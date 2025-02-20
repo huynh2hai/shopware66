@@ -1,0 +1,19 @@
+{
+    "swagCmsExtensions": {
+        "form": {
+            "component": {
+                "checkbox": {
+                    "false": "Nē",
+                    "true": "Jā"
+                },
+                "select": {
+                    "defaultPlaceholder": "Izvēlieties opciju..."
+                }
+            }
+        },
+        "quickview": {
+            "detailPageLinkText": "Rādīt detalizēti",
+            "liveRegionSlideAnnouncement": "Tagad tiek skatīts slaids produktam %productName%"
+        }
+    }
+}

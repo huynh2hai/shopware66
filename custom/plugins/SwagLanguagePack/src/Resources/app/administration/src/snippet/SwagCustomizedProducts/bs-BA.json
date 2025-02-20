@@ -1,0 +1,240 @@
+{
+    "sw-privileges": {
+        "permissions": {
+            "swag_customized_products_template": {
+                "label": "Prilagođeni proizvodi"
+            }
+        }
+    },
+    "swag-customized-products": {
+        "create": {
+            "title": "Novi predložak proizvoda"
+        },
+        "detail": {
+            "buttonSaveDuplicate": "Spremite i duplicirajte",
+            "labelContextMenuAddToTemplate": "Koristite u predlošku",
+            "messageSaveError": "Predložak nije moguće sačuvati.",
+            "tabAssignment": {
+                "cardGeneral": "Proizvodi",
+                "productSelectPlaceholder": "Odaberite proizvode...",
+                "title": "Dodjela proizvoda"
+            },
+            "tabGeneral": {
+                "cardExclusion": {
+                    "buttonAdd": "Dodaj izuzete kombinacije",
+                    "emptyTitle": "Još nema izuzetih kombinacija. | Nisu pronađene izuzete kombinacije.",
+                    "labelName": "Ime",
+                    "modal": {
+                        "nameLabel": "Ime",
+                        "title": "{name} | Dodaj izuzetu kombinaciju"
+                    },
+                    "placeholderSearch": "Pretražite izuzete kombinacije...",
+                    "textModalDelete": "Da li stvarno želite izbrisati izuzetu kombinaciju \"{name}\"? | Da li stvarno želite izbrisati ove {count} izuzete kombinacije?",
+                    "title": "Izuzete kombinacije",
+                    "titleModalDelete": "Izbriši izuzete kombinacije"
+                },
+                "cardGeneral": "Opšta konfiguracija",
+                "cardOption": {
+                    "buttonAdd": "Dodaj opciju",
+                    "emptyTitle": "Još nema opcija. | Nije pronađena nijedna opcija.",
+                    "errorSave": "Opciju nije moguće sačuvati.",
+                    "labelName": "Ime",
+                    "labelOptionValuesCount": "Vrijednosti",
+                    "labelPosition": "Pozicija",
+                    "labelType": "Tip",
+                    "optionAddNotAvailableTooltip": "Nove opcije mogu se dodati samo koristeći zadani jezik sistema.",
+                    "placeholderSearch": "Opcije pretraživanja...",
+                    "placeholderType": "Odaberite vrstu unosa...",
+                    "textModalDelete": "Da li stvarno želite izbrisati opciju \"{name}\"? | Da li stvarno želite izbrisati ove {count} opcije?",
+                    "title": "Opcije",
+                    "titleModalDelete": "Obriši opciju"
+                },
+                "createOption": {
+                    "nameLabel": "Ime",
+                    "namePlaceholder": "Unesite prikazano ime...",
+                    "title": "Dodaj opciju",
+                    "typeHelpText": "Vrsta se naknadno ne može promijeniti.",
+                    "typeLabel": "Vrsta"
+                },
+                "helpTextConfirmInput": "Individualizirani proizvodi mogu se staviti u košaricu nakon potvrde pojedinačne konfiguracije kvačicom.",
+                "helpTextOptionsAutoCollapse": "Ako je ova postavka aktivna, opcije će se automatski zatvoriti nakon valjanog unosa. Ova funkcija nije dostupna u modu korak-po-korak.",
+                "helpTextStepByStep": "U modu korak-po-korak, opcije za individualizaciju proizvoda prikazuju se jedna za drugom.",
+                "labelActive": "Aktivan",
+                "labelColor": "Boja",
+                "labelConfirmInput": "Kupci moraju potvrditi svoje konfiguracije",
+                "labelDescription": "Opis",
+                "labelDisplayName": "Ime za prikaz",
+                "labelImage": "Slika",
+                "labelInternalName": "Tehnički naziv",
+                "labelOptionsAutoCollapse": "Mogućnosti samorušenja",
+                "labelStepByStep": "Korak-po-korak mod",
+                "placeholderDescription": "Unesite opis proizvoda...",
+                "placeholderDisplayName": "Unesite prikazano ime...",
+                "placeholderInternalName": "Unesite tehnički naziv...",
+                "textAssignmentInfo": "Dodijelite prilagođeni predložak proizvoda na stranici detalja postojećeg proizvoda kako biste ga učinili prilagodljivim.",
+                "title": "Pregled"
+            }
+        },
+        "extension": {
+            "buttonViewConfiguration": "Pogledajte konfiguraciju",
+            "textOrderItemPrefix": "Proizvod po narudžbi"
+        },
+        "general": {
+            "descriptionTextModule": "Ovdje upravljajte proizvodima po narudžbi.",
+            "duplicate": "Dupliciraj",
+            "duplicateNameSuffix": "(Kopiraj)",
+            "mainMenuItemGeneral": "Proizvodi po narudžbi",
+            "selectRule": "Odaberite pravilo..."
+        },
+        "list": {
+            "buttonAddTemplate": "Dodaj predložak",
+            "columnDescription": "Opis",
+            "columnDisplayName": "Ime za prikaz",
+            "columnInternalName": "Interno ime",
+            "columnOptionsCount": "Priložene opcije",
+            "columnProductsCount": "Dodijeljeni proizvodi",
+            "messageEmpty": "Još nema predložaka proizvoda.",
+            "templateTitle": "Predlošci proizvoda",
+            "titleSidebarItemRefresh": "Osvježi"
+        },
+        "optionDetailModal": {
+            "noChildren": "Izbor nema vrijednosti.",
+            "noFormFound": "Nije pronađen obrazac za ovu vrstu.",
+            "optionType": {
+                "advancedSurcharges": {
+                    "columnTitles": {
+                        "rule": "Pravilo"
+                    }
+                },
+                "datetime": {
+                    "maxDate": "Vremenski period (kraj)",
+                    "minDate": "Vremenski period (početak)"
+                },
+                "defaultLabel": "Zadana vrijednost",
+                "defaultPlaceholder": "Unesite zadanu vrijednost...",
+                "defaultPlaceholderSelect": "Odaberite zadanu vrijednost...",
+                "descriptionLabel": "Opis",
+                "imageupload": {
+                    "excludedExtensionsLabel": "Izuzete proširenja datoteka",
+                    "fileExtensionsLabel": "Podržane ekstenzije datoteka",
+                    "maxCountLabel": "Maksimalan broj datoteke",
+                    "maxFileSizeLabel": "Maksimalna veličina datoteke",
+                    "tooltip": "Imajte na umu da ekstenzije datoteka razlikuju velika i mala slova."
+                },
+                "itemNumberHelpText": "Opcija proizvodnog broja se prikazuje u pregledu narudžbe i opisuje broj proizvoda ove određene opcije.",
+                "itemNumberLabel": "Opcija proizvodnog broja",
+                "nameLabel": "Ime",
+                "numberfield": {
+                    "maximumValueLabel": "Maks. vrijednost",
+                    "minimumValueLabel": "Min. vrijednost",
+                    "placeholder": "Unesite minimalnu vrijednost...",
+                    "stepLabel": "Veličina koraka"
+                },
+                "placeholderDescription": "Unesite opis...",
+                "placeholderItemNumber": "Unesite opciju proizvodnog broja...",
+                "placeholderLabel": "Rezervirano mjesto",
+                "placeholderPlaceholder": "Unesite rezervirano mjesto...",
+                "requiredLabel": "Obavezno",
+                "requiredTooltip": {
+                    "disabled": "Ne možete označiti ovu opciju jer je povezana s izuzećem",
+                    "enabled": "Označite da biste tražili ovu opciju"
+                },
+                "select": {
+                    "isDropDownLabel": "Prikaži kao padajući izbornik",
+                    "isMultiSelectLabel": "Moguće višestruki odabir",
+                    "isMultiSelectTooltip": {
+                        "disabled": "Ne možete označiti ovu opciju jer je povezana s izuzećem.",
+                        "enabled": "Označite da biste omogućili kupcu da odabere više vrijednosti."
+                    }
+                },
+                "surcharges": {
+                    "advancedLabel": "Napredne nadoplate",
+                    "advancedSurchargesTooltip": "Omogućite ovu opciju za konfiguriranje naprednih nadoplata.",
+                    "oncePerOrderLabel": "Doplata jednom po konfiguraciji proizvoda",
+                    "relativeLabel": "Relativna nadoplata",
+                    "relativeSurchargesTooltip": "Omogućite ovu opciju za konfiguriranje relativnih nadoplata.",
+                    "selectTaxRateTooltip": "Odaberite poreznu stopu ili omogućite relativne nadoplate da biste konfigurirali ovu opciju.",
+                    "taxLabel": "Porezna stopa",
+                    "taxPlaceholder": "Odaberi poreznu stopu...",
+                    "textWarningBasePrice": "Napominjemo da je osnovna cijena potrebna kada želite koristiti napredne nadoplate. Ako se nijedno od navedenih pravila o cijenama ne podudara, osnovna cijena će se koristiti kao zamjenska cijena."
+                },
+                "textfield": {
+                    "maxLengthLabel": "Maks. dužina",
+                    "minLengthLabel": "Min. dužina"
+                },
+                "typeLabel": "Vrsta",
+                "valueLabel": "Vrijednost"
+            },
+            "saveError": "Spremi grešku"
+        },
+        "optionTypes": {
+            "checkbox": "Potvrdni kvadratić",
+            "colorpicker": "Birač boja",
+            "colorselect": "Odabir boja",
+            "datetime": "Datumsko polje",
+            "fileupload": "Unos datoteka",
+            "htmleditor": "HTML urednik",
+            "imageselect": "Odabir slike",
+            "imageupload": "Unos slike",
+            "numberfield": "Polje broja",
+            "select": "Polje za odabir",
+            "textarea": "Textoblast",
+            "textfield": "Tekstualno polje",
+            "timestamp": "Polje za vrijeme"
+        }
+    },
+    "swag-customized-products-assignment-card": {
+        "emptyTitle": "Još nema zadataka.",
+        "labelManufacturer": "Proizvođač",
+        "labelName": "Ime",
+        "labelProductNumber": "Broj proizvoda",
+        "textModalDelete": "Želite li zaista izbrisati dodjelu proizvoda \"{name}\"? | Želite li zaista izbrisati ove {count} dodjele proizvoda?",
+        "titleModalDelete": "Izbrišite dodjelu proizvoda"
+    },
+    "swag-customized-products-condition-tree": {
+        "helpText": "Opišite kombinaciju stanja opcija koja će se isključiti. Imajte na umu da nećete moći odabrati potrebne ili višestruke opcije za izuzeće.",
+        "label": "Isključena kombinacija",
+        "node": {
+            "operatorSelectPlaceholder": "Odaberite operatera...",
+            "optionSelectPlaceholder": "Odaberite opciju...",
+            "strongAnd": "I"
+        }
+    },
+    "swag-customized-products-configuration-modal": {
+        "emptyConfigurationHint": "Ovaj proizvod nije konfigurisan",
+        "oneTimeSurchargeSuffix": "jednom",
+        "perItemSuffix": "po komadu",
+        "title": "Prilagođena konfiguracija proizvoda",
+        "warningImagePreview": "Imajte na umu da preglednik ne podržava sve vrste datoteka. Molimo koristite funkciju “Download” u skladu s tim da biste prikazali željenu sliku u programu za uređivanje po vašem izboru."
+    },
+    "swag-customized-products-option-tree-item": {
+        "actions": {
+            "buttonCreateSubElement": "Kreirajte podelement"
+        },
+        "general": {
+            "placeholderElementName": "Ovdje unesite ime elementa..."
+        }
+    },
+    "swag-customized-products-product-assignment": {
+        "cardTitle": "Proizvodi po narudžbi",
+        "moduleLink": "Prilagođeni proizvodi",
+        "selectLabel": "predložak",
+        "selectPlaceholder": "Odaberite predložak proizvoda po narudžbi...",
+        "textContent": "Prilagođeni proizvodi omogućuju vam da ponudite jedinstvena i osobna iskustva e-trgovine. Kupci će dobiti pristup unaprijed definiranim mogućnostima prilagodbe na stranici proizvoda. Postoje razne mogućnosti, kao što su prijenos slika i grafike koje omogućuju pojedinačne otiske, pružaju različite boje ili način slanja tekstova za prilagođene gravure.<br><br>Postavljanje predložaka za prilagođene proizvode također je jednostavno. Otvorite modul Prilagođeni proizvodi i učitajte ili stvorite predložak za prilagodbu. Koristite okvir za odabir u nastavku da biste dodijelili taj predložak bilo kojem prilagodljivom proizvodu.",
+        "textHeadline": "Dodjela predloška"
+    },
+    "swag-migration": {
+        "index": {
+            "selectDataCard": {
+                "dataSelection": {
+                    "customProducts": "Prilagođeni proizvodi"
+                },
+                "entities": {
+                    "swag_customized_products_template": "Predložak:",
+                    "swag_customized_products_template_option": "Opcija:",
+                    "swag_customized_products_template_option_value": "Vrijednost:"
+                }
+            }
+        }
+    }
+}

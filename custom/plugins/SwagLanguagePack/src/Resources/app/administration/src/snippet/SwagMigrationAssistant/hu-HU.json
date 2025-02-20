@@ -1,0 +1,663 @@
+{
+    "global": {
+        "error-codes": {
+            "SWAG_MIGRATION_CONNECTION_NAME_ALREADY_EXISTS": "A kapcsolat neve már létezik.",
+            "SWAG_MIGRATION_CONNECTION_NAME_TO_SHORT": "A kapcsolat nevének legalább 6 karakter hosszúnak kell lennie.",
+            "SWAG_MIGRATION_INVALID_API_KEY": "Az API billentyű hossza nem megfelelő ({length}/40 karakter)."
+        }
+    },
+    "swag-migration": {
+        "api-error": {
+            "abortMigration": "Nem sikerült megszakítani a migrációt.",
+            "approveFinishedMigration": "Nem sikerült az áttelepítés befejezésekor",
+            "checkConnection": "Nem sikerült ellenőrizni a forrásrendszerhez való kapcsolatot.",
+            "fetchConnectionId": "Nem sikerült megszerezni az aktív kapcsolatazonosítót.",
+            "getDataSelection": "Nem sikerült kiválasztani az aktuális kapcsolat adatait.",
+            "getState": "Nem sikerült megszerezni a migrációs állapotot.",
+            "startMigration": "Nem sikerült elindítani a migrációt."
+        },
+        "dashboard": {
+            "button": "Áttelepítési segéd megnyitása",
+            "headline": "Mozgatás a Shopware",
+            "information": "Az első dolog, hogy összekapcsolja a meglévő bolt rendszer - a Migration Assistant segít az út mentén.",
+            "shopInfoCard": {
+                "button": "Nyissa meg",
+                "header": "Áttelepítési asszisztens",
+                "resetButton": "Finish"
+            },
+            "title": "Áttelepítési asszisztens"
+        },
+        "general": {
+            "descriptionTextModule": "Modul az adatok áttelepítéséhez",
+            "mainMenuItemGeneral": "Áttelepítési asszisztens",
+            "tabDataSelector": "Adatok kiválasztása",
+            "tabHistory": "Történelem",
+            "tabMain": "Általános"
+        },
+        "history": {
+            "clearRunDialog": {
+                "content": "Az áttelepítési adatok törlésével eltávolítja a naplóbejegyzéseket, a médiafájlbejegyzéseket, az ideiglenes áttelepítési adatrekordokat és az áttelepítési futtatást, amelyek ezután már nem lesznek elérhetők az áttelepítési előzményekben.",
+                "contentHint": "Biztosan törölni szeretné az adatokat?",
+                "title": "Áttelepítési adatok törlése"
+            },
+            "connectionName": "Kapcsolat neve",
+            "contextMenu": {
+                "clearLogs": "Áttelepítési adatok törlése",
+                "details": "Részletek megjelenítése",
+                "downloadLogs": "Napló letöltése"
+            },
+            "detailPage": {
+                "close": "Zárja",
+                "data": "Adatok",
+                "dataCount": "Adatkészletek",
+                "dataName": "Név",
+                "errorCode": "Hibaüzenet",
+                "errorCount": "Count",
+                "errorLevel": "Napló szint",
+                "errors": "Részletek",
+                "logDescription": "További részletek {link}",
+                "logDownload": "töltse le a naplófájlt.",
+                "noErrorsOccurred": "Nem történt hiba.",
+                "noProgressData": "Ezt a futtatást a plugin egy korábbi verziójában hajtották végre, és adatait törölték.",
+                "runStatus": "A migráció állapota:",
+                "status": {
+                    "aborted": "Megszakadt",
+                    "finished": "Kész",
+                    "running": "Futás"
+                },
+                "timestamp": "Idő:",
+                "title": "A migráció részletei"
+            },
+            "importDateTime": "Kezdő időpont",
+            "noData": "Nem találtak áttelepítést.",
+            "profileAndGateway": "Profil és átjáró",
+            "selectedData": "Adatok",
+            "shopDomain": "Shop domain",
+            "shopSystem": "Üzlet rendszer",
+            "status": "státusz"
+        },
+        "index": {
+            "abortButton": "Mégse",
+            "assistantCard": {
+                "connection": {
+                    "content": "A Migrációs asszisztens segít létrehozni a kapcsolatot a bolti rendszer és a Shopware 6 között az adatok átviteléhez és áttelepítéséhez.",
+                    "link": "Súgó és dokumentáció",
+                    "title": "Kapcsolat beállítása"
+                },
+                "dataSelection": {
+                    "content": "Válassza ki az áttelepíteni kívánt adatokat. Lehetőség van a plugin adatok is, ha a plugin már elérhető a Shopware 6. Ellenőrizze a bővítmény elérhetőségét a Shopware fiókjában.",
+                    "title": "Adatok megadása az áttelepítéshez"
+                },
+                "finish": "Kész!",
+                "headline": "Hogyan működik az áttelepítés?",
+                "migrationOverview": {
+                    "content": "1. Egy automatikus folyamat ellenőrzi a kiválasztott adatokat hiányzó hozzárendelések esetén. Készüljön fel az automatikus folyamat befejezésére kézi hozzárendelések hozzáadásával.{linebreak}2. A bolt adatait elolvassa és hozzárendeli.{linebreak}3. Az összes kiválasztott és megfelelően hozzárendelt adat átkerül a Shopware 6-ba.{linebreak}4. A médiaelemek letöltésre kerülnek.",
+                    "title": "Áttelepítés lépései"
+                },
+                "title": "Információ"
+            },
+            "backToOverviewButton": "Vissza az áttekintéshez",
+            "confirmAbortDialog": {
+                "cancelPause": "Szünet",
+                "cancelRunning": "Folytatás",
+                "confirm": "A migráció leállítása",
+                "content": "A migráció még nem fejeződött be teljesen. A már áttelepített adatok használhatatlanok lehetnek. Ha most kilép, akkor teljesen meg kell futtatnia az áttelepítési folyamatot.",
+                "hint": "Meg akarja állítani a migrációt?",
+                "title": "A migráció leállítása"
+            },
+            "confirmWarningCard": {
+                "currencyMismatch": {
+                    "checkboxLabel": "Igen, szeretném folytatni",
+                    "info": "A különböző alapértelmezett pénznemekkel történő áttelepítés sérült adatrekordokhoz vezethet, és kiszámíthatatlan mellékhatásokat okozhat.",
+                    "question": "Biztos benne, hogy az adatokat a szokásos pénznemben kell áttelepíteni [{targetSystemCurrency}]?",
+                    "text": "Az áttelepítendő adatok pénzneme nem egyezik meg a standard pénznemmel [{targetSystemCurrency}]. Az [{sourceSystemCurrency}] -al rendelkező adatok továbbra is áttelepíthetők, de nem lesznek automatikusan konvertálva. Ezután manuálisan módosíthatja az árakat.",
+                    "title": "Másik pénznemet ismert a migráció"
+                },
+                "languageMismatch": {
+                    "checkboxLabel": "Igen, szeretném folytatni",
+                    "info": "A különböző alapértelmezett nyelvekkel történő áttelepítés sérült adatrekordokhoz vezethet, és kiszámíthatatlan mellékhatásokat okozhat.",
+                    "question": "Biztos benne, hogy az adatokat a szabványos nyelven kell áttelepíteni [{targetSystemLanguage}]?",
+                    "text": "Az áttelepítendő adatok nyelve nem egyezik a szabványos nyelvvel [{targetSystemLanguage}]. Az [{sourceSystemLanguage}] -al rendelkező adatok továbbra is áttelepíthetők, de nem lesznek automatikusan konvertálva. Ezután manuálisan módosíthatja a fordításokat.",
+                    "title": "A migráció egy másik nyelvet ismert fel"
+                }
+            },
+            "continueButton": "Folytatás",
+            "error": {
+                "SWAG_MIGRATION_CANNOT_CONVERT_CHILD_ENTITY": {
+                    "description": "Az {parentEntity} szülő entitásból származó {entity} gyermek entitás \"{parentSourceId}\" azonosítóval nem konvertálható.",
+                    "title": "A {entity} gyermek entitás nem alakítható át"
+                },
+                "SWAG_MIGRATION_CANNOT_CONVERT_ENTITY": {
+                    "description": "Az „{sourceId}” forrásazonosítóval rendelkező {entity} entitás nem konvertálható.",
+                    "title": "A {entity} entitást nem lehetett átalakítani"
+                },
+                "SWAG_MIGRATION_CANNOT_GET_FILE": {
+                    "description": "A {entity} fájl az uri \"{uri}\" és a \"{sourceId}\" hordozóazonosítóval nem tölthető le /másolható.",
+                    "title": "A {entity} fájl nem tölthető le/másolható"
+                },
+                "SWAG_MIGRATION_ENTITY_ALREADY_EXISTS": {
+                    "description": "Az „{sourceId}” forrásazonosítóval rendelkező {entity} entitás már létezik, és nem írható.",
+                    "title": "A {entity} entitás már létezik"
+                },
+                "SWAG_MIGRATION_ENTITY_FIELD_REASSIGNED": {
+                    "description": "Az „{sourceId}” forrásazonosítóval rendelkező {entity} entitás a \"{emptyField}\" mezőt \"{replacementField}” váltotta fel.",
+                    "title": "A {entity} entitásnak van egy új mezője"
+                },
+                "SWAG_MIGRATION_ENTITY_UNKNOWN": {
+                    "description": "Az „{requiredForSourceId}” forrásazonosítóval rendelkező {requiredForEntity} entitás nem találja a „{sourceId}” forrásazonosítóval rendelkező függött {entity} entitást.",
+                    "title": "Nem található {entity}"
+                },
+                "SWAG_MIGRATION_MESSAGE_QUEUE_EXCEPTION": {
+                    "description": "Kivétel történt az üzenetsor feldolgozása során.",
+                    "title": "Üzenetsor kivétele"
+                },
+                "SWAG_MIGRATION_RUN_ABORTED_AUTOMATICALLY_EXCEPTION": {
+                    "description": "A migráció automatikusan megszakadt, mert túl sok egymást követő kivétel történt.",
+                    "title": "A migráció automatikusan megszakadt"
+                },
+                "SWAG_MIGRATION_RUN_EXCEPTION": {
+                    "description": "{description}",
+                    "title": "Kivétel történt"
+                },
+                "SWAG_MIGRATION__COULD_NOT_READ_ENTITY_COUNT": {
+                    "description": "A {entity} entitáshoz tartozó összes szám nem olvasható. Győződjön meg arról, hogy az „{table}” táblázat létezik a forrásrendszerben, és a „{condition}” opcionális feltétel érvényes. Kivétel üzenet: {exceptionMessage}",
+                    "title": "Nem sikerült beolvasni az entitásszámot"
+                },
+                "SWAG_MIGRATION__DATASET_NOT_FOUND": {
+                    "description": "A „{profileName}” profilhoz és az „{entity}” entitáshoz tartozó adatkészlet nem található. A \"{sourceId}\" azonosítóval rendelkező entitást nem lehetett feldolgozni.",
+                    "title": "Az adatkészlet nem található"
+                },
+                "SWAG_MIGRATION__DEBUG": {
+                    "description": "{logData}",
+                    "title": "Hibakerakás kimenet"
+                },
+                "SWAG_MIGRATION__DOCUMENT_TYPE_NOT_SUPPORTED": {
+                    "description": "A „{sourceId}” forrásazonosítóval rendelkező dokumentum nem konvertálható, mert az „{type}” dokumentumtípus nem támogatott.",
+                    "title": "A dokumentum típusa nem támogatott"
+                },
+                "SWAG_MIGRATION__INVALID_EMAIL_ADDRESS": {
+                    "description": "A {entity}  entitás e-mail címe „{sourceId}” forrásazonosítóval érvénytelen: {email}",
+                    "title": "Érvénytelen e-mail cím"
+                },
+                "SWAG_MIGRATION__PROCESSOR_NOT_FOUND": {
+                    "description": "Processzor \"{profileName}„profilhoz,\"{gatewayName}\"átjáróhoz és\"{entity}\"entitáshoz nem található.",
+                    "title": "A processzor nem található"
+                },
+                "SWAG_MIGRATION__SHOPWARE_ASSOCIATION_REQUIRED_MISSING": {
+                    "description": "A forrás {missingEntity} azonosítóval{sourceId}\"\" nem található, de szükséges {requiredFor}.",
+                    "title": "A társított {entity} nem található"
+                },
+                "SWAG_MIGRATION__SHOPWARE_CANNOT_COPY_DATA": {
+                    "description": "A forrásfájl nem másolható. Fájl: {path}",
+                    "title": "Forrásfájl nem található"
+                },
+                "SWAG_MIGRATION__SHOPWARE_CANNOT_DOWNLOAD_DATA": {
+                    "description": "Nem lehet letölteni a médiát. Érintett fájl: {uri}",
+                    "title": "A média nem tölthető"
+                },
+                "SWAG_MIGRATION__SHOPWARE_EMPTY_NECESSARY_DATA_FIELDS": {
+                    "description": "Az „{sourceId}” forrásazonosítóval rendelkező {entity} entitás nem rendelkezik a \"{emptyField}” mezőhöz szükséges adatokkal",
+                    "title": "A {entity} entitásnak üres mezője van"
+                },
+                "SWAG_MIGRATION__SHOPWARE_INVALID_UNSERIALIZED_DATA": {
+                    "description": "Az \"{sourceId}\" forrásazonosítóval rendelkező {entity} entitás nem alakítható át a \"{unserializedEntity}\" entitás érvénytelen nem szerializált objektumadatai miatt, és a nyers adatok: {serializedData}",
+                    "title": "Érvénytelen nem szerializált adatok"
+                },
+                "SWAG_MIGRATION__SHOPWARE_PARENT_ENTITY_NOT_FOUND": {
+                    "description": "A „{entity}” gyermek szülőentitás nem található.",
+                    "title": "A szülő entitás nem található"
+                },
+                "SWAG_MIGRATION__SHOPWARE_UNSUPPORTED_NUMBER_RANGE_TYPE": {
+                    "description": "A „{sourceId}” forrásazonosítóval rendelkező számtartomány-entitást nem lehet átalakítani a nem támogatott típus miatt: {type}.",
+                    "title": "Nem támogatott számtartomány típusa"
+                },
+                "SWAG_MIGRATION__SHOPWARE_UNSUPPORTED_OBJECT_TYPE": {
+                    "description": "{entity} „{objectType}„típusú objektumtípus, amelynek forrásazonosítója „{sourceId}„nem konvertálható.",
+                    "title": "Nem támogatott objektumtípus"
+                },
+                "SWAG_MIGRATION__SHOPWARE_UNSUPPORTED_SHIPPING_CALCULATION_TYPE": {
+                    "description": "A „{sourceId}” forrásazonosítóval rendelkező szállítási módszer entitás nem konvertálható a nem támogatott számítási típus miatt: {type}.",
+                    "title": "Nem támogatott szállítási számítási típus"
+                },
+                "SWAG_MIGRATION__SHOPWARE_UNSUPPORTED_SHIPPING_PRICE": {
+                    "description": "Az „{shippingMethodId}” szállítási módszer „{sourceId}” forrásazonosítójával rendelkező szállítási ár entitás nem alakítható át a nem támogatott tényezőár kiszámítása miatt.",
+                    "title": "Nem támogatott szállítási tényező árának kiszámítása"
+                },
+                "SWAG_MIGRATION__THEME_COMPILING_ERROR": {
+                    "description": "A \"{sourceId}\" azonosítóval rendelkező témát nem lehetett összeállítani.",
+                    "title": "Téma összeállítási hiba"
+                },
+                "SWAG_MIGRATION__WRITER_NOT_FOUND": {
+                    "description": "A \"{entity}\" entitás fájlírója nem található.",
+                    "title": "Fájlíró nem található"
+                },
+                "SWAG_MIGRATION__WRITE_EXCEPTION_OCCURRED": {
+                    "description": "{description}",
+                    "title": "Írási kivétel történt"
+                },
+                "authorizationError": {
+                    "information": "Engedélyezési hiba. A hozzáférési adatok nem helyesek. Kérjük, ellenőrizze, és próbálja újra."
+                },
+                "canNotConnectToServer": "Nincs kapcsolat a kiszolgálóval. Kérjük, ellenőrizze a kapcsolatot problémák esetén.",
+                "customerExists": {
+                    "information": "A „{mail}” e-mail címmel rendelkező ügyfél már létezik. Ezt a felhasználót nem adhatja hozzá az adatbázishoz az e-mailhez."
+                },
+                "gatewayNotFound": {
+                    "information": "A \"{notFoundGateway}\" átjáró nem található."
+                },
+                "gatewayRead": {
+                    "information": "Nem sikerült beolvasni a \"{unreadableGateway}” átjárót."
+                },
+                "localeNotFound": {
+                    "information": "A „{notFoundCode}” területi beviteli kód nem található."
+                },
+                "mediaProcessConnectionError": "Csatlakozási hiba történt a médiaadatok másolása közben. Kérjük, ellenőrizze a kapcsolatot.",
+                "migrationContextPropertyMissing": {
+                    "information": "A „{notFoundProperty}” szükséges tulajdonság az áttelepítési környezethez nem található."
+                },
+                "migrationsWorkloadPropertyMissing": {
+                    "information": "A „{notFoundProperty}” szükséges tulajdonság az áttelepítési munkaterheléshez nem található."
+                },
+                "noFileSystemPermissions": {
+                    "information": "Nincsenek fájlrendszer-engedélyek fájlok vagy könyvtárak létrehozására vagy írására. Kérjük, ellenőrizze a jogosultságait."
+                },
+                "profileNotFound": {
+                    "information": "A „{notFoundProfile}” áttelepítési profil nem található."
+                },
+                "undefinedIndex": {
+                    "detail": "Azonosítatlan index nem található.",
+                    "information": "Index \"{unidentifiedIndex}\" nem található. Kérjük, ellenőrizze az adatait.",
+                    "title": "Nem azonosított index"
+                },
+                "unknownError": "Ismeretlen hiba. További információért az adatbázis naplózási táblájában is megtekintheti."
+            },
+            "errorTypes": {
+                "error": "Hiba",
+                "info": "Információ",
+                "warning": "figyelmeztetés"
+            },
+            "finishButton": "Finish",
+            "loadingScreenCard": {
+                "documentationLink": "https://developer.shopware.com/docs/guides/hosting/infrastructure/message-queue.html#message-queue",
+                "documentationLinkText": "Üzenetsor dokumentációja",
+                "flowChart": {
+                    "cleanup": "Tisztítás",
+                    "fetchData": "Olvasás",
+                    "finish": "Kész",
+                    "indexing": "Indexelés",
+                    "premapping": "Ellenőrizés",
+                    "processMedia": "Letöltés",
+                    "writeData": "Írás"
+                },
+                "notice": "Tipp: Ez a folyamat az üzenetsorban fut. Nem kell ezen az oldalon maradnia, ha az üzlet megfelelően van konfigurálva.",
+                "result": {
+                    "caption": "A média letöltése folytatódik a háttérben. A nagy fájlok időbe telhetnek.",
+                    "historyHint": "Ezt az információt bármikor megtekintheti a migrációs előzményekben. Lehetséges, hogy később további naplóüzenetek kerülnek hozzáadásra, mert a média letöltése továbbra is a háttérben fut.",
+                    "logSummary": "Naplónapló",
+                    "title": "A migrációs asszisztens elkészült"
+                },
+                "status": {
+                    "aborting": {
+                        "caption": "Az íratlan adatok törlődnek. A már áttelepített adatok használhatatlanok lehetnek.",
+                        "long": "Megszakítják a migrációt",
+                        "short": "Abortusz"
+                    },
+                    "cleanup": {
+                        "caption": "Az ideiglenes adatok eltávolításra kerülnek. A migráció majdnem befejeződött.",
+                        "long": "Megtisztítják a migrációt",
+                        "short": "Tisztítás"
+                    },
+                    "fetching": {
+                        "caption": "Az új feladatok feldolgozásra kerülnek.",
+                        "long": "Az adatokat az Ön rendszeréből olvashatjuk",
+                        "short": "Olvasás"
+                    },
+                    "finish": "Kész",
+                    "indexing": {
+                        "caption": "A migráció majdnem befejeződött.",
+                        "long": "Az új adatok indexelése folyamatban van",
+                        "short": "Indexelés"
+                    },
+                    "media-processing": {
+                        "caption": "A nagy képadatok feldolgozása időbe telhet.",
+                        "long": "Átvitelezték a médiát",
+                        "short": "Médiaátvitel"
+                    },
+                    "writing": {
+                        "caption": "Az üzlet méretétől függően néhány percet is igénybe vehet.",
+                        "long": "Az adatokat a Shopware 6-ban írják",
+                        "short": "Írás"
+                    }
+                }
+            },
+            "migrateButton": "Áttelepítés indítása",
+            "migrationAlreadyRunning": "A migráció már megkezdődött.",
+            "pauseButton": "Szünet",
+            "pluginVersionText": "Észrevettük, hogy egy plugin frissítés áll rendelkezésre a forrásrendszerben {sourceSystem}. Kérjük, frissítse az \"{pluginName}\" bővítményt az áttelepítés megkezdése előtt.",
+            "premappingCard": {
+                "cardTitle": "Feladások",
+                "group": {
+                    "delivery_time": "Szállítási idő",
+                    "manufacturer": "Gyártók",
+                    "newsletter_status": "Hírlevél státusza",
+                    "order_delivery_state": "Rendelési szállítási állapotok",
+                    "order_state": "Rendelés állapotok",
+                    "payment_method": "Fizetési módok",
+                    "salesChannel": "Hírlevél értékesítési csatorna",
+                    "salutation": "Köszöntés",
+                    "shipping_availability_rule": "Szállítási mód elérhetősége",
+                    "transaction_state": "Tranzakciós államok",
+                    "user": "Rendszergazda felhasználó"
+                },
+                "loadingCaption": "A meglévő adatokat ellenőriztük.",
+                "loadingTitle": "Az adatellenőrzés fut",
+                "newAssignmentTitle": "Új feladatok",
+                "placeholder": "Kérjük, válasszon",
+                "previousTitle": "Előző",
+                "unfilledAlert": "Észleltük, hogy vannak olyan adatok, amelyek kézi hozzárendelést igényelnek.",
+                "unfilledCaption": "Csak a kézi hozzárendelés befejezése után folytathatja.",
+                "unfilledTitle": "Az adatellenőrzés befejeződött",
+                "validCaption": "Az adatok készen állnak a folytatásra",
+                "validTitle": "Az adatellenőrzés befejeződött"
+            },
+            "savePremapping": {
+                "message": "Az előleképezés mentve lett.",
+                "saveButton": "Előleképezés mentése"
+            },
+            "selectDataCard": {
+                "cardTitle": "Adatok kiválasztása",
+                "dataHeader": "Adatok",
+                "dataSelection": {
+                    "basicSettings": "Alapvető adatok",
+                    "cms": "Elrendezések",
+                    "customerWishlists": "Kívánságlisták",
+                    "customersOrders": "Ügyfelek és rendelések",
+                    "media": "Média",
+                    "newsletterRecipient": "Hírlevél címzett",
+                    "processMediaFiles": "Média",
+                    "productReviews": "Termék vélemények",
+                    "products": "Termékek",
+                    "promotions": "Akciók",
+                    "seoUrls": "SEO URL-ek"
+                },
+                "dataTypes": {
+                    "basicData": "Shop adatok",
+                    "pluginData": "Plugin adatok"
+                },
+                "entities": {
+                    "category": "Kategóriák:",
+                    "category_association": "Kategória egyesületek",
+                    "category_cms_page_association": "Kategóriaelrendezés társítások:",
+                    "category_custom_field": "Egyedi kategória mezők",
+                    "category_product_stream_association": "Kategória dinamikus termékcsoportok társulásai:",
+                    "cms_page": "Elrendezések:",
+                    "country": "Országok:",
+                    "country_state": "Országos államok:",
+                    "currency": "Pénznem:",
+                    "custom_field_set": "Egyéni mezőkészletek:",
+                    "customer": "Ügyfelek:",
+                    "customer_custom_field": "Ügyfél egyedi mezők",
+                    "customer_group": "Ügyfélcsoportok:",
+                    "customer_group_custom_field": "Ügyfélcsoport egyéni mezői",
+                    "customer_wishlist": "Kívánságlisták:",
+                    "delivery_time": "Szállítási idők:",
+                    "language": "Nyelvek:",
+                    "mail_template": "E-mail sablonok:",
+                    "main_variant_relation": "Fő variáns kapcsolatok:",
+                    "media": "Média:",
+                    "media_folder": "Média mappák:",
+                    "media_folder_inheritance": "Médiafappa öröklése:",
+                    "number_range": "Számtartományok:",
+                    "order": "Megrendelések:",
+                    "order_custom_field": "Egyéni mezők megrendelése",
+                    "order_document": "Megrendelési dokumentumok:",
+                    "order_document_base_config": "Dokumentum konfigurálása:",
+                    "order_document_custom_field": "Rendeljen meg a dokumentum egyéni mezőit",
+                    "order_document_inheritance": "Dokumentumkapcsolatok megrendelése:",
+                    "page_system_config": "Az oldal alapvető információi:",
+                    "product": "Termékek:",
+                    "product_cross_selling": "Keresztértékesítés:",
+                    "product_custom_field": "Termék egyedi mezők",
+                    "product_feature_set": "Alapvető jellemzők:",
+                    "product_manufacturer": "Termékgyártók:",
+                    "product_manufacturer_custom_field": "Termékgyártó egyedi mezői",
+                    "product_option_relation": "Termék opciók:",
+                    "product_price_custom_field": "Termék ár egyedi mezők",
+                    "product_property_relation": "Terméktulajdonságok:",
+                    "product_review": "Vélemények:",
+                    "product_sorting": "Termék válogatás:",
+                    "product_stream": "Dinamikus termékcsoportok:",
+                    "product_stream_filter_inheritance": "Dinamikus termékcsoport szűrők:",
+                    "promotion": "Akciók:",
+                    "property_group": "Tulajdonság csoportok:",
+                    "property_group_option": "Tulajdonságok:",
+                    "rule": "Szabályok:",
+                    "sales_channel": "Értékesítési csatornák:",
+                    "sales_channel_domain": "Tartományok:",
+                    "salutation": "Üdvözlések:",
+                    "seo_url": "SEO URL-ek:",
+                    "seo_url_template": "SEO URL-sablonok:",
+                    "shipping_method": "Szállítási módok:",
+                    "snippet": "Kódrészletek:",
+                    "snippet_set": "Kódrészlet készletek:",
+                    "system_config": "Alapvető információk:",
+                    "tax": "Adókulcsok:",
+                    "tax_rule": "Adószabályok:",
+                    "translation": "Fordítások:",
+                    "unit": "Léptékegységek:"
+                },
+                "headers": {
+                    "dataType": "Típus",
+                    "name": "Név",
+                    "total": "Adatkészletek"
+                },
+                "noData": "Nem találtak semmit, ami átvándorolna."
+            },
+            "shopInfoCard": {
+                "buttonCreateConnection": "Új kapcsolat létrehozása",
+                "buttonCreateInitialConnection": "Kezdeti kapcsolat létrehozása",
+                "buttonEditSettings": "Kapcsolat szerkesztése",
+                "buttonProfileInstallation": "Másik profil telepítése",
+                "buttonRemoveCredentials": "Hozzáférési adatok törlése",
+                "buttonResetChecksums": "Ellenőrzőösszegek visszaállítása",
+                "buttonResetMigration": "Teljes migráció",
+                "buttonSelectConnection": "Kapcsolat módosítása",
+                "cardTitle": "Üzlet rendszer",
+                "connected": "Csatlakoztatott",
+                "connectionCheck": "Csatlakozás ellenőrzése:",
+                "gateway": "Átjáró:",
+                "lastMigration": "Utolsó áttelepítés:",
+                "noConnection": "Nincs kapcsolat",
+                "noMigrationDoneYet": "-",
+                "notConnected": "Nincs csatlakoztatva",
+                "profile": "Rendszerprofil:",
+                "refreshTooltip": "Ellenőrizze a forrásrendszerhez való csatlakozást",
+                "removeCredentialsConfirmDialog": {
+                    "abortButtonText": "Mégse",
+                    "confirmButtonText": "Igen, törlés",
+                    "content": "Ezután nem lesz aktív kapcsolat. Adja meg újra a hozzáférési adatokat a kapcsolat visszaállításához.",
+                    "contentHint": "Szeretné törölni az aktuális hozzáférési adatokat?",
+                    "title": "Hozzáférési adatok törlése"
+                },
+                "resetChecksumsConfirmDialog": {
+                    "abortButtonText": "Mégse",
+                    "confirmButtonText": "Igen, visszaállítás",
+                    "content": "Ha visszaállítja az ellenőrző összegeket, a következő áttelepítéskor a forrásrendszer összes adata felismerésre kerül. Ez magában foglalja a már áttelepített vagy változatlan adatkészleteket is. <br><br><strong>Fontos:</strong> Az utolsó áttelepítés óta a Shopware 6 adatrekordjainak módosításai felülírásra kerülnek. A forrásrendszer adatai elsőbbséget élveznek.",
+                    "contentHint": "Vissza szeretné állítani az ellenőrző összegeket?",
+                    "title": "Ellenőrzőösszegek visszaállítása"
+                },
+                "resetMigrationConfirmDialog": {
+                    "abortButtonText": "Mégse",
+                    "confirmButtonText": "Véglegesítés most",
+                    "content": "Nagyszerű! Most véglegesítsük az áttelepítést, és tisztítsuk meg az ideiglenes fájlokat és a fel nem használt adatokat. <strong>Kérjük, vegye figyelembe:</strong> A migráció véglegesítése terminál. Az aktuális kapcsolaton keresztül nem tud több adatot áttelepíteni.",
+                    "contentHint": "Most akarja véglegesíteni a migrációt?",
+                    "errorNotification": {
+                        "message": "A migráció jelenleg folyamatban van.",
+                        "title": "Hiba történt az áttelepítés véglegesítése közben"
+                    },
+                    "header": "Befejezte az üzlet adatainak áttelepítését?",
+                    "title": "A migráció véglegesítése"
+                }
+            },
+            "shopwareMajorVersionText": "Észrevettük, hogy a forrásrendszer {sourceSystem} verziója nem felel meg a célrendszer {targetSystem} verziójának. Kérjük, az áttelepítés megkezdése előtt győződjön meg arról, hogy mindkét rendszer esetében ugyanazt a fő verziót használja.",
+            "title": "Általános"
+        },
+        "wizard": {
+            "buttonAbort": "Mégse",
+            "buttonConnect": "Csatlakozás",
+            "buttonConnectionCreate": "Kapcsolat létrehozása",
+            "buttonConnectionSelect": "Kapcsolat módosítása",
+            "buttonEdit": "Kapcsolat szerkesztése",
+            "buttonFinish": "Kész",
+            "buttonLater": "Zárja",
+            "buttonLetsGo": "Kezdés",
+            "buttonNext": "Folytatás",
+            "buttonToProfileInformation": "Információ",
+            "buttonUseSsl": "HTTPS használata",
+            "pages": {
+                "connectionCreate": {
+                    "connectionLabel": "Kapcsolat neve",
+                    "connectionPlaceholder": "Adja meg a nevet",
+                    "connectionTooltip": "Adjon meg egy egyedi nevet a kapcsolatnak.",
+                    "contentInformation": "Az áttelepítés végrehajtásához a következő információkra van szükség.",
+                    "gatewayLabel": "Gateway",
+                    "gatewayPlaceholder": "Átjáró kiválasztása",
+                    "gatewayTooltip": "A rendszerek közötti kapcsolat típusa.",
+                    "gateways": {
+                        "shopwareApi": "API",
+                        "shopwareLocal": "Helyi adatbázis"
+                    },
+                    "hint": {
+                        "local": "Megjegyzés: A bolti rendszereknek ugyanazon a szerveren kell lenniük. Hozzáférési adatokra van szüksége az adatbázishoz."
+                    },
+                    "profileInstall": "Másik profil telepítése",
+                    "profileLabel": "Shop rendszer profil",
+                    "profilePlaceholder": "Profil kiválasztása",
+                    "title": "Áttelepítés — Új kapcsolat létrehozása"
+                },
+                "connectionSelect": {
+                    "connectionLabel": "Kapcsolat neve",
+                    "connectionPlaceholder": "Válasszon ki egy kapcsolatot",
+                    "contentInformation": "Válasszon ki egy meglévő kapcsolatot a listából az adatok frissítéséhez.",
+                    "title": "Áttelepítés — Kapcsolat módosítása"
+                },
+                "credentials": {
+                    "emptyState": "Sajnáljuk, hogy nincs űrlap a kiválasztott profilhoz.",
+                    "error": {
+                        "SWAG_MIGRATION__API_CONNECTION_ERROR": "Nem sikerült csatlakozni a kiszolgálóhoz. Kérjük, ellenőrizze az adott bolt domainjét.",
+                        "SWAG_MIGRATION__API_CONNECTION_ERROR__HINT": "Ha problémái vannak a csatlakozással, érdemes ellenőrizni a szerveren jelenleg telepített curl verziót, és frissíteni azt.",
+                        "SWAG_MIGRATION__DATABASE_CONNECTION_ATTRIBUTES_WRONG": "Az adatbázis-kapcsolat nem rendelkezik megfelelő attribútumokkal, és nem állíthatók be.",
+                        "SWAG_MIGRATION__DATABASE_CONNECTION_ERROR": "Adatbázis-kapcsolat nem hozható létre.",
+                        "SWAG_MIGRATION__GATEWAY_READ": "Nem sikerült csatlakozni a kiszolgálóhoz. Kérjük, ellenőrizze az adott bolt domainjét.",
+                        "SWAG_MIGRATION__GATEWAY_READ__HINT": "Ha problémái vannak a csatlakozással, érdemes ellenőrizni a szerveren jelenleg telepített curl verziót, és frissíteni azt.",
+                        "SWAG_MIGRATION__INVALID_CONNECTION_AUTHENTICATION": "A hitelesítő adatai helytelenek. Kérjük, ellenőrizze őket, és próbálja újra.",
+                        "SWAG_MIGRATION__IS_RUNNING": "A migráció jelenleg folyamatban van. Ezért az áttelepítés befejezéséig nem szerkesztheti a hitelesítő adatokat.",
+                        "SWAG_MIGRATION__PLUGIN_NOT_INSTALLED": "A szükséges „Migration Connector” bővítmény nincs telepítve a Shopware 5 programban. Kérjük, telepítse az ingyenes plugint, és próbálja újra.",
+                        "SWAG_MIGRATION__PLUGIN_NOT_INSTALLED__HINT": "Ha már telepítette a „Migrációs csatlakozót”, és törölte a gyorsítótárat a Shopware 5 háttérben (Konfiguráció > Gyorsítótár/Teljesítmény), próbálja meg manuálisan törölni a Shopware 5 gyorsítótár mappát (var/cache).",
+                        "SWAG_MIGRATION__SSL_REQUIRED": "Megállapítottuk, hogy az adott bolti domainhez SSL-kapcsolat szükséges.",
+                        "alertErrorTitle": "Figyelem",
+                        "contentTitle": "Nincs kapcsolat",
+                        "undefinedErrorMsg": "Belső kiszolgáló hiba. Kérem, próbálja meg újra."
+                    },
+                    "shopware55": {
+                        "api": {
+                            "apiKeyLabel": "API-kulcs",
+                            "apiKeyPlaceholder": "Adja meg a kulcsot",
+                            "apiKeyTooltip": "Az API-kulcs a biztonság és az azonosítás érdekében használatos.",
+                            "apiUserLabel": "Felhasználónév (API-felhasználó)",
+                            "apiUserPlaceholder": "Adja meg a felhasználónevet",
+                            "apiUserTooltip": "A Shopware 5 backend felhasználóneve.",
+                            "contentInformation": "Érvényes API-hitelesítő adatokra van szükség a Shopware 5 és a Shopware 6 közötti kapcsolat létrehozásához. API hitelesítő adatai megtalálhatók a Shopware 5 háttérrendszerében a „Felhasználói felügyelet” alatt. Az API-hozzáférést ott aktiválni kell, és a mentéssel meg kell erősíteni.",
+                            "endpointLabel": "Shop domain",
+                            "endpointPlaceholder": "www.demoshop.com",
+                            "endpointSSLLabel": "Üzletem biztonságos kapcsolatot (SSL) használ"
+                        },
+                        "local": {
+                            "contentInformation": "Továbbra is szükségünk van hozzáférési adatokra ahhoz, hogy csatlakozzunk a Shopware 5 adatbázisához.",
+                            "dbHostLabel": "Host",
+                            "dbHostPlaceholder": "Adja meg a fogadó",
+                            "dbNameLabel": "Adatbázis neve",
+                            "dbNamePlaceholder": "Adja meg a nevet",
+                            "dbPasswordLabel": "Jelszó",
+                            "dbPasswordPlaceholder": "Adja meg a jelszót",
+                            "dbPortLabel": "Kikötő",
+                            "dbUserLabel": "Felhasználó",
+                            "dbUserPlaceholder": "Adja meg a felhasználónevet",
+                            "installationRoot": "Üzlet telepítési mappája",
+                            "installationRootPlaceholder": "Adja meg a telepítési gyökér"
+                        }
+                    },
+                    "shopware6": {
+                        "api": {
+                            "apiPasswordLabel": "Titkos hozzáférési kulcs",
+                            "apiPasswordPlaceholder": "Adja meg a titkos hozzáférési kulcsot",
+                            "apiPasswordTooltip": "A titkos hozzáférési kulcsot a biztonság és az azonosítás érdekében használják.",
+                            "apiUserLabel": "Hozzáférési kulcs azonosító",
+                            "apiUserPlaceholder": "Hozzáférési kulcs azonosítója",
+                            "apiUserTooltip": "Hozzáférés az integráció kulcsazonosítójához.",
+                            "contentInformation": "Érvényes API hitelesítő adatokra van szükség a forrás és a cél Shopware 6 példány közötti kapcsolat létrehozásához. Ezeket akkor kapod meg, ha integrációt hozol létre a forrásrendszeredben.",
+                            "endpointLabel": "Shop domain",
+                            "endpointPlaceholder": "www.demoshop.com",
+                            "endpointSSLLabel": "Üzletem biztonságos kapcsolatot (SSL) használ"
+                        }
+                    },
+                    "statusTitle": "Csatlakozás ellenőrzése",
+                    "success": {
+                        "SWAG_MIGRATION__REQUEST_CERTIFICATE_INVALID": "Megállapítottuk, hogy a megadott bolt tartomány SSL tanúsítványa nem biztonságos. Ellenőrizze a tanúsítványt saját biztonsága érdekében.",
+                        "contentInformation": "Elindíthatja az áttelepítést.",
+                        "contentTitle": "Sikeres kapcsolat",
+                        "undefinedErrorMsg": "Ismeretlen hiba történt, amikor az SSL tanúsítványt ellenőrizte a megadott üzletben."
+                    },
+                    "title": "Áttelepítés — Kapcsolat létrehozása"
+                },
+                "introduction": {
+                    "contentHeadline": "Mozogjunk néhány dolgot.",
+                    "contentInformation": "Együtt csatlakoztatjuk bolti rendszerét a Shopware 6-hoz. Ezt követően a Migration Assistant segít az adatok lépésről lépésre történő áttelepítésében.",
+                    "title": "Áttelepítési asszisztens"
+                },
+                "profileInformation": {
+                    "shopware55Api": {
+                        "contentInformation": "A szükséges „Migration Connector” bővítmény ingyenes, és megtalálható a Shopware 5 backendben a Plugin Manager > Bővítmények > Migration tools alatt. Kérjük, telepítse és aktiválja a bővítményt a folytatáshoz.",
+                        "contentTitle": "Plugin szükséges",
+                        "pluginLink": "További információ a beépülő modulról"
+                    },
+                    "shopware6Api": {
+                        "contentTitle": "Követelmények",
+                        "integration": {
+                            "description": "Hozzon létre egy integrációt a forrásrendszerben a Beállítások > Rendszer > Integrációk menüpontban. A következő lépésben szüksége lesz a létrehozott hozzáférési kulcs azonosítóra és a titkos hozzáférési kulcsra.",
+                            "link": "https://docs.shopware.com/en/shopware-6-en/settings/system/integrationen",
+                            "linkText": "További információ az integrációkról",
+                            "title": "integráció"
+                        },
+                        "plugin": {
+                            "description": "Telepítse a Migration Assistant kiterjesztést a forrásrendszerbe.",
+                            "link": "https://store.shopware.com/en/swag257162657297f/migration-assistant.html",
+                            "linkText": "További információ a Migration Assistant bővítményről",
+                            "title": "Extension"
+                        }
+                    },
+                    "title": "Migration - Csatlakozás előkészítése"
+                },
+                "profileInstallation": {
+                    "availabilityHeadline": "Korábban elérhető:",
+                    "availableVersionHeadline": "Támogatott:",
+                    "content": "Válassza ki az üzlet rendszerét az adatok áttelepítéséhez, és győződjön meg róla, hogy a megfelelő profilbővítményt is telepíti.",
+                    "installationButton": "Telepítés",
+                    "installedHint": "Telepítve",
+                    "magentoProfileHeadline": "Magento - Profil",
+                    "profileManufacturer": "shopware AG",
+                    "shopwareProfileHeadline": "Shopware - Profil",
+                    "title": "Migration - Shopsystem-Profile"
+                }
+            }
+        },
+        "worker-listener": {
+            "mediaProcessing": {
+                "message": "Nem maradt fájl. | Egy fájl maradt hátra. | {n} fájl maradt.",
+                "messageSuccess": "A média letöltése befejeződött.",
+                "title": "Letöltik a médiát",
+                "titleSuccess": "A média letöltése befejeződött"
+            }
+        }
+    }
+}

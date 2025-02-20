@@ -1,0 +1,142 @@
+{
+    "publisher": {
+        "activity": {
+            "dates": {
+                "editedDaysAgo": "{1} hace 1 día | hace {days} días",
+                "editedHoursAgo": "{1} hace 1 hora | hace {hours} horas",
+                "editedMinutesAgo": "{1} hace 1 minuto | Hace {minutes} minutos",
+                "editedNow": "Editado justo ahora"
+            },
+            "feed": {
+                "badgeMessages": {
+                    "cms_page": {
+                        "discarded": "Borrador <b>{draftName}</b> descartado",
+                        "merged": "Borrador empujado <b>{draftName}</b> al diseño principal"
+                    }
+                },
+                "badges": {
+                    "cms_page": {
+                        "discarded": "Borrador descartado",
+                        "draftCreated": "Borrador creado",
+                        "layoutCreated": "Diseño creado",
+                        "layoutEdited": "Diseño editado",
+                        "merged": "Diseño principal publicado",
+                        "published": "Borrador publicado",
+                        "updated": "{1} 1 cambio realizado | {detailCount} cambios realizados"
+                    }
+                },
+                "detail": {
+                    "cms_block": {
+                        "delete": "Bloque eliminado",
+                        "insert": "Bloque añadido",
+                        "update": "Bloque actualizado"
+                    },
+                    "cms_page": {
+                        "insert": "Diseño creado",
+                        "update": "Diseño actualizado"
+                    },
+                    "cms_section": {
+                        "delete": "Sección eliminada",
+                        "insert": "Sección añadida",
+                        "update": "Sección actualizada"
+                    },
+                    "cms_slot": {
+                        "delete": "Ranura eliminada",
+                        "insert": "Ranura añadida",
+                        "update": "Ranura actualizada"
+                    }
+                },
+                "hideDetails": "Ocultar cambios",
+                "showDetails": "Mostrar cambios",
+                "title": "Actividad",
+                "whitespace": "Todos los cambios realizados en este diseño se mostrarán aquí."
+            }
+        },
+        "detail": {
+            "action": {
+                "save": "Guardar",
+                "saveAssign": "Guardar y publicar",
+                "saveDraft": "Guardar como nuevo borrador"
+            },
+            "modal": {
+                "buttonCreateNewLayout": "Crear un nuevo diseño",
+                "buttonSaveAsNewDraft": "Ignorar actualización",
+                "buttonUpdateFromParent": "Actualizar desde el diseño principal",
+                "cancel": "Cancelar",
+                "descriptionParentChanges": "Puede seguir utilizando este borrador o crear un nuevo diseño independiente. Si actualiza el borrador con el diseño principal, se perderán los cambios realizados en este borrador.",
+                "discard": "Descartar cambios",
+                "infoParentChanges": "Mientras trabajaba en este borrador, se cambió el diseño principal.",
+                "publishAffectedCategories": "{1} Los cambios de diseño afectarán a 1 categoría activa. | Los cambios de diseño afectarán a {count} categorías activas.",
+                "publishConfirmation": "¿Desea guardar y publicar los cambios?",
+                "publishInformation": "Los cambios guardados se aplicarán a tu tienda en vivo y son visibles para los clientes.",
+                "save": "Guardar",
+                "saveAndPublish": "Guardar y publicar cambios",
+                "saveAsDraft": "Guardar como nuevo borrador",
+                "saveDraftConfirmation": "Guardar borrador",
+                "saveDraftInformation": "Asigne un nombre al diseño de acuerdo con los cambios que haya realizado en el diseño, de modo que pueda volver a encontrarlo fácilmente más adelante.",
+                "saveDraftLabelName": "Nombre",
+                "titleParentChanges": "Cambios en el diseño principal",
+                "titlePublish": "Publicar cambios",
+                "titleSaveDraft": "Guardar nuevo borrador",
+                "titleUnsaved": "Cambios no guardados",
+                "unsavedLineConfirmation": "¿Guardar los cambios realizados en el diseño?",
+                "unsavedLineInformation": "Los cambios se perderán si no los guarda."
+            },
+            "preview": "Vista previa",
+            "previewTooltip": "Sólo se mostrará el contenido guardado",
+            "sidebar": {
+                "activity": {
+                    "title": "Actividad",
+                    "whitespace": "Las actividades de usted y sus colegas en este diseño se enumeran aquí."
+                }
+            }
+        },
+        "error": {
+            "action": {
+                "createNewLayout": "No se pudo crear el nuevo diseño.",
+                "draft": "No se pudo crear el borrador.",
+                "duplicateDraft": "No se pudo duplicar el proyecto.",
+                "getDrafts": "No se pudieron cargar los borradores.",
+                "getSalesChannelUrl": "No se pudo encontrar la URL del canal de ventas.",
+                "merge": "No se pudo anular el borrador.",
+                "saveAndPublish": "No se pudo publicar el borrador.",
+                "saveCmsPage": "No se pudo actualizar el diseño.",
+                "updateFromParent": "El borrador no se pudo actualizar con el diseño principal."
+            },
+            "title": "Se ha producido un error."
+        },
+        "listing": {
+            "draft": "Borrador",
+            "draftPageType": "Borradores",
+            "drafts": "{1} 1 Borrador | {count} Borradores",
+            "errors": {
+                "incompatibleWithCmsMessage": "Los diseños que contienen formularios personalizados no se pueden duplicar."
+            },
+            "gridAuthor": "Creado por",
+            "gridCreatedAt": "Fecha de creación",
+            "gridName": "Nombre",
+            "modal": {
+                "close": "Cancelar",
+                "placeholderSearch": "Busque un borrador...",
+                "title": "Borradores de",
+                "whitespace": "No se encontraron borradores."
+            }
+        }
+    },
+    "sw-cms": {
+        "detail": {
+            "label": {
+                "pageType": {
+                    "draft": "Borrador"
+                }
+            }
+        }
+    },
+    "sw-privileges": {
+        "permissions": {
+            "publisher": {
+                "label": "Editorial"
+            }
+        }
+    }
+}

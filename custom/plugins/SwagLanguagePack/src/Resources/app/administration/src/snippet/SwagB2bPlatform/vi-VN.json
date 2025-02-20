@@ -1,0 +1,232 @@
+{
+    "b2b": {
+        "customer": {
+            "detail": {
+                "easymode": {
+                    "helpText": "Chế độ Easy Mode cho phép quản lý trở nên đơn giản hơn. Điều này có nghĩa là vai trò, ngân sách và các khoản dự phòng sẽ không còn cần phải duy trì! Để kích hoạt chế độ này, người dùng không được tạo bất kỳ vai trò nào.",
+                    "isActive": "Easy Mode được kích hoạt",
+                    "isNotActive": "Easy Mode không được kích hoạt",
+                    "label": "Kích hoạt Easy Mode",
+                    "title": "Chế độ Easy"
+                }
+            }
+        },
+        "global": {
+            "errors": {
+                "unexpectedErrorMessage": "Đã xảy ra lỗi.",
+                "unexpectedErrorTitle": "Lỗi!"
+            }
+        },
+        "order": {
+            "detail": {
+                "deliveryDateLabel": "Ngày giao hàng",
+                "orderReferenceLabel": "Số tham chiếu đơn hàng"
+            }
+        }
+    },
+    "b2b-offer": {
+        "detail": {
+            "base": {
+                "labelCompany": "Công ty",
+                "labelCreated": "Ngày tạo",
+                "labelDiscount": "Giảm giá",
+                "labelEmail": "Địa chỉ email",
+                "labelExpirationDate": "Ngày hết hạn",
+                "labelExpirationTime": "Thời gian hết hạn",
+                "labelPositions": "Các mục",
+                "labelState": "Tiểu bang",
+                "labelTotal": "Giá gốc (net)",
+                "labelTotalDiscount": "Giá chiết khấu (net)",
+                "labelUpdated": "Ngày sửa đổi",
+                "titleCompany": "Công ty",
+                "titleDetails": "Thông tin chi tiết"
+            },
+            "commentPlaceholder": "Bình luận",
+            "discount": {
+                "addProductLabel": "Thêm sản phẩm",
+                "addProductPlaceholder": "Tìm...",
+                "columnDiscountPriceNet": "Yêu cầu",
+                "columnName": "Sản Phẩm",
+                "columnNewOffer": "Ưu đãi mới",
+                "columnPriceNet": "Bản gốc",
+                "columnQuantity": "Số lượng",
+                "columnReferenceNumber": "Sản phẩm #",
+                "columnTotalNet": "Tổng (ròng)",
+                "contextMenuRemove": "Loại bỏ mục",
+                "discountLabel": "Giảm giá bổ sung",
+                "labelComment": "Bình luận",
+                "labelDiscount": "Giảm giá",
+                "labelDiscountType": "Loại giảm giá",
+                "labelDiscountTypeAbsolute": "Tuyệt đối",
+                "labelDiscountTypePercentage": "Tỷ lệ phần trăm",
+                "labelExpirationDate": "Ngày hết hạn",
+                "placeholderComment": "Bình luận",
+                "summaryDate": "Ngày",
+                "summaryTaxes": "VAT",
+                "summaryTotalAmountNet": "Tổng chưa bao gồm VAT",
+                "summaryTotalDiscount": "Tổng chiết khấu",
+                "summaryTotalWithTax": "Tổng đã bao gồm VAT"
+            },
+            "history": {
+                "authorAdmin": "Chủ cửa hàng",
+                "labelComment": "Bình luận",
+                "labelDiscountAmountNet": "- Số tiền chiết khấu (net):",
+                "labelExpirationDate": "Ngày hết hạn:",
+                "labelQuantity": "- Số lượng:",
+                "messagePlaceholder": "Tin nhắn",
+                "new": "Giá trị mới:",
+                "placeholder": "Vẫn chưa có lịch sử.",
+                "previous": "Giá trị trước:",
+                "product": "Sản phẩm:",
+                "productReference": "Số tham chiếu:",
+                "titleAddedPositions": "Các mục đã thêm",
+                "titleChangedItemPrice": "Giá của một mặt hàng đã thay đổi",
+                "titleDiscount": "Giảm giá đã thay đổi",
+                "titleDiscountAdded": "Giảm giá đã thêm",
+                "titleItemComment": "Chú thích mục đã thay đổi",
+                "titleRemovedPositions": "Các mục đã xóa",
+                "titleStatus": "Trạng thái đã thay đổi",
+                "titleUpdated": "Cập nhật đề nghị",
+                "titleUpdatedPositions": "Mục cập nhật"
+            },
+            "noComments": "Không có ý kiến",
+            "offerPlaceholder": "Các chi tiết cung cấp không thể được tải.",
+            "title": "Ưu đãi",
+            "titleActivity": "Hoạt động",
+            "titleBase": "Thông tin chi tiết",
+            "titlePositions": "Các mục"
+        },
+        "general": {
+            "buttonAcceptOffer": "Chấp nhận đề nghị",
+            "buttonCancel": "Hủy",
+            "buttonDeclineOffer": "Từ chối đề nghị",
+            "buttonDelete": "Xoá",
+            "buttonMakeNewOffer": "Thực hiện đề nghị mới",
+            "buttonReply": "Trả lời",
+            "buttonSave": "Lưu",
+            "buttonSendMessage": "Gửi",
+            "buttonSendNewOffer": "Gửi đề nghị mới",
+            "buttonViewDebtor": "Xem con nợ",
+            "description": "Ưu đãi dành riêng cho khách hàng",
+            "label": "Ưu đãi",
+            "offer_status_accepted_admin": "Gửi bởi chủ cửa hàng",
+            "offer_status_accepted_both": "Được chấp nhận bởi cả hai",
+            "offer_status_accepted_user": "Gửi bởi người dùng",
+            "offer_status_converted": "Chuyển đổi",
+            "offer_status_declined_admin": "Bị từ chối bởi chủ cửa hàng",
+            "offer_status_declined_user": "Bị từ chối bởi người dùng",
+            "offer_status_expired": "Hết hạn",
+            "offer_status_open": "Mở",
+            "title": "Ưu đãi"
+        },
+        "list": {
+            "columnCreated": "Ngày tạo",
+            "columnDebtor": "Người nợ",
+            "columnDebtorCompany": "Công ty",
+            "columnExpires": "Ngày hết hạn",
+            "columnId": "ID",
+            "columnListAmountNet": "Giá gốc",
+            "columnListDiscountAmountNet": "Giá giảm giá",
+            "columnPositions": "Các mục",
+            "columnState": "Tiểu bang",
+            "columnTotalDiscount": "Giảm giá",
+            "columnUpdated": "Ngày sửa đổi",
+            "contextMenuDebtor": "Xem con nợ",
+            "contextMenuDelete": "Xoá",
+            "contextMenuDetail": "Xem Ưu đãi",
+            "messageEmpty": "Hiện tại không có cung cấp.",
+            "title": "Ưu đãi"
+        },
+        "modal": {
+            "textBulkDeleteConfirm": "Bạn có chắc muốn xóa các ưu đãi đã chọn?",
+            "textDeleteConfirm": "Bạn có chắc muốn xóa ưu đãi này không?",
+            "titleBulkDelete": "Xóa các ưu đãi đã chọn",
+            "titleDelete": "Xóa đề nghị"
+        },
+        "notifications": {
+            "messageCommentError": "Không thể gửi nhận xét.",
+            "messageDeleteError": "Đề nghị không thể bị xóa.",
+            "messageDetailError": "Các chi tiết cung cấp không thể được tải.",
+            "messageListError": "Các cung cấp không thể được nạp.",
+            "messageOfferUpdatedError": "Ưu đãi không thể được cập nhật.",
+            "messageProductSearchError": "Đề nghị đã chứa sản phẩm này.",
+            "titleError": "Đã xảy ra lỗi.",
+            "titleProductSearchError": "Không thể thêm sản phẩm."
+        }
+    },
+    "b2b-salesrep": {
+        "customer": {
+            "settings": {
+                "isDebtor": "Khách hàng là một con nợ",
+                "isSalesRepresentative": "Khách hàng là đại diện bán hàng",
+                "labelDebtor": "Đánh dấu là con nợ",
+                "labelSalesRepresentative": "Đánh dấu là đại diện bán hàng",
+                "messageSaveError": "Đã xảy ra lỗi trong khi lưu cài đặt mới.",
+                "noDebtor": "Khách hàng không phải là con nợ",
+                "noSalesRepresentative": "Khách hàng không phải là đại diện bán hàng",
+                "salesRepresentativeClientSelection": {
+                    "assigned": "Được chỉ định",
+                    "company": "Công ty",
+                    "customerNumber": "Số khách hàng",
+                    "email": "Email",
+                    "firstName": "Tên",
+                    "lastName": "Họ",
+                    "owner": "Chủ sở hữu",
+                    "searchbarPlaceholder": "Tìm khách hàng...",
+                    "type": "Loại"
+                },
+                "salesRepresentativeClients": {
+                    "owner": "Chủ sở hữu"
+                },
+                "tab": "Cấu hình B2B",
+                "tabSalesRepresentativeClientSelection": "Khách hàng",
+                "title": "Gán vai trò B2B",
+                "titleDebtor": "Người nợ",
+                "titleSalesRepresentative": "Đại diện bán hàng",
+                "titleSaveError": "Lỗi trong khi lưu"
+            }
+        },
+        "general": {
+            "description": "Phân công khách hàng đại diện bán hàng",
+            "title": "Đại diện bán hàng B2B"
+        }
+    },
+    "global": {
+        "businessEvents": {
+            "b2b_budget_notifiy_author": "Thông báo ngân sách",
+            "b2b_contact_password_activation_mail": "Kích hoạt tài khoản liên hệ",
+            "b2b_offer_status_notify_mail": "Thay đổi trạng thái ưu đãi",
+            "b2b_order_clearance_accepted": "Đơn hàng được chấp nhận",
+            "b2b_order_clearance_inquiry_mail": "Yêu cầu thông quan đơn hàng"
+        }
+    },
+    "sw-flow": {
+        "triggers": {
+            "activation": "Kích hoạt",
+            "author": "Tác giả",
+            "b2B": "B2B",
+            "budget": "Ngân sách",
+            "clearance": "Giải phóng mặt bằng",
+            "contact": "Nhân viên",
+            "inquiry": "Yêu cầu",
+            "notifiy": "Thông báo",
+            "notify": "Thông báo",
+            "offer": "Trích dẫn",
+            "password": "Mật khẩu",
+            "status": "Trạng thái"
+        }
+    },
+    "sw-privileges": {
+        "permissions": {
+            "b2b-offer": {
+                "label": "Ưu đãi"
+            },
+            "b2b-user": {
+                "label": "Người dùng B2B"
+            },
+            "sales-representative-clients": {
+                "label": "Khách hàng đại diện bán hàng"
+            }
+        }
+    }
+}

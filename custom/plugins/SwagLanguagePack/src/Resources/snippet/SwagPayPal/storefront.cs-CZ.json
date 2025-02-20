@@ -1,0 +1,84 @@
+{
+    "paypal": {
+        "acdc": {
+            "cardNumber": "Číslo karty",
+            "cardholderName": "Jméno držitele karty",
+            "cvv": "Bezpečnostní kód (CVC/CVV)",
+            "expiration": "Platnost karty (MM/RR)",
+            "zip": "Fakturační PSČ"
+        },
+        "cookie": {
+            "googlePay": "Platby Google Pay",
+            "name": "Platby přes PayPal"
+        },
+        "error": {
+            "SWAG_PAYPAL__API_CANNOT_BE_ZERO_OR_NEGATIVE": "Celková částka nesmí být nulová ani záporná. Zkuste to prosím znovu s částkou vyšší než nula nebo zvolte jiný způsob platby.",
+            "SWAG_PAYPAL__API_NOT_AVAILABLE": "Služby PayPal jsou momentálně nedostupné. Zkuste to prosím znovu později.",
+            "SWAG_PAYPAL__API_POSTAL_CODE_REQUIRED": "Uvedená adresa neobsahuje poštovní směrovací číslo. Zadejte prosím poštovní směrovací číslo.",
+            "SWAG_PAYPAL__API_SHIPPING_ADDRESS_INVALID": "Zadaná dodací adresa nebyla poskytovatelem platby přijata. Zkontrolujte prosím svou adresu nebo zvolte jiný způsob platby.",
+            "SWAG_PAYPAL__BROWSER_UNSUPPORTED": "Vybraný způsob platby nepodporuje váš aktuální prohlížeč. Zkuste to prosím znovu s jiným prohlížečem nebo zvolte jiný způsob platby.",
+            "SWAG_PAYPAL__CARD_VALIDATION_FAILED": "Zadané údaje o kreditní kartě nelze ověřit. Zkontrolujte prosím své položky a zkuste to znovu.",
+            "SWAG_PAYPAL__EXPRESS_GENERIC_ERROR": "Během procesu objednávky PayPal došlo k chybě. Zkuste to prosím znovu později nebo použijte běžnou pokladnu.",
+            "SWAG_PAYPAL__EXPRESS_USER_CANCELLED": "Proces objednávky PayPal byl zrušen. Zkuste to prosím znovu nebo použijte běžnou pokladnu.",
+            "SWAG_PAYPAL__GENERIC_ERROR": "Během platebního procesu došlo k chybě. Zkuste to prosím znovu později nebo zvolte jiný způsob platby.",
+            "SWAG_PAYPAL__USER_CANCELLED": "Platební proces byl zrušen. Zkuste to prosím znovu nebo zvolte jiný způsob platby.",
+            "handler_swag_puihandler": {
+                "SWAG_PAYPAL__API_PAYMENT_SOURCE_DECLINED_BY_PROCESSOR": "Zvolený způsob platby byl zamítnut z důvodu automatizovaného postupu zpracování údajů. Pro více informací si přečtěte prohlášení o ochraně osobních údajů <a href=\"https://www.ratepay.com/legal-payment-dataprivacy\" target=\"_blank\">Ratepay</a> nebo použijte kontaktní formulář Ratepay <a href=\"https://www.ratepay.com/kontakt\" target=\"_blank\"></a>.",
+                "SWAG_PAYPAL__API_PAYMENT_SOURCE_INFO_CANNOT_BE_VERIFIED": "Vaše jméno a/nebo adresu nelze ověřit. Zkontrolujte prosím své položky a zkuste to znovu. Další informace naleznete v prohlášení o ochraně osobních údajů <a href=\"https://www.ratepay.com/legal-payment-dataprivacy\" target=\"_blank\" >Ratepay</a> nebo použijte kontaktní formulář Ratepay <a href=\"https://www.ratepay.com/kontakt\" target=\"_blank\"></a>."
+            }
+        },
+        "general": {
+            "browserUnsupported": "Váš aktuální prohlížeč není podporován vybranou platební metodou. Zkuste prosím jiný prohlížeč nebo zvolte jiný způsob platby.",
+            "paymentCancel": "Platební proces byl zrušen. Zkuste to prosím znovu nebo zvolte jiný způsob platby.",
+            "paymentError": "Během platebního procesu došlo k chybě. Zkuste to prosím znovu později nebo zvolte jiný způsob platby."
+        },
+        "payUponInvoice": {
+            "checkout": {
+                "confirmDisclaimer": "Kliknutím na tlačítko, souhlasíte s <a href=\"https://www.ratepay.com/legal-payment-terms\" target=\"_blank\">platební podmínky</a> a <a href=\"https://www.ratepay.com/legal-payment-dataprivacy\" target=\"_blank\">provedení kontroly rizika</a> od platebního partnera, Ratepay. Souhlasíte také s PayPal <a href=\"https://www.paypal.com/us/webapps/mpp/ua/privacy-full\" target=\"_blank\">prohlášení o ochraně osobních údajů</a>. Pokud je vaše žádost o nákup Na fakturu přijata, reklamace kupní ceny bude přiřazena společnosti Ratepay, a můžete platit pouze Ratepay, ne obchodník.",
+                "finish": {
+                    "subtitle": "Zpracování může trvat až několik minut. Toto okno prosím nezavírejte, budete přesměrováni.",
+                    "title": "Vaše platba se nyní zpracovává!"
+                }
+            },
+            "document": {
+                "paymentNote": "Společnost%companyName% přidělila pohledávku vůči vám společnosti PayPal (Europe) S.à r.l. et Cie, S.C.A. v rámci stávající faktoringové smlouvy. Platby s účinkem vyplacení dluhu lze provádět pouze společnosti PayPal (Europe) S.à r.l. et Cie, S.C.A.",
+                "paymentNoteRatepay": "%companyName% postoupena žalobu vůči vám společnosti Ratepay GmbH v rámci stávající dohody o faktoringu. Platby s účinkem plnění dluhu lze provádět pouze společnosti Ratepay GmbH. Další podrobnosti o vaší platbě naleznete v komunikaci s Ratepay.",
+                "paymentShippingInfo": {
+                    "payPalPuiPaymentMethod": "Způsob platby: Platba na faktuře"
+                }
+            },
+            "error": {
+                "declined": "Není možné použít zvolenou platební metodu. Toto rozhodnutí je založeno na automatizovaném zpracování dat. Další informace naleznete v <a href=\"https://www.ratepay.com/legal-payment-dataprivacy\" target=\"_blank\">Prohlášení o ochraně osobních údajů Ratepay</a> nebo můžete kontaktovat Ratepay pomocí tohoto <a href=\"https://www.ratepay.com/kontakt\" target=\"_blank\">kontaktní formulář</a>.",
+                "unverifiedInfo": "Kombinaci vašeho jména a adresy nebylo možné ověřit. Opravte svá data a zkuste to znovu.\nDalší informace naleznete v <a href=\"https://www.ratepay.com/legal-payment-dataprivacy\" target=\"_blank\" >Prohlášení o ochraně osobních údajů Ratepay</a> nebo můžete Ratepay kontaktovat pomocí tohoto <a href=\"https://www.ratepay.com/kontakt\" target=\"_blank\">kontaktního formuláře</a>."
+            },
+            "instructions": {
+                "legalMessage": "Proč PayPal? PayPal je naším partnerem pro zpracování faktur. Společnost PayPal právě převedla částku přímo na nás. Částku platíte společnosti PayPal podle platebních pokynů poté, co jste obdrželi a zkontrolovali nákup.",
+                "legalMessageRatepay": "Platby na faktuře jsou zpracovávány ve spolupráci s naším partnerem Ratepay. Společnost Ratepay nám právě převedla splatnou částku. Před převodem částky faktury v souladu s pokyny k platbě na Ratepay můžete počkat na doručení objednávky a zkontrolovat svůj nákup.",
+                "table": {
+                    "amount": "Částka:",
+                    "bank": "Banka:",
+                    "bic": "BIC:",
+                    "holder": "Držitel účtu:",
+                    "iban": "IBAN:",
+                    "reference": "Odkaz:"
+                },
+                "transferRequest": "Převeďte prosím %value% na níže uvedený účet.",
+                "transferRequestDate": "Převeďte prosím %value% do %date% na PayPal."
+            }
+        },
+        "smartPaymentButtons": {
+            "confirmPageHint": "Vaše platba byla vytvořena. Prosím, vyplňte ji potvrzením objednávky.",
+            "description": "Zaplaťte snadno, rychle a bezpečně - vyberte jednu z těchto platebních metod na potvrzovací stránce."
+        },
+        "vault": {
+            "account": {
+                "clear": "Odstranit účet",
+                "create": "Zapamatovat si účet pro budoucí nákupy"
+            },
+            "card": {
+                "clear": "Vyjmout kartu",
+                "create": "Zapamatujte si kartu pro budoucí nákupy"
+            }
+        }
+    }
+}

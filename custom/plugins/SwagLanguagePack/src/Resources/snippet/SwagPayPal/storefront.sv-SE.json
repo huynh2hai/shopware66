@@ -1,0 +1,84 @@
+{
+    "paypal": {
+        "acdc": {
+            "cardNumber": "Kortnummer",
+            "cardholderName": "Kortinnehavarens namn",
+            "cvv": "Säkerhetskod (CVV)",
+            "expiration": "Förfallodatum (MM/ÅÅ)",
+            "zip": "Postnummer för fakturering"
+        },
+        "cookie": {
+            "googlePay": "Google Pay-betalningar",
+            "name": "PayPal-betalningar"
+        },
+        "error": {
+            "SWAG_PAYPAL__API_CANNOT_BE_ZERO_OR_NEGATIVE": "Det totala beloppet får inte vara noll eller negativt. Försök igen med ett belopp som är större än noll eller välj en annan betalningsmetod.",
+            "SWAG_PAYPAL__API_NOT_AVAILABLE": "PayPal-tjänster är för närvarande inte tillgängliga. Försök igen senare.",
+            "SWAG_PAYPAL__API_POSTAL_CODE_REQUIRED": "Den angivna adressen innehåller inte ett postnummer. Lägg till ditt postnummer.",
+            "SWAG_PAYPAL__API_SHIPPING_ADDRESS_INVALID": "Den angivna leveransadressen godkändes inte av betalningsleverantören. Kontrollera din adress eller välj en annan betalningsmetod.",
+            "SWAG_PAYPAL__BROWSER_UNSUPPORTED": "Den valda betalningsmetoden stöder inte din nuvarande webbläsare. Försök igen med en annan webbläsare eller välj en annan betalningsmetod.",
+            "SWAG_PAYPAL__CARD_VALIDATION_FAILED": "De angivna kreditkortsuppgifterna kunde inte valideras. Kontrollera dina poster och försök igen.",
+            "SWAG_PAYPAL__EXPRESS_GENERIC_ERROR": "Ett fel inträffade under PayPal-beställningsprocessen. Försök igen senare eller använd den vanliga kassan.",
+            "SWAG_PAYPAL__EXPRESS_USER_CANCELLED": "PayPal-beställningsprocessen har avbrutits. Försök igen eller använd den vanliga kassan.",
+            "SWAG_PAYPAL__GENERIC_ERROR": "Ett fel uppstod under betalningsprocessen. Försök igen senare eller välj en annan betalningsmetod.",
+            "SWAG_PAYPAL__USER_CANCELLED": "Betalningsprocessen har avbrutits. Försök igen eller välj en annan betalningsmetod.",
+            "handler_swag_puihandler": {
+                "SWAG_PAYPAL__API_PAYMENT_SOURCE_DECLINED_BY_PROCESSOR": "Den valda betalningsmetoden avvisades på grund av ett automatiserat databehandlingsförfarande. För mer information läs <a href=\"https://www.ratepay.com/legal-payment-dataprivacy\" target=\"_blank\">Ratepays datasekretesspolicy</a> eller använd Ratepay <a href=\"https://www.ratepay.com/kontakt\" target=\"_blank\">kontaktformulär</a>.",
+                "SWAG_PAYPAL__API_PAYMENT_SOURCE_INFO_CANNOT_BE_VERIFIED": "Ditt namn och/eller adress kunde inte valideras. Kontrollera dina poster och försök igen. För ytterligare information läs <a href=\"https://www.ratepay.com/legal-payment-dataprivacy\" target=\"_blank\" >Ratepays dataskyddspolicy</a> eller använd Ratepay <a href=\"https://www.ratepay.com/kontakt\" target=\"_blank\">kontaktformulär</a>."
+            }
+        },
+        "general": {
+            "browserUnsupported": "Din nuvarande webbläsare stöds inte av den valda betalningsmetoden. Prova en annan webbläsare eller välj en annan betalningsmetod.",
+            "paymentCancel": "Betalningsprocessen har avbrutits. Försök igen eller välj en annan betalningsmetod.",
+            "paymentError": "Ett fel uppstod under betalningsprocessen. Försök igen senare eller välj en annan betalningsmetod."
+        },
+        "payUponInvoice": {
+            "checkout": {
+                "confirmDisclaimer": "Genom att klicka på knappen, du godkänner <a href=\"https://www.ratepay.com/legal-payment-terms\" target=\"_blank\">betalningsvillkoren</a> och <a href=\"https://www.ratepay.com/legal-payment-dataprivacy\" target=\"_blank\">utförandet av en riskkontroll</a> från betalningspartnern, Ratepay. Du samtycker också till PayPals <a href=\"https://www.paypal.com/us/webapps/mpp/ua/privacy-full\" target=\"_blank\">sekretesspolicy</a>. Om din begäran att köpa Vid faktura accepteras, köpeskillingen kommer att tilldelas Ratepay, och du får endast betala Ratepay, inte handlaren.",
+                "finish": {
+                    "subtitle": "Behandlingen kan ta upp till flera minuter. Stäng inte detta fönster, du kommer att omdirigeras.",
+                    "title": "Betalningen behandlas"
+                }
+            },
+            "document": {
+                "paymentNote": "%companyName% har tilldelat fordran mot dig till PayPal (Europe) S.à r.l. et Cie, S.C.A. som en del av ett gällande factoringavtal. Betalningar med skuldavskrivningseffekt kan endast göras till PayPal (Europe) S.à r.l. et Cie, S.C.A.",
+                "paymentNoteRatepay": "%companyName% har överlåtit fordran mot dig till Ratepay GmbH som en del av ett gällande factoringavtal. Betalningar med skuldavskrivningseffekt kan endast göras till Ratepay GmbH. Se kommunikationen med Ratepay för mer information om din betalning.",
+                "paymentShippingInfo": {
+                    "payPalPuiPaymentMethod": "Betalningsmetod: Betala på faktura"
+                }
+            },
+            "error": {
+                "declined": "Det är inte möjligt att använda den valda betalningsmetoden. Beslutet baseras på automatisk databehandling. Du hittar mer information i <a href=\"https://www.ratepay.com/legal-payment-dataprivacy\" target=\"_blank\">Ratepay Data Privacy Statement</a> eller så kan du kontakta Ratepay via detta <a href=\"https://www.ratepay.com/kontakt\" target=\"_blank\">kontaktformulär</a>.",
+                "unverifiedInfo": "Kombinationen av ditt namn och adress kunde inte valideras. Vänligen korrigera dina data och försök igen. Du hittar mer information i <a href=\"https://www.ratepay.com/legal-payment-dataprivacy\" target=\"_blank\" >Ratepay Data Privacy Statement</a> eller så kan du kontakta Ratepay via detta <a href=\"https://www.ratepay.com/kontakt\" target=\"_blank\">kontaktformulär</a>."
+            },
+            "instructions": {
+                "legalMessage": "Varför PayPal? PayPal är vår partner för hantering av fakturabetalningar. PayPal har just överfört beloppet till oss direkt. Du betalar beloppet till PayPal enligt betalningsanvisningarna efter att du har mottagit och kontrollerat ditt köp.",
+                "legalMessageRatepay": "Betalning mot faktura behandlas i samarbete med vår partner Ratepay. Ratepay har just överfört betalningsbeloppet till oss. Du kan vänta på att beställningen anländer och kontrollerar ditt köp innan du överför fakturabeloppet i enlighet med betalningsinstruktionerna till Ratepay.",
+                "table": {
+                    "amount": "Belopp:",
+                    "bank": "Bank:",
+                    "bic": "BIC:",
+                    "holder": "Kontoinnehavare:",
+                    "iban": "IBAN:",
+                    "reference": "Referens:"
+                },
+                "transferRequest": "Överför %value% till kontot nedan.",
+                "transferRequestDate": "Överför %value% till %date% till PayPal."
+            }
+        },
+        "smartPaymentButtons": {
+            "confirmPageHint": "Din betalning har skapats. Vänligen fyll i det genom att bekräfta din beställning.",
+            "description": "Betala enkelt, snabbt och säkert - Välj en av dessa betalningsmetoder på bekräftelsesidan."
+        },
+        "vault": {
+            "account": {
+                "clear": "Ta bort konto",
+                "create": "Kom ihåg konto för framtida köp"
+            },
+            "card": {
+                "clear": "Ta bort kortet",
+                "create": "Kom ihåg kort för framtida inköp"
+            }
+        }
+    }
+}

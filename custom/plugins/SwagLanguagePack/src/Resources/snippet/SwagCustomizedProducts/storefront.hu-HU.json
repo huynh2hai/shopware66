@@ -1,0 +1,117 @@
+{
+    "customizedProducts": {
+        "addToCart": {
+            "error": {
+                "default": "Hiba történt az Egyéni termék bevásárlókosárhoz történő hozzáadásakor.",
+                "invalidExtensionType": "Érvénytelen fájltípus észlelhető.",
+                "maxFileCountExceeded": "Maximális fájlszám túllépve.",
+                "maxFileSizeExceeded": "Maximális fájlméret túllépve.",
+                "notAvailable": "Ezzel a konfigurációval egy vagy több egyéni termék már nem érhető el.",
+                "priceCalculation": "Hiba történt az egyéni termékár kiszámítása során.",
+                "templateAssigned": "Egy vagy több termék mostantól egyéni termék, és konfigurálni kell."
+            },
+            "success": "Egyéni termék hozzáadásra került."
+        },
+        "cart": {
+            "configurationTitle": "{0} Nincs konfiguráció - <a href=\"%path%\">Testreszabás most!</a>|] 0, Inf [Konfiguráció"
+        },
+        "checkoutItem": {
+            "valueLabel": "Érték:"
+        },
+        "configurationEdit": {
+            "label": "Konfiguráció szerkesztése",
+            "notFullyRestorable": "A konfiguráció nem lett teljesen visszaállítva, néhány lehetőség megváltozhat.",
+            "notRestorable": "A konfiguráció nem állítható vissza."
+        },
+        "configurationShare": {
+            "button": "Share",
+            "oneTimeLabel": "Egyszeri kapcsolat",
+            "title": "A konfiguráció megosztása",
+            "unavailable": "A konfiguráció lejárt, vagy már nem lehet letölteni."
+        },
+        "confirmInput": {
+            "label": "Kétszer ellenőriztem a konfigurációt, és megerősítettem, hogy ezek a beállítások helyesek."
+        },
+        "editor": {
+            "bold": "Félkövér",
+            "italic": "Dőlt",
+            "strikeThrough": "Átszúrás",
+            "textFormatting": "Szöveg formázása",
+            "underline": "Aláhúzás"
+        },
+        "exclusionViolations": {
+            "excludeItem": "A %1 és a következő opció (ek) kombinációja nem megengedett: %2",
+            "headline": "Oldja meg az ütközéseket"
+        },
+        "lineItem": {
+            "showConfiguration": "Konfiguráció megjelenítése"
+        },
+        "optionRequired": "(kötelező)",
+        "optionTypes": {
+            "numberfield": {
+                "errors": {
+                    "max": "A megadott szám túl magas",
+                    "min": "A megadott szám nem elég magas",
+                    "required": "Ez a mező kötelező"
+                }
+            },
+            "selectNoValueText": "Nincs kiválasztás",
+            "textarea": {
+                "errors": {
+                    "max": "A beírt szöveg túl hosszú",
+                    "min": "A beírt szöveg nem elég hosszú",
+                    "required": "Ez a mező kötelező"
+                }
+            },
+            "textareaClearButton": "Mező törlése",
+            "textfield": {
+                "errors": {
+                    "max": "A beírt szöveg túl hosszú",
+                    "min": "A beírt szöveg nem elég hosszú",
+                    "required": "Ez a mező kötelező"
+                }
+            },
+            "upload": {
+                "dropzoneBrowseButton": "Böngészés",
+                "dropzoneHeadlineText": "Húzza ide a fájlokat",
+                "dropzoneRestrictionsText": "(Max. %maxCount% fájl (ok), max. %maxFileSize% MB fájlonként)",
+                "errors": {
+                    "fileCount": "Maximális fájlszám túllépve",
+                    "fileSize": "Maximális fájlméret túllépve",
+                    "fileType": "A fájl érvénytelen típusú",
+                    "generic": "A fájl nem tölthető be"
+                }
+            }
+        },
+        "paypal": {
+            "hint": "incl. konfiguráció"
+        },
+        "priceDisplay": {
+            "oneTimePrice": "Egyszeri pótdíj",
+            "productPrice": "Termék ára",
+            "subTotal": "Részösszeg",
+            "summary": "összefoglalás",
+            "totalPrice": "Teljes ár",
+            "unitPrice": "Egységenkénti pótdíj"
+        },
+        "priceLabelNotice": "**A végső árak eltérőek lehetnek a bevásárlókosár esetleges újraszámítása miatt.",
+        "priceTagFilter": {
+            "oneTimeSurchargeSuffix": "egyszer",
+            "perItemSuffix": "darabonként"
+        },
+        "showPreview": {
+            "expandLabel": "Mutass többet",
+            "shrinkLabel": "kevesebbet mutat"
+        },
+        "stepByStep": {
+            "navigation": {
+                "btnChangeConfiguration": "Konfiguráció módosítása",
+                "btnConfigureProduct": "Termék konfigurálása",
+                "btnFinish": "Finish",
+                "btnNext": "Következő",
+                "btnPrev": "Vissza",
+                "required": "Kötelező mező"
+            }
+        }
+    }
+}

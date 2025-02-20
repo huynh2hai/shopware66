@@ -1,0 +1,142 @@
+{
+    "publisher": {
+        "activity": {
+            "dates": {
+                "editedDaysAgo": "{1} 1 zi ago | {days} zile ago",
+                "editedHoursAgo": "{1} 1 oră ago | {hours} ore ago",
+                "editedMinutesAgo": "{1} 1 minut ago | {minutes} minute ago",
+                "editedNow": "Editat chiar acum"
+            },
+            "feed": {
+                "badgeMessages": {
+                    "cms_page": {
+                        "discarded": "Ciorna <b>{draftName}</b> a fost ștearsă",
+                        "merged": "Aranjat schiță <b>{draftName}</b> la aspectul principal"
+                    }
+                },
+                "badges": {
+                    "cms_page": {
+                        "discarded": "Proiect aruncat în mare",
+                        "draftCreated": "Proiect creat",
+                        "layoutCreated": "Aspect creat",
+                        "layoutEdited": "Layout editat",
+                        "merged": "Structura principală publicată",
+                        "published": "Proiect publicat",
+                        "updated": "{1} 1 schimbare facuta | {detailCount} modificari facute"
+                    }
+                },
+                "detail": {
+                    "cms_block": {
+                        "delete": "Bloc eliminat",
+                        "insert": "Bloc adăugat",
+                        "update": "Bloc actualizat"
+                    },
+                    "cms_page": {
+                        "insert": "Aspect creat",
+                        "update": "Aspect actualizat"
+                    },
+                    "cms_section": {
+                        "delete": "Secțiune eliminată",
+                        "insert": "Adăugat secțiune",
+                        "update": "Secţiune actualizată"
+                    },
+                    "cms_slot": {
+                        "delete": "Slot eliminat",
+                        "insert": "Slot adăugat",
+                        "update": "Slot actualizat"
+                    }
+                },
+                "hideDetails": "Ascunde modificările",
+                "showDetails": "Afișează modificările",
+                "title": "Activitate",
+                "whitespace": "Toate modificările efectuate pe acest aspect vor fi listate aici."
+            }
+        },
+        "detail": {
+            "action": {
+                "save": "Salvează",
+                "saveAssign": "Salvare și publicare",
+                "saveDraft": "Salvare ca schiță nouă"
+            },
+            "modal": {
+                "buttonCreateNewLayout": "Creează un aspect nou",
+                "buttonSaveAsNewDraft": "Ignoră actualizarea",
+                "buttonUpdateFromParent": "Actualizare din aspectul principal",
+                "cancel": "Anulare",
+                "descriptionParentChanges": "Puteți continua să utilizați această schiță sau să creați un nou aspect independent. Dacă actualizați schița cu aspectul principal, modificările aduse acestui proiect vor fi pierdute.",
+                "discard": "Abandonează modificările",
+                "infoParentChanges": "În timp ce lucrați la acest proiect, aspectul principal a fost schimbat.",
+                "publishAffectedCategories": "{1} Modificările aspectului vor afecta 1 categorie activă. | Modificările aspectului vor afecta {count} categorii active.",
+                "publishConfirmation": "Doriți să salvați și să publicați modificările?",
+                "publishInformation": "Modificările salvate vor fi aplicate magazinului live și vor fi vizibile clienților.",
+                "save": "Salvează",
+                "saveAndPublish": "Salvează și publică modificările",
+                "saveAsDraft": "Salvare ca schiță nouă",
+                "saveDraftConfirmation": "Salvează schița",
+                "saveDraftInformation": "Denumiți designul în funcție de modificările pe care le-ați făcut layout-ului, astfel încât să îl puteți găsi cu ușurință mai târziu.",
+                "saveDraftLabelName": "Nume",
+                "titleParentChanges": "Modificări ale aspectului principal",
+                "titlePublish": "Publicarea modificărilor",
+                "titleSaveDraft": "Salvează schiță nouă",
+                "titleUnsaved": "Modificări nesalvat",
+                "unsavedLineConfirmation": "Salvați modificările aduse aspectului?",
+                "unsavedLineInformation": "Modificările tale vor fi pierdute dacă nu le salvezi."
+            },
+            "preview": "previzualizare",
+            "previewTooltip": "Numai conținutul salvat va fi afișat",
+            "sidebar": {
+                "activity": {
+                    "title": "Activitate",
+                    "whitespace": "Activitățile dvs. și ale colegilor dvs. în acest aspect sunt enumerate aici."
+                }
+            }
+        },
+        "error": {
+            "action": {
+                "createNewLayout": "Noul aspect nu a putut fi creat.",
+                "draft": "Proiectul nu a putut fi creat.",
+                "duplicateDraft": "Proiectul nu a putut fi duplicat.",
+                "getDrafts": "Proiectele nu au putut fi încărcate.",
+                "getSalesChannelUrl": "Nu s-a putut găsi nicio adresă URL a canalului de vânzări.",
+                "merge": "Proiectul nu a putut fi anulat.",
+                "saveAndPublish": "Proiectul nu a putut fi publicat.",
+                "saveCmsPage": "Structura nu a putut fi actualizată.",
+                "updateFromParent": "Proiectul nu a putut fi actualizat de aspectul principal."
+            },
+            "title": "A apărut o eroare."
+        },
+        "listing": {
+            "draft": "Proiect",
+            "draftPageType": "Schițe",
+            "drafts": "{1} 1 Proiect | {count} Schițe",
+            "errors": {
+                "incompatibleWithCmsMessage": "Aspecte care conțin formulare personalizate nu pot fi duplicate."
+            },
+            "gridAuthor": "Creat de",
+            "gridCreatedAt": "Data creării",
+            "gridName": "Nume",
+            "modal": {
+                "close": "Anulare",
+                "placeholderSearch": "Caută o schiţă...",
+                "title": "Proiectele de",
+                "whitespace": "Nu s-au găsit schiţe."
+            }
+        }
+    },
+    "sw-cms": {
+        "detail": {
+            "label": {
+                "pageType": {
+                    "draft": "Proiect"
+                }
+            }
+        }
+    },
+    "sw-privileges": {
+        "permissions": {
+            "publisher": {
+                "label": "Editura"
+            }
+        }
+    }
+}

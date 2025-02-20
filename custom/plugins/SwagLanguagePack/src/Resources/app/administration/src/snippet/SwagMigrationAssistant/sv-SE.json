@@ -1,0 +1,663 @@
+{
+    "global": {
+        "error-codes": {
+            "SWAG_MIGRATION_CONNECTION_NAME_ALREADY_EXISTS": "Anslutningsnamnet finns redan.",
+            "SWAG_MIGRATION_CONNECTION_NAME_TO_SHORT": "Anslutningsnamnet måste vara minst 6 tecken långt.",
+            "SWAG_MIGRATION_INVALID_API_KEY": "API-nyckeln har inte rätt längd ({length}/40 tecken)."
+        }
+    },
+    "swag-migration": {
+        "api-error": {
+            "abortMigration": "Det gick inte att avbryta migreringen.",
+            "approveFinishedMigration": "Misslyckades när migreringen slutfördes",
+            "checkConnection": "Det gick inte att kontrollera anslutningen till källsystemet.",
+            "fetchConnectionId": "Det gick inte att hämta aktivt anslutnings-ID.",
+            "getDataSelection": "Det gick inte att hämta dataval för aktuell anslutning.",
+            "getState": "Det gick inte att hämta migreringsstatus.",
+            "startMigration": "Det gick inte att starta migreringen."
+        },
+        "dashboard": {
+            "button": "Öppen migreringsassistent",
+            "headline": "Flytta till Shopware",
+            "information": "Det första är att koppla ihop ditt befintliga butikssystem - Migrationsassistenten hjälper dig längs vägen.",
+            "shopInfoCard": {
+                "button": "Öppna",
+                "header": "Flyttassistent",
+                "resetButton": "Avsluta"
+            },
+            "title": "Flyttassistent"
+        },
+        "general": {
+            "descriptionTextModule": "Modul för att migrera data",
+            "mainMenuItemGeneral": "Flyttassistent",
+            "tabDataSelector": "Val av data",
+            "tabHistory": "Historia",
+            "tabMain": "General"
+        },
+        "history": {
+            "clearRunDialog": {
+                "content": "Om du tar bort migreringsdata tas loggposter, mediefilposter, dataposter för temporär migrering och migreringskörningen bort, som sedan inte längre är tillgänglig i migreringshistoriken.",
+                "contentHint": "Vill du verkligen ta bort data?",
+                "title": "Ta bort migreringsdata"
+            },
+            "connectionName": "Namn på anslutning",
+            "contextMenu": {
+                "clearLogs": "Ta bort migreringsdata",
+                "details": "Visa detaljer",
+                "downloadLogs": "Ladda ner logg"
+            },
+            "detailPage": {
+                "close": "Stäng",
+                "data": "Data",
+                "dataCount": "Dataset",
+                "dataName": "Namn",
+                "errorCode": "Felmeddelande",
+                "errorCount": "Räkna",
+                "errorLevel": "Loggnivå",
+                "errors": "Detaljer",
+                "logDescription": "För mer information {link}",
+                "logDownload": "ladda ner loggfilen.",
+                "noErrorsOccurred": "Inga fel har inträffat.",
+                "noProgressData": "Denna körning utfördes i en tidigare version av insticksprogrammet och dess data har raderats.",
+                "runStatus": "Migreringsstatus:",
+                "status": {
+                    "aborted": "Avbruten",
+                    "finished": "Färdig",
+                    "running": "Running"
+                },
+                "timestamp": "Tid:",
+                "title": "Information om migrering"
+            },
+            "importDateTime": "Starttid",
+            "noData": "Inga migreringar hittades.",
+            "profileAndGateway": "Profil & gateway",
+            "selectedData": "Data",
+            "shopDomain": "Handla domän",
+            "shopSystem": "Shop system",
+            "status": "Status"
+        },
+        "index": {
+            "abortButton": "Avbryta",
+            "assistantCard": {
+                "connection": {
+                    "content": "Flyttassistenten hjälper dig att upprätta en anslutning mellan ditt butikssystem och Shopware 6 för att överföra och migrera dina data.",
+                    "link": "Hjälp & dokumentation",
+                    "title": "Konfigurera en anslutning"
+                },
+                "dataSelection": {
+                    "content": "Markera de data som du vill migrera. Det är möjligt att inkludera insticksdata också, om plugin redan finns tillgänglig för Shopware 6. Kontrollera om plugin-programmet är tillgängligt i ditt Shopware-konto.",
+                    "title": "Ange data för migrering"
+                },
+                "finish": "Klar!",
+                "headline": "Hur migreringen fungerar",
+                "migrationOverview": {
+                    "content": "1. En automatisk process kontrollerar markerade data för saknade tilldelningar. Förbered dig för att slutföra den automatiska processen genom att lägga till manuella uppdrag.{linebreak}2. Din butiks data läses och tilldelas.{linebreak}3. Alla valda och korrekt tilldelade data överförs till Shopware 6.{linebreak}4. Medieobjekt hämtas.",
+                    "title": "Steg för migrering"
+                },
+                "title": "Information"
+            },
+            "backToOverviewButton": "Tillbaka till kontot",
+            "confirmAbortDialog": {
+                "cancelPause": "Pausa",
+                "cancelRunning": "Fortsätt",
+                "confirm": "Stoppa migreringen",
+                "content": "Migreringen är inte helt klar. Redan migrerade data kan vara oanvändbara. Om du avslutar nu måste du köra om migreringsprocessen helt.",
+                "hint": "Vill du stoppa migreringen?",
+                "title": "Stoppa migreringen"
+            },
+            "confirmWarningCard": {
+                "currencyMismatch": {
+                    "checkboxLabel": "Ja, jag skulle vilja fortsätta",
+                    "info": "En migrering med olika standardvalutor kan leda till skadade dataposter och orsaka oförutsägbara biverkningar.",
+                    "question": "Är du säker på att uppgifterna ska migreras i standardvalutan [{targetSystemCurrency}]?",
+                    "text": "Valutan för de data som ska migreras matchar inte standardvalutan [{targetSystemCurrency}]. Data med [{sourceSystemCurrency}] kan fortfarande migreras, men de konverteras inte automatiskt. Du kan justera priserna manuellt efteråt.",
+                    "title": "Migrationen har erkänt en annan"
+                },
+                "languageMismatch": {
+                    "checkboxLabel": "Ja, jag skulle vilja fortsätta",
+                    "info": "En migrering med olika standardspråk kan leda till skadade dataposter och orsaka oförutsägbara biverkningar.",
+                    "question": "Är du säker på att data ska migreras på standardspråket [{targetSystemLanguage}]?",
+                    "text": "Språket för de data som ska migreras matchar inte standardspråket [{targetSystemLanguage}]. Data med [{sourceSystemLanguage}] kan fortfarande migreras, men de konverteras inte automatiskt. Du kan justera översättningarna manuellt efteråt.",
+                    "title": "Migration har erkänt ett annat"
+                }
+            },
+            "continueButton": "Fortsätt",
+            "error": {
+                "SWAG_MIGRATION_CANNOT_CONVERT_CHILD_ENTITY": {
+                    "description": "{entity} underordnade entiteten från {parentEntity} överordnad entitet med id \"{parentSourceId}\" kunde inte konverteras.",
+                    "title": "Den underordnade entiteten {entity} kunde inte konverteras"
+                },
+                "SWAG_MIGRATION_CANNOT_CONVERT_ENTITY": {
+                    "description": "Enheten {entity} med käll-id \"{sourceId}\" kunde inte konverteras.",
+                    "title": "Enheten {entity} kunde inte konverteras"
+                },
+                "SWAG_MIGRATION_CANNOT_GET_FILE": {
+                    "description": "Filen {entity} med URI \"{uri}\" och media-id \"{sourceId}\" kan inte laddas ner eller kopieras.",
+                    "title": "Filen {entity} kan inte laddas ner eller kopieras"
+                },
+                "SWAG_MIGRATION_ENTITY_ALREADY_EXISTS": {
+                    "description": "Entiteten {entity} med käll-id \"{sourceId}\" finns redan och kan inte skrivas.",
+                    "title": "Enheten {entity} finns redan"
+                },
+                "SWAG_MIGRATION_ENTITY_FIELD_REASSIGNED": {
+                    "description": "Enheten {entity} med käll-id \"{sourceId}\" fick fältet \"{emptyField}\" ersatt med \"{replacementField}”.",
+                    "title": "Entiteten {entity} har ett fält som har återanslagits"
+                },
+                "SWAG_MIGRATION_ENTITY_UNKNOWN": {
+                    "description": "Entiteten {requiredForEntity} med käll-id \"{requiredForSourceId}\" kan inte hitta den beroende {entity} entiteten med käll-id \"{sourceId}”.",
+                    "title": "Kan inte hitta {entity}"
+                },
+                "SWAG_MIGRATION_MESSAGE_QUEUE_EXCEPTION": {
+                    "description": "Ett undantag inträffade under bearbetningen av meddelandekön.",
+                    "title": "Undantaget för meddelandekö"
+                },
+                "SWAG_MIGRATION_RUN_ABORTED_AUTOMATICALLY_EXCEPTION": {
+                    "description": "Migreringen avbröts automatiskt eftersom alltför många på varandra följande undantag inträffade.",
+                    "title": "Migrering avbryts automatiskt"
+                },
+                "SWAG_MIGRATION_RUN_EXCEPTION": {
+                    "description": "{description}",
+                    "title": "Ett undantag inträffade"
+                },
+                "SWAG_MIGRATION__COULD_NOT_READ_ENTITY_COUNT": {
+                    "description": "Totalantalet för entiteten {entity} kunde inte läsas. Kontrollera att tabellen \"{table}\" finns i källsystemet och att det valfria villkoret \"{condition}\" är giltigt. Meddelande om undantag: {exceptionMessage}",
+                    "title": "Kunde inte läsa antalet entiteter"
+                },
+                "SWAG_MIGRATION__DATASET_NOT_FOUND": {
+                    "description": "DataSet för profilen \"{profileName}\" och entitet \"{entity}\" hittades inte. Enhet med id \"{sourceId}\" kunde inte bearbetas.",
+                    "title": "DataSet hittades inte"
+                },
+                "SWAG_MIGRATION__DEBUG": {
+                    "description": "{logData}",
+                    "title": "Felsöknings-utgång"
+                },
+                "SWAG_MIGRATION__DOCUMENT_TYPE_NOT_SUPPORTED": {
+                    "description": "Dokumentet med käll-id \"{sourceId}\" kunde inte konverteras eftersom dokumenttypen \"{type}\" inte stöds.",
+                    "title": "Dokumenttyp stöds inte"
+                },
+                "SWAG_MIGRATION__INVALID_EMAIL_ADDRESS": {
+                    "description": "E-postadressen för entiteten {entity}  med käll-id \"{sourceId}\" är ogiltig: {email}",
+                    "title": "Ogiltig e-postadress"
+                },
+                "SWAG_MIGRATION__PROCESSOR_NOT_FOUND": {
+                    "description": "Processor för profil \"{profileName}”, gateway\"{gatewayName}\"och entitet\"{entity}\"hittades inte.",
+                    "title": "Processorn hittades inte"
+                },
+                "SWAG_MIGRATION__SHOPWARE_ASSOCIATION_REQUIRED_MISSING": {
+                    "description": "{missingEntity} med käll-id \"{sourceId}\" kan inte hittas men krävs för {requiredFor}.",
+                    "title": "Associerade {entity} hittades inte"
+                },
+                "SWAG_MIGRATION__SHOPWARE_CANNOT_COPY_DATA": {
+                    "description": "Källfilen kunde inte kopieras. Fil: {path}",
+                    "title": "Källfilen hittades inte"
+                },
+                "SWAG_MIGRATION__SHOPWARE_CANNOT_DOWNLOAD_DATA": {
+                    "description": "Kan inte ladda ner media. Berörd fil: {uri}",
+                    "title": "Kan inte ladda ner media"
+                },
+                "SWAG_MIGRATION__SHOPWARE_EMPTY_NECESSARY_DATA_FIELDS": {
+                    "description": "{entity} entiteten med käll-id \"{sourceId}\" har inte de data som behövs för fältet \"{emptyField}”",
+                    "title": "Entiteten {entity} har ett tomt nödvändigt fält"
+                },
+                "SWAG_MIGRATION__SHOPWARE_INVALID_UNSERIALIZED_DATA": {
+                    "description": "Entiteten {entity} med käll-id \"{sourceId}\" kunde inte konverteras på grund av ogiltiga oserialiserade objektdata för entiteten \"{unserializedEntity}\" och rådata är: {serializedData}",
+                    "title": "Ogiltiga icke-serialiserade data"
+                },
+                "SWAG_MIGRATION__SHOPWARE_PARENT_ENTITY_NOT_FOUND": {
+                    "description": "Överordnad entitet för \"{entity}\" underordnad hittades inte.",
+                    "title": "Överordnad enhet hittades inte"
+                },
+                "SWAG_MIGRATION__SHOPWARE_UNSUPPORTED_NUMBER_RANGE_TYPE": {
+                    "description": "NumberRange-entitet med käll-id \"{sourceId}\" kunde inte konverteras på grund av typen som inte stöds: {type}.",
+                    "title": "Nummerintervalltyp som inte stöds"
+                },
+                "SWAG_MIGRATION__SHOPWARE_UNSUPPORTED_OBJECT_TYPE": {
+                    "description": "{entity} av objekttypen ”{objectType}”med käll-id ”{sourceId}”kunde inte konverteras.",
+                    "title": "Objekttyp stöds"
+                },
+                "SWAG_MIGRATION__SHOPWARE_UNSUPPORTED_SHIPPING_CALCULATION_TYPE": {
+                    "description": "Leveransmetod entiteten med käll-id \"{sourceId}\" kunde inte konverteras på grund av beräkningstyp som inte stöds: {type}.",
+                    "title": "Beräkningstyp för frakt stöds inte"
+                },
+                "SWAG_MIGRATION__SHOPWARE_UNSUPPORTED_SHIPPING_PRICE": {
+                    "description": "Leveranspriset enhet med käll-id \"{sourceId}\" för leveransmetod \"{shippingMethodId}\" kunde inte konverteras på grund av beräkning av faktorpris som inte stöds.",
+                    "title": "Prisberäkning för fraktfaktor som inte stöds"
+                },
+                "SWAG_MIGRATION__THEME_COMPILING_ERROR": {
+                    "description": "Temat med id \"{sourceId}\" kunde inte kompileras.",
+                    "title": "Fel vid sammanställning av tema"
+                },
+                "SWAG_MIGRATION__WRITER_NOT_FOUND": {
+                    "description": "Filskrivaren för entiteten \"{entity}\" hittades inte.",
+                    "title": "Filskrivaren hittades inte"
+                },
+                "SWAG_MIGRATION__WRITE_EXCEPTION_OCCURRED": {
+                    "description": "{description}",
+                    "title": "Ett skrivundantag har inträffat"
+                },
+                "authorizationError": {
+                    "information": "Fel vid auktorisering. Dina åtkomstdata är inte korrekta. Kontrollera det och försök igen."
+                },
+                "canNotConnectToServer": "Ingen anslutning till servern. Kontrollera anslutningen för problem.",
+                "customerExists": {
+                    "information": "Kunden med e-post \"{mail}\" finns redan. Du kan inte lägga till den här användaren med det e-postmeddelandet i din databas."
+                },
+                "gatewayNotFound": {
+                    "information": "Gateway \"{notFoundGateway}\" hittades inte."
+                },
+                "gatewayRead": {
+                    "information": "Kunde inte läsa gateway \"{unreadableGateway}”."
+                },
+                "localeNotFound": {
+                    "information": "Inmatningskod för språkinställning \"{notFoundCode}\" hittades inte."
+                },
+                "mediaProcessConnectionError": "Ett anslutningsfel uppstod vid kopiering av mediedata. Kontrollera anslutningen.",
+                "migrationContextPropertyMissing": {
+                    "information": "Obligatorisk egenskap \"{notFoundProperty}\" för migreringskontext hittades inte."
+                },
+                "migrationsWorkloadPropertyMissing": {
+                    "information": "Obligatorisk egenskap \"{notFoundProperty}\" för migreringsarbetsbelastning hittades inte."
+                },
+                "noFileSystemPermissions": {
+                    "information": "Inga filsystembehörigheter för att skapa eller skriva filer eller kataloger. Kontrollera dina behörigheter."
+                },
+                "profileNotFound": {
+                    "information": "Migreringsprofilen \"{notFoundProfile}\" hittades inte."
+                },
+                "undefinedIndex": {
+                    "detail": "Oidentifierat index kunde inte hittas.",
+                    "information": "Index \"{unidentifiedIndex}\" kunde inte hittas. Kontrollera dina data.",
+                    "title": "Oidentifierat index"
+                },
+                "unknownError": "Okänt fel. Du kan kontrollera loggningstabellen för din databas för mer information."
+            },
+            "errorTypes": {
+                "error": "Fel",
+                "info": "Information",
+                "warning": "Varning"
+            },
+            "finishButton": "Avsluta",
+            "loadingScreenCard": {
+                "documentationLink": "https://developer.shopware.com/docs/guides/hosting/infrastructure/message-queue.html#message-queue",
+                "documentationLinkText": "Dokumentation för meddelandekö",
+                "flowChart": {
+                    "cleanup": "Rengöring",
+                    "fetchData": "Läsning",
+                    "finish": "Klar",
+                    "indexing": "Indexering",
+                    "premapping": "Kontrollerar",
+                    "processMedia": "Nedladdning",
+                    "writeData": "Skriva"
+                },
+                "notice": "Tips: Den här processen körs i meddelandekön. Du behöver inte stanna kvar på den här sidan om din butik är korrekt konfigurerad.",
+                "result": {
+                    "caption": "Nedladdningen av media fortsätter i bakgrunden. Stora filer kan ta lite tid.",
+                    "historyHint": "Du kan visa den här informationen när som helst i migreringshistoriken. Det är möjligt att fler loggmeddelanden läggs till vid ett senare tillfälle eftersom mediahämtningen fortfarande körs i bakgrunden.",
+                    "logSummary": "Loggbok",
+                    "title": "Migrationsassistenten är klar"
+                },
+                "status": {
+                    "aborting": {
+                        "caption": "Oskrivna data rensas upp. Redan migrerade data kan vara oanvändbara.",
+                        "long": "Migrationen avbryts",
+                        "short": "Avbryta"
+                    },
+                    "cleanup": {
+                        "caption": "Tillfälliga data tas bort. Migrationen är nästan klar.",
+                        "long": "Migrationen städas upp",
+                        "short": "Rengöring"
+                    },
+                    "fetching": {
+                        "caption": "De nya uppdragen behandlas.",
+                        "long": "Uppgifterna kommer att läsas från ditt system",
+                        "short": "Läsning"
+                    },
+                    "finish": "Klar",
+                    "indexing": {
+                        "caption": "Migrationen är nästan klar.",
+                        "long": "De nya uppgifterna indexeras",
+                        "short": "Indexering"
+                    },
+                    "media-processing": {
+                        "caption": "Stora bilddata kan ta lite tid att bearbeta.",
+                        "long": "Medierna överförs",
+                        "short": "Medieöverföring"
+                    },
+                    "writing": {
+                        "caption": "Beroende på butikens storlek kan det ta några ögonblick.",
+                        "long": "Uppgifterna skrivs i Shopware 6",
+                        "short": "Skriva"
+                    }
+                }
+            },
+            "migrateButton": "Starta migrering",
+            "migrationAlreadyRunning": "Migrationen har redan börjat",
+            "pauseButton": "Pausa",
+            "pluginVersionText": "Vi har märkt att en plugin uppdatering är tillgänglig i ditt källsystem {sourceSystem}. Uppdatera insticksprogrammet \"{pluginName}\" innan du påbörjar migreringen.",
+            "premappingCard": {
+                "cardTitle": "Uppdrag",
+                "group": {
+                    "delivery_time": "Leveranstid",
+                    "manufacturer": "Tillverkare",
+                    "newsletter_status": "Status på nyhetsbrev",
+                    "order_delivery_state": "Order leveranstillstånd",
+                    "order_state": "Order",
+                    "payment_method": "Betalningsmetoder",
+                    "salesChannel": "Försäljningskanal för nyhetsbrev",
+                    "salutation": "Hälsningsfras",
+                    "shipping_availability_rule": "Leveransmetod tillgänglighet",
+                    "transaction_state": "Transaktionstillstånd",
+                    "user": "Administration användare"
+                },
+                "loadingCaption": "Befintliga data har kontrollerats.",
+                "loadingTitle": "Datakskontrollen körs",
+                "newAssignmentTitle": "Nya uppdrag",
+                "placeholder": "Vänligen välj",
+                "previousTitle": "Tidigare",
+                "unfilledAlert": "Vi har upptäckt att det finns data som kräver manuell tilldelning.",
+                "unfilledCaption": "Du kan bara fortsätta efter att den manuella tilldelningen har slutförts.",
+                "unfilledTitle": "Datakskontrollen har slutförts",
+                "validCaption": "Uppgifterna är redo att fortsätta",
+                "validTitle": "Datakoskontrollen är klar"
+            },
+            "savePremapping": {
+                "message": "Förmappning har sparats.",
+                "saveButton": "Spara förmappning"
+            },
+            "selectDataCard": {
+                "cardTitle": "Val av data",
+                "dataHeader": "Data",
+                "dataSelection": {
+                    "basicSettings": "Grundläggande uppgifter",
+                    "cms": "Layouter",
+                    "customerWishlists": "Önskelistor",
+                    "customersOrders": "Kunder & beställningar",
+                    "media": "Media",
+                    "newsletterRecipient": "Mottagare av nyhetsbrev",
+                    "processMediaFiles": "Media",
+                    "productReviews": "Produktrecensioner",
+                    "products": "Produkter",
+                    "promotions": "kampanjer",
+                    "seoUrls": "SEO-webbadresser"
+                },
+                "dataTypes": {
+                    "basicData": "Handla data",
+                    "pluginData": "Insticksprogram"
+                },
+                "entities": {
+                    "category": "Kategorier:",
+                    "category_association": "Kategori föreningar:",
+                    "category_cms_page_association": "Kategori layout associationer:",
+                    "category_custom_field": "Kategori anpassade fält",
+                    "category_product_stream_association": "Kategori dynamiska produktgruppsföreningar:",
+                    "cms_page": "Layouter:",
+                    "country": "Länder:",
+                    "country_state": "Lantstater:",
+                    "currency": "Valutor:",
+                    "custom_field_set": "Anpassade fältuppsättningar:",
+                    "customer": "Kunder:",
+                    "customer_custom_field": "Kundanpassade fält",
+                    "customer_group": "Kundgrupper:",
+                    "customer_group_custom_field": "Kundgruppsanpassade fält",
+                    "customer_wishlist": "Önskelistor:",
+                    "delivery_time": "Leveranstider:",
+                    "language": "Språk:",
+                    "mail_template": "E-postmallar:",
+                    "main_variant_relation": "De viktigaste varianterna:",
+                    "media": "Media:",
+                    "media_folder": "Mediekappar:",
+                    "media_folder_inheritance": "Arv av mediekatalog:",
+                    "number_range": "Antal intervall:",
+                    "order": "Beställningar:",
+                    "order_custom_field": "Beställ anpassade fält",
+                    "order_document": "Beställ dokument:",
+                    "order_document_base_config": "Dokumentkonfiguration:",
+                    "order_document_custom_field": "Beställ anpassade fält för dokument",
+                    "order_document_inheritance": "Order dokument relationer:",
+                    "page_system_config": "Sidans grundläggande information:",
+                    "product": "Produkter:",
+                    "product_cross_selling": "Korsförsäljning:",
+                    "product_custom_field": "Anpassade produktfält",
+                    "product_feature_set": "Väsentliga egenskaper",
+                    "product_manufacturer": "Tillverkare av produkter:",
+                    "product_manufacturer_custom_field": "Produkttillverkarens anpassade fält",
+                    "product_option_relation": "Produktalternativ:",
+                    "product_price_custom_field": "Anpassade fält för produktpris",
+                    "product_property_relation": "Produktens egenskaper:",
+                    "product_review": "Recensioner:",
+                    "product_sorting": "Sortering av produkter:",
+                    "product_stream": "Dynamiska produktgrupper:",
+                    "product_stream_filter_inheritance": "Filter för dynamiska produktgrupper:",
+                    "promotion": "Kampanjer:",
+                    "property_group": "Fastighetsgrupper:",
+                    "property_group_option": "Egenskaper:",
+                    "rule": "Regler:",
+                    "sales_channel": "Försäljningskanaler:",
+                    "sales_channel_domain": "Domäner:",
+                    "salutation": "Hälsningsfras:",
+                    "seo_url": "SEO-webbadresser:",
+                    "seo_url_template": "SEO-URL-mallar:",
+                    "shipping_method": "Leveransmetoder:",
+                    "snippet": "Skuttar:",
+                    "snippet_set": "Utdrag set:",
+                    "system_config": "Grundläggande information:",
+                    "tax": "Skattesatser",
+                    "tax_rule": "Skatteregler:",
+                    "translation": "Översättningar:",
+                    "unit": "Skala enheter:"
+                },
+                "headers": {
+                    "dataType": "Typ",
+                    "name": "Namn",
+                    "total": "Datauppsättningar"
+                },
+                "noData": "Inget funnet att migrera."
+            },
+            "shopInfoCard": {
+                "buttonCreateConnection": "Skapa ny anslutning",
+                "buttonCreateInitialConnection": "Skapa initial anslutning",
+                "buttonEditSettings": "Redigera anslutning",
+                "buttonProfileInstallation": "Installera en annan profil",
+                "buttonRemoveCredentials": "Ta bort åtkomstdata",
+                "buttonResetChecksums": "Återställ kontrollsummor",
+                "buttonResetMigration": "Fullständig migrering",
+                "buttonSelectConnection": "Ändra anslutningen",
+                "cardTitle": "Shop system",
+                "connected": "Ansluten",
+                "connectionCheck": "Kontroll av anslutning:",
+                "gateway": "Porten:",
+                "lastMigration": "Senaste migreringen:",
+                "noConnection": "Ingen anslutning",
+                "noMigrationDoneYet": "-",
+                "notConnected": "Inte ansluten",
+                "profile": "Systemprofil:",
+                "refreshTooltip": "Kontrollera anslutningen till källsystemet",
+                "removeCredentialsConfirmDialog": {
+                    "abortButtonText": "Avbryta",
+                    "confirmButtonText": "Ja, ta bort",
+                    "content": "Det kommer inte att finnas någon aktiv anslutning efter detta. Ange dina åtkomstdata igen för att återställa anslutningen.",
+                    "contentHint": "Vill du ta bort aktuella åtkomstdata?",
+                    "title": "Ta bort åtkomstdata"
+                },
+                "resetChecksumsConfirmDialog": {
+                    "abortButtonText": "Avbryta",
+                    "confirmButtonText": "Ja, återställ",
+                    "content": "Om du återställer kontrollsummorna identifieras alla data från källsystemet i nästa migrering. Detta inkluderar redan migrerade eller oförändrade datauppsättningar. <br><br><strong>Viktigt:</strong> Ändringar av dataposterna du har gjort i Shopware 6 sedan den senaste migreringen skrivs över. Källsystemsdata har prioritet.",
+                    "contentHint": "Vill du återställa kontrollsummorna?",
+                    "title": "Återställ kontrollsummor"
+                },
+                "resetMigrationConfirmDialog": {
+                    "abortButtonText": "Avbryta",
+                    "confirmButtonText": "Slutför nu",
+                    "content": "Bra! Låt oss nu slutföra migreringen och rensa temporära filer och oanvända data. <strong>Observera:</strong> Slutföra migreringen är terminal. Du kommer inte att kunna migrera fler data via den aktuella anslutningen.",
+                    "contentHint": "Vill du slutföra migreringen nu?",
+                    "errorNotification": {
+                        "message": "En migrering pågår för närvarande.",
+                        "title": "Fel uppstod när migreringen slutfördes"
+                    },
+                    "header": "Har du flyttat färdigt dina butiksdata?",
+                    "title": "Slutföra migreringen"
+                }
+            },
+            "shopwareMajorVersionText": "Vi har märkt att din källsystemversion {sourceSystem} inte matchar din målsystemversion {targetSystem} . Se till att du använder samma huvudversion för båda systemen innan du startar migreringen.",
+            "title": "General"
+        },
+        "wizard": {
+            "buttonAbort": "Avbryta",
+            "buttonConnect": "Anslut",
+            "buttonConnectionCreate": "Upprätta anslutning",
+            "buttonConnectionSelect": "Ändra anslutning",
+            "buttonEdit": "Redigera anslutning",
+            "buttonFinish": "Klar",
+            "buttonLater": "Stäng",
+            "buttonLetsGo": "Starta",
+            "buttonNext": "Fortsätt",
+            "buttonToProfileInformation": "Information",
+            "buttonUseSsl": "Använd HTTPS",
+            "pages": {
+                "connectionCreate": {
+                    "connectionLabel": "Namn på anslutning",
+                    "connectionPlaceholder": "Ange namn",
+                    "connectionTooltip": "Ange ett unikt namn för anslutningen.",
+                    "contentInformation": "Följande information krävs för migreringen.",
+                    "gatewayLabel": "Inkörsport",
+                    "gatewayPlaceholder": "Välj gateway",
+                    "gatewayTooltip": "Typ av anslutning mellan systemen.",
+                    "gateways": {
+                        "shopwareApi": "API",
+                        "shopwareLocal": "Lokal databas"
+                    },
+                    "hint": {
+                        "local": "Obs! Shop system måste finnas på samma server. Du behöver åtkomstdata till databasen."
+                    },
+                    "profileInstall": "Installera en annan profil",
+                    "profileLabel": "Shop systemprofil",
+                    "profilePlaceholder": "Välj profil",
+                    "title": "Migrering — Skapa ny anslutning"
+                },
+                "connectionSelect": {
+                    "connectionLabel": "Namn på anslutning",
+                    "connectionPlaceholder": "Välj en anslutning",
+                    "contentInformation": "Välj en befintlig anslutning i listan för att uppdatera data.",
+                    "title": "Migrering — Ändra anslutningen"
+                },
+                "credentials": {
+                    "emptyState": "Tyvärr hittades inget formulär för vald profil.",
+                    "error": {
+                        "SWAG_MIGRATION__API_CONNECTION_ERROR": "Kunde inte ansluta till servern. Kontrollera den angivna butiksdomänen.",
+                        "SWAG_MIGRATION__API_CONNECTION_ERROR__HINT": "Om du har problem med att ansluta kan det vara värt att kontrollera den installerade curl-versionen på din server och uppdatera den.",
+                        "SWAG_MIGRATION__DATABASE_CONNECTION_ATTRIBUTES_WRONG": "Databasanslutningen har inte rätt attribut och de kan inte ställas in.",
+                        "SWAG_MIGRATION__DATABASE_CONNECTION_ERROR": "Databasanslutning kunde inte upprättas.",
+                        "SWAG_MIGRATION__GATEWAY_READ": "Kunde inte ansluta till servern. Kontrollera den angivna butiksdomänen.",
+                        "SWAG_MIGRATION__GATEWAY_READ__HINT": "Om du har problem med att ansluta kan det vara värt att kontrollera den installerade curl-versionen på din server och uppdatera den.",
+                        "SWAG_MIGRATION__INVALID_CONNECTION_AUTHENTICATION": "Dina uppgifter är felaktiga. Kontrollera dem och försök igen.",
+                        "SWAG_MIGRATION__IS_RUNNING": "En migrering pågår för närvarande. Därför kan du inte redigera autentiseringsuppgifterna förrän migreringen är klar.",
+                        "SWAG_MIGRATION__PLUGIN_NOT_INSTALLED": "Den nödvändiga plugin ”Migration Connector” är inte installerad i Shopware 5. Installera det kostnadsfria insticksprogrammet och försök igen.",
+                        "SWAG_MIGRATION__PLUGIN_NOT_INSTALLED__HINT": "Om du redan har installerat ”Migration Connector” och rensat cacheminnet i Shopware 5-backend (Konfiguration > cache/prestanda) kan du försöka ta bort Shopware 5-cachemappen (var/cache) manuellt.",
+                        "SWAG_MIGRATION__SSL_REQUIRED": "Vi har fastställt att den givna butiksdomänen krävs en SSL-anslutning.",
+                        "alertErrorTitle": "Lystring",
+                        "contentTitle": "Ingen anslutning",
+                        "undefinedErrorMsg": "Internt serverfel. Var snäll och försök igen."
+                    },
+                    "shopware55": {
+                        "api": {
+                            "apiKeyLabel": "API-nyckel",
+                            "apiKeyPlaceholder": "Ange nyckel",
+                            "apiKeyTooltip": "API-nyckeln används för säkerhet och identifiering.",
+                            "apiUserLabel": "Användarnamn (API-användare)",
+                            "apiUserPlaceholder": "Ange användarnamn",
+                            "apiUserTooltip": "Användarnamn för din Shopware 5-serverdel.",
+                            "contentInformation": "Du behöver giltiga API-autentiseringsuppgifter för att upprätta en anslutning mellan Shopware 5 och Shopware 6. Dina API-inloggningsuppgifter finns i ditt Shopware 5-gränssnitt under ”Användaradministration”. API-åtkomst måste aktiveras där och bekräftas genom att spara.",
+                            "endpointLabel": "Handla domän",
+                            "endpointPlaceholder": "www.demoshop.com",
+                            "endpointSSLLabel": "Min butik använder en säker anslutning (SSL)"
+                        },
+                        "local": {
+                            "contentInformation": "Vi behöver fortfarande åtkomstdata för att kunna ansluta till din Shopware 5-databas.",
+                            "dbHostLabel": "Värd",
+                            "dbHostPlaceholder": "Ange värd",
+                            "dbNameLabel": "Databas namn",
+                            "dbNamePlaceholder": "Ange namn",
+                            "dbPasswordLabel": "lösenord",
+                            "dbPasswordPlaceholder": "Ange lösenord",
+                            "dbPortLabel": "Hamn",
+                            "dbUserLabel": "Användare",
+                            "dbUserPlaceholder": "Ange användarnamn",
+                            "installationRoot": "Handla installationskatalog",
+                            "installationRootPlaceholder": "Ange installationsroten"
+                        }
+                    },
+                    "shopware6": {
+                        "api": {
+                            "apiPasswordLabel": "Hemlig åtkomstnyckel",
+                            "apiPasswordPlaceholder": "Ange hemlig åtkomstnyckel",
+                            "apiPasswordTooltip": "Den hemliga åtkomstnyckeln används för säkerhet och identifiering.",
+                            "apiUserLabel": "Åtkomstnyckel ID",
+                            "apiUserPlaceholder": "Ange åtkomstnyckel-ID",
+                            "apiUserTooltip": "Få tillgång till nyckel-ID för din integration.",
+                            "contentInformation": "Du behöver giltiga API-autentiseringsuppgifter för att upprätta en anslutning mellan din källa och målet Shopware 6-instans. Du får dessa när du skapar en integration i ditt källsystem.",
+                            "endpointLabel": "Handla domän",
+                            "endpointPlaceholder": "www.demoshop.com",
+                            "endpointSSLLabel": "Min butik använder en säker anslutning (SSL)"
+                        }
+                    },
+                    "statusTitle": "Kontroll av anslutning",
+                    "success": {
+                        "SWAG_MIGRATION__REQUEST_CERTIFICATE_INVALID": "Vi har fastställt att SSL-certifikatet för den angivna butiksdomänen inte är säkert. Kontrollera certifikatet för din egen säkerhet.",
+                        "contentInformation": "Du kan påbörja migreringen.",
+                        "contentTitle": "Anslutningen lyckades",
+                        "undefinedErrorMsg": "Ett okänt fel uppstod vid kontroll av SSL-certifikatet från den angivna butiksdomänen."
+                    },
+                    "title": "Migrering — Upprätta en anslutning"
+                },
+                "introduction": {
+                    "contentHeadline": "Låt oss flytta några saker",
+                    "contentInformation": "Tillsammans kopplar vi ditt butikssystem till Shopware 6. Därefter hjälper Migrationsassistenten dig att migrera dina data steg för steg.",
+                    "title": "Flyttassistent"
+                },
+                "profileInformation": {
+                    "shopware55Api": {
+                        "contentInformation": "Den nödvändiga plugin ”Migration Connector” är gratis och kan hittas i din Shopware 5-serverdel under Plugin Manager > Tillägg > Migreringsverktyg. Installera och aktivera insticksprogrammet för att fortsätta.",
+                        "contentTitle": "Plugin krävs",
+                        "pluginLink": "Mer information om insticksprogrammet"
+                    },
+                    "shopware6Api": {
+                        "contentTitle": "Krav",
+                        "integration": {
+                            "description": "Skapa en integration i källsystemet via Inställningar > System > Integrationer. Du behöver det genererade åtkomstnyckel-ID och hemliga åtkomstnyckeln i nästa steg.",
+                            "link": "https://docs.shopware.com/en/shopware-6-en/settings/system/integrationen",
+                            "linkText": "Mer om integrationer",
+                            "title": "Integration"
+                        },
+                        "plugin": {
+                            "description": "Installera tillägget Migration Assistant i källsystemet.",
+                            "link": "https://store.shopware.com/en/swag257162657297f/migration-assistant.html",
+                            "linkText": "Mer om tillägget Migration Assistant",
+                            "title": "Utökning"
+                        }
+                    },
+                    "title": "Migrering - förberedelse för"
+                },
+                "profileInstallation": {
+                    "availabilityHeadline": "Tidigare tillgänglig:",
+                    "availableVersionHeadline": "Stöds:",
+                    "content": "Välj butikssystemet att migrera data från och se till att installera motsvarande profilinsticksprogram också.",
+                    "installationButton": "Installera",
+                    "installedHint": "Installerad",
+                    "magentoProfileHeadline": "Magento - Profil",
+                    "profileManufacturer": "butiksware AG",
+                    "shopwareProfileHeadline": "Shopware - Profil",
+                    "title": "Migrering - Shopsystem-Profil"
+                }
+            }
+        },
+        "worker-listener": {
+            "mediaProcessing": {
+                "message": "Inga filer kvar. | En fil återstår. | {n} filer kvar.",
+                "messageSuccess": "Nedladdningen av media har slutförts.",
+                "title": "Mediet laddas ner",
+                "titleSuccess": "Nedladdning av media klar"
+            }
+        }
+    }
+}

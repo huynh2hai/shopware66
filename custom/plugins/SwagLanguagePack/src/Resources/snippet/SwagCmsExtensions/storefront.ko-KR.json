@@ -1,0 +1,18 @@
+{
+    "swagCmsExtensions": {
+        "form": {
+            "component": {
+                "checkbox": {
+                    "false": "아니요",
+                    "true": "예"
+                },
+                "select": {
+                    "defaultPlaceholder": "옵션 선택..."
+                }
+            }
+        },
+        "quickview": {
+            "detailPageLinkText": "더 자세한 정보 표시"
+        }
+    }
+}

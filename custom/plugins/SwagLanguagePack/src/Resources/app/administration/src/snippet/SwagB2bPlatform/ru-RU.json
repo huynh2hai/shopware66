@@ -1,0 +1,232 @@
+{
+    "b2b": {
+        "customer": {
+            "detail": {
+                "easymode": {
+                    "helpText": "Простой режим обеспечивает менее сложное управление. Это означает, что больше нет необходимости сохранять роли, бюджеты и контингенты! Чтобы активировать этот режим, пользователь не должен создавать никаких ролей.",
+                    "isActive": "Активен простой режим",
+                    "isNotActive": "Простой режим не активен",
+                    "label": "Активировать простой режим",
+                    "title": "Простой режим"
+                }
+            }
+        },
+        "global": {
+            "errors": {
+                "unexpectedErrorMessage": "Произошла ошибка.",
+                "unexpectedErrorTitle": "Ошибка!"
+            }
+        },
+        "order": {
+            "detail": {
+                "deliveryDateLabel": "Дата доставки",
+                "orderReferenceLabel": "Справочный номер заказа"
+            }
+        }
+    },
+    "b2b-offer": {
+        "detail": {
+            "base": {
+                "labelCompany": "Компания",
+                "labelCreated": "Дата создания",
+                "labelDiscount": "Скидка",
+                "labelEmail": "Адрес электронной почты",
+                "labelExpirationDate": "Дата истечения срока действия",
+                "labelExpirationTime": "Время истечения срока действия",
+                "labelPositions": "Предметы",
+                "labelState": "государство",
+                "labelTotal": "Первоначальная цена (нетто)",
+                "labelTotalDiscount": "Цена со скидкой (нетто)",
+                "labelUpdated": "Дата изменения",
+                "titleCompany": "Компания",
+                "titleDetails": "Подробности"
+            },
+            "commentPlaceholder": "Комментарий",
+            "discount": {
+                "addProductLabel": "Добавить продукт",
+                "addProductPlaceholder": "Поиск...",
+                "columnDiscountPriceNet": "Запрос",
+                "columnName": "Продукт",
+                "columnNewOffer": "Новое предложение",
+                "columnPriceNet": "Оригинал",
+                "columnQuantity": "Количество",
+                "columnReferenceNumber": "Номер продукта",
+                "columnTotalNet": "Итого (нетто)",
+                "contextMenuRemove": "Удалить элемент",
+                "discountLabel": "Дополнительная скидка",
+                "labelComment": "Комментарий",
+                "labelDiscount": "Скидка",
+                "labelDiscountType": "Тип скидки",
+                "labelDiscountTypeAbsolute": "Абсолютный",
+                "labelDiscountTypePercentage": "Процентная доля",
+                "labelExpirationDate": "Дата истечения срока действия",
+                "placeholderComment": "Комментарий",
+                "summaryDate": "Дата",
+                "summaryTaxes": "ЧАН",
+                "summaryTotalAmountNet": "Итого без учета НДС",
+                "summaryTotalDiscount": "Общая скидка",
+                "summaryTotalWithTax": "Итого, включая НДС"
+            },
+            "history": {
+                "authorAdmin": "Владелец магазина",
+                "labelComment": "Комментарий",
+                "labelDiscountAmountNet": "- Сумма скидки (нетто):",
+                "labelExpirationDate": "Дата истечения срока действия:",
+                "labelQuantity": "- Количество:",
+                "messagePlaceholder": "Сообщение",
+                "new": "Новое значение:",
+                "placeholder": "Пока нет истории.",
+                "previous": "Предыдущее значение:",
+                "product": "Продукт:",
+                "productReference": "Справочный номер:",
+                "titleAddedPositions": "Добавленные элементы",
+                "titleChangedItemPrice": "Цена товара изменена",
+                "titleDiscount": "Скидка изменена",
+                "titleDiscountAdded": "Добавлена скидка",
+                "titleItemComment": "Комментарий к элементу изменен",
+                "titleRemovedPositions": "Удаленные элементы",
+                "titleStatus": "Статус изменен",
+                "titleUpdated": "Предложение обновлено",
+                "titleUpdatedPositions": "Обновленные элементы"
+            },
+            "noComments": "Нет доступных комментариев",
+            "offerPlaceholder": "Не удалось загрузить сведения о предложении.",
+            "title": "Предложение",
+            "titleActivity": "Деятельность",
+            "titleBase": "Подробности",
+            "titlePositions": "Предметы"
+        },
+        "general": {
+            "buttonAcceptOffer": "Принять предложение",
+            "buttonCancel": "Отменить",
+            "buttonDeclineOffer": "Отклонить предложение",
+            "buttonDelete": "Удалить",
+            "buttonMakeNewOffer": "Сделать новое предложение",
+            "buttonReply": "Ответить",
+            "buttonSave": "Сохранить",
+            "buttonSendMessage": "Отправить",
+            "buttonSendNewOffer": "Отправить новое предложение",
+            "buttonViewDebtor": "Просмотр должника",
+            "description": "Предложения, ориентированные на клиента",
+            "label": "Предложения",
+            "offer_status_accepted_admin": "Отправлено владельцем магазина",
+            "offer_status_accepted_both": "Принято обоими",
+            "offer_status_accepted_user": "Отправлено пользователем",
+            "offer_status_converted": "Преобразованные",
+            "offer_status_declined_admin": "Отклонено владельцем магазина",
+            "offer_status_declined_user": "Отклонено пользователем",
+            "offer_status_expired": "Истек",
+            "offer_status_open": "Открыть",
+            "title": "Предложения"
+        },
+        "list": {
+            "columnCreated": "Дата создания",
+            "columnDebtor": "Должник",
+            "columnDebtorCompany": "Компания",
+            "columnExpires": "Дата истечения срока действия",
+            "columnId": "Id",
+            "columnListAmountNet": "Первоначальная цена",
+            "columnListDiscountAmountNet": "Цена со скидкой",
+            "columnPositions": "Предметы",
+            "columnState": "государство",
+            "columnTotalDiscount": "Скидка",
+            "columnUpdated": "Дата изменения",
+            "contextMenuDebtor": "Просмотреть должника",
+            "contextMenuDelete": "Удалить",
+            "contextMenuDetail": "Посмотреть предложение",
+            "messageEmpty": "В настоящее время нет предложений.",
+            "title": "Предложения"
+        },
+        "modal": {
+            "textBulkDeleteConfirm": "Вы действительно хотите удалить выбранные предложения?",
+            "textDeleteConfirm": "Вы действительно хотите удалить это предложение?",
+            "titleBulkDelete": "Удалить выбранные предложения",
+            "titleDelete": "Удалить предложение"
+        },
+        "notifications": {
+            "messageCommentError": "Комментарий не может быть отправлен.",
+            "messageDeleteError": "Предложение не может быть удалено.",
+            "messageDetailError": "Не удалось загрузить сведения о предложении.",
+            "messageListError": "Не удалось загрузить предложения.",
+            "messageOfferUpdatedError": "Предложение не может быть обновлено.",
+            "messageProductSearchError": "Предложение уже содержит этот продукт.",
+            "titleError": "Произошла ошибка.",
+            "titleProductSearchError": "Продукт не может быть добавлен."
+        }
+    },
+    "b2b-salesrep": {
+        "customer": {
+            "settings": {
+                "isDebtor": "Клиент является должником",
+                "isSalesRepresentative": "Клиент является торговым представителем",
+                "labelDebtor": "Пометить как должника",
+                "labelSalesRepresentative": "Пометить как торговый представитель",
+                "messageSaveError": "Произошла ошибка при сохранении новых настроек.",
+                "noDebtor": "Клиент не является должником",
+                "noSalesRepresentative": "Клиент не является торговым представителем",
+                "salesRepresentativeClientSelection": {
+                    "assigned": "Назначено",
+                    "company": "Компания",
+                    "customerNumber": "Номер клиента",
+                    "email": "Электронная почта",
+                    "firstName": "Имя",
+                    "lastName": "Фамилия",
+                    "owner": "Владелец",
+                    "searchbarPlaceholder": "Поиск клиентов...",
+                    "type": "Тип"
+                },
+                "salesRepresentativeClients": {
+                    "owner": "Владелец"
+                },
+                "tab": "Конфигурация B2B",
+                "tabSalesRepresentativeClientSelection": "Клиенты",
+                "title": "Назначение ролей B2B",
+                "titleDebtor": "Должник",
+                "titleSalesRepresentative": "Торговый представитель",
+                "titleSaveError": "Ошибка при сохранении"
+            }
+        },
+        "general": {
+            "description": "Назначение клиента торгового представителя",
+            "title": "Торговый представитель B2B"
+        }
+    },
+    "global": {
+        "businessEvents": {
+            "b2b_budget_notifiy_author": "Уведомление о бюджете",
+            "b2b_contact_password_activation_mail": "Активация контактной учетной записи",
+            "b2b_offer_status_notify_mail": "Изменение статуса предложения",
+            "b2b_order_clearance_accepted": "Оформление заказа принято",
+            "b2b_order_clearance_inquiry_mail": "Запрос на оформление заказа"
+        }
+    },
+    "sw-flow": {
+        "triggers": {
+            "activation": "Активация",
+            "author": "Автор",
+            "b2B": "B2B",
+            "budget": "Бюджет",
+            "clearance": "Разминирование",
+            "contact": "Сотрудник",
+            "inquiry": "Запрос",
+            "notifiy": "Уведомить",
+            "notify": "Уведомить",
+            "offer": "Цитата",
+            "password": "Пароль",
+            "status": "Статус"
+        }
+    },
+    "sw-privileges": {
+        "permissions": {
+            "b2b-offer": {
+                "label": "Предложения"
+            },
+            "b2b-user": {
+                "label": "Пользователь B2B"
+            },
+            "sales-representative-clients": {
+                "label": "Клиенты торговых представителей"
+            }
+        }
+    }
+}

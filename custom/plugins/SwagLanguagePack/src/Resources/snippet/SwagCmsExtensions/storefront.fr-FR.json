@@ -1,0 +1,18 @@
+{
+    "swagCmsExtensions": {
+        "form": {
+            "component": {
+                "checkbox": {
+                    "false": "Non",
+                    "true": "Oui"
+                },
+                "select": {
+                    "defaultPlaceholder": "Sélectionner l'option..."
+                }
+            }
+        },
+        "quickview": {
+            "detailPageLinkText": "Afficher plus de détails"
+        }
+    }
+}

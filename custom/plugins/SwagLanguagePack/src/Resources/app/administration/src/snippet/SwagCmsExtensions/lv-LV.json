@@ -1,0 +1,209 @@
+{
+    "sw-restricted-rules": {
+        "restrictedAssignment": {
+            "swagCmsExtensionsBlockRules": "CMS paplašinājumi: Bloķēt redzamību"
+        }
+    },
+    "swag-cms-extensions": {
+        "error-codes": {
+            "SWAG_SCROLL_NAVIGATION_DUPLICATE_VALUE_ERROR": "Šī lauka vērtība jau tiek lietota.",
+            "SWAG_SCROLL_NAVIGATION_EMPTY_FIELD_WHEN_ACTIVE_ERROR": "Šis lauks nedrīkst būt tukšs, ja navigācijas punkts ir aktīvs.",
+            "SWAG_SCROLL_NAVIGATION_FIELD_TOO_LONG_ERROR": "Šī lauka maksimālais lielums ir pārsniegts."
+        },
+        "sw-cms": {
+            "components": {
+                "form-editor": {
+                    "addGroupButton": "Pievienot grupu",
+                    "emptyState": {
+                        "buttonText": "Veidlapas lauka izveide",
+                        "text": "Jūs vēl neesat izveidojis nekādus veidlapas laukus."
+                    },
+                    "group": {
+                        "actions": {
+                            "duplicate": "Dublikāts",
+                            "moveDown": "Pārvietoties uz leju",
+                            "moveToGroup": "Pārvietot uz grupu",
+                            "moveUp": "Pārvietoties uz augšu"
+                        },
+                        "field": {
+                            "addFieldButton": "Pievienot lauku",
+                            "fieldPrefix": "Lauks"
+                        },
+                        "groupNamePrefix": "Grupa"
+                    },
+                    "moveToGroupModal": {
+                        "groupSelectLabel": "Grupa",
+                        "primaryButtonText": "Pārvietot",
+                        "title": "Pārvietot uz grupu"
+                    },
+                    "settings-field": {
+                        "defaultValueFieldLabel": "Noklusējuma vērtība",
+                        "defaultValues": {
+                            "checked": "Pārbaudīts",
+                            "notChecked": "Nav pārbaudīts"
+                        },
+                        "entityFieldLabel": "Uzņēmums",
+                        "errorMessageFieldLabel": "Kļūdas ziņojums",
+                        "internalNameHelpText": "Iekšējais nosaukums kalpo kā unikāla identifikācija, lai izmantotu šo lauku kā mainīgo, piemēram, e-pasta veidnēs.",
+                        "maxFieldLabel": "Maks.",
+                        "minFieldLabel": "Min.",
+                        "modeFieldLabel": "Saturs",
+                        "modeOptionCustom": "Custom",
+                        "modeOptionEntity": "Uzņēmums",
+                        "optionsFieldLabel": "Vērtības",
+                        "placeholderFieldLabel": "Vietturis",
+                        "requiredFieldLabel": "Obligāts lauks",
+                        "rowsFieldLabel": "Augstums",
+                        "rowsLabel": "{n} rinda | {n} rindas",
+                        "scalableFieldLabel": "Mērogojams",
+                        "stepFieldLabel": "Solis",
+                        "titleFieldLabel": "Nosaukums",
+                        "typeFieldLabel": "Tips",
+                        "types": {
+                            "checkbox": "Izvēles rūtiņa",
+                            "email": "E-pasts",
+                            "number": "Numurs",
+                            "select": "Atlasiet",
+                            "text": "Teksts",
+                            "textarea": "Textarea"
+                        },
+                        "widthFieldLabel": "Platums"
+                    },
+                    "settings-group": {
+                        "explanation": "Grupas palīdz veidot formu. Visi grupas lauki veido vizuālu sadaļu.",
+                        "internalNameHelpText": "Iekšējais nosaukums kalpo kā unikāla identifikācija šīs grupas izmantošanai kā mainīgais, piemēram, e-pasta veidnēs.",
+                        "titleFieldLabel": "Virsraksts"
+                    },
+                    "title": "Lauki"
+                },
+                "sw-cms-slot": {
+                    "formModalPrimary": "Izveidot",
+                    "formModalTitle": "Veidlapas izveide"
+                }
+            },
+            "detail": {
+                "blockRule": {
+                    "alwaysVisiblePlaceholder": "Vienmēr redzams (Noklusējums)",
+                    "invertedSwitchLabel": "Redzams, ja noteikums nav piemērojams",
+                    "ruleHelpText": "Definēt nosacījumus, kas jāizpilda, lai parādītu šo bloku.",
+                    "ruleTitle": "Redzamība",
+                    "sidebarHeaderBlockBehaviorSettings": "Noteikumi"
+                },
+                "errors": {
+                    "customFormConfigurationInvalid": "Vienam vai vairākiem pielāgotiem veidlapas elementiem ir nederīga konfigurācija. Lūdzu, pārbaudiet visas jūsu konfigurācijas."
+                },
+                "quickview": {
+                    "showQuickviewHelpText": "Noklikšķinot uz blokiem, kas saistīti ar produktu, detalizētās informācijas lapas vietā tiek parādīts Quickview.",
+                    "showQuickviewLabel": "Lietot Quickview",
+                    "sidebarHeaderBlockBehaviorSettings": "Quickview"
+                },
+                "scrollNavigation": {
+                    "anchorSwitch": "Iestatiet navigācijas punktu",
+                    "anchorTitle": "Navigācijas punkta nosaukums",
+                    "anchorTitleHelpText": "Navigācijas punkti tiek parādīti veikala fonā kā navigējams pieejamo sadaļu saraksts.",
+                    "duplicateDisplayNameMessage": "Šis navigācijas punkts jau pastāv: \"{currentName}\".",
+                    "invalidDisplayNameLengthMessage": "Vismaz vienam no jūsu aktīvajiem navigācijas punktiem nav nosaukuma. | Šī navigācijas punkta nosaukums pārsniedz maksimālo 255 rakstzīmju garumu: \"{truncatedName}\"",
+                    "pageSettings": {
+                        "activeHelpText": "Animēta ritināšana padara navigāciju starp navigācijas punktiem plūstamāku. Lai vienmērīga ritināšanas pieredze būtu ieteicama, vērtības būtu robežās no 500 ms līdz 1000 ms.",
+                        "activeLabel": "Animēta ritināšana",
+                        "advancedSettingsLabel": "Papildu iestatījumi",
+                        "bouncyLabel": "Atlecoša ritināšana",
+                        "description": "Lai izmantotu ritināšanu ar animāciju, pārliecinieties, vai esat aktivizējis nepieciešamos navigācijas punktus un piešķīris nosaukumus.",
+                        "durationLabel": "Ilgums",
+                        "durationSuffix": "ms",
+                        "easing": {
+                            "in": "Paātrināšana (Ease In)",
+                            "inOut": "Paātrināšana un palēnināšana (Ease InOut)",
+                            "linear": "Pastāvīga (lineāra)",
+                            "out": "Palēnināšanās (Ease Out)"
+                        },
+                        "easingDegreeHelpText": "Grāds norāda paātrinājuma vai palēninājuma lielumu. Jo zemāka pakāpe, jo vienmērīgāka ritināšana. Intuitīvai ritināšanai ir ieteicama vērtība no 2 līdz 5. Šī vērtība neietekmē atlēcošu vai lineāru ritināšanu.",
+                        "easingDegreeLabel": "Trajektorijas pakāpe",
+                        "easingLabel": "Ritināšanas režīms",
+                        "nativeScrollingHelpText": "Ja šī opcija ir iespējota, tiek izmantota pārlūkprogrammas noklusējuma ritināšanas darbība. Ja tas ir atspējots, noklikšķinot uz saites, pārlūkprogrammas fokuss pāriet uz mērķa pozīciju.",
+                        "nativeScrollingLabel": "Vietējā ritināšana",
+                        "title": "Ritināšanas navigācija"
+                    },
+                    "title": "Ritināšanas navigācija"
+                }
+            },
+            "elements": {
+                "custom-form": {
+                    "config": {
+                        "editFormTemplateLink": "Rediģēt veidnes",
+                        "templateSelectLabel": "Veidne",
+                        "templateSelectPlaceholder": "Nav"
+                    },
+                    "createTemplateModal": {
+                        "overwriteButtonLabel": "Pārrakstīt",
+                        "overwriteConfirmationText": "Vai esat pārliecināts, ka vēlaties pārrakstīt veidlapas veidni \"<span>{templateName}</span>“?",
+                        "overwriteLinkText": "Pārrakstīt esošo veidlapu veidni",
+                        "overwriteMessage": "Veidlapas veidne ir pārrakstīta!",
+                        "overwriteSelectLabel": "Veidlapas veidne",
+                        "overwriteWarningText": "Veidlapas veidne ar šo nosaukumu jau pastāv.",
+                        "placeholder": "Nosauciet veidlapas veidni...",
+                        "successMessage": "Veidlapas veidne ir saglabāta!",
+                        "templateNameLabel": "Nosaukums",
+                        "titles": {
+                            "default": "Saglabāt kā veidlapas veidni",
+                            "overwrite": "Pārrakstīt veidlapas veidni"
+                        }
+                    },
+                    "editor": {
+                        "footer": {
+                            "createTemplateButton": "Saglabāt kā veidni"
+                        },
+                        "tabs": {
+                            "fields": {
+                                "tabTitle": "Lauki",
+                                "templateLabel": "Veidne",
+                                "templateText": "Ietaupiet laiku nākotnē un saglabājiet šo veidlapu kā veidni."
+                            },
+                            "options": {
+                                "confirmationTextLabel": "Apstiprinājuma teksts",
+                                "headlineLabel": "Virsraksts",
+                                "internalNameLabel": "Nosaukums (iekšējais)",
+                                "mailTemplateLabel": "E-pasta veidne",
+                                "tabTitle": "Opcijas"
+                            }
+                        },
+                        "title": "Veidlapas iestatījumi"
+                    },
+                    "label": "Pielāgota",
+                    "templateListing": {
+                        "emptyState": "Nav atrastas veidnes",
+                        "renameContextAction": "Pārdēvēt",
+                        "templateNameLabel": "Veidnes nosaukums"
+                    }
+                }
+            },
+            "section": {
+                "actions": {
+                    "copySuffix": "(Kopēt)",
+                    "pageForm": {
+                        "emptyAnchorName": "(Nosaukums nav iestatīts)",
+                        "labelPrefix": "Navigācijas punkts"
+                    },
+                    "viewports": {
+                        "emptyAnchorName": "(Nosaukums nav iestatīts)",
+                        "tooltipPrefix": "Navigācijas punkts:"
+                    }
+                }
+            },
+            "sidebar": {
+                "emptyAnchorName": "(Nosaukums nav iestatīts)",
+                "navElement": {
+                    "blockRuleTooltip": "Šī elementa redzamību ierobežo noteikums."
+                },
+                "rulesOnAllBlocks": "Šajā sadaļā ir tikai saturs ar ierobežotu redzamību. Ņemiet vērā, ka daži klienti var redzēt tukšu sadaļu šeit."
+            }
+        },
+        "sw-settings-rule": {
+            "detail": {
+                "associations": {
+                    "blockVisibility": "CMS paplašinājumi: Bloķēt redzamību"
+                }
+            }
+        }
+    }
+}

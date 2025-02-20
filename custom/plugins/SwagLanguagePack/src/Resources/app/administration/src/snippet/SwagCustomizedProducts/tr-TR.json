@@ -1,0 +1,240 @@
+{
+    "sw-privileges": {
+        "permissions": {
+            "swag_customized_products_template": {
+                "label": "Özel Ürünler"
+            }
+        }
+    },
+    "swag-customized-products": {
+        "create": {
+            "title": "Yeni ürün şablonu"
+        },
+        "detail": {
+            "buttonSaveDuplicate": "Kaydet ve çoğaltma",
+            "labelContextMenuAddToTemplate": "Şablonda kullan",
+            "messageSaveError": "Şablon kaydedilemedi.",
+            "tabAssignment": {
+                "cardGeneral": "Ürünler",
+                "productSelectPlaceholder": "Ürünleri seçin...",
+                "title": "Ürün ataması"
+            },
+            "tabGeneral": {
+                "cardExclusion": {
+                    "buttonAdd": "Hariç tutulan kombinasyon ekle",
+                    "emptyTitle": "Henüz dışlanan kombinasyon yok. | Dışlanan kombinasyon bulunamadı.",
+                    "labelName": "İsim",
+                    "modal": {
+                        "nameLabel": "İsim",
+                        "title": "{name} | Dışlanan kombinasyon ekle"
+                    },
+                    "placeholderSearch": "Hariç bırakılan kombinasyonları ara...",
+                    "textModalDelete": "Hariç tutulan kombinasyonu gerçekten silmek istiyor musunuz \"{name}“? | Bu {count} hariç tutulan kombinasyonları gerçekten silmek istiyor musunuz?",
+                    "title": "Hariç bırakılan kombinasyon",
+                    "titleModalDelete": "Hariç tutulan kombinasyonu sil"
+                },
+                "cardGeneral": "Genel yapılandırma",
+                "cardOption": {
+                    "buttonAdd": "Ekle seçeneği",
+                    "emptyTitle": "Henüz seçenek yok. | Hiçbir seçenek bulunamadı.",
+                    "errorSave": "Seçenek kaydedilemedi.",
+                    "labelName": "İsim",
+                    "labelOptionValuesCount": "Değerler",
+                    "labelPosition": "Pozisyon",
+                    "labelType": "Türü",
+                    "optionAddNotAvailableTooltip": "Yeni seçenekler yalnızca sistem varsayılan dili kullanılarak eklenebilir.",
+                    "placeholderSearch": "Arama seçenekleri...",
+                    "placeholderType": "Bir giriş türü seçin...",
+                    "textModalDelete": "Gerçekten \"{name}“seçeneğini silmek istiyor musunuz? | Bu {count} seçenekleri gerçekten silmek istiyor musunuz?",
+                    "title": "Seçenekler",
+                    "titleModalDelete": "Sil seçeneği"
+                },
+                "createOption": {
+                    "nameLabel": "İsim",
+                    "namePlaceholder": "Görünen adı girin...",
+                    "title": "Ekle seçeneği",
+                    "typeHelpText": "Tür daha sonra değiştirilemez.",
+                    "typeLabel": "Türü"
+                },
+                "helpTextConfirmInput": "Bireysel ürünler, yalnızca bir onay kutusunu işaretleyerek bireysel yapılandırmayı onayladıktan sonra alışveriş sepetine konulabilir.",
+                "helpTextOptionsAutoCollapse": "Bu ayar etkinse, seçenekler geçerli bir girdiden sonra otomatik olarak kapanır. Bu işlev adım adım modda kullanılamaz.",
+                "helpTextStepByStep": "Adım adım modda, bir ürünü kişiselleştirme seçenekleri birbiri ardına görüntülenir.",
+                "labelActive": "Aktif",
+                "labelColor": "Renk",
+                "labelConfirmInput": "Müşterilerin yapılandırmalarını onaylaması gerekir",
+                "labelDescription": "Açıklama",
+                "labelDisplayName": "Görünme adı",
+                "labelImage": "Görüntü",
+                "labelInternalName": "Teknik adı",
+                "labelOptionsAutoCollapse": "Kendinden daraltma seçenekleri",
+                "labelStepByStep": "Adım adım mod",
+                "placeholderDescription": "Ürün açıklamasını girin...",
+                "placeholderDisplayName": "Görünen adı girin...",
+                "placeholderInternalName": "Teknik adı girin...",
+                "textAssignmentInfo": "Özelleştirilebilir hale getirmek için mevcut bir ürünün ayrıntı sayfasına özel bir ürün şablonu atayın.",
+                "title": "Genel Bakış"
+            }
+        },
+        "extension": {
+            "buttonViewConfiguration": "Yapılandırmayı görüntüle",
+            "textOrderItemPrefix": "Özel Ürün"
+        },
+        "general": {
+            "descriptionTextModule": "Özelleştirilmiş Ürünleri buradan yönetin.",
+            "duplicate": "Çoğalt",
+            "duplicateNameSuffix": "(Kopyala)",
+            "mainMenuItemGeneral": "Özel Ürünler",
+            "selectRule": "Kural seç..."
+        },
+        "list": {
+            "buttonAddTemplate": "Şablon ekle",
+            "columnDescription": "Açıklama",
+            "columnDisplayName": "Görünme adı",
+            "columnInternalName": "İç adı",
+            "columnOptionsCount": "Ekli seçenekler",
+            "columnProductsCount": "Atanan ürünler",
+            "messageEmpty": "Henüz ürün şablonu yok.",
+            "templateTitle": "Ürün şablonları",
+            "titleSidebarItemRefresh": "Yenile"
+        },
+        "optionDetailModal": {
+            "noChildren": "Seçmenin değeri yoktur.",
+            "noFormFound": "Bu tür için form bulunamadı.",
+            "optionType": {
+                "advancedSurcharges": {
+                    "columnTitles": {
+                        "rule": "Kural"
+                    }
+                },
+                "datetime": {
+                    "maxDate": "Zaman Dönemi (bitiş)",
+                    "minDate": "Zaman Periyodu (başlangıç)"
+                },
+                "defaultLabel": "Varsayılan değer",
+                "defaultPlaceholder": "Varsayılan değeri girin...",
+                "defaultPlaceholderSelect": "Varsayılan bir değer seç...",
+                "descriptionLabel": "Açıklama",
+                "imageupload": {
+                    "excludedExtensionsLabel": "Hariç tutulan dosya uzantıları",
+                    "fileExtensionsLabel": "Desteklenen dosya uzantıları",
+                    "maxCountLabel": "Maksimum dosya numarası",
+                    "maxFileSizeLabel": "Maksimum dosya boyutu",
+                    "tooltip": "Dosya uzantılarının büyük/küçük harf duyarlı olduğunu lütfen unutmayın."
+                },
+                "itemNumberHelpText": "Seçenek ürün numarası, sipariş genel görünümünde görüntülenir ve bu özel seçeneğin ürün numarasını açıklar.",
+                "itemNumberLabel": "Seçenek ürün numarası",
+                "nameLabel": "İsim",
+                "numberfield": {
+                    "maximumValueLabel": "Maks. değer",
+                    "minimumValueLabel": "Min. değer",
+                    "placeholder": "Minimum değer girin...",
+                    "stepLabel": "Adım boyutu"
+                },
+                "placeholderDescription": "Açıklamayı girin...",
+                "placeholderItemNumber": "Seçenek ürün numarasını girin...",
+                "placeholderLabel": "Yer tutucu",
+                "placeholderPlaceholder": "Yer tutucuyu girin...",
+                "requiredLabel": "Gerekli",
+                "requiredTooltip": {
+                    "disabled": "Dışlama ile ilişkili olduğu için bu seçeneği gerektiremezsiniz",
+                    "enabled": "Bu seçeneği zorunlu kılmak için işaretleyin"
+                },
+                "select": {
+                    "isDropDownLabel": "Açılır menü olarak göster",
+                    "isMultiSelectLabel": "Birden fazla seçim mümkün",
+                    "isMultiSelectTooltip": {
+                        "disabled": "Dışlama ile ilişkili olduğu için bu seçeneği işaretleyemezsiniz.",
+                        "enabled": "Müşterinin birden çok değer seçmesini sağlamak için kontrol edin."
+                    }
+                },
+                "surcharges": {
+                    "advancedLabel": "Gelişmiş ek ücretler",
+                    "advancedSurchargesTooltip": "Gelişmiş ek ücretleri yapılandırmak için bu seçeneği etkinleştirin.",
+                    "oncePerOrderLabel": "Ürün yapılandırması başına bir kez ek ücret",
+                    "relativeLabel": "Göreceli ek ücretler",
+                    "relativeSurchargesTooltip": "Göreli ek ücretleri yapılandırmak için bu seçeneği etkinleştirin.",
+                    "selectTaxRateTooltip": "Bu seçeneği yapılandırmak için bir vergi oranı seçin veya göreceli ek ücretleri etkinleştirin.",
+                    "taxLabel": "Vergi oranı",
+                    "taxPlaceholder": "Bir vergi oranı seçin...",
+                    "textWarningBasePrice": "Gelişmiş ek ücretler kullanmak istediğinizde temel fiyat gerekli olduğunu lütfen unutmayın. Aşağıda listelenen fiyat kurallarından hiçbiri eşleşmiyorsa, taban fiyat geri dönüş fiyatı olarak kullanılır."
+                },
+                "textfield": {
+                    "maxLengthLabel": "Maks. uzunluk",
+                    "minLengthLabel": "Min. uzunluk"
+                },
+                "typeLabel": "Türü",
+                "valueLabel": "Değer"
+            },
+            "saveError": "Kaydet hatası"
+        },
+        "optionTypes": {
+            "checkbox": "Onay Kutusu",
+            "colorpicker": "Renk seçici",
+            "colorselect": "Renk seçimi",
+            "datetime": "Tarih alanı",
+            "fileupload": "Dosya yükleme",
+            "htmleditor": "HTML editörü",
+            "imageselect": "Resim seç",
+            "imageupload": "Resim yükleme",
+            "numberfield": "Sayı alanı",
+            "select": "Seçim alanı",
+            "textarea": "Textarea",
+            "textfield": "Metin alanı",
+            "timestamp": "Zaman alanı"
+        }
+    },
+    "swag-customized-products-assignment-card": {
+        "emptyTitle": "Henüz bir görev yok.",
+        "labelManufacturer": "Üretici",
+        "labelName": "İsim",
+        "labelProductNumber": "Ürün numarası",
+        "textModalDelete": "Ürünün atamasını gerçekten silmek istiyor musunuz \"{name}“? | Bu {count} ürün atamalarını gerçekten silmek istiyor musunuz?",
+        "titleModalDelete": "Ürün atamasını sil"
+    },
+    "swag-customized-products-condition-tree": {
+        "helpText": "Dışlanacak seçenek durumlarının birleşimini açıklayın. Bir dışlama için gerekli veya çoklu seçme seçenekleri seçemeyeceğinizi lütfen unutmayın.",
+        "label": "Hariç tutulan kombinasyon",
+        "node": {
+            "operatorSelectPlaceholder": "Operatör seç...",
+            "optionSelectPlaceholder": "Seçeneği seçin...",
+            "strongAnd": "VE"
+        }
+    },
+    "swag-customized-products-configuration-modal": {
+        "emptyConfigurationHint": "Bu ürün yapılandırılmamış",
+        "oneTimeSurchargeSuffix": "Bir kez",
+        "perItemSuffix": "parça başına",
+        "title": "Özel Ürün yapılandırması",
+        "warningImagePreview": "Tüm dosya türlerinin tarayıcı tarafından desteklenmediğini lütfen unutmayın. İstediğiniz görüntüyü istediğiniz düzenleme programında görüntülemek için lütfen “İndir” işlevini kullanın."
+    },
+    "swag-customized-products-option-tree-item": {
+        "actions": {
+            "buttonCreateSubElement": "Alt belement oluştur"
+        },
+        "general": {
+            "placeholderElementName": "Öğe adını buraya girin..."
+        }
+    },
+    "swag-customized-products-product-assignment": {
+        "cardTitle": "Özel Ürünler",
+        "moduleLink": "Özel Ürünler",
+        "selectLabel": "Şablon",
+        "selectPlaceholder": "Özel Ürünler şablonu Seç...",
+        "textContent": "Özel Ürünler benzersiz ve kişisel e-ticaret deneyimleri sunmanızı sağlar. Müşterilere ürün sayfasında önceden tanımlanmış özelleştirme seçeneklerine erişim hakkı verilir. Bireysel baskılara izin veren resim ve grafikler yüklemek, çeşitli renklendirmeler sağlamak veya özel gravürler için metin göndermek için bir yol gibi çeşitli olasılıklar vardır.<br><br>Özel Ürünler için şablonlar kurmak da kolaydır. Özel Ürünler modülünü açın ve bir özelleştirme şablonu yükleyin veya oluşturun. Bu şablonu özelleştirilebilir herhangi bir ürüne atamak için aşağıdaki seçme kutusunu kullanın.",
+        "textHeadline": "Şablon ataması"
+    },
+    "swag-migration": {
+        "index": {
+            "selectDataCard": {
+                "dataSelection": {
+                    "customProducts": "Özel ürünler"
+                },
+                "entities": {
+                    "swag_customized_products_template": "Şablon:",
+                    "swag_customized_products_template_option": "Seçenek:",
+                    "swag_customized_products_template_option_value": "Değer:"
+                }
+            }
+        }
+    }
+}

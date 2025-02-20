@@ -1,0 +1,117 @@
+{
+    "customizedProducts": {
+        "addToCart": {
+            "error": {
+                "default": "Er is een fout opgetreden bij het toevoegen van het aangepaste product aan de winkelwagen.",
+                "invalidExtensionType": "Ongeldig bestandstype gedetecteerd.",
+                "maxFileCountExceeded": "Maximale hoeveelheid overschreden.",
+                "maxFileSizeExceeded": "Maximum bestandgrootte overschreden.",
+                "notAvailable": "Een of meer aangepaste producten zijn niet langer beschikbaar met deze configuratie.",
+                "priceCalculation": "Er is een fout opgetreden bij het berekenen van de aangepaste productprijs.",
+                "templateAssigned": "Een of meer producten zijn nu aangepaste producten en moeten worden geconfigureerd."
+            },
+            "success": "Aangepast product is toegevoegd."
+        },
+        "cart": {
+            "configurationTitle": "{0} Geen configuratie - <a href=\"%path%\">Nu aanpassen!</a>|]0,Inf[ Configuratie"
+        },
+        "checkoutItem": {
+            "valueLabel": "Waarde:"
+        },
+        "configurationEdit": {
+            "label": "Configuratie bewerken",
+            "notFullyRestorable": "De configuratie is niet volledig hersteld, sommige opties kunnen worden gewijzigd.",
+            "notRestorable": "Configuratie kon niet worden hersteld."
+        },
+        "configurationShare": {
+            "button": "Delen",
+            "oneTimeLabel": "Eenmalige link",
+            "title": "Deel uw configuratie",
+            "unavailable": "De configuratie is verlopen en kan niet langer worden opgehaald."
+        },
+        "confirmInput": {
+            "label": "Ik heb de configuratie dubbel gecontroleerd en bevestig dat deze instellingen correct zijn."
+        },
+        "editor": {
+            "bold": "Vet",
+            "italic": "Cursief",
+            "strikeThrough": "Doorstrepen",
+            "textFormatting": "Tekstopmaak",
+            "underline": "Onderstrepen"
+        },
+        "exclusionViolations": {
+            "excludeItem": "De huidige combinatie van %1 en de volgende optie(s) is niet toegestaan: %2",
+            "headline": "Los de conflicten op"
+        },
+        "lineItem": {
+            "showConfiguration": "Configuratie tonen"
+        },
+        "optionRequired": "(vereist)",
+        "optionTypes": {
+            "numberfield": {
+                "errors": {
+                    "max": "Het nummer dat u hebt ingevoerd is te hoog",
+                    "min": "Het nummer dat u hebt ingevoerd is niet hoog genoeg",
+                    "required": "Dit veld is verplicht"
+                }
+            },
+            "selectNoValueText": "Geen selectie",
+            "textarea": {
+                "errors": {
+                    "max": "De tekst die u hebt ingevoerd is te lang",
+                    "min": "De tekst die u hebt ingevoerd is niet lang genoeg",
+                    "required": "Dit veld is verplicht"
+                }
+            },
+            "textareaClearButton": "Velden wissen",
+            "textfield": {
+                "errors": {
+                    "max": "De tekst die u hebt ingevoerd is te lang",
+                    "min": "De tekst die u hebt ingevoerd is niet lang genoeg",
+                    "required": "Dit veld is verplicht"
+                }
+            },
+            "upload": {
+                "dropzoneBrowseButton": "Bladeren",
+                "dropzoneHeadlineText": "Bestanden naar hier slepen en neerzetten",
+                "dropzoneRestrictionsText": "(Max. %maxCount% bestand(en), max. %maxFileSize% MB per bestand)",
+                "errors": {
+                    "fileCount": "Maximum aantal bestanden overschreden",
+                    "fileSize": "Maximale bestandsgrootte overschreden",
+                    "fileType": "Bestand heeft een ongeldig type",
+                    "generic": "Bestand kon niet worden geladen"
+                }
+            }
+        },
+        "paypal": {
+            "hint": "incl. configuratie"
+        },
+        "priceDisplay": {
+            "oneTimePrice": "Eenmalige toeslag",
+            "productPrice": "Artikelprijs",
+            "subTotal": "Subtotaal",
+            "summary": "Samenvatting",
+            "totalPrice": "Totaalprijs",
+            "unitPrice": "Per eenheidstoeslag"
+        },
+        "priceLabelNotice": "**Uiteindelijke prijzen kunnen afwijken, vanwege mogelijke herberekeningen in de winkelwagen.",
+        "priceTagFilter": {
+            "oneTimeSurchargeSuffix": "éénmalig",
+            "perItemSuffix": "per stuk"
+        },
+        "showPreview": {
+            "expandLabel": "toon meer",
+            "shrinkLabel": "toon minder"
+        },
+        "stepByStep": {
+            "navigation": {
+                "btnChangeConfiguration": "Wijzig configuratie",
+                "btnConfigureProduct": "Configureer product",
+                "btnFinish": "Voltooien",
+                "btnNext": "Volgende",
+                "btnPrev": "Terug",
+                "required": "Verplicht veld"
+            }
+        }
+    }
+}

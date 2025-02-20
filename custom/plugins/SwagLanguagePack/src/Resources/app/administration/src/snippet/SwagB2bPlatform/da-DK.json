@@ -1,0 +1,232 @@
+{
+    "b2b": {
+        "customer": {
+            "detail": {
+                "easymode": {
+                    "helpText": "Easy Mode aktiveret en mindre kompleks administration. Det betyder, at det ikke længere er nødvendigt at opretholde roller, budgetter og kontingenter! For at aktivere denne tilstand må brugeren ikke have oprettet nogen roller.",
+                    "isActive": "Nem tilstand er aktiv",
+                    "isNotActive": "Nem tilstand er ikke aktiv",
+                    "label": "Aktiver Easy Mode",
+                    "title": "Nem tilstand"
+                }
+            }
+        },
+        "global": {
+            "errors": {
+                "unexpectedErrorMessage": "Der opstod en fejl.",
+                "unexpectedErrorTitle": "Fejl!"
+            }
+        },
+        "order": {
+            "detail": {
+                "deliveryDateLabel": "Leveringsdato",
+                "orderReferenceLabel": "Ordrenummer"
+            }
+        }
+    },
+    "b2b-offer": {
+        "detail": {
+            "base": {
+                "labelCompany": "Selskab",
+                "labelCreated": "Dato oprettet",
+                "labelDiscount": "Rabat",
+                "labelEmail": "E-mail-adresse",
+                "labelExpirationDate": "Udløbsdato",
+                "labelExpirationTime": "Udløbstid",
+                "labelPositions": "Varer",
+                "labelState": "Stat",
+                "labelTotal": "Oprindelig pris (netto)",
+                "labelTotalDiscount": "Rabatpris (netto)",
+                "labelUpdated": "Dato for ændring",
+                "titleCompany": "Selskab",
+                "titleDetails": "Detaljer"
+            },
+            "commentPlaceholder": "kommentar",
+            "discount": {
+                "addProductLabel": "Tilføj produkt",
+                "addProductPlaceholder": "Søg...",
+                "columnDiscountPriceNet": "Anmodning",
+                "columnName": "Produkt",
+                "columnNewOffer": "Nyt tilbud",
+                "columnPriceNet": "Original",
+                "columnQuantity": "Mængde",
+                "columnReferenceNumber": "Produkt #",
+                "columnTotalNet": "I alt (netto)",
+                "contextMenuRemove": "Fjern element",
+                "discountLabel": "Yderligere rabat",
+                "labelComment": "kommentar",
+                "labelDiscount": "Rabat",
+                "labelDiscountType": "Rabattype",
+                "labelDiscountTypeAbsolute": "absolut",
+                "labelDiscountTypePercentage": "Procent",
+                "labelExpirationDate": "Udløbsdato",
+                "placeholderComment": "kommentar",
+                "summaryDate": "Dato",
+                "summaryTaxes": "MOMS",
+                "summaryTotalAmountNet": "I alt eksklusive moms",
+                "summaryTotalDiscount": "Samlet rabat",
+                "summaryTotalWithTax": "I alt inklusive moms"
+            },
+            "history": {
+                "authorAdmin": "Ejeren af butikken",
+                "labelComment": "kommentar",
+                "labelDiscountAmountNet": "- Rabatbeløb (netto):",
+                "labelExpirationDate": "Udløbsdato:",
+                "labelQuantity": "- Mængde:",
+                "messagePlaceholder": "Besked",
+                "new": "Ny værdi:",
+                "placeholder": "Der er ingen historie endnu.",
+                "previous": "Forrige værdi:",
+                "product": "Produkt:",
+                "productReference": "Referencenummer:",
+                "titleAddedPositions": "Tilføjet varer",
+                "titleChangedItemPrice": "Prisen på en vare ændret",
+                "titleDiscount": "Rabat ændret",
+                "titleDiscountAdded": "Rabat tilføjet",
+                "titleItemComment": "Emnekommentaren ændret",
+                "titleRemovedPositions": "Fjernede elementer",
+                "titleStatus": "Status ændret",
+                "titleUpdated": "Tilbuddet er opdateret",
+                "titleUpdatedPositions": "Opdaterede elementer"
+            },
+            "noComments": "Ingen kommentarer tilgængelige",
+            "offerPlaceholder": "Tilbudsoplysningerne kunne ikke indlæses.",
+            "title": "Tilbud",
+            "titleActivity": "Aktivitet",
+            "titleBase": "Detaljer",
+            "titlePositions": "Varer"
+        },
+        "general": {
+            "buttonAcceptOffer": "Accepter tilbud",
+            "buttonCancel": "annullere",
+            "buttonDeclineOffer": "Afvis tilbud",
+            "buttonDelete": "Slet",
+            "buttonMakeNewOffer": "Lav nyt tilbud",
+            "buttonReply": "Svar",
+            "buttonSave": "Gem",
+            "buttonSendMessage": "Send",
+            "buttonSendNewOffer": "Send nyt tilbud",
+            "buttonViewDebtor": "Se debitor",
+            "description": "Kundespecifikke tilbud",
+            "label": "Tilbud",
+            "offer_status_accepted_admin": "Sendt af butiksejer",
+            "offer_status_accepted_both": "Accepteret af begge",
+            "offer_status_accepted_user": "Sendt af bruger",
+            "offer_status_converted": "Omregnet",
+            "offer_status_declined_admin": "Afvist af butiksejer",
+            "offer_status_declined_user": "Afvist af bruger",
+            "offer_status_expired": "Udløbet",
+            "offer_status_open": "Åben",
+            "title": "Tilbud"
+        },
+        "list": {
+            "columnCreated": "Oprettelsesdato",
+            "columnDebtor": "Debitor",
+            "columnDebtorCompany": "Selskab",
+            "columnExpires": "Udløbsdato",
+            "columnId": "ID",
+            "columnListAmountNet": "Oprindelig pris",
+            "columnListDiscountAmountNet": "Rabat pris",
+            "columnPositions": "Varer",
+            "columnState": "Stat",
+            "columnTotalDiscount": "Rabat",
+            "columnUpdated": "Dato for ændring",
+            "contextMenuDebtor": "Vis debitor",
+            "contextMenuDelete": "Slet",
+            "contextMenuDetail": "Se tilbud",
+            "messageEmpty": "I øjeblikket er der ingen tilbud.",
+            "title": "Tilbud"
+        },
+        "modal": {
+            "textBulkDeleteConfirm": "Er du sikker på, at du vil slette de valgte tilbud?",
+            "textDeleteConfirm": "Er du sikker på, at du vil slette dette tilbud?",
+            "titleBulkDelete": "Slet valgte tilbud",
+            "titleDelete": "Slet tilbud"
+        },
+        "notifications": {
+            "messageCommentError": "Kommentar kunne ikke sendes.",
+            "messageDeleteError": "Tilbuddet kunne ikke slettes.",
+            "messageDetailError": "Tilbudsoplysningerne kunne ikke indlæses.",
+            "messageListError": "Tilbud kunne ikke indlæses.",
+            "messageOfferUpdatedError": "Tilbuddet kunne ikke opdateres.",
+            "messageProductSearchError": "Tilbuddet indeholder allerede dette produkt.",
+            "titleError": "Der opstod en fejl.",
+            "titleProductSearchError": "Produktet kunne ikke tilsættes."
+        }
+    },
+    "b2b-salesrep": {
+        "customer": {
+            "settings": {
+                "isDebtor": "Kunden er debitor",
+                "isSalesRepresentative": "Kunden er salgsrepræsentant",
+                "labelDebtor": "Markér som debitor",
+                "labelSalesRepresentative": "Markér som salgsrepræsentant",
+                "messageSaveError": "Der opstod en fejl under gemning af de nye indstillinger.",
+                "noDebtor": "Kunden er ikke debitor",
+                "noSalesRepresentative": "Kunden er ikke en salgsrepræsentant",
+                "salesRepresentativeClientSelection": {
+                    "assigned": "Tildelt",
+                    "company": "Selskab",
+                    "customerNumber": "Kundens nummer",
+                    "email": "E-mail",
+                    "firstName": "Fornavn",
+                    "lastName": "Efternavn",
+                    "owner": "Ejer",
+                    "searchbarPlaceholder": "Søg efter kunder...",
+                    "type": "Type"
+                },
+                "salesRepresentativeClients": {
+                    "owner": "Ejer"
+                },
+                "tab": "B2B-konfiguration",
+                "tabSalesRepresentativeClientSelection": "Kunder",
+                "title": "Tildel B2B-roller",
+                "titleDebtor": "Debitor",
+                "titleSalesRepresentative": "Salgsrepræsentant",
+                "titleSaveError": "Fejl under lagring"
+            }
+        },
+        "general": {
+            "description": "Tildeling af salgskonsulent",
+            "title": "B2B salgsrepræsentant"
+        }
+    },
+    "global": {
+        "businessEvents": {
+            "b2b_budget_notifiy_author": "Budgetmeddelelse",
+            "b2b_contact_password_activation_mail": "Aktivering af kontaktkonto",
+            "b2b_offer_status_notify_mail": "Tilbudsstatusændring",
+            "b2b_order_clearance_accepted": "Godkendelse af ordre accepteret",
+            "b2b_order_clearance_inquiry_mail": "Anmodning om godkendelse af ordre"
+        }
+    },
+    "sw-flow": {
+        "triggers": {
+            "activation": "Aktivering",
+            "author": "Forfatter",
+            "b2B": "B2B",
+            "budget": "Budget",
+            "clearance": "Rensning",
+            "contact": "Medarbejder",
+            "inquiry": "Forespørgsel",
+            "notifiy": "Underrette",
+            "notify": "Underrette",
+            "offer": "Citat",
+            "password": "Adgangskode",
+            "status": "Status"
+        }
+    },
+    "sw-privileges": {
+        "permissions": {
+            "b2b-offer": {
+                "label": "Tilbud"
+            },
+            "b2b-user": {
+                "label": "B2B-bruger"
+            },
+            "sales-representative-clients": {
+                "label": "Salgsrepræsentantkunder"
+            }
+        }
+    }
+}

@@ -1,0 +1,142 @@
+{
+    "publisher": {
+        "activity": {
+            "dates": {
+                "editedDaysAgo": "{1} 1 день тому | {days} днів тому",
+                "editedHoursAgo": "{1} 1 годину тому | {hours} годин тому",
+                "editedMinutesAgo": "{1} 1 хвилину тому | {minutes} хвилин тому",
+                "editedNow": "Щойно оновлено"
+            },
+            "feed": {
+                "badgeMessages": {
+                    "cms_page": {
+                        "discarded": "Чернетку <b>{draftName}</b> відхилено",
+                        "merged": "Чернетка <b>{draftName}</b> перенесена в основний макет"
+                    }
+                },
+                "badges": {
+                    "cms_page": {
+                        "discarded": "Чернетку відхилено",
+                        "draftCreated": "Чернетку створено",
+                        "layoutCreated": "Макет створено",
+                        "layoutEdited": "Макет відредаговано",
+                        "merged": "Опубліковано основний макет",
+                        "published": "Чернетка опублікована",
+                        "updated": "{1} 1 зміна внесена | {detailCount} внесено змін"
+                    }
+                },
+                "detail": {
+                    "cms_block": {
+                        "delete": "Блок видалено",
+                        "insert": "Блок доданий",
+                        "update": "Оновлений блок"
+                    },
+                    "cms_page": {
+                        "insert": "Макет створено",
+                        "update": "Макет оновлено"
+                    },
+                    "cms_section": {
+                        "delete": "Розділ видалено",
+                        "insert": "Розділ додано",
+                        "update": "Розділ оновлено"
+                    },
+                    "cms_slot": {
+                        "delete": "Слот видалено",
+                        "insert": "Слот доданий",
+                        "update": "Слот оновлено"
+                    }
+                },
+                "hideDetails": "Сховати зміни",
+                "showDetails": "Показати зміни",
+                "title": "Діяльність",
+                "whitespace": "Всі зміни, внесені в цей макет, будуть перелічені тут."
+            }
+        },
+        "detail": {
+            "action": {
+                "save": "Зберегти",
+                "saveAssign": "Зберегти та опублікувати",
+                "saveDraft": "Зберегти як нову чернетку"
+            },
+            "modal": {
+                "buttonCreateNewLayout": "Створити новий макет",
+                "buttonSaveAsNewDraft": "Ігнорувати це оновлення",
+                "buttonUpdateFromParent": "Оновлення з основного макета",
+                "cancel": "Скасувати",
+                "descriptionParentChanges": "Ви можете продовжувати використовувати цю чернетку або створити новий незалежний макет. Якщо ви оновите цю чернетку основним макетом, зміни, внесені до цієї чернетки, будуть втрачені.",
+                "discard": "Відхилити зміни",
+                "infoParentChanges": "Поки ви працювали над ццією чернеткою, основний макет було змінено.",
+                "publishAffectedCategories": "{1} Зміни макета торкнуться 1 активної категорії. | Зміни макета вплинуть на {count} активних категорій.",
+                "publishConfirmation": "Зберегти та опублікувати зміни?",
+                "publishInformation": "Збережені зміни будуть застосовані до вашого реального магазину та будуть видимі для клієнтів.",
+                "save": "Зберегти",
+                "saveAndPublish": "Зберегти та опублікувати зміни",
+                "saveAsDraft": "Зберегти як нову чернетку",
+                "saveDraftConfirmation": "Зберегти чернетку",
+                "saveDraftInformation": "Назвіть свій дизайн відповідно до змін, які ви внесли в макет, щоб ви могли легко знайти його знову пізніше.",
+                "saveDraftLabelName": "Ім’я",
+                "titleParentChanges": "Зміни в основному макеті",
+                "titlePublish": "Опублікувати зміни",
+                "titleSaveDraft": "Зберегти нову чернетку",
+                "titleUnsaved": "Незбережені зміни",
+                "unsavedLineConfirmation": "Зберегти зміни, внесені в макет?",
+                "unsavedLineInformation": "Зміни буде втрачено, якщо ви їх не збережете."
+            },
+            "preview": "Попередній перегляд",
+            "previewTooltip": "Буде показано лише збережений вміст",
+            "sidebar": {
+                "activity": {
+                    "title": "Діяльність",
+                    "whitespace": "Тут перераховані дії вас і ваших колег з цього макету."
+                }
+            }
+        },
+        "error": {
+            "action": {
+                "createNewLayout": "Не вдалося створити новий макет.",
+                "draft": "Неможливо створити чернетку.",
+                "duplicateDraft": "Чернетку не вдалося продублювати.",
+                "getDrafts": "Не вдалося завантажити чернетку.",
+                "getSalesChannelUrl": "Не вдалося знайти URL-адресу каналу продажів.",
+                "merge": "Чернетку не можна замінити.",
+                "saveAndPublish": "Чернетку не вдалося опублікувати.",
+                "saveCmsPage": "Не вдалося оновити макет.",
+                "updateFromParent": "Чернетка не може бути оновлена основним макетом."
+            },
+            "title": "Виникла помилка."
+        },
+        "listing": {
+            "draft": "Чернетка",
+            "draftPageType": "Чернетки",
+            "drafts": "{1} 1 Чернетка | {count} Чернеток",
+            "errors": {
+                "incompatibleWithCmsMessage": "Макети, які містять власні форми, не можна дублювати."
+            },
+            "gridAuthor": "Створено",
+            "gridCreatedAt": "Дата створення",
+            "gridName": "Ім'я",
+            "modal": {
+                "close": "Відхилити",
+                "placeholderSearch": "Пошук чернеток...",
+                "title": "Чернетки",
+                "whitespace": "Чернетки не знайдено."
+            }
+        }
+    },
+    "sw-cms": {
+        "detail": {
+            "label": {
+                "pageType": {
+                    "draft": "Чернетка"
+                }
+            }
+        }
+    },
+    "sw-privileges": {
+        "permissions": {
+            "publisher": {
+                "label": "Видавець"
+            }
+        }
+    }
+}

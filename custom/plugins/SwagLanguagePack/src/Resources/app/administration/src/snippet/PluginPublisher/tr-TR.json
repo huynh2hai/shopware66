@@ -1,0 +1,142 @@
+{
+    "publisher": {
+        "activity": {
+            "dates": {
+                "editedDaysAgo": "{1} 1 gün önce | {days} gün önce",
+                "editedHoursAgo": "{1} 1 saat önce | {hours} saat önce",
+                "editedMinutesAgo": "{1} 1 dakika önce | {minutes} dakika önce",
+                "editedNow": "Az önce düzenlendi"
+            },
+            "feed": {
+                "badgeMessages": {
+                    "cms_page": {
+                        "discarded": "Taslak <b>{draftName}</b> atıldı",
+                        "merged": "Taslak <b>{draftName}</b> ana düzene itildi"
+                    }
+                },
+                "badges": {
+                    "cms_page": {
+                        "discarded": "Taslak atıldı",
+                        "draftCreated": "Taslak oluşturuldu",
+                        "layoutCreated": "Düzen oluşturuldu",
+                        "layoutEdited": "Düzenlenen düzen",
+                        "merged": "Ana düzen yayınlandı",
+                        "published": "Taslak yayınlandı",
+                        "updated": "{1} 1 değişiklik yapıldı | {detailCount} değişiklik yapıldı"
+                    }
+                },
+                "detail": {
+                    "cms_block": {
+                        "delete": "Kaldırılan blok",
+                        "insert": "Blok eklendi",
+                        "update": "Güncellenmiş blok"
+                    },
+                    "cms_page": {
+                        "insert": "Oluşturulan düzen",
+                        "update": "Güncellenmiş düzen"
+                    },
+                    "cms_section": {
+                        "delete": "Kaldırılan bölüm",
+                        "insert": "Eklenen bölüm",
+                        "update": "Güncellenmiş bölüm"
+                    },
+                    "cms_slot": {
+                        "delete": "Kaldırılan yuva",
+                        "insert": "Eklenen yuva",
+                        "update": "Güncelleme yuvası"
+                    }
+                },
+                "hideDetails": "Değişiklikleri gizle",
+                "showDetails": "Değişiklikleri göster",
+                "title": "Aktivite",
+                "whitespace": "Bu düzende yapılan tüm değişiklikler burada listelenecektir."
+            }
+        },
+        "detail": {
+            "action": {
+                "save": "Kaydet",
+                "saveAssign": "Kaydet ve yayınla",
+                "saveDraft": "Yeni taslak olarak kaydet"
+            },
+            "modal": {
+                "buttonCreateNewLayout": "Yeni düzen oluştur",
+                "buttonSaveAsNewDraft": "Güncellemeyi yoksay",
+                "buttonUpdateFromParent": "Ana düzenden güncelleme",
+                "cancel": "İptal",
+                "descriptionParentChanges": "Bu taslağı kullanmaya devam edebilir veya yeni bir bağımsız düzen oluşturabilirsiniz. Taslağınızı ana düzen ile güncellerseniz, bu taslakta yapılan değişiklikler kaybolacaktır.",
+                "discard": "Değişiklikleri atın",
+                "infoParentChanges": "Bu taslak üzerinde çalışırken, ana düzen değiştirildi.",
+                "publishAffectedCategories": "{1} Düzen değişiklikleri 1 etkin kategoriyi etkiler. | Mizanpaj değişiklikleri {count} etkin kategoriyi etkiler.",
+                "publishConfirmation": "Değişikliklerinizi kaydetmek ve yayımlamak istiyor musunuz?",
+                "publishInformation": "Kaydedilen değişiklikler canlı mağazanıza uygulanacak ve müşteriler tarafından görülebilir.",
+                "save": "Kaydet",
+                "saveAndPublish": "Değişiklikleri kaydetme ve yayınlama",
+                "saveAsDraft": "Yeni taslak olarak kaydet",
+                "saveDraftConfirmation": "Taslak kaydet",
+                "saveDraftInformation": "Tasarımınızı düzende yaptığınız değişikliklere göre adlandırın, böylece daha sonra kolayca tekrar bulabilirsiniz.",
+                "saveDraftLabelName": "İsim",
+                "titleParentChanges": "Ana mizanpajdaki değişiklikler",
+                "titlePublish": "Değişiklikleri yayınlama",
+                "titleSaveDraft": "Yeni Taslak Kaydet",
+                "titleUnsaved": "Kaydedilmemiş değişiklikler",
+                "unsavedLineConfirmation": "Düzende yapılan değişiklikleri kaydedin mi?",
+                "unsavedLineInformation": "Değişiklikleriniz kaydetmezseniz kaybolacaktır."
+            },
+            "preview": "Önizleme",
+            "previewTooltip": "Yalnızca kaydedilmiş içerikler görüntülenir",
+            "sidebar": {
+                "activity": {
+                    "title": "Aktivite",
+                    "whitespace": "Sizin ve meslektaşlarınızın bu düzendeki faaliyetleri burada listelenmiştir."
+                }
+            }
+        },
+        "error": {
+            "action": {
+                "createNewLayout": "Yeni düzen oluşturulamadı.",
+                "draft": "Taslak oluşturulamadı.",
+                "duplicateDraft": "Taslak çoğaltılamadı.",
+                "getDrafts": "Taslaklar yüklenemedi.",
+                "getSalesChannelUrl": "Satış kanalı URL'si bulunamadı.",
+                "merge": "Taslak geçersiz kılınamadı.",
+                "saveAndPublish": "Taslak yayınlanamadı.",
+                "saveCmsPage": "Düzen güncellenemedi.",
+                "updateFromParent": "Taslak ana düzen tarafından güncellenemedi."
+            },
+            "title": "Bir hata oluştu."
+        },
+        "listing": {
+            "draft": "Taslak",
+            "draftPageType": "Taslaklar",
+            "drafts": "{1} 1 Taslak | {count} Taslaklar",
+            "errors": {
+                "incompatibleWithCmsMessage": "Özel formlar içeren düzenler çoğaltılamaz."
+            },
+            "gridAuthor": "Tarafından yaratıldı",
+            "gridCreatedAt": "Oluşturma tarihi",
+            "gridName": "İsim",
+            "modal": {
+                "close": "İptal",
+                "placeholderSearch": "Taslak ara...",
+                "title": "Taslakları",
+                "whitespace": "Taslak bulunamadı."
+            }
+        }
+    },
+    "sw-cms": {
+        "detail": {
+            "label": {
+                "pageType": {
+                    "draft": "Taslak"
+                }
+            }
+        }
+    },
+    "sw-privileges": {
+        "permissions": {
+            "publisher": {
+                "label": "Yayıncı"
+            }
+        }
+    }
+}

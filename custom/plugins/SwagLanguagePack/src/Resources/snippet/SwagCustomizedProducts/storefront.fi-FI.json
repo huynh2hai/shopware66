@@ -1,0 +1,117 @@
+{
+    "customizedProducts": {
+        "addToCart": {
+            "error": {
+                "default": "Ostoskoriin lisättäessä mukautettua tuotetta tapahtui virhe.",
+                "invalidExtensionType": "Virheellinen tiedostotyyppi havaittu.",
+                "maxFileCountExceeded": "Tiedoston enimmäismäärä ylitetty.",
+                "maxFileSizeExceeded": "Tiedoston enimmäiskoko ylitetty.",
+                "notAvailable": "Yhtä tai useampaa mukautettua tuotetta ei enää ole saatavilla tämän kokoonpanon kanssa.",
+                "priceCalculation": "Mukautetun tuotteen hintaa laskettaessa tapahtui virhe.",
+                "templateAssigned": "Yksi tai useampi tuote on nyt mukautettuja tuotteita, ja ne on määritettävä."
+            },
+            "success": "Mukautettu tuote on lisätty."
+        },
+        "cart": {
+            "configurationTitle": "{0} Ei kokoonpanoa - <a href=\"%path%\">Mukauta nyt!</a>|] 0, Inf [Kokoonpano"
+        },
+        "checkoutItem": {
+            "valueLabel": "Arvo:"
+        },
+        "configurationEdit": {
+            "label": "Muokkaa asetuksia",
+            "notFullyRestorable": "Kokoonpanoa ei ole täysin palautettu, jotkin vaihtoehdot voivat muuttua.",
+            "notRestorable": "Kokoonpanoa ei voitu palauttaa."
+        },
+        "configurationShare": {
+            "button": "Jaa",
+            "oneTimeLabel": "Yhden kerran linkki",
+            "title": "Määritysten jakaminen",
+            "unavailable": "Kokoonpano on vanhentunut tai sitä ei voi enää hakea."
+        },
+        "confirmInput": {
+            "label": "Tarkistin kokoonpanon ja vahvistan, että nämä asetukset ovat oikein."
+        },
+        "editor": {
+            "bold": "lihavoitu",
+            "italic": "Kursivointi",
+            "strikeThrough": "Lakko läpi",
+            "textFormatting": "Tekstin muotoilu",
+            "underline": "Alleviiva"
+        },
+        "exclusionViolations": {
+            "excludeItem": "Nykyinen %1 : n ja seuraavien vaihtoehtojen yhdistelmä ei ole sallittu: %2",
+            "headline": "Ratkaise ristiriidat"
+        },
+        "lineItem": {
+            "showConfiguration": "Näytä kokoonpano"
+        },
+        "optionRequired": "(pakollinen)",
+        "optionTypes": {
+            "numberfield": {
+                "errors": {
+                    "max": "Antamasi numero on liian korkea",
+                    "min": "Antamasi numero ei ole tarpeeksi korkea",
+                    "required": "Tämä kenttä on pakollinen"
+                }
+            },
+            "selectNoValueText": "Ei valintaa",
+            "textarea": {
+                "errors": {
+                    "max": "Antamasi teksti on liian pitkä",
+                    "min": "Antamasi teksti ei ole tarpeeksi pitkä",
+                    "required": "Tämä kenttä on pakollinen"
+                }
+            },
+            "textareaClearButton": "Selkeä kenttä",
+            "textfield": {
+                "errors": {
+                    "max": "Antamasi teksti on liian pitkä",
+                    "min": "Antamasi teksti ei ole tarpeeksi pitkä",
+                    "required": "Tämä kenttä on pakollinen"
+                }
+            },
+            "upload": {
+                "dropzoneBrowseButton": "selailla",
+                "dropzoneHeadlineText": "Vedä ja pudota tiedostoja tähän",
+                "dropzoneRestrictionsText": "(Max. %maxCount% tiedosto (t), max. %maxFileSize% Mt per tiedosto)",
+                "errors": {
+                    "fileCount": "Suurin sallittu tiedostojen määrä ylittynyt",
+                    "fileSize": "Tiedoston enimmäiskoko ylittynyt",
+                    "fileType": "Tiedoston tyyppi on virheellinen",
+                    "generic": "Tiedostoa ei voitu ladata"
+                }
+            }
+        },
+        "paypal": {
+            "hint": "Sisältää kokoonpanon"
+        },
+        "priceDisplay": {
+            "oneTimePrice": "Kertamaksu",
+            "productPrice": "Tuotteen hinta",
+            "subTotal": "Välikumma",
+            "summary": "Yhteenveto",
+            "totalPrice": "Kokonaishinta",
+            "unitPrice": "Yksikkökohtainen lisämaksu"
+        },
+        "priceLabelNotice": "**Lopulliset hinnat voivat poiketa ostoskorin mahdollisista uudelleenlaskennoista johtuen.",
+        "priceTagFilter": {
+            "oneTimeSurchargeSuffix": "kerran",
+            "perItemSuffix": "kappaleelta"
+        },
+        "showPreview": {
+            "expandLabel": "näytä lisää",
+            "shrinkLabel": "näytä vähemmän"
+        },
+        "stepByStep": {
+            "navigation": {
+                "btnChangeConfiguration": "Muuta kokoonpanoa",
+                "btnConfigureProduct": "Määritä tuote",
+                "btnFinish": "Viimeistele",
+                "btnNext": "Seuraava",
+                "btnPrev": "Takaisin",
+                "required": "Pakollinen kenttä"
+            }
+        }
+    }
+}

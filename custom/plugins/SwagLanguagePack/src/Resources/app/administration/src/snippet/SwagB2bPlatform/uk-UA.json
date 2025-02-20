@@ -1,0 +1,232 @@
+{
+    "b2b": {
+        "customer": {
+            "detail": {
+                "easymode": {
+                    "helpText": "Легкий режим увімкнув менш складне керування. Це означає, що більше не потрібно підтримувати ролі, бюджети та контингенти! Щоб активувати цей режим, користувач не повинен створювати ніяких ролей.",
+                    "isActive": "Легкий режим активний",
+                    "isNotActive": "Легкий режим не активний",
+                    "label": "Активуйте легкий режим",
+                    "title": "Легкий режим"
+                }
+            }
+        },
+        "global": {
+            "errors": {
+                "unexpectedErrorMessage": "Сталася помилка.",
+                "unexpectedErrorTitle": "Помилка!"
+            }
+        },
+        "order": {
+            "detail": {
+                "deliveryDateLabel": "Дата доставки",
+                "orderReferenceLabel": "Замовити довідковий номер"
+            }
+        }
+    },
+    "b2b-offer": {
+        "detail": {
+            "base": {
+                "labelCompany": "Компанія",
+                "labelCreated": "Дата створення",
+                "labelDiscount": "Знижка",
+                "labelEmail": "Адреса електронної пошти",
+                "labelExpirationDate": "Термін придатності",
+                "labelExpirationTime": "Термін придатності",
+                "labelPositions": "Предмети",
+                "labelState": "Держава",
+                "labelTotal": "Оригінальна ціна (нетто)",
+                "labelTotalDiscount": "Ціна зі знижкою (нетто)",
+                "labelUpdated": "Дата модифікації",
+                "titleCompany": "Компанія",
+                "titleDetails": "Деталі"
+            },
+            "commentPlaceholder": "Коментар",
+            "discount": {
+                "addProductLabel": "Додати товар",
+                "addProductPlaceholder": "Пошук...",
+                "columnDiscountPriceNet": "Запит",
+                "columnName": "Товар",
+                "columnNewOffer": "Нова пропозиція",
+                "columnPriceNet": "Оригінал",
+                "columnQuantity": "Кількість",
+                "columnReferenceNumber": "Товар #",
+                "columnTotalNet": "Всього (нетто)",
+                "contextMenuRemove": "Вилучити елемент",
+                "discountLabel": "Додаткова знижка",
+                "labelComment": "Коментар",
+                "labelDiscount": "Знижка",
+                "labelDiscountType": "Тип знижки",
+                "labelDiscountTypeAbsolute": "Абсолютна",
+                "labelDiscountTypePercentage": "Відсоток",
+                "labelExpirationDate": "Термін придатності",
+                "placeholderComment": "Коментар",
+                "summaryDate": "Дата",
+                "summaryTaxes": "ПДВ",
+                "summaryTotalAmountNet": "Всього без урахування ПДВ",
+                "summaryTotalDiscount": "Загальна знижка",
+                "summaryTotalWithTax": "Всього з урахуванням ПДВ"
+            },
+            "history": {
+                "authorAdmin": "Власник магазину",
+                "labelComment": "Коментар",
+                "labelDiscountAmountNet": "- Сума знижки (нетто):",
+                "labelExpirationDate": "Термін придатності:",
+                "labelQuantity": "- Кількість:",
+                "messagePlaceholder": "Повідомлення",
+                "new": "Нове значення:",
+                "placeholder": "Історії поки немає.",
+                "previous": "Попереднє значення:",
+                "product": "Товар:",
+                "productReference": "Номер довідки:",
+                "titleAddedPositions": "Додані товари",
+                "titleChangedItemPrice": "Ціна товару змінилася",
+                "titleDiscount": "Знижка змінилася",
+                "titleDiscountAdded": "Знижка додана",
+                "titleItemComment": "Коментар елемента змінено",
+                "titleRemovedPositions": "Вилучені елементи",
+                "titleStatus": "Статус змінено",
+                "titleUpdated": "Пропозиція оновлена",
+                "titleUpdatedPositions": "Оновлені елементи"
+            },
+            "noComments": "Немає коментарів",
+            "offerPlaceholder": "Подробиці пропозиції не можуть бути завантажені.",
+            "title": "Пропозиція",
+            "titleActivity": "Активність",
+            "titleBase": "Деталі",
+            "titlePositions": "Предмети"
+        },
+        "general": {
+            "buttonAcceptOffer": "Прийняти пропозицію",
+            "buttonCancel": "Скасувати",
+            "buttonDeclineOffer": "Відхилити пропозицію",
+            "buttonDelete": "Видалити",
+            "buttonMakeNewOffer": "Зробити нову пропозицію",
+            "buttonReply": "Відповісти",
+            "buttonSave": "Зберегти",
+            "buttonSendMessage": "Відправити",
+            "buttonSendNewOffer": "Надіслати нову пропозицію",
+            "buttonViewDebtor": "Подивитися боржника",
+            "description": "Специфічні пропозиції клієнтів",
+            "label": "Пропозиції",
+            "offer_status_accepted_admin": "Відправлено власником магазину",
+            "offer_status_accepted_both": "Прийнято обома",
+            "offer_status_accepted_user": "Відправлено користувачем",
+            "offer_status_converted": "Перетворено",
+            "offer_status_declined_admin": "Відхилено власником магазину",
+            "offer_status_declined_user": "Відхилено користувачем",
+            "offer_status_expired": "Термін дії минув",
+            "offer_status_open": "Відкрити",
+            "title": "Пропозиції"
+        },
+        "list": {
+            "columnCreated": "Дата створення",
+            "columnDebtor": "Боржник",
+            "columnDebtorCompany": "Компанія",
+            "columnExpires": "Термін придатності",
+            "columnId": "Ід",
+            "columnListAmountNet": "Оригінальна ціна",
+            "columnListDiscountAmountNet": "Ціна зі знижкою",
+            "columnPositions": "Предмети",
+            "columnState": "Держава",
+            "columnTotalDiscount": "Знижка",
+            "columnUpdated": "Дата модифікації",
+            "contextMenuDebtor": "Переглянути боржника",
+            "contextMenuDelete": "Видалити",
+            "contextMenuDetail": "Переглянути пропозицію",
+            "messageEmpty": "В даний час пропозицій немає.",
+            "title": "Пропозиції"
+        },
+        "modal": {
+            "textBulkDeleteConfirm": "Ви впевнені, що хочете видалити вибрані пропозиції?",
+            "textDeleteConfirm": "Ви впевнені, що хочете видалити цю пропозицію?",
+            "titleBulkDelete": "Видалити вибрані пропозиції",
+            "titleDelete": "Видалити пропозицію"
+        },
+        "notifications": {
+            "messageCommentError": "Не вдалося надіслати коментар.",
+            "messageDeleteError": "Пропозицію видалити не вдалося.",
+            "messageDetailError": "Подробиці пропозиції не можуть бути завантажені.",
+            "messageListError": "Пропозиції не можуть бути завантажені.",
+            "messageOfferUpdatedError": "Пропозиція не може бути оновлена.",
+            "messageProductSearchError": "Пропозиція вже містить цей товар.",
+            "titleError": "Сталася помилка.",
+            "titleProductSearchError": "Товар не вдалося додати."
+        }
+    },
+    "b2b-salesrep": {
+        "customer": {
+            "settings": {
+                "isDebtor": "Замовник - боржник",
+                "isSalesRepresentative": "Замовник - торговий представник",
+                "labelDebtor": "Позначити боржника",
+                "labelSalesRepresentative": "Позначити як торгового представника",
+                "messageSaveError": "Сталася помилка при збереженні нових налаштувань.",
+                "noDebtor": "Замовник не є боржником",
+                "noSalesRepresentative": "Замовник не є торговим представником",
+                "salesRepresentativeClientSelection": {
+                    "assigned": "Призначено",
+                    "company": "Компанія",
+                    "customerNumber": "Номер клієнта",
+                    "email": "E-mail",
+                    "firstName": "Прізвище",
+                    "lastName": "Прізвище",
+                    "owner": "Власник",
+                    "searchbarPlaceholder": "Пошук клієнтів...",
+                    "type": "Тип"
+                },
+                "salesRepresentativeClients": {
+                    "owner": "Власник"
+                },
+                "tab": "Налаштування B2B",
+                "tabSalesRepresentativeClientSelection": "Клієнти",
+                "title": "Призначення ролей B2B",
+                "titleDebtor": "Боржник",
+                "titleSalesRepresentative": "Торговий представник",
+                "titleSaveError": "Помилка під час збереження"
+            }
+        },
+        "general": {
+            "description": "Призначення клієнта торгового представника",
+            "title": "Торговий представник B2B"
+        }
+    },
+    "global": {
+        "businessEvents": {
+            "b2b_budget_notifiy_author": "Сповіщення про бюджет",
+            "b2b_contact_password_activation_mail": "Активація облікового запису контакту",
+            "b2b_offer_status_notify_mail": "Пропонувати зміну статусу",
+            "b2b_order_clearance_accepted": "Заявка прийнята",
+            "b2b_order_clearance_inquiry_mail": "Заявка прийнята"
+        }
+    },
+    "sw-flow": {
+        "triggers": {
+            "activation": "Активація",
+            "author": "Автор",
+            "b2B": "В2Б",
+            "budget": "Бюджет",
+            "clearance": "Оформлення",
+            "contact": "Співробітник",
+            "inquiry": "Запит",
+            "notifiy": "Повідомити",
+            "notify": "Повідомити",
+            "offer": "Цитата",
+            "password": "Пароль",
+            "status": "Статус"
+        }
+    },
+    "sw-privileges": {
+        "permissions": {
+            "b2b-offer": {
+                "label": "Пропозиції"
+            },
+            "b2b-user": {
+                "label": "B2B користувач"
+            },
+            "sales-representative-clients": {
+                "label": "Торговий представник клієнтів"
+            }
+        }
+    }
+}

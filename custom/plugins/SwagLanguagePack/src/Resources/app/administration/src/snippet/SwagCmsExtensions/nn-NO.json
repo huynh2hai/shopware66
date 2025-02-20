@@ -1,0 +1,209 @@
+{
+    "sw-restricted-rules": {
+        "restrictedAssignment": {
+            "swagCmsExtensionsBlockRules": "CMS-utvidelser: Blokker synlighet"
+        }
+    },
+    "swag-cms-extensions": {
+        "error-codes": {
+            "SWAG_SCROLL_NAVIGATION_DUPLICATE_VALUE_ERROR": "Verdien til dette feltet er allerede i bruk.",
+            "SWAG_SCROLL_NAVIGATION_EMPTY_FIELD_WHEN_ACTIVE_ERROR": "Dette felt må ikke være tomt, hvis navigationspunktet er aktivt.",
+            "SWAG_SCROLL_NAVIGATION_FIELD_TOO_LONG_ERROR": "Den maksimale størrelsen på dette feltet er overskredet."
+        },
+        "sw-cms": {
+            "components": {
+                "form-editor": {
+                    "addGroupButton": "Legg til gruppe",
+                    "emptyState": {
+                        "buttonText": "Opprett skjemafelt",
+                        "text": "Du har ikke opprettet noen skjemafelt ennå."
+                    },
+                    "group": {
+                        "actions": {
+                            "duplicate": "Duplikat",
+                            "moveDown": "Flytt ned",
+                            "moveToGroup": "Flytt til gruppe",
+                            "moveUp": "Flytt opp"
+                        },
+                        "field": {
+                            "addFieldButton": "Legg til felt",
+                            "fieldPrefix": "Feltet"
+                        },
+                        "groupNamePrefix": "Gruppe"
+                    },
+                    "moveToGroupModal": {
+                        "groupSelectLabel": "Gruppe",
+                        "primaryButtonText": "Flytt",
+                        "title": "Flytt til gruppe"
+                    },
+                    "settings-field": {
+                        "defaultValueFieldLabel": "Standardverdi",
+                        "defaultValues": {
+                            "checked": "Sjekket",
+                            "notChecked": "Ikke sjekket"
+                        },
+                        "entityFieldLabel": "Enhet",
+                        "errorMessageFieldLabel": "Feilmelding",
+                        "internalNameHelpText": "Det interne navnet fungerer som en unik identifikasjon for bruken av dette feltet som en variabel i f.eks. E-postmaler.",
+                        "maxFieldLabel": "Maks.",
+                        "minFieldLabel": "Min.",
+                        "modeFieldLabel": "Innhold",
+                        "modeOptionCustom": "Tilpasset",
+                        "modeOptionEntity": "Enhet",
+                        "optionsFieldLabel": "Verdier",
+                        "placeholderFieldLabel": "Plassholder",
+                        "requiredFieldLabel": "Påkrevd felt",
+                        "rowsFieldLabel": "Høyde",
+                        "rowsLabel": "{n} rad | {n} rader",
+                        "scalableFieldLabel": "Skalerbar",
+                        "stepFieldLabel": "Trinn",
+                        "titleFieldLabel": "Tittel",
+                        "typeFieldLabel": "Type",
+                        "types": {
+                            "checkbox": "Avmerkingsboks",
+                            "email": "E-post",
+                            "number": "Nummer",
+                            "select": "Velg",
+                            "text": "Tekst",
+                            "textarea": "Tekstområde"
+                        },
+                        "widthFieldLabel": "Bredde"
+                    },
+                    "settings-group": {
+                        "explanation": "Grupper bidrar til å strukturere skjemaet. Alle feltene i en gruppe danner en visuell inndeling.",
+                        "internalNameHelpText": "Det interne navnet fungerer som en unik identifikasjon for bruken av denne gruppen som en variabel i f.eks. E-postmaler.",
+                        "titleFieldLabel": "Overskrift"
+                    },
+                    "title": "Felt"
+                },
+                "sw-cms-slot": {
+                    "formModalPrimary": "Opprette",
+                    "formModalTitle": "Opprett skjema"
+                }
+            },
+            "detail": {
+                "blockRule": {
+                    "alwaysVisiblePlaceholder": "Alltid synlig (standard)",
+                    "invertedSwitchLabel": "Synlig, hvis regelen ikke gjelder",
+                    "ruleHelpText": "Definer betingelser som må oppfylles for å vise denne blokken.",
+                    "ruleTitle": "Synlighet",
+                    "sidebarHeaderBlockBehaviorSettings": "Regler"
+                },
+                "errors": {
+                    "customFormConfigurationInvalid": "Ett eller flere egendefinerte skjemaelementer har en ugyldig konfigurasjon. Kontroller alle konfigurasjonene dine."
+                },
+                "quickview": {
+                    "showQuickviewHelpText": "Når du klikker på produktrelaterte blokker, vises Quickview i stedet for detaljsiden.",
+                    "showQuickviewLabel": "Bruk Quickview",
+                    "sidebarHeaderBlockBehaviorSettings": "Hurtigvisning"
+                },
+                "scrollNavigation": {
+                    "anchorSwitch": "Angi navigasjonspunkt",
+                    "anchorTitle": "Navn på navigasjonspunkt",
+                    "anchorTitleHelpText": "Navigasjonspunktene vises i butikkfronten som en navigerbar liste over tilgjengelige seksjoner.",
+                    "duplicateDisplayNameMessage": "Dette navigasjonspunktet finnes allerede: \"{currentName}».",
+                    "invalidDisplayNameLengthMessage": "Minst ett av dine aktive navigasjonspunkter har ikke noe navn. | Navnet på dette navigasjonspunktet overskrider den maksimale lengden på 255 tegn: \"{truncatedName}»",
+                    "pageSettings": {
+                        "activeHelpText": "Animert rulling gjør navigasjonen mellom navigasjonspunkter mer flytende. Verdier mellom 500 ms og 1000 ms anbefales for en jevn rulling.",
+                        "activeLabel": "Animert rulling",
+                        "advancedSettingsLabel": "Avanserte innstillinger",
+                        "bouncyLabel": "Bouncy rulling",
+                        "description": "Hvis du vil bruke animert rulling, må du kontrollere at du har aktivert de nødvendige navigasjonspunktene og tilordnede navn.",
+                        "durationLabel": "Varighet",
+                        "durationSuffix": "ms",
+                        "easing": {
+                            "in": "Akselererende (enkel i)",
+                            "inOut": "Akselererende og retarderende (Enkel InOut)",
+                            "linear": "Konstant (lineær)",
+                            "out": "Retardasjon (letthet ut)"
+                        },
+                        "easingDegreeHelpText": "Graden angir størrelsen på akselerasjonen eller retardasjonen. Jo lavere grad, jo jevnere rullingen. En verdi mellom 2 og 5 anbefales for intuitiv rulling. Denne verdien påvirker ikke bouncy eller lineær rulling.",
+                        "easingDegreeLabel": "Grad av bane",
+                        "easingLabel": "Rulleatferd",
+                        "nativeScrollingHelpText": "Hvis dette alternativet er aktivert, brukes nettleserens standard rulleadferd. Hvis deaktivert, klikker du på en lenke, får nettleserens fokus til å hoppe til målposisjonen.",
+                        "nativeScrollingLabel": "Innfødt rulling",
+                        "title": "Bla navigasjon"
+                    },
+                    "title": "Bla navigasjon"
+                }
+            },
+            "elements": {
+                "custom-form": {
+                    "config": {
+                        "editFormTemplateLink": "Rediger maler",
+                        "templateSelectLabel": "Mal",
+                        "templateSelectPlaceholder": "Ingen"
+                    },
+                    "createTemplateModal": {
+                        "overwriteButtonLabel": "Overskriv",
+                        "overwriteConfirmationText": "Er du sikker, at du vil overskrive skjemamalen \"<span>{templateName}</span>«?",
+                        "overwriteLinkText": "Overskriv eksisterende skjemamal",
+                        "overwriteMessage": "Form mal har blitt overskrevet!",
+                        "overwriteSelectLabel": "Skjema mal",
+                        "overwriteWarningText": "Det finnes allerede en skjemamal med dette navnet.",
+                        "placeholder": "Navngiv din formal...",
+                        "successMessage": "Skjemamalen har blitt lagret!",
+                        "templateNameLabel": "Navn",
+                        "titles": {
+                            "default": "Lagre som skjemamal",
+                            "overwrite": "Overskriv skjemamal"
+                        }
+                    },
+                    "editor": {
+                        "footer": {
+                            "createTemplateButton": "Lagre som mal"
+                        },
+                        "tabs": {
+                            "fields": {
+                                "tabTitle": "Felt",
+                                "templateLabel": "Mal",
+                                "templateText": "Spar tid i fremtiden og lagre dette skjemaet som en mal."
+                            },
+                            "options": {
+                                "confirmationTextLabel": "Bekreftelse tekst",
+                                "headlineLabel": "Overskrift",
+                                "internalNameLabel": "Navn (internt)",
+                                "mailTemplateLabel": "E-postmal",
+                                "tabTitle": "Alternativer"
+                            }
+                        },
+                        "title": "Skjemainnstillinger"
+                    },
+                    "label": "Egendefinert skjema",
+                    "templateListing": {
+                        "emptyState": "Ingen maler funnet",
+                        "renameContextAction": "Gi nytt navn",
+                        "templateNameLabel": "Navn på mal"
+                    }
+                }
+            },
+            "section": {
+                "actions": {
+                    "copySuffix": "(Kopier)",
+                    "pageForm": {
+                        "emptyAnchorName": "(Ingen navn er angitt)",
+                        "labelPrefix": "Navigasjon"
+                    },
+                    "viewports": {
+                        "emptyAnchorName": "(Ingen navn er angitt)",
+                        "tooltipPrefix": "Navigasjonspunkt"
+                    }
+                }
+            },
+            "sidebar": {
+                "emptyAnchorName": "(Ingen navn er angitt)",
+                "navElement": {
+                    "blockRuleTooltip": "Synligheten til dette elementet er begrenset av en regel."
+                },
+                "rulesOnAllBlocks": "Denne delen har bare innhold med begrenset synlighet. Vær oppmerksom på at enkelte kunder kan se en tom del her."
+            }
+        },
+        "sw-settings-rule": {
+            "detail": {
+                "associations": {
+                    "blockVisibility": "CMS-utvidelser: Blokker synlighet"
+                }
+            }
+        }
+    }
+}

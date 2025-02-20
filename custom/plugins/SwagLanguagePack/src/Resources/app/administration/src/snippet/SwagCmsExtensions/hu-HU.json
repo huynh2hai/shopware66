@@ -1,0 +1,209 @@
+{
+    "sw-restricted-rules": {
+        "restrictedAssignment": {
+            "swagCmsExtensionsBlockRules": "CMS Extensions: Blokk láthatósága"
+        }
+    },
+    "swag-cms-extensions": {
+        "error-codes": {
+            "SWAG_SCROLL_NAVIGATION_DUPLICATE_VALUE_ERROR": "A mező értéke már használatban van.",
+            "SWAG_SCROLL_NAVIGATION_EMPTY_FIELD_WHEN_ACTIVE_ERROR": "Ez a mező nem lehet üres, ha a navigációs pont aktív.",
+            "SWAG_SCROLL_NAVIGATION_FIELD_TOO_LONG_ERROR": "A mező maximális méretét túllépték."
+        },
+        "sw-cms": {
+            "components": {
+                "form-editor": {
+                    "addGroupButton": "Csoport hozzáadása",
+                    "emptyState": {
+                        "buttonText": "Űrlapmező létrehozása",
+                        "text": "Még nem hozott létre űrlapmezőket."
+                    },
+                    "group": {
+                        "actions": {
+                            "duplicate": "Duplikált",
+                            "moveDown": "Mozgás lefelé",
+                            "moveToGroup": "Ugrás a csoportra",
+                            "moveUp": "Mozgás felfelé"
+                        },
+                        "field": {
+                            "addFieldButton": "Mező hozzáadása",
+                            "fieldPrefix": "Mező"
+                        },
+                        "groupNamePrefix": "Csoport"
+                    },
+                    "moveToGroupModal": {
+                        "groupSelectLabel": "Csoport",
+                        "primaryButtonText": "Mozgás",
+                        "title": "Ugrás a csoportra"
+                    },
+                    "settings-field": {
+                        "defaultValueFieldLabel": "Alapértelmezett érték",
+                        "defaultValues": {
+                            "checked": "Ellenőrizte",
+                            "notChecked": "Nincs bejelölve"
+                        },
+                        "entityFieldLabel": "Szervezet",
+                        "errorMessageFieldLabel": "Hibaüzenet",
+                        "internalNameHelpText": "A belső név egyedi azonosítóként szolgál ennek a mezőnek a változóként való használatához például e-mail sablonokban.",
+                        "maxFieldLabel": "Max.",
+                        "minFieldLabel": "Min.",
+                        "modeFieldLabel": "Tartalom",
+                        "modeOptionCustom": "Egyéni",
+                        "modeOptionEntity": "Szervezet",
+                        "optionsFieldLabel": "Érték",
+                        "placeholderFieldLabel": "Helyőrző",
+                        "requiredFieldLabel": "Kötelező mező",
+                        "rowsFieldLabel": "Magasság",
+                        "rowsLabel": "{n} sor | {n} sor",
+                        "scalableFieldLabel": "Méretezhető",
+                        "stepFieldLabel": "Lépés",
+                        "titleFieldLabel": "Cím",
+                        "typeFieldLabel": "Típus",
+                        "types": {
+                            "checkbox": "Jelölőnégyzet",
+                            "email": "E-mail",
+                            "number": "Szám",
+                            "select": "Válassza",
+                            "text": "Szöveg",
+                            "textarea": "Textarea"
+                        },
+                        "widthFieldLabel": "Szélesség"
+                    },
+                    "settings-group": {
+                        "explanation": "A csoportok segítenek az űrlap felépítésében. A csoporton belüli összes mező vizuális szakaszt képez.",
+                        "internalNameHelpText": "A belső név egyedi azonosítóként szolgál ennek a csoportnak a változóként való használatához pl. E-mail sablonokban.",
+                        "titleFieldLabel": "Főcím"
+                    },
+                    "title": "mezők"
+                },
+                "sw-cms-slot": {
+                    "formModalPrimary": "létrehozás",
+                    "formModalTitle": "Űrlap létrehozása"
+                }
+            },
+            "detail": {
+                "blockRule": {
+                    "alwaysVisiblePlaceholder": "Mindig látható (alapértelmezett)",
+                    "invertedSwitchLabel": "Látható, ha a szabály nem érvényes",
+                    "ruleHelpText": "Határozza meg azokat a feltételeket, amelyeknek teljesíteniük kell a blokk megjelenítéséhez.",
+                    "ruleTitle": "Láthatóság",
+                    "sidebarHeaderBlockBehaviorSettings": "Szabályok"
+                },
+                "errors": {
+                    "customFormConfigurationInvalid": "Egy vagy több egyéni űrlapelem érvénytelen konfigurációval rendelkezik. Kérjük, ellenőrizze az összes konfigurációt."
+                },
+                "quickview": {
+                    "showQuickviewHelpText": "Amikor a termékkel kapcsolatos blokkokra kattint, a részletoldal helyett a Quickview jelenik meg.",
+                    "showQuickviewLabel": "Gyorsnézet használata",
+                    "sidebarHeaderBlockBehaviorSettings": "Gyorsnézet"
+                },
+                "scrollNavigation": {
+                    "anchorSwitch": "Navigációs pont beállítása",
+                    "anchorTitle": "Navigációs pont neve",
+                    "anchorTitleHelpText": "A navigációs pontok az elérhető szakaszok navigálható listájaként jelennek meg az üzletben.",
+                    "duplicateDisplayNameMessage": "Ez a navigációs pont már létezik: \"{currentName}”.",
+                    "invalidDisplayNameLengthMessage": "Legalább az egyik aktív navigációs pontnak nincs neve. | A navigációs pont neve meghaladja a 255 karaktert: \"{truncatedName}”",
+                    "pageSettings": {
+                        "activeHelpText": "Az animált görgetés folyékonyabbá teszi a navigációs pontok közötti navigációt. Az 500ms és 1000 ms közötti értékek a gördülékeny görgetés érdekében ajánlottak.",
+                        "activeLabel": "Animált görgetés",
+                        "advancedSettingsLabel": "Speciális beállítások",
+                        "bouncyLabel": "Ugráló görgetés",
+                        "description": "Animált görgetés használatához győződjön meg arról, hogy aktiválta a szükséges navigációs pontokat és a hozzárendelt neveket.",
+                        "durationLabel": "tartam",
+                        "durationSuffix": "ms",
+                        "easing": {
+                            "in": "Gyorsítás (Könnyű beadás)",
+                            "inOut": "Gyorsítás és lassítás (Könnyű InOut)",
+                            "linear": "Állandó (lineáris)",
+                            "out": "Lelasodás (könnyű kimenet)"
+                        },
+                        "easingDegreeHelpText": "A fok a gyorsulás vagy lassulás nagyságát jelzi. Minél alacsonyabb a fok, annál simább a görgetés. Az intuitív görgetéshez 2 és 5 közötti érték ajánlott. Ez az érték nem befolyásolja a visszapattanást vagy a lineáris görgetést.",
+                        "easingDegreeLabel": "A röppálya mértéke",
+                        "easingLabel": "Görgetési viselkedés",
+                        "nativeScrollingHelpText": "Ha ez a beállítás engedélyezve van, akkor a böngésző alapértelmezett görgetési viselkedését használja. Ha le van tiltva, egy hivatkozásra kattintva a böngésző fókusza a célpozícióra ugrik.",
+                        "nativeScrollingLabel": "Natív görgetés",
+                        "title": "Navigáció görgetése"
+                    },
+                    "title": "Navigáció görgetése"
+                }
+            },
+            "elements": {
+                "custom-form": {
+                    "config": {
+                        "editFormTemplateLink": "Sablonok szerkesztése",
+                        "templateSelectLabel": "Template",
+                        "templateSelectPlaceholder": "Nincs"
+                    },
+                    "createTemplateModal": {
+                        "overwriteButtonLabel": "Felülírás",
+                        "overwriteConfirmationText": "Biztos benne, hogy felül szeretné írni a \"<span>{templateName}</span>„űrlapsablont?",
+                        "overwriteLinkText": "Meglévő űrlapsablon felülírása",
+                        "overwriteMessage": "Űrlap sablon felülírásra került!",
+                        "overwriteSelectLabel": "Űrlap sablon",
+                        "overwriteWarningText": "Már létezik ilyen nevű űrlapsablon.",
+                        "placeholder": "Adja meg az űrlapsablont...",
+                        "successMessage": "Űrlap sablon mentve!",
+                        "templateNameLabel": "Név",
+                        "titles": {
+                            "default": "Mentés űrlapsablonként",
+                            "overwrite": "Űrlapsablon felülírása"
+                        }
+                    },
+                    "editor": {
+                        "footer": {
+                            "createTemplateButton": "Mentés sablonként"
+                        },
+                        "tabs": {
+                            "fields": {
+                                "tabTitle": "mezők",
+                                "templateLabel": "Template",
+                                "templateText": "Takarítson meg időt a jövőben, és mentse ezt az űrlapot sablonként."
+                            },
+                            "options": {
+                                "confirmationTextLabel": "Megerősítés szövege",
+                                "headlineLabel": "Főcím",
+                                "internalNameLabel": "Név (belső)",
+                                "mailTemplateLabel": "E-mail sablon",
+                                "tabTitle": "Opciók"
+                            }
+                        },
+                        "title": "Űrlap beállítások"
+                    },
+                    "label": "Egyéni űrlap",
+                    "templateListing": {
+                        "emptyState": "Nem található sablonok",
+                        "renameContextAction": "Átnevezés",
+                        "templateNameLabel": "Sablon neve"
+                    }
+                }
+            },
+            "section": {
+                "actions": {
+                    "copySuffix": "(Másolás)",
+                    "pageForm": {
+                        "emptyAnchorName": "(Nincs megadva név)",
+                        "labelPrefix": "Navigációs pont"
+                    },
+                    "viewports": {
+                        "emptyAnchorName": "(Nincs megadva név)",
+                        "tooltipPrefix": "Navigációs pont:"
+                    }
+                }
+            },
+            "sidebar": {
+                "emptyAnchorName": "(Nincs megadva név)",
+                "navElement": {
+                    "blockRuleTooltip": "Ennek az elemnek a láthatóságát egy szabály korlátozza."
+                },
+                "rulesOnAllBlocks": "Ez a szakasz csak korlátozott látótávolságú tartalommal rendelkezik. Vegye figyelembe, hogy egyes ügyfelek egy üres szakaszt láthatnak itt."
+            }
+        },
+        "sw-settings-rule": {
+            "detail": {
+                "associations": {
+                    "blockVisibility": "CMS Extensions: Blokk láthatósága"
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,232 @@
+{
+    "b2b": {
+        "customer": {
+            "detail": {
+                "easymode": {
+                    "helpText": "Η εύκολη λειτουργία επέτρεψε μια λιγότερο περίπλοκη διαχείριση. Αυτό σημαίνει ότι δεν είναι πλέον απαραίτητο να διατηρήσουμε τους ρόλους, τους προϋπολογισμούς και τα ενδεχόμενα! Για να ενεργοποιήσετε αυτήν τη λειτουργία, ο χρήστης δεν πρέπει να έχει δημιουργήσει ρόλους.",
+                    "isActive": "Η εύκολη λειτουργία είναι ενεργή",
+                    "isNotActive": "Η εύκολη λειτουργία δεν είναι ενεργή",
+                    "label": "Ενεργοποίηση εύκολης λειτουργίας",
+                    "title": "Εύκολη λειτουργία"
+                }
+            }
+        },
+        "global": {
+            "errors": {
+                "unexpectedErrorMessage": "Παρουσιάστηκε ένα σφάλμα.",
+                "unexpectedErrorTitle": "Σφάλμα!"
+            }
+        },
+        "order": {
+            "detail": {
+                "deliveryDateLabel": "Ημερομηνία παράδοσης",
+                "orderReferenceLabel": "Αριθμός αναφοράς σειράς"
+            }
+        }
+    },
+    "b2b-offer": {
+        "detail": {
+            "base": {
+                "labelCompany": "Εταιρία",
+                "labelCreated": "Ημερομηνία δημιουργίας",
+                "labelDiscount": "Έκπτωση",
+                "labelEmail": "Διεύθυνση ηλεκτρονικού ταχυδρομείου",
+                "labelExpirationDate": "Ημερομηνία λήξης",
+                "labelExpirationTime": "Χρόνος λήξης",
+                "labelPositions": "Αντικείμενα",
+                "labelState": "Κράτος",
+                "labelTotal": "Αρχική τιμή (καθαρή)",
+                "labelTotalDiscount": "Τιμή έκπτωσης (καθαρή)",
+                "labelUpdated": "Ημερομηνία τροποποίησης",
+                "titleCompany": "Εταιρία",
+                "titleDetails": "Λεπτομέρειες"
+            },
+            "commentPlaceholder": "Σχόλιο",
+            "discount": {
+                "addProductLabel": "Προσθήκη προϊόντος",
+                "addProductPlaceholder": "Αναζήτηση...",
+                "columnDiscountPriceNet": "Αίτημα",
+                "columnName": "Προϊόν",
+                "columnNewOffer": "Νέα προσφορά",
+                "columnPriceNet": "Πρωτότυπο",
+                "columnQuantity": "Ποσότητα",
+                "columnReferenceNumber": "# Προϊόν",
+                "columnTotalNet": "Σύνολο (καθαρό)",
+                "contextMenuRemove": "Αφαίρεση αντικειμένου",
+                "discountLabel": "Πρόσθετη έκπτωση",
+                "labelComment": "Σχόλιο",
+                "labelDiscount": "Έκπτωση",
+                "labelDiscountType": "Τύπος έκπτωσης",
+                "labelDiscountTypeAbsolute": "Απόλυτο",
+                "labelDiscountTypePercentage": "Ποσοστό",
+                "labelExpirationDate": "Ημερομηνία λήξης",
+                "placeholderComment": "Σχόλιο",
+                "summaryDate": "Ημερομηνία",
+                "summaryTaxes": "ΦΠΑ",
+                "summaryTotalAmountNet": "Σύνολο χωρίς ΦΠΑ",
+                "summaryTotalDiscount": "Συνολική Έκπτωση",
+                "summaryTotalWithTax": "Σύνολο συμπεριλαμβανομένου του ΦΠΑ"
+            },
+            "history": {
+                "authorAdmin": "Ιδιοκτήτης",
+                "labelComment": "Σχόλιο",
+                "labelDiscountAmountNet": "- Ποσό έκπτωσης (καθαρό):",
+                "labelExpirationDate": "Ημερομηνία λήξης:",
+                "labelQuantity": "- Ποσότητα:",
+                "messagePlaceholder": "Μήνυμα",
+                "new": "Νέα τιμή:",
+                "placeholder": "Δεν υπάρχει ακόμα ιστορία.",
+                "previous": "Προηγούμενη τιμή:",
+                "product": "Προϊόν:",
+                "productReference": "Αριθμός αναφοράς:",
+                "titleAddedPositions": "Προστέθηκαν αντικείμενα",
+                "titleChangedItemPrice": "Η τιμή ενός στοιχείου άλλαξε",
+                "titleDiscount": "Η έκπτωση άλλαξε",
+                "titleDiscountAdded": "Η έκπτωση προστέθηκε",
+                "titleItemComment": "Το σχόλιο αντικειμένου άλλαξε",
+                "titleRemovedPositions": "Καταργημένα αντικείμενα",
+                "titleStatus": "Αλλαγή κατάστασης",
+                "titleUpdated": "Η προσφορά ενημερώθηκε",
+                "titleUpdatedPositions": "Ενημερωμένα στοιχεία"
+            },
+            "noComments": "Δεν υπάρχουν διαθέσιμα σχόλια",
+            "offerPlaceholder": "Δεν ήταν δυνατή η φόρτωση των στοιχείων της προσφοράς.",
+            "title": "Προσφορά",
+            "titleActivity": "Δραστηριότητα",
+            "titleBase": "Λεπτομέρειες",
+            "titlePositions": "Αντικείμενα"
+        },
+        "general": {
+            "buttonAcceptOffer": "Αποδοχή προσφοράς",
+            "buttonCancel": "Ακύρωση",
+            "buttonDeclineOffer": "Προσφορά παρακμής",
+            "buttonDelete": "Διαγραφή",
+            "buttonMakeNewOffer": "Κάντε νέα προσφορά",
+            "buttonReply": "Απάντηση",
+            "buttonSave": "Αποθηκεύστε",
+            "buttonSendMessage": "Αποστολή",
+            "buttonSendNewOffer": "Αποστολή νέας προσφοράς",
+            "buttonViewDebtor": "Προβολή οφειλέτη",
+            "description": "Προσφορές που αφορούν τον πελάτη",
+            "label": "Προσφορές",
+            "offer_status_accepted_admin": "Αποστολή από ιδιοκτήτη καταστήματος",
+            "offer_status_accepted_both": "Αποδεκτό και από τους",
+            "offer_status_accepted_user": "Απεστάλη από το χρήστη",
+            "offer_status_converted": "Μετατροπή",
+            "offer_status_declined_admin": "Απορρίφθηκε από τον ιδιοκτήτη καταστήματος",
+            "offer_status_declined_user": "Απορρίφθηκε από το χρήστη",
+            "offer_status_expired": "Έληξε",
+            "offer_status_open": "Ανοιχτό",
+            "title": "Προσφορές"
+        },
+        "list": {
+            "columnCreated": "Ημερομηνία δημιουργίας",
+            "columnDebtor": "Οφειλέτης",
+            "columnDebtorCompany": "Εταιρία",
+            "columnExpires": "Ημερομηνία λήξης",
+            "columnId": "Id",
+            "columnListAmountNet": "Αρχική τιμή",
+            "columnListDiscountAmountNet": "Τιμή έκπτωσης",
+            "columnPositions": "Αντικείμενα",
+            "columnState": "Κράτος",
+            "columnTotalDiscount": "Έκπτωση",
+            "columnUpdated": "Ημερομηνία τροποποίησης",
+            "contextMenuDebtor": "Προβολή οφειλέτη",
+            "contextMenuDelete": "Διαγραφή",
+            "contextMenuDetail": "Προβολή Προσφοράς",
+            "messageEmpty": "Αυτή τη στιγμή δεν υπάρχουν προσφορές.",
+            "title": "Προσφορές"
+        },
+        "modal": {
+            "textBulkDeleteConfirm": "Είστε βέβαιοι ότι θέλετε να διαγράψετε τις επιλεγμένες προσφορές;",
+            "textDeleteConfirm": "Είστε βέβαιοι ότι θέλετε να διαγράψετε αυτή την προσφορά;",
+            "titleBulkDelete": "Διαγραφή επιλεγμένων προσφορών",
+            "titleDelete": "Διαγραφή προσφοράς"
+        },
+        "notifications": {
+            "messageCommentError": "Δεν ήταν δυνατή η αποστολή του σχολίου.",
+            "messageDeleteError": "Η προσφορά δεν μπορούσε να διαγραφεί.",
+            "messageDetailError": "Δεν ήταν δυνατή η φόρτωση των στοιχείων της προσφοράς.",
+            "messageListError": "Οι προσφορές δεν ήταν δυνατή η φόρτωση.",
+            "messageOfferUpdatedError": "Η προσφορά δεν ήταν δυνατή η ενημέρωση.",
+            "messageProductSearchError": "Η προσφορά περιέχει ήδη αυτό το προϊόν.",
+            "titleError": "Παρουσιάστηκε ένα σφάλμα.",
+            "titleProductSearchError": "Δεν ήταν δυνατή η προσθήκη του προϊόντος."
+        }
+    },
+    "b2b-salesrep": {
+        "customer": {
+            "settings": {
+                "isDebtor": "Ο πελάτης είναι οφειλέτης",
+                "isSalesRepresentative": "Ο πελάτης είναι αντιπρόσωπος πωλήσεων",
+                "labelDebtor": "Σήμανση ως οφειλέτη",
+                "labelSalesRepresentative": "Σήμανση ως αντιπρόσωπος πωλήσεων",
+                "messageSaveError": "Παρουσιάστηκε σφάλμα κατά την αποθήκευση των νέων ρυθμίσεων.",
+                "noDebtor": "Ο πελάτης δεν είναι οφειλέτης",
+                "noSalesRepresentative": "Ο πελάτης δεν είναι αντιπρόσωπος πωλήσεων",
+                "salesRepresentativeClientSelection": {
+                    "assigned": "Ανατέθηκε",
+                    "company": "Εταιρία",
+                    "customerNumber": "Αριθμός πελάτη",
+                    "email": "Email",
+                    "firstName": "Όνομα",
+                    "lastName": "Επώνυμο",
+                    "owner": "ιδιοκτήτης",
+                    "searchbarPlaceholder": "Αναζήτηση πελατών...",
+                    "type": "Τύπος"
+                },
+                "salesRepresentativeClients": {
+                    "owner": "ιδιοκτήτης"
+                },
+                "tab": "Διαμόρφωση B2B",
+                "tabSalesRepresentativeClientSelection": "Πελάτες",
+                "title": "Εκχώρηση ρόλων B2B",
+                "titleDebtor": "Οφειλέτης",
+                "titleSalesRepresentative": "Αντιπρόσωπος πωλήσεων",
+                "titleSaveError": "Σφάλμα κατά την αποθήκευση"
+            }
+        },
+        "general": {
+            "description": "Ανάθεση πελάτη αντιπροσώπου πωλήσεων",
+            "title": "Αντιπρόσωπος πωλήσεων B2B"
+        }
+    },
+    "global": {
+        "businessEvents": {
+            "b2b_budget_notifiy_author": "Κοινοποίηση προϋπολογισμού",
+            "b2b_contact_password_activation_mail": "Ενεργοποίηση λογαριασμού επικοινωνίας",
+            "b2b_offer_status_notify_mail": "Αλλαγή κατάστασης προσφοράς",
+            "b2b_order_clearance_accepted": "Η εκκαθάριση παραγγελίας έγινε δεκτή",
+            "b2b_order_clearance_inquiry_mail": "Αίτημα εξουσιοδότησης παραγγελίας"
+        }
+    },
+    "sw-flow": {
+        "triggers": {
+            "activation": "Ενεργοποίηση",
+            "author": "Συγγραφέας",
+            "b2B": "Β2Β",
+            "budget": "Προϋπολογισμός",
+            "clearance": "Εκκαθάριση",
+            "contact": "Υπάλληλος",
+            "inquiry": "Διερεύνηση",
+            "notifiy": "Ειδοποιήστε",
+            "notify": "Ειδοποιήστε",
+            "offer": "Παραθέτω",
+            "password": "Κωδικός πρόσβασης",
+            "status": "Κατάσταση"
+        }
+    },
+    "sw-privileges": {
+        "permissions": {
+            "b2b-offer": {
+                "label": "Προσφορές"
+            },
+            "b2b-user": {
+                "label": "Χρήστης B2B"
+            },
+            "sales-representative-clients": {
+                "label": "Πελάτες αντιπροσώπων πωλήσεων"
+            }
+        }
+    }
+}

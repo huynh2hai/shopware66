@@ -1,0 +1,84 @@
+{
+    "paypal": {
+        "acdc": {
+            "cardNumber": "Broj kartice",
+            "cardholderName": "Ime vlasnika kartice",
+            "cvv": "Sigurnosni kod (CVV)",
+            "expiration": "Datum isteka (MM/GG)",
+            "zip": "Poštanski broj za obračun"
+        },
+        "cookie": {
+            "googlePay": "Google Pai plaćanja",
+            "name": "PaiPal plaćanja"
+        },
+        "error": {
+            "SWAG_PAYPAL__API_CANNOT_BE_ZERO_OR_NEGATIVE": "Ukupan iznos ne sme biti nula ili negativan. Pokušajte ponovo sa iznosom većim od nule ili izaberite drugi način plaćanja.",
+            "SWAG_PAYPAL__API_NOT_AVAILABLE": "PaiPal usluge trenutno nisu dostupne. Pokušajte ponovo kasnije.",
+            "SWAG_PAYPAL__API_POSTAL_CODE_REQUIRED": "Navedena adresa ne sadrži poštanski broj. Molimo dodajte svoj poštanski broj.",
+            "SWAG_PAYPAL__API_SHIPPING_ADDRESS_INVALID": "Unesenu adresu za isporuku nije prihvatio dobavljač plaćanja. Proverite svoju adresu ili izaberite drugi način plaćanja.",
+            "SWAG_PAYPAL__BROWSER_UNSUPPORTED": "Odabrani način plaćanja ne podržava vaš trenutni pregledač. Pokušajte ponovo sa drugim pregledačem ili izaberite drugi način plaćanja.",
+            "SWAG_PAYPAL__CARD_VALIDATION_FAILED": "Uneseni podaci o kreditnoj kartici nisu mogli biti potvrđeni. Proverite svoje unose i pokušajte ponovo.",
+            "SWAG_PAYPAL__EXPRESS_GENERIC_ERROR": "Došlo je do greške tokom procesa naručivanja PaiPal. Pokušajte ponovo kasnije ili koristite redovnu odjavu.",
+            "SWAG_PAYPAL__EXPRESS_USER_CANCELLED": "Proces narudžbe PaiPal je otkazan. Pokušajte ponovo ili koristite redovnu odjavu.",
+            "SWAG_PAYPAL__GENERIC_ERROR": "Došlo je do greške tokom procesa plaćanja. Pokušajte ponovo kasnije ili izaberite drugi način plaćanja.",
+            "SWAG_PAYPAL__USER_CANCELLED": "Proces plaćanja je otkazan. Pokušajte ponovo ili izaberite drugi način plaćanja.",
+            "handler_swag_puihandler": {
+                "SWAG_PAYPAL__API_PAYMENT_SOURCE_DECLINED_BY_PROCESSOR": "Odabrani način plaćanja odbijen je zbog automatizovane procedure obrade podataka. Za više informacija pročitajte izjavu o privatnosti podataka <a href=\"https://www.ratepay.com/legal-payment-dataprivacy\" target=\"_blank\">Ratepai</a> ili koristite Ratepai <a href=\"https://www.ratepay.com/kontakt\" target=\"_blank\">kontakt obrazac</a>.",
+                "SWAG_PAYPAL__API_PAYMENT_SOURCE_INFO_CANNOT_BE_VERIFIED": "Vaše ime i/ili adresa nisu mogli biti potvrđeni. Proverite svoje unose i pokušajte ponovo. Za dodatne informacije pročitajte izjavu o privatnosti podataka <a href=\"https://www.ratepay.com/legal-payment-dataprivacy\" target=\"_blank\" >Ratepai</a> ili koristite Ratepai <a href=\"https://www.ratepay.com/kontakt\" target=\"_blank\">kontakt obrazac</a>."
+            }
+        },
+        "general": {
+            "browserUnsupported": "Vaš trenutni pregledač nije podržan izabranim načinom plaćanja. Pokušajte sa drugim pregledačem ili izaberite drugi način plaćanja.",
+            "paymentCancel": "Proces plaćanja je otkazan. Pokušajte ponovo ili izaberite drugi način plaćanja.",
+            "paymentError": "Došlo je do greške tokom procesa plaćanja. Pokušajte ponovo kasnije ili izaberite drugi način plaćanja."
+        },
+        "payUponInvoice": {
+            "checkout": {
+                "confirmDisclaimer": "Klikom na dugme pristajete na <a href=\"https://www.ratepay.com/legal-payment-terms\" target=\"_blank\">uslova plaćanja</a> i <a href=\"https://www.ratepay.com/legal-payment-dataprivacy\" target=\"_blank\">izvršenja provere rizika</a> od partnera za plaćanje, Ratepai. Takođe se slažete sa PaiPal izjavom o privatnosti <a href=\"https://www.paypal.com/us/webapps/mpp/ua/privacy-full\" target=\"_blank\"></a>. Ako je vaš zahtev za kupovinu Po fakturi prihvaćen, zahtev za kupovnu cenu biće dodeljen Ratepai-u, a vi možete platiti samo Ratepai-u, a ne trgovcu.",
+                "finish": {
+                    "subtitle": "Obrada može potrajati i do nekoliko minuta. Molimo vas da ne zatvorite ovaj prozor, bićete preusmereni.",
+                    "title": "Plaćanje se obrađuje"
+                }
+            },
+            "document": {
+                "paymentNote": "%companyName% je dodelio zahtev protiv vas da PaiPal (Evropa) s.à r.l. et Cie, S.C.A. kao deo trenutnog ugovora faktoring. Plaćanja sa efektom pražnjenja duga mogu se vršiti samo na PaiPal (Evropa) s.à r.l. et Cie, S.C.A.",
+                "paymentNoteRatepay": "%companyName% je dodelio zahtev protiv vas Ratepai GmbH kao deo trenutnog ugovora o faktoringu. Plaćanja sa efektom ispuštanja duga mogu se vršiti samo Ratepai GmbH. Molimo pogledajte komunikaciju sa Ratepai-om za više detalja o vašoj uplati.",
+                "paymentShippingInfo": {
+                    "payPalPuiPaymentMethod": "Način plaćanja: Platite po fakturi"
+                }
+            },
+            "error": {
+                "declined": "Nije moguće koristiti izabrani način plaćanja. Ova odluka se zasniva na automatizovanoj obradi podataka. Dodatne informacije možete pronaći u Izjavi o privatnosti podataka <a href=\"https://www.ratepay.com/legal-payment-dataprivacy\" target=\"_blank\">Ratepay</a> ili možete kontaktirati Ratepai koristeći ovaj <a href=\"https://www.ratepay.com/kontakt\" target=\"_blank\">kontakt obrazac</a>.",
+                "unverifiedInfo": "Kombinacija vašeg imena i adrese nije mogla potvrditi. Ispravite svoje podatke i pokušajte ponovo. Dodatne informacije možete pronaći u Izjavi o privatnosti podataka <a href=\"https://www.ratepay.com/legal-payment-dataprivacy\" target=\"_blank\" >Ratepay</a> ili možete kontaktirati Ratepai koristeći ovaj <a href=\"https://www.ratepay.com/kontakt\" target=\"_blank\">kontakt obrazac</a>."
+            },
+            "instructions": {
+                "legalMessage": "Zašto PaiPal? PaiPal je naš partner za obradu plaćanja fakture. PaiPal je upravo prenio iznos na nas direktno. Plaćate iznos PaiPal u skladu sa uputstvima za plaćanje nakon što ste primili i proverili kupovinu.",
+                "legalMessageRatepay": "Plaćanje po fakturi se obrađuju u saradnji sa našim partnerom Ratepai-om. Ratepai je upravo prenio iznos koji se plaća na nas. Možete sačekati da narudžba stigne i proverite kupovinu, pre nego što iznos fakture prenesete u skladu sa uputstvima za plaćanje na Ratepai.",
+                "table": {
+                    "amount": "Iznos:",
+                    "bank": "Banka:",
+                    "bic": "BIK:",
+                    "holder": "Nosilac naloga:",
+                    "iban": "IBAN:",
+                    "reference": "Referenca:"
+                },
+                "transferRequest": "Molimo vas da prebacite %value% na račun ispod.",
+                "transferRequestDate": "Molimo vas da prebacite %value% do %date% na PaiPal."
+            }
+        },
+        "smartPaymentButtons": {
+            "confirmPageHint": "Vaša uplata je stvorena. Molimo vas da ga popunite, potvrđujući vašu narudžbu.",
+            "description": "Plati lako, brzo i bezbedno - Molimo Vas da izaberete jedan od ovih načina plaćanja na stranici za potvrdu."
+        },
+        "vault": {
+            "account": {
+                "clear": "Ukloni nalog",
+                "create": "Zapamtite račun za buduće kupovine"
+            },
+            "card": {
+                "clear": "Uklonite karticu",
+                "create": "Zapamtite karticu za buduće kupovine"
+            }
+        }
+    }
+}

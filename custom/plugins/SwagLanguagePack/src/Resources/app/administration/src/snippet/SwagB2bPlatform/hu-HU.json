@@ -1,0 +1,232 @@
+{
+    "b2b": {
+        "customer": {
+            "detail": {
+                "easymode": {
+                    "helpText": "Az Easy Mode lehetővé tette a kevésbé összetett kezelést. Ez azt jelenti, hogy már nem szükséges a szerepek, költségvetések és kontingensek fenntartása! Ennek az üzemmódnak a aktiválásához a felhasználónak nem szabad szerepköröket létrehoznia.",
+                    "isActive": "Az Easy Mode aktív",
+                    "isNotActive": "Az Easy Mode nem aktív",
+                    "label": "Aktiválja az Egyszerű módot",
+                    "title": "Egyszerű mód"
+                }
+            }
+        },
+        "global": {
+            "errors": {
+                "unexpectedErrorMessage": "Hiba történt.",
+                "unexpectedErrorTitle": "Hiba!"
+            }
+        },
+        "order": {
+            "detail": {
+                "deliveryDateLabel": "Szállítási dátum",
+                "orderReferenceLabel": "Rendelési hivatkozási szám"
+            }
+        }
+    },
+    "b2b-offer": {
+        "detail": {
+            "base": {
+                "labelCompany": "Cég",
+                "labelCreated": "Létrehozás dátuma",
+                "labelDiscount": "Kedvezmény",
+                "labelEmail": "E-mail cím",
+                "labelExpirationDate": "Lejárat dátuma",
+                "labelExpirationTime": "Lejárati idő",
+                "labelPositions": "Tételek",
+                "labelState": "Állapot",
+                "labelTotal": "Eredeti ár (nettó)",
+                "labelTotalDiscount": "Kedvezményes ár (nettó)",
+                "labelUpdated": "Módosítás dátuma",
+                "titleCompany": "Cég",
+                "titleDetails": "Részletek"
+            },
+            "commentPlaceholder": "Megjegyzés",
+            "discount": {
+                "addProductLabel": "Termék hozzáadása",
+                "addProductPlaceholder": "Keresés...",
+                "columnDiscountPriceNet": "Kérés",
+                "columnName": "Termék",
+                "columnNewOffer": "Új ajánlat",
+                "columnPriceNet": "Eredeti",
+                "columnQuantity": "Mennyiség",
+                "columnReferenceNumber": "Termék száma",
+                "columnTotalNet": "Összesen (nettó)",
+                "contextMenuRemove": "Elem eltávolítása",
+                "discountLabel": "További kedvezmény",
+                "labelComment": "Megjegyzés",
+                "labelDiscount": "Kedvezmény",
+                "labelDiscountType": "Kedvezmény típusa",
+                "labelDiscountTypeAbsolute": "Abszolút",
+                "labelDiscountTypePercentage": "Százalék",
+                "labelExpirationDate": "Lejárat dátuma",
+                "placeholderComment": "Megjegyzés",
+                "summaryDate": "Dátum",
+                "summaryTaxes": "ÁFA",
+                "summaryTotalAmountNet": "ÁFA nélkül összesen",
+                "summaryTotalDiscount": "Összes kedvezmény",
+                "summaryTotalWithTax": "Összesen, ÁFA"
+            },
+            "history": {
+                "authorAdmin": "Üzlet tulajdonosa",
+                "labelComment": "Megjegyzés",
+                "labelDiscountAmountNet": "- Kedvezmény összege (nettó):",
+                "labelExpirationDate": "Lejárat dátuma:",
+                "labelQuantity": "- Mennyiség:",
+                "messagePlaceholder": "üzenet",
+                "new": "Új érték:",
+                "placeholder": "Még nincs történelem.",
+                "previous": "Előző érték:",
+                "product": "Termék:",
+                "productReference": "Hivatkozási szám",
+                "titleAddedPositions": "Hozzáadott elemek",
+                "titleChangedItemPrice": "Egy cikk ára megváltozott",
+                "titleDiscount": "Kedvezmény megváltozott",
+                "titleDiscountAdded": "Kedvezmény hozzáadva",
+                "titleItemComment": "Az elem megjegyzés megváltozott",
+                "titleRemovedPositions": "Eltávolított elemek",
+                "titleStatus": "Állapot megváltozott",
+                "titleUpdated": "Az ajánlat frissítve",
+                "titleUpdatedPositions": "Frissített elemek"
+            },
+            "noComments": "Nincs hozzászólás",
+            "offerPlaceholder": "Az ajánlat részletei nem tölthetők be.",
+            "title": "Ajánlat",
+            "titleActivity": "Tevékenység",
+            "titleBase": "Részletek",
+            "titlePositions": "Tételek"
+        },
+        "general": {
+            "buttonAcceptOffer": "Ajánlat elfogadása",
+            "buttonCancel": "Mégse",
+            "buttonDeclineOffer": "Elutasítás ajánlat",
+            "buttonDelete": "Törlés",
+            "buttonMakeNewOffer": "Tegyen új ajánlatot",
+            "buttonReply": "Válasz",
+            "buttonSave": "Mentés",
+            "buttonSendMessage": "Küldés",
+            "buttonSendNewOffer": "Új ajánlat küldése",
+            "buttonViewDebtor": "Az adós megtekintése",
+            "description": "Ügyfélspecifikus ajánlatok",
+            "label": "Ajánlatok",
+            "offer_status_accepted_admin": "Üzlet tulajdonosa által küldött",
+            "offer_status_accepted_both": "Elfogadta mindkettő",
+            "offer_status_accepted_user": "Felhasználó által küldött",
+            "offer_status_converted": "konvertált",
+            "offer_status_declined_admin": "A bolt tulajdonosa elutasította",
+            "offer_status_declined_user": "Felhasználó elutasította",
+            "offer_status_expired": "Lejárt",
+            "offer_status_open": "Nyissa meg",
+            "title": "Ajánlatok"
+        },
+        "list": {
+            "columnCreated": "Létrehozás dátuma",
+            "columnDebtor": "Adós",
+            "columnDebtorCompany": "Cég",
+            "columnExpires": "Lejárat dátuma",
+            "columnId": "Id",
+            "columnListAmountNet": "Eredeti ár",
+            "columnListDiscountAmountNet": "Kedvezményes ár",
+            "columnPositions": "Tételek",
+            "columnState": "Állapot",
+            "columnTotalDiscount": "Kedvezmény",
+            "columnUpdated": "Módosítás dátuma",
+            "contextMenuDebtor": "Adós megtekintése",
+            "contextMenuDelete": "Törlés",
+            "contextMenuDetail": "Ajánlat megtekintése",
+            "messageEmpty": "Jelenleg nincsenek ajánlatok.",
+            "title": "Ajánlatok"
+        },
+        "modal": {
+            "textBulkDeleteConfirm": "Biztos benne, hogy törölni szeretné a kiválasztott ajánlatokat?",
+            "textDeleteConfirm": "Biztosan törölni szeretné ezt az ajánlatot?",
+            "titleBulkDelete": "Kijelölt ajánlatok törlése",
+            "titleDelete": "Ajánlat törlése"
+        },
+        "notifications": {
+            "messageCommentError": "A megjegyzést nem lehetett elküldeni.",
+            "messageDeleteError": "Az ajánlat nem törölhető.",
+            "messageDetailError": "Az ajánlat részletei nem tölthetők be.",
+            "messageListError": "Az ajánlatokat nem lehetett betölteni.",
+            "messageOfferUpdatedError": "Az ajánlat nem frissíthető.",
+            "messageProductSearchError": "Az ajánlat már tartalmazza ezt a terméket.",
+            "titleError": "Hiba történt.",
+            "titleProductSearchError": "A termék nem adható hozzá."
+        }
+    },
+    "b2b-salesrep": {
+        "customer": {
+            "settings": {
+                "isDebtor": "Az ügyfél adós",
+                "isSalesRepresentative": "Az ügyfél értékesítési képviselő",
+                "labelDebtor": "Adós megjelölése",
+                "labelSalesRepresentative": "Értékesítési képviselő megjelölése",
+                "messageSaveError": "Hiba történt az új beállítások mentése közben.",
+                "noDebtor": "Az ügyfél nem adós",
+                "noSalesRepresentative": "Az ügyfél nem értékesítési képviselő",
+                "salesRepresentativeClientSelection": {
+                    "assigned": "hozzárendelt",
+                    "company": "Cég",
+                    "customerNumber": "Ügyfélszám",
+                    "email": "E-mail",
+                    "firstName": "Keresztnév",
+                    "lastName": "Vezetéknév",
+                    "owner": "Tulajdonos",
+                    "searchbarPlaceholder": "Ügyfelek keresése...",
+                    "type": "Típus"
+                },
+                "salesRepresentativeClients": {
+                    "owner": "Tulajdonos"
+                },
+                "tab": "B2B konfiguráció",
+                "tabSalesRepresentativeClientSelection": "Ügyfelek",
+                "title": "B2B szerepkörök hozzárendelése",
+                "titleDebtor": "Adós",
+                "titleSalesRepresentative": "Értékesítési képviselő",
+                "titleSaveError": "Hiba a mentés közben"
+            }
+        },
+        "general": {
+            "description": "Értékesítési képviselő ügyfél hozzárendelése",
+            "title": "B2B Értékesítési képviselő"
+        }
+    },
+    "global": {
+        "businessEvents": {
+            "b2b_budget_notifiy_author": "Költségvetés",
+            "b2b_contact_password_activation_mail": "Kapcsolattartó fiók aktiválása",
+            "b2b_offer_status_notify_mail": "Az ajánlat állapotának megváltoztatása",
+            "b2b_order_clearance_accepted": "Rendelési vámkezelés elfogadva",
+            "b2b_order_clearance_inquiry_mail": "Rendelési vámkezelés kérése"
+        }
+    },
+    "sw-flow": {
+        "triggers": {
+            "activation": "Aktiválás",
+            "author": "Szerző",
+            "b2B": "B2B",
+            "budget": "költségvetés",
+            "clearance": "Üzemeltetés",
+            "contact": "Munkavállaló",
+            "inquiry": "Érdeklődés",
+            "notifiy": "Értesítés",
+            "notify": "Értesítés",
+            "offer": "Idézet",
+            "password": "Jelszó",
+            "status": "státusz"
+        }
+    },
+    "sw-privileges": {
+        "permissions": {
+            "b2b-offer": {
+                "label": "Ajánlatok"
+            },
+            "b2b-user": {
+                "label": "B2B felhasználó"
+            },
+            "sales-representative-clients": {
+                "label": "Értékesítési reprezentatív ügyfelek"
+            }
+        }
+    }
+}

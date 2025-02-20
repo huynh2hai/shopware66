@@ -1,0 +1,613 @@
+{
+    "AISearch": {
+        "loadingTitle": "Ti sto cercando...",
+        "result": {
+            "noResults": "Mi dispiace, non sono riuscito a trovare alcun risultato",
+            "noResultsSubTitle": "Per favore prova qualcos'altro...",
+            "productDetailButton": "Visualizza prodotto",
+            "searchTerm": "Termine di ricerca:",
+            "title": "Questo è quello che ho trovato per te"
+        }
+    },
+    "approvalRules": {
+        "actionAddNew": "Crea regole",
+        "approvalRulesInfoEmpty": "Non è stata ancora creata alcuna regola di approvazione.",
+        "checkout": {
+            "confirmSubmit": "Invia l'ordine per l'approvazione"
+        },
+        "condition": {
+            "cartCartAmount": "Somma totale",
+            "cartGoodsCount": "Quantità totale di prodotti distinti",
+            "cartGoodsPrice": "Subtotale di tutti gli articoli",
+            "cartLineItemGoodsTotal": "Quantità totale di tutti i prodotti",
+            "cartLineItemsInCartCount": "Quantità di articoli distinti",
+            "cartPositionPrice": "Totale",
+            "cartShippingCost": "Costi di spedizione",
+            "cartTotalPurchasePrice": "Totale di tutti i prezzi di acquisto",
+            "cartVolume": "Volume totale di tutti i prodotti",
+            "cartWeight": "Peso totale di tutti i prodotti",
+            "operator": {
+                "empty": "vuoto",
+                "equals": "Uguale",
+                "greaterThan": "Più grande di",
+                "greaterThanEquals": "È maggiore di/uguale a",
+                "gross": "Lordo",
+                "isNoneOf": "Non è nessuno dei",
+                "isOneOf": "È uno dei",
+                "lowerThan": "Minore di",
+                "lowerThanEquals": "È inferiore o uguale a",
+                "net": "Netto",
+                "notEquals": "Diverso"
+            },
+            "orderApprovalAllOrders": "Tutti gli ordini",
+            "orderApprovalCustomCondition": "Condizioni personalizzate",
+            "paymentMethod": "Metodo di pagamento applicato",
+            "shippingMethod": "Metodo di spedizione applicato"
+        },
+        "deleteModal": {
+            "description": "Sei sicuro di voler eliminare questa regola di approvazione?",
+            "title": "Avviso"
+        },
+        "deleteSuccess": "La regola di approvazione è stata eliminata.",
+        "detail": {
+            "activeRuleLabel": "Attivo",
+            "appliesToLabel": "Si applica a",
+            "approverLabel": "Fornisce le approvazioni degli ordini",
+            "conditionLabel": "Si applica a",
+            "createAction": "Salva regola di approvazione",
+            "createWelcome": "Nuova regola di approvazione",
+            "editAction": "Salva modifiche",
+            "editWelcome": "Modifica le regole di approvazione",
+            "errorLabel": "Questo campo",
+            "nameLabel": "Nome",
+            "namePlaceholder": "Inserisci nome...",
+            "operatorLabel": "Operatore",
+            "priorityLabel": "Priorità",
+            "priorityPlaceholder": "Imposta priorità...",
+            "priorityTooltip": "Se si applicano le condizioni di più regole, viene utilizzata la regola con la priorità più alta. Le regole con la stessa priorità dovrebbero essere evitate.",
+            "reviewFormWarningAlert": "Tieni presente che i dipendenti non possono approvare i propri ordini.",
+            "roleLabel": "Richiede l'approvazione degli ordini",
+            "rolePlaceholder": "Seleziona un ruolo...",
+            "valueLabel": "Valore",
+            "warningAlert": "Per utilizzare le regole di approvazione, crea prima i ruoli."
+        },
+        "list": {
+            "actionEdit": "Modifica",
+            "labelItemsPerPage": "Voci per pagina",
+            "tableHeaderApplyTo": "Richiede l'approvazione",
+            "tableHeaderApprover": "Dà l'approvazione",
+            "tableHeaderCondition": "Si applica a",
+            "tableHeaderName": "Nome",
+            "tableHeaderPriority": "Priorità",
+            "tableHeaderStatus": "Stato"
+        },
+        "menuTitle": "Regole di approvazione",
+        "rulesText": "Crea regole di approvazione per gestire i tuoi processi di ordinazione. ",
+        "searchButton": "Ricerca",
+        "searchPlaceholder": "Ricerca..."
+    },
+    "checkout": {
+        "guest-customer-not-allowed": "Gli abbonamenti non sono disponibili per i clienti ospiti. Ti preghiamo di accedere o di creare un profilo.",
+        "order-approval-blocked": "Questo ordine deve essere approvato per il seguente motivo: %reason%",
+        "paymentStatus": "Approvazione in sospeso",
+        "seePendingApprovals": "<a href=\"%url%\">Vedi le approvazioni in sospeso.</a>",
+        "submittedApproveHeader": "L'ordine è stato inviato per l'approvazione.",
+        "subscription-interval-blocked": "Questo intervallo di abbonamento non è sfortunatamente disponibile per te, al momento.",
+        "subscription-plan-blocked": "Questo piano di abbonamento non è sfortunatamente disponibile per te, al momento.",
+        "subscription-product-mapping-missing": "Un prodotto non è disponibile per questo abbonamento ed è stato rimosso dal tuo carrello.",
+        "warning": {
+            "cartCartAmount": "Il totale complessivo di questo ordine richiede revisione e approvazione.",
+            "cartGoodsPrice": "Questo subtotale di tutti gli articoli richiede revisione e approvazione.",
+            "cartLineItemsInCartCount": "La quantità di articoli distinti richiede revisione e approvazione.",
+            "cartPositionPrice": "Il totale di questo ordine richiede revisione e approvazione.",
+            "cartShippingCost": "Il costo di spedizione di questo ordine richiede revisione e approvazione.",
+            "cartVolume": "Il volume di questo ordine richiede revisione e approvazione.",
+            "cartWeight": "Il peso di questo ordine richiede revisione e approvazione.",
+            "orderApprovalAllOrders": "Questo ordine deve essere approvato.",
+            "paymentMethod": "Il metodo di pagamento di questo ordine richiede revisione e approvazione.",
+            "shippingMethod": "Il metodo di spedizione di questo ordine richiede revisione e approvazione."
+        }
+    },
+    "commercial": {
+        "subscriptions": {
+            "account": {
+                "cancelSubscription": "Annulla l'abbonamento",
+                "deliveryFrequency": "Frequenza:",
+                "nextExecution": "Prossima esecuzione:",
+                "pauseSubscription": "Interrompi una volta",
+                "recurringTotal": {
+                    "gross": "Totale ricorrente (lordo):",
+                    "net": "Totale ricorrente (netto):"
+                },
+                "resumeSubscription": "Riprendi l'abbonamento",
+                "subscriptionColumnName": "Nome",
+                "subscriptionColumnPrice": "Prezzo",
+                "subscriptionColumnQuantity": "Quantità",
+                "subscriptionColumnTotal": "Totale",
+                "subscriptionFrom": "Da:",
+                "subscriptionNumber": "Numero di abbonamento:",
+                "subscriptionPaymentMethod": "Modalità di pagamento:",
+                "subscriptionRemainingExecutionCount": "%count% ordini rimanenti fino al termine del periodo di abbonamento minimo.",
+                "subscriptionShippingCosts": "Costi di spedizione:",
+                "subscriptionShippingMethod": "Modalità di spedizione:",
+                "subscriptionsInfoEmpty": "Non hai ancora alcun abbonamento.",
+                "subscriptionsLink": "Abbonamenti",
+                "subscriptionsSubtitle": "Qui puoi trovare i tuoi abbonamenti, ordinati per data.",
+                "subscriptionsTitle": "Abbonamenti",
+                "viewAllSubscriptions": "Visualizza tutti gli abbonamenti",
+                "viewSubscription": "Visualizza l'abbonamento"
+            },
+            "confirm": {
+                "submitDisclaimer": "Cliccando su \"Invia ordine\", confermi che il tuo abbonamento sarà rinnovato automaticamente e che il tuo profilo sarà automaticamente addebitato, secondo il tuo metodo di pagamento, in conformità con il prezzo dell'abbonamento nella sezione \"Prodotti\". Puoi annullare il tuo abbonamento in qualsiasi momento, tramite il profilo del cliente. Un numero minimo di consegne potrebbe applicarsi."
+            },
+            "detail": {
+                "discountBadge": "Salva %discountPercentage%%",
+                "expectedMinimumTerm": "Numero minimo di consegne: %count%",
+                "frequencyTitle": "Seleziona la frequenza",
+                "oneTimePurchase": "Acquisto una tantum",
+                "subscribe": "Abbonati ora"
+            },
+            "lineItem": {
+                "delivery": "Consegna \"%intervalName%\"",
+                "discountLabel": "Sconto sull'abbonamento: %discount%%",
+                "label": "Dettagli dell'abbonamento",
+                "minimumDeliveries": "almeno %amount% consegne",
+                "startingDate": "a partire dal %date%",
+                "startingToday": "a partire da oggi"
+            },
+            "listing": {
+                "badgeTitle": "Abbonamento",
+                "badgeTitleWithDiscount": "Abbonati e risparmia fino al %discountPercentage%%"
+            },
+            "summary": {
+                "recurringTotal": {
+                    "label": "Totale ricorrente per consegna"
+                }
+            }
+        }
+    },
+    "detail": {
+        "reviewSummaryHelpText": "Questo è un riepilogo generato dall'IA di tutte le recensioni.",
+        "reviewSummaryTitle": "Cosa dicono i nostri clienti"
+    },
+    "employee-management": {
+        "account": {
+            "orderedBy": "Ordinato da:"
+        },
+        "employeeCreate": {
+            "labelEmail": "Indirizzo e-mail",
+            "labelFirstName": "Nome",
+            "labelLanguage": "Lingua",
+            "labelLastName": "Cognome",
+            "labelRole": "Ruolo",
+            "placeholderEmail": "Inserisci il nuovo indirizzo email...",
+            "placeholderFirstName": "Inserisci nome...",
+            "placeholderLastName": "Inserisci cognome...",
+            "title": "Crea nuovo profilo per dipendenti"
+        },
+        "employeeDeactivate": {
+            "text": "Sei sicuro di voler disattivare il profilo di <strong>%firstName% %lastName%</strong>?\n Il dipendente non potrà utilizzare il prroprio profilo, a meno che non sia riattivato.",
+            "title": "Disattiva l'account del dipendente"
+        },
+        "employeeDelete": {
+            "text": "Sei sicuro di voler eliminare il profilo del dipendente <strong>%firstName% %lastName%</strong>?",
+            "title": "Elimina l'account del dipendente"
+        },
+        "employeeEdit": {
+            "title": "Dettagli del dipendente"
+        },
+        "employeeProfile": {
+            "labelEmail": "Indirizzo e-mail",
+            "labelFirstName": "Nome",
+            "labelLanguage": "Lingua",
+            "labelLastName": "Cognome",
+            "labelName": "Nome",
+            "labelRole": "Ruolo",
+            "placeholderEmail": "Inserisci il nuovo indirizzo email...",
+            "placeholderFirstName": "Inserisci nome...",
+            "placeholderLastName": "Inserisci cognome..."
+        },
+        "employeeRevoke": {
+            "buttonRevoke": "Revoca l'invito",
+            "text": "Sei sicuro di voler revocare l'invito per <strong>%firstName% %lastName%</strong>?",
+            "title": "Revoca l'invito"
+        },
+        "employeeSetPassword": {
+            "employeeWithHashNotFound": "Il link di invito non è valido o è scaduto.",
+            "inviteConfirmNoSuccess": "Impossibile salvare la password.",
+            "inviteConfirmSuccess": "La tua password è stata salvata.",
+            "text": "Crea una password per completare l'iscrizione.",
+            "title": "Completa l'iscrizione"
+        },
+        "employees": {
+            "buttonAdd": "Crea un profilo",
+            "buttonRevoke": "Revoca l'invito",
+            "emptyState": "Non hai ancora aggiunto alcun dipendente.",
+            "noRole": "Nessuna",
+            "resendInvitation": "Invia nuovamente l'invito",
+            "stateActive": "Attivo",
+            "stateDeactivated": "Inattivo",
+            "stateInvitationExpired": "Invito scaduto",
+            "stateInvitationSent": "Invito inviato",
+            "tableHeaderEmail": "Indirizzo e-mail",
+            "tableHeaderFirstName": "Nome",
+            "tableHeaderLastName": "Cognome",
+            "tableHeaderRole": "Ruolo",
+            "tableHeaderStatus": "Stato",
+            "title": "Dipendenti"
+        },
+        "flash": {
+            "employee": {
+                "activateSuccess": "Il profilo del dipendente \"%firstName% %lastName%\" è stato attivato.",
+                "createSuccess": "È stato creato un nuovo profilo dipendente. Questo profilo dev'essere attivato dal dipendente tramite il link nell'email d'invito.",
+                "deactivateSuccess": "Il profilo del dipendente \"%firstName% %lastName%\" è stato disattivato.",
+                "deleteSuccess": "Il profilo del dipendente è stato eliminato.",
+                "editSuccess": "Il profilo del dipendente \"%firstName% %lastName%\" è stato aggiornato.",
+                "logoutBeforeInviteAcceptance": "Hai già effettuato l'accesso. Esci e utilizza nuovamente il link di invito contenuto nella tua email.",
+                "notFound": "Impossibile trovare il profilo del dipendente.",
+                "resendSuccess": "L'email d'invito è stata inviata nuovamente."
+            },
+            "role": {
+                "createSuccess": "Un nuovo ruolo è stato creato.",
+                "deleteSuccess": "Il ruolo è stato eliminato.",
+                "notFound": "Impossibile trovare il ruolo.",
+                "updateSuccess": "Il ruolo \"%name%\" è stato aggiornato."
+            }
+        },
+        "navigation": {
+            "adminPill": "Admin",
+            "employees": "Dipendenti",
+            "roles": "Ruoli"
+        },
+        "overview": {
+            "companyTitle": "La tua azienda",
+            "profileTitle": "Dati personali"
+        },
+        "roleCreate": {
+            "defaultModalText": "Hai modificato il ruolo predefinito per i nuovi dipendenti. Sei sicuro di voler continuare?",
+            "defaultModalTitle": "Imposta il ruolo predefinito",
+            "labelDefaultRole": "Ruolo predefinito per i nuovi dipendenti",
+            "labelName": "Ruolo",
+            "permissionsTitle": "Autorizzazioni",
+            "placeholderName": "Inserisci il nome del ruolo...",
+            "title": "Crea nuovo ruolo"
+        },
+        "roleDelete": {
+            "hasEmployeesWarningText": "Eliminando questo ruolo, tutti i dipendenti cui è assegnato perderanno le proprie autorizzazioni.",
+            "text": "Sei sicuro di voler eliminare il ruolo <strong>%name%</strong>?",
+            "title": "Cancella ruolo"
+        },
+        "roleEdit": {
+            "permissionGroups": {
+                "approval_rule": "Gestione delle regole di approvazione",
+                "employee": "Gestione dei dipendenti",
+                "order": "Ordini",
+                "pending_order": "Gestione degli ordini in sospeso",
+                "quote": "Gestione delle quotazioni",
+                "role": "Gestione dei ruoli"
+            },
+            "permissionTooltip": "Questa autorizzazione dipende da:",
+            "permissions": {
+                "approval_rule": {
+                    "create": "Può creare regole di approvazione",
+                    "delete": "Può eliminare le regole di approvazione",
+                    "read": "Può leggere le regole di approvazione",
+                    "update": "Può aggiornare le regole di approvazione"
+                },
+                "employee": {
+                    "create": "Può creare dipendenti",
+                    "delete": "Può eliminare i dipendenti",
+                    "edit": "Può modificare i dipendenti",
+                    "read": "Può visualizzare i dipendenti"
+                },
+                "order": {
+                    "read": {
+                        "all": "Può visualizzare tutti gli ordini"
+                    }
+                },
+                "pending_order": {
+                    "approve_decline": "Può approvare/rifiutare gli ordini in sospeso",
+                    "approve_decline_all": "Può approvare/rifiutare tutti gli ordini in sospeso",
+                    "read_all": "Può visualizzare tutti gli ordini in sospeso"
+                },
+                "quote": {
+                    "accept": "Può accettare un preventivo",
+                    "decline": "Può rifiutare la quotazione",
+                    "read": {
+                        "all": "Può visualizzare tutte le quotazioni"
+                    },
+                    "request": "Può richiedere un preventivo",
+                    "request_change": "Può richiedere la modifica del preventivo"
+                },
+                "role": {
+                    "create": "Può creare ruoli",
+                    "delete": "Può eliminare i ruoli",
+                    "edit": "Può modificare i ruoli",
+                    "read": "Può visualizzare i ruoli"
+                }
+            },
+            "title": "Dettagli ruolo"
+        },
+        "roles": {
+            "buttonAdd": "Crea ruolo",
+            "defaultRoleLabel": "Ruolo predefinito",
+            "emptyState": "Non hai ancora aggiunto alcun ruolo.",
+            "noRoleSelected": "Nessuna",
+            "tableHeaderName": "Ruolo",
+            "title": "Ruoli"
+        },
+        "seePermissions": "Vedi le autorizzazioni",
+        "tableHeader": {
+            "searchButton": "Ricerca",
+            "searchPlaceholder": "Inserisci il termine di ricerca..."
+        }
+    },
+    "general": {
+        "categories": "Categorie",
+        "completion": "Suggerimenti",
+        "manufacturer": "Produttore",
+        "product": "Prodotti"
+    },
+    "imageUploadSearch": {
+        "buttonSearchImage": "Ricerca",
+        "description": "Trova i prodotti caricando un'immagine.",
+        "fileTypeSizeError": "Impossibile leggere il file. Assicurati che i file non superino il limite di dimensione e utilizzi il formato di file corretto.",
+        "header": "Ricerca per immagine",
+        "searchButton": "Ricerca per immagine",
+        "serviceError": "Il servizio non è al momento disponibile",
+        "subDescription": "*Caricando un'immagine, accetti che venga utilizzata per il nostro servizio. Le immagini caricate non verranno archiviate.",
+        "title": "Carica un'immagine",
+        "uploadButton": "Seleziona il file",
+        "uploadContent": "Trascina qui il file per caricarlo",
+        "uploadDescription": "(Max. 1 file, max. %size%, solo JPG o PNG)"
+    },
+    "naturalLanguageSearch": {
+        "description": "Questa funzionalità ti consente di trovare prodotti nel nostro negozio online, semplicemente descrivendo ciò che stai cercando in un linguaggio naturale, e nella forma di una frase.",
+        "error": "Il servizio non è al momento disponibile",
+        "searchButton": "Ricerca per contesto",
+        "searchPlaceholder": "Inserisci qualcosa...",
+        "suggestion": "Provalo:",
+        "title": "Cosa stai cercando?"
+    },
+    "orderApproval": {
+        "flashMessage": {
+            "notAllowOrder": "Non ti è permesso ordinare.",
+            "orderDeclined": "Ordine in sospeso rifiutato.",
+            "orderDeleted": "Ordine in sospeso eliminato.",
+            "orderNotApproved": "Ordine in sospeso. In attesa di approvazione.",
+            "orderNotAvailable": "L'ordine in sospeso non è ancora disponibile.",
+            "ruleCreated": "Regola di approvazione creata.",
+            "ruleUpdated": "Regola di approvazione aggiornata."
+        }
+    },
+    "pendingOrders": {
+        "approveModal": {
+            "btnCancel": "Interrompi",
+            "btnConfirm": "Approvare",
+            "description": "Sei sicuro di voler approvare l'ordine inviato?",
+            "title": "Approva l'ordine inviato"
+        },
+        "billingAddressHeader": "Indirizzo di fatturazione",
+        "cancelModal": {
+            "btnCancel": "Scarta",
+            "btnConfirm": "Confermare",
+            "description": "Sei sicuro di voler annullare questo ordine? \n La tua decisione sarà definitiva.",
+            "title": "Annulla ordine"
+        },
+        "completePaymentModal": {
+            "btnCancel": "Interrompi",
+            "btnConfirm": "Completa",
+            "description": "Sei sicuro di voler completare il pagamento?",
+            "title": "Completa pagamento"
+        },
+        "declineComment": "Commento",
+        "declineCommentDescription": "Il commento deve avere una lunghezza massima di 255 caratteri.",
+        "declineModal": {
+            "btnCancel": "Interrompi",
+            "btnConfirm": "Rifiuta",
+            "commentLabel": "Commento",
+            "commentOptional": "(facoltativo)",
+            "commentPlaceholder": "Inserisci un commento...",
+            "description": "Sei sicuro di voler rifiutare l'ordine inviato?",
+            "title": "Rifiuta l'ordine inviato"
+        },
+        "deleteModal": {
+            "description": "Sei sicuro di voler eliminare l'approvazione dell'ordine <strong>%number%</strong>?",
+            "title": "Eliminare l'approvazione dell'ordine"
+        },
+        "detail": {
+            "approvalRuleTitle": "Regola di approvazione:",
+            "approveButton": "Approva l'ordine",
+            "cancelButton": "Interrompi",
+            "cartValueTitle": "Valore del carrello:",
+            "completePaymentButton": "Completa pagamento",
+            "declineButton": "Rifiuta ordine",
+            "employeeTitle": "Dipendente:",
+            "finishButton": "Termina l'ordine",
+            "itemsTitle": "Oggetti:",
+            "orderSubmittedOnTitle": "Inviato il:",
+            "overviewDetailsHeader": "Dettagli",
+            "paymentMethodTitle": "Modalità di pagamento:",
+            "pendingOrderNumberTitle": "Numero di approvazione",
+            "quoteNumberTitle": "Numero del preventivo:",
+            "title": "Numero di approvazione"
+        },
+        "itemTable": {
+            "columnName": "Prodotto",
+            "columnQuantity": "Quantità",
+            "columnTotal": "Totale",
+            "columnUnitPrice": "Prezzo unitario",
+            "contextBtn": {
+                "repeatOrder": "Ripeti l’ordine"
+            }
+        },
+        "list": {
+            "actionApprove": "Approva l'ordine",
+            "actionDecline": "Rifiuta ordine",
+            "actionView": "Visualizza i dettagli",
+            "tableHeaderCartValue": "Valore del carrello",
+            "tableHeaderCondition": "Regola di approvazione",
+            "tableHeaderItems": "Voci",
+            "tableHeaderNumber": "Numero di approvazione",
+            "tableHeaderPaymentMethod": "Modalità di pagamento"
+        },
+        "menuTitle": "Ordini da approvare",
+        "orderHeadline": "Inviato il",
+        "orderStatusActionCompletePayment": "Continua la procedura di pagamento",
+        "pendingApprovalNumber": "Numero di approvazione:",
+        "pendingOrdersInfoEmpty": "Nessun ordine in sospeso.",
+        "shippingAddressHeader": "Indirizzo di consegna"
+    },
+    "quickOrder": {
+        "addToCartModal": {
+            "description": "Desideri davvero aggiungere tutti i prodotti presenti in questo elenco di ordini, al tuo carrello?",
+            "title": "Nel carrello"
+        },
+        "buttonAddToCart": "Nel carrello",
+        "buttonClearList": "Svuota l'elenco",
+        "buttonUploadCSV": "Carica file",
+        "columnName": "Prodotto",
+        "columnQuantity": "Quantità",
+        "downloadTemplate": "File di esempio",
+        "pageDescription": "Velocizza il tuo processo di ordine regolare con elenchi di ordini rifiniti e semiautomatici.",
+        "pageTitle": "Ordini rapidi",
+        "placeholderNameField": "Inserisci il numero o il nome del prodotto...",
+        "productHasBeenAdded": "Quantità del prodotto aumentata:",
+        "productNotFound": "Impossibile trovare i seguenti prodotti:",
+        "reloadPageMessage": "Sei sicuro di voler abbandonare questa pagina? Le informazioni inserite potrebbero non essere salvate",
+        "removeListModal": {
+            "description": "Desideri davvero eliminare tutti i prodotti dal tuo elenco di ordini?",
+            "title": "Elimina l'elenco degli ordini"
+        },
+        "textNoProductsFound": "Nessun prodotto trovato",
+        "uploadAddBtn": "Aggiungi prodotti",
+        "uploadAddOption": "Mantieni l'elenco di ordini esistente",
+        "uploadApplyBtn": "Acquisisci",
+        "uploadButton": "Seleziona il file",
+        "uploadCSVDescription": "Carica soltanto i file CSV aventi colonne per i numeri del prodotto (product_number) e le quantità del prodotto (quantity).",
+        "uploadCSVHeader": "File CSV",
+        "uploadCSVTitle": "Aggiungi prodotti tramite file CSV",
+        "uploadCombinedHeader": "Somma",
+        "uploadContent": "Trascina qui il file per caricarlo",
+        "uploadCurrentHeader": "Elenco di ordini",
+        "uploadErrorMessage": "Errore del file. Assicurati che il file abbia il formato CSV e le colonne necessarie esatte.",
+        "uploadModalDuplicatedTitle": "Quantità del prodotto",
+        "uploadOptionsLabel": "Opzioni",
+        "uploadOverwriteOption": "Sovrascrivi l'elenco di ordini esistenti",
+        "uploadProductHeader": "Prodotto",
+        "uploadRule": "Alcuni dei prodotti nel file CSV sono già sul tuo elenco di ordini. Ti preghiamo di selezionare le quantità che soddisfino le tue esigenze.",
+        "uploadSize": "(Max. 1 file)",
+        "uploadSuccessMessage": "Prodotti aggiunti correttamente.",
+        "uploading": "Caricamento in corso..."
+    },
+    "quoteManagement": {
+        "buttonRequestQuote": "Richiedi un preventivo",
+        "checkout": {
+            "summaryDiscount": "Sconto"
+        },
+        "declineCancelButton": "Interrompi",
+        "declineError": "Impossibile rifiutare il preventivo.",
+        "declineLabelField": "Perché desideri rifiutare il preventivo?",
+        "declineLink": "Rifiuta",
+        "declinePlaceholderField": "Inserisci il tuo messaggio...",
+        "declineSendButton": "Rifiuta il preventivo",
+        "declineSuccess": "Il preventivo è stato rifiutato.",
+        "details": {
+            "commentDecline": "Hai rifiutato il preventivo",
+            "commentLatest": "Ultimo messaggio",
+            "commentMerchantSent": "Merchant inviato",
+            "commentRequest": "Hai richiesto un preventivo",
+            "commentRequestChanges": "Hai richiesto delle modifiche",
+            "commentSent": "Il venditore ha inviato un preventivo",
+            "commentTitle": "Cronologia dei messaggi",
+            "created": "Aggiunto il",
+            "expirationDate": "Valido fino",
+            "grandTotalGross": "Totale complessivo (lordo)",
+            "grandTotalNet": "Totale complessivo (netto)",
+            "labelExpired": "Scaduto",
+            "netTotal": "Totale (netto)",
+            "orderNumber": "Codice ordine",
+            "plusTax": "IVA (%rate%%)",
+            "quoteTotal": "Totale del preventivo",
+            "requestedAt": "Richiesto a",
+            "requestedBy": "Creato da",
+            "shipping": "Costi di spedizione",
+            "status": "Stato",
+            "subtotal": "Subtotale (netto)",
+            "tax": "IVA (%rate%%)",
+            "total": "Somma totale",
+            "totalDiscount": "Sconto",
+            "updated": "Data di modifica"
+        },
+        "document": {
+            "headline": "Documento di citazione %number%",
+            "number": "Documento di citazione %number%"
+        },
+        "itemTable": {
+            "columnName": "Prodotto",
+            "columnQuantity": "Quantità",
+            "columnTaxExcludeVat": "escl. IVA",
+            "columnTaxIncludeVat": "incl. IVA",
+            "columnTotal": "Totale"
+        },
+        "overviewCartHeader": "Riepilogo del carrello",
+        "overviewDetailsHeader": "Dettagli",
+        "proceedLink": "Effettua l'ordine",
+        "quoteContextMenuDetail": "Visualizza i dettagli",
+        "quoteDetail": {
+            "downloadDocument": "Scarica documento",
+            "titleItems": "Voci",
+            "titleQuote": "Citazione"
+        },
+        "quoteId": "Preventivo #",
+        "quoteRequestModal": {
+            "buttonCancel": "Interrompi",
+            "buttonSend": "Invia la richiesta",
+            "commentLabel": "Messaggio",
+            "commentOptional": "(facoltativo)",
+            "commentPlaceholder": "Inserisci il tuo messaggio...",
+            "itemInCart": "Articoli nel carrello:",
+            "shipping": "Costi di spedizione:",
+            "subtotal": "Totale parziale:",
+            "tax": "IVA (%rate%%):",
+            "title": "Richiesta di preventivo",
+            "total": "Totale complessivo:"
+        },
+        "quotes": "Citazioni",
+        "quotesDetailTitle": "Preventivo #%id%",
+        "quotesInfoEmpty": "Ancora nessuna quotazione",
+        "quotesTitle": "Citazioni",
+        "requestChangeError": "Impossibile modificare il preventivo.",
+        "requestChangeSuccess": "Preventivo modificato correttamente.",
+        "requestChangesCancelButton": "Interrompi",
+        "requestChangesLabelField": "Cosa vorresti modificare?",
+        "requestChangesLink": "Richiedi modifiche",
+        "requestChangesPlaceholderField": "Inserisci il tuo messaggio...",
+        "requestChangesSendButton": "Invia richiesta",
+        "requestQuoteSuccess": "Grazie per la tua richiesta! Un preventivo con il numero #quoteNumber è stato creato"
+    },
+    "search": {
+        "headline": "Risultati di ricerca per \"%searchTerm%\" "
+    },
+    "swag-return-management": {
+        "account": {
+            "orderItemColumnStatus": "Stato"
+        },
+        "checkout": {
+            "cartHeaderStatus": "Stato"
+        }
+    },
+    "swag-text-translator": {
+        "button": {
+            "revertToOriginal": "Visualizza l'originale",
+            "translateTo": "Traduci la recensione in %language%"
+        },
+        "translateError": "Impossibile tradurre la recensione. Ti preghiamo di riprovare più tardi.",
+        "translatedFrom": "Tradotto da %language%"
+    },
+    "text-generator": {
+        "finish-sweetener": {
+            "disclaimer": "Questo testo è stato interamente generato da un'IA."
+        }
+    }
+}

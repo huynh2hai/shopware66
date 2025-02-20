@@ -1,0 +1,663 @@
+{
+    "global": {
+        "error-codes": {
+            "SWAG_MIGRATION_CONNECTION_NAME_ALREADY_EXISTS": "Numele conexiunii există deja.",
+            "SWAG_MIGRATION_CONNECTION_NAME_TO_SHORT": "Numele conexiunii trebuie să aibă cel puțin 6 caractere.",
+            "SWAG_MIGRATION_INVALID_API_KEY": "Tasta API nu are lungimea corectă ({length}/40 caractere)."
+        }
+    },
+    "swag-migration": {
+        "api-error": {
+            "abortMigration": "Nu s-a putut întrerupe migrarea.",
+            "approveFinishedMigration": "Eșuat la finalizarea migrării",
+            "checkConnection": "Nu s-a reușit verificarea conexiunii la sistemul sursă.",
+            "fetchConnectionId": "Nu s-a reușit obținerea ID-ului conexiunii active.",
+            "getDataSelection": "Nu s-a reușit obținerea selecției de date pentru conexiunea curentă.",
+            "getState": "Nu a reușit să obțineți starea de migrare.",
+            "startMigration": "Nu a reușit să pornească migrarea."
+        },
+        "dashboard": {
+            "button": "Asistent migrare deschis",
+            "headline": "Mutarea la Shopware",
+            "information": "Primul lucru este să conectați sistemul de magazine existent - Asistentul de migrare vă va ajuta pe parcurs.",
+            "shopInfoCard": {
+                "button": "Deschidere",
+                "header": "Asistent migrare",
+                "resetButton": "Finish"
+            },
+            "title": "Asistent migrare"
+        },
+        "general": {
+            "descriptionTextModule": "Modul de migrare a datelor",
+            "mainMenuItemGeneral": "Asistent migrare",
+            "tabDataSelector": "Selectarea datelor",
+            "tabHistory": "Istoric",
+            "tabMain": "General"
+        },
+        "history": {
+            "clearRunDialog": {
+                "content": "Ștergerea datelor de migrare va elimina intrările din jurnal, intrările de fișiere media, înregistrările temporare de date de migrare și rularea migrării, care nu vor mai fi disponibile în istoricul migrării.",
+                "contentHint": "Chiar doriți să ștergeți datele?",
+                "title": "Ștergerea datelor de migr"
+            },
+            "connectionName": "Denumirea conexiunii",
+            "contextMenu": {
+                "clearLogs": "Ștergerea datelor de migr",
+                "details": "Arată detalii",
+                "downloadLogs": "Jurnalul de descărcare"
+            },
+            "detailPage": {
+                "close": "Închide",
+                "data": "Date",
+                "dataCount": "Seturi de date",
+                "dataName": "Nume",
+                "errorCode": "Mesaj de eroare",
+                "errorCount": "Contele",
+                "errorLevel": "Nivelul jurnalului",
+                "errors": "Detalii",
+                "logDescription": "Pentru mai multe detalii {link}",
+                "logDownload": "descarcă fișierul jurnal.",
+                "noErrorsOccurred": "Nu s-au produs erori.",
+                "noProgressData": "Această rulare a fost efectuată într-o versiune anterioară a pluginului și datele sale au fost șterse.",
+                "runStatus": "Starea migrării:",
+                "status": {
+                    "aborted": "Abandonat",
+                    "finished": "Terminat",
+                    "running": "Rularea"
+                },
+                "timestamp": "Timp:",
+                "title": "Detalii migrare"
+            },
+            "importDateTime": "Ora de început",
+            "noData": "Nu s-au găsit migraţii.",
+            "profileAndGateway": "Profil & gateway",
+            "selectedData": "Date",
+            "shopDomain": "Domeniul magazin",
+            "shopSystem": "Sistem de magazin",
+            "status": "Stare"
+        },
+        "index": {
+            "abortButton": "Anulare",
+            "assistantCard": {
+                "connection": {
+                    "content": "Asistentul de migrare vă va ajuta să stabiliți o conexiune între sistemul magazinului dvs. și Shopware 6 pentru a transfera și a migra datele.",
+                    "link": "Ajutor și documentație",
+                    "title": "Configurarea unei conexiuni"
+                },
+                "dataSelection": {
+                    "content": "Selectați datele pe care doriți să le migrați. Este posibil să se includă și datele plugin-ului, în cazul în care plugin-ul este deja disponibil pentru Shopware 6. Verificați disponibilitatea pluginurilor în contul dvs. Shopware.",
+                    "title": "Specificarea datelor pentru migrare"
+                },
+                "finish": "Făcut!",
+                "headline": "Cum funcționează migrarea",
+                "migrationOverview": {
+                    "content": "1. Un proces automat verifică datele selectate pentru alocările lipsă. Pregătiți-vă pentru a finaliza procesul automat prin adăugarea de sarcini manuale.{linebreak}2. Datele magazinului dvs. sunt citite și atribuite.{linebreak}3. Toate datele selectate și atribuite în mod corespunzător este transferat la Shopware 6.{linebreak}4. Articolele media sunt descărcate.",
+                    "title": "Pași migrare"
+                },
+                "title": "Informații"
+            },
+            "backToOverviewButton": "Înapoi la prezentare generală",
+            "confirmAbortDialog": {
+                "cancelPause": "Pauză",
+                "cancelRunning": "Continuă",
+                "confirm": "Oprire migrare",
+                "content": "Migrarea nu este complet completă. Datele migrate deja pot fi inutilizabile. Dacă renunțați acum, va trebui să reexecutați complet procesul de migrare.",
+                "hint": "Vrei să opreşti migraţia?",
+                "title": "Oprire migrare"
+            },
+            "confirmWarningCard": {
+                "currencyMismatch": {
+                    "checkboxLabel": "Da, aș dori să continui",
+                    "info": "O migrare cu diferite valute implicite poate duce la înregistrări de date corupte și poate provoca efecte secundare imprevizibile.",
+                    "question": "Sunteți sigur că datele trebuie migrate în moneda standard [{targetSystemCurrency}]?",
+                    "text": "Moneda datelor care urmează să fie migrate nu corespunde monedei standard [{targetSystemCurrency}]. Datele cu [{sourceSystemCurrency}] pot fi migrate în continuare, dar nu vor fi convertite automat. Puteți ajusta prețurile manual după aceea.",
+                    "title": "Migrația a recunoscut o altă monedă"
+                },
+                "languageMismatch": {
+                    "checkboxLabel": "Da, aș dori să continui",
+                    "info": "O migrare cu diferite limbi implicite poate duce la înregistrări de date corupte și poate provoca efecte secundare imprevizibile.",
+                    "question": "Sunteți sigur că datele trebuie migrate în limba standard [{targetSystemLanguage}]?",
+                    "text": "Limba datelor care urmează să fie migrate nu corespunde limbii standard [{targetSystemLanguage}]. Datele cu [{sourceSystemLanguage}] pot fi migrate în continuare, dar nu vor fi convertite automat. Puteţi ajusta traducerile manual după aceea.",
+                    "title": "Migrația a recunoscut o altă limbă"
+                }
+            },
+            "continueButton": "Continuă",
+            "error": {
+                "SWAG_MIGRATION_CANNOT_CONVERT_CHILD_ENTITY": {
+                    "description": "Entitatea copil {entity} din entitatea mamă {parentEntity} cu ID-ul „{parentSourceId}” nu a putut fi convertite.",
+                    "title": "Entitatea {entity} copil nu a putut fi convertită"
+                },
+                "SWAG_MIGRATION_CANNOT_CONVERT_ENTITY": {
+                    "description": "Entitatea {entity} cu ID-ul sursă „{sourceId}” nu a putut fi convertită.",
+                    "title": "Entitatea {entity} nu a putut fi convertită"
+                },
+                "SWAG_MIGRATION_CANNOT_GET_FILE": {
+                    "description": "Fișierul {entity} cu uri „{uri}” și media id „{sourceId}” nu poate fi descărcat/copiat.",
+                    "title": "Fișierul {entity} nu poate fi descărcat/copiat"
+                },
+                "SWAG_MIGRATION_ENTITY_ALREADY_EXISTS": {
+                    "description": "Entitatea {entity} cu ID-ul sursă „{sourceId}” există deja și nu poate fi scrisă.",
+                    "title": "Entitatea {entity} există deja"
+                },
+                "SWAG_MIGRATION_ENTITY_FIELD_REASSIGNED": {
+                    "description": "Entitatea {entity} cu ID-ul sursă „{sourceId}” a primit câmpul „{emptyField}” înlocuit cu „{replacementField}”.",
+                    "title": "Entitatea {entity} are un câmp care a fost reatribuit"
+                },
+                "SWAG_MIGRATION_ENTITY_UNKNOWN": {
+                    "description": "Entitatea {requiredForEntity} cu ID-ul sursă „{requiredForSourceId}” nu poate găsi entitatea {entity} dependentă cu ID-ul sursă „{sourceId}”.",
+                    "title": "Nu am găsit {entity}"
+                },
+                "SWAG_MIGRATION_MESSAGE_QUEUE_EXCEPTION": {
+                    "description": "A apărut o excepție în timpul procesării cozii de mesaje.",
+                    "title": "Excepție de coadă de mesaje"
+                },
+                "SWAG_MIGRATION_RUN_ABORTED_AUTOMATICALLY_EXCEPTION": {
+                    "description": "Migrarea a fost întreruptă automat, deoarece au avut loc prea multe excepții consecutive.",
+                    "title": "Migrarea este întreruptă automat"
+                },
+                "SWAG_MIGRATION_RUN_EXCEPTION": {
+                    "description": "{description}",
+                    "title": "A apărut o excepție"
+                },
+                "SWAG_MIGRATION__COULD_NOT_READ_ENTITY_COUNT": {
+                    "description": "Numărul total pentru entitatea {entity} nu a putut fi citit. Asigurați-vă că tabelul „{table}” există în sistemul sursă și că condiția opțională „{condition}” este validă. Mesaj de excepţie: {exceptionMessage}",
+                    "title": "Nu am putut citi numărul de entități"
+                },
+                "SWAG_MIGRATION__DATASET_NOT_FOUND": {
+                    "description": "DataSet pentru profilul „{profileName}” și entitatea „{entity}” nu a fost găsită. Entitatea cu ID-ul „{sourceId}” nu a putut fi procesată.",
+                    "title": "DataSet nu a fost găsit"
+                },
+                "SWAG_MIGRATION__DEBUG": {
+                    "description": "{logData}",
+                    "title": "Depanare ieșire"
+                },
+                "SWAG_MIGRATION__DOCUMENT_TYPE_NOT_SUPPORTED": {
+                    "description": "Documentul cu ID-ul sursă „{sourceId}” nu a putut fi convertit deoarece tipul de document „{type}” nu este acceptat.",
+                    "title": "Tipul de document nu este acceptat"
+                },
+                "SWAG_MIGRATION__INVALID_EMAIL_ADDRESS": {
+                    "description": "Adresa de e-mail a entității {entity}  cu ID-ul sursă „{sourceId}” nu este validă: {email}",
+                    "title": "Adresă de e-mail nevalidă"
+                },
+                "SWAG_MIGRATION__PROCESSOR_NOT_FOUND": {
+                    "description": "Procesor pentru profilul \"{profileName}„, gateway-ul\"{gatewayName}\"și entitatea\"{entity}\"nu a fost găsită.",
+                    "title": "Procesorul negăsit"
+                },
+                "SWAG_MIGRATION__SHOPWARE_ASSOCIATION_REQUIRED_MISSING": {
+                    "description": "{missingEntity} cu ID-ul sursă „{sourceId}” nu poate fi găsit, dar este necesar pentru {requiredFor}.",
+                    "title": "Asociat {entity} nu a fost găsit"
+                },
+                "SWAG_MIGRATION__SHOPWARE_CANNOT_COPY_DATA": {
+                    "description": "Fișierul sursă nu a putut fi copiat. Fișier: {path}",
+                    "title": "Fișierul sursă nu a fost găsit"
+                },
+                "SWAG_MIGRATION__SHOPWARE_CANNOT_DOWNLOAD_DATA": {
+                    "description": "Nu se poate descărca media. Fişier afectat: {uri}",
+                    "title": "Nu se poate descărca media"
+                },
+                "SWAG_MIGRATION__SHOPWARE_EMPTY_NECESSARY_DATA_FIELDS": {
+                    "description": "Entitatea {entity} cu ID-ul sursă „{sourceId}” nu are datele necesare pentru câmpul „{emptyField}”",
+                    "title": "Entitatea {entity} are un câmp necompletat necesar"
+                },
+                "SWAG_MIGRATION__SHOPWARE_INVALID_UNSERIALIZED_DATA": {
+                    "description": "Entitatea {entity} cu ID-ul sursă „{sourceId}” nu a putut fi convertită din cauza datelor nevalide obiect nevalide pentru entitatea „{unserializedEntity}” și datele brute este: {serializedData}",
+                    "title": "Date nevalide neserializate"
+                },
+                "SWAG_MIGRATION__SHOPWARE_PARENT_ENTITY_NOT_FOUND": {
+                    "description": "Entitatea mamă pentru „{entity}” copil nu a fost găsit.",
+                    "title": "Entitatea mamă negăsită"
+                },
+                "SWAG_MIGRATION__SHOPWARE_UNSUPPORTED_NUMBER_RANGE_TYPE": {
+                    "description": "NumberRange-entitate cu sursa id „{sourceId}” nu a putut fi convertit din cauza tipului neacceptat: {type}.",
+                    "title": "Tip de interval de numere neacceptat"
+                },
+                "SWAG_MIGRATION__SHOPWARE_UNSUPPORTED_OBJECT_TYPE": {
+                    "description": "{entity} de tip obiect „{objectType}” cu sursa id-ul „{sourceId}” nu a putut fi convertit.",
+                    "title": "Tip de obiect neacceptat"
+                },
+                "SWAG_MIGRATION__SHOPWARE_UNSUPPORTED_SHIPPING_CALCULATION_TYPE": {
+                    "description": "Entitatea metodei de expediere cu ID-ul sursă „{sourceId}” nu a putut fi convertită din cauza tipului de calcul neacceptat: {type}.",
+                    "title": "Tipul de calcul al expedierii neacceptate"
+                },
+                "SWAG_MIGRATION__SHOPWARE_UNSUPPORTED_SHIPPING_PRICE": {
+                    "description": "Entitatea prețului de expediere cu ID-ul sursă „{sourceId}” al metodei de expediere „{shippingMethodId}” nu a putut fi convertită din cauza calculării prețului factorului neacceptat.",
+                    "title": "Calcularea prețului factorului de transport neacceptat"
+                },
+                "SWAG_MIGRATION__THEME_COMPILING_ERROR": {
+                    "description": "Tema cu id „{sourceId}” nu a putut fi compilată.",
+                    "title": "Eroare la compilarea temelor"
+                },
+                "SWAG_MIGRATION__WRITER_NOT_FOUND": {
+                    "description": "Scriitor de fișiere pentru „{entity}” entitate nu a fost găsit.",
+                    "title": "Scriitorul fișierelor nu a fost găsit"
+                },
+                "SWAG_MIGRATION__WRITE_EXCEPTION_OCCURRED": {
+                    "description": "{description}",
+                    "title": "A apărut o excepție de scriere"
+                },
+                "authorizationError": {
+                    "information": "Eroare de autorizare. Datele dvs. de acces nu sunt corecte. Vă rugăm să verificați și încercați din nou."
+                },
+                "canNotConnectToServer": "Nici o conexiune la server. Vă rugăm să verificați conexiunea pentru probleme.",
+                "customerExists": {
+                    "information": "Clientul cu e-mail „{mail}” există deja. Nu puteți adăuga acest utilizator cu acel e-mail la baza de date."
+                },
+                "gatewayNotFound": {
+                    "information": "Gateway \"{notFoundGateway}\" nu a fost găsit."
+                },
+                "gatewayRead": {
+                    "information": "Nu s-a putut citi gateway-ul \"{unreadableGateway}”."
+                },
+                "localeNotFound": {
+                    "information": "Codul de introducere locală \"{notFoundCode}\" nu a fost găsit."
+                },
+                "mediaProcessConnectionError": "A apărut o eroare de conexiune în timpul copierii datelor media. Vă rugăm să verificați conexiunea.",
+                "migrationContextPropertyMissing": {
+                    "information": "Proprietatea obligatorie \"{notFoundProperty}\" pentru contextul de migrare nu a fost găsită."
+                },
+                "migrationsWorkloadPropertyMissing": {
+                    "information": "Proprietatea obligatorie „{notFoundProperty}” pentru volumul de lucru de migrare nu a fost găsită."
+                },
+                "noFileSystemPermissions": {
+                    "information": "Nu există permisiuni de sistem de fișiere pentru a crea sau scrie fișiere sau directoare. Vă rugăm să verificați permisiunile."
+                },
+                "profileNotFound": {
+                    "information": "Profilul de migrare \"{notFoundProfile}\" nu a fost găsit."
+                },
+                "undefinedIndex": {
+                    "detail": "Indexul neidentificat nu a putut fi găsit.",
+                    "information": "Indexul „{unidentifiedIndex}” nu a putut fi găsit. Vă rugăm să verificați datele.",
+                    "title": "Index neidentificat"
+                },
+                "unknownError": "Eroare necunoscută. Puteți verifica tabelul de jurnal al bazei de date pentru mai multe informații."
+            },
+            "errorTypes": {
+                "error": "Eroare",
+                "info": "Informații",
+                "warning": "Atenție"
+            },
+            "finishButton": "Finish",
+            "loadingScreenCard": {
+                "documentationLink": "https://developer.shopware.com/docs/guides/hosting/infrastructure/message-queue.html#message-queue",
+                "documentationLinkText": "Documentația cozii de mesaje",
+                "flowChart": {
+                    "cleanup": "Curățare",
+                    "fetchData": "Citire",
+                    "finish": "Terminat",
+                    "indexing": "Indexare",
+                    "premapping": "Verificare",
+                    "processMedia": "Descărcare",
+                    "writeData": "Scrierea"
+                },
+                "notice": "Sfat: Acest proces rulează în coada de mesaje. Nu trebuie să rămâneți pe această pagină dacă magazinul dvs. este configurat corect.",
+                "result": {
+                    "caption": "Descărcarea media continuă în fundal. Fișierele mari pot dura ceva timp.",
+                    "historyHint": "Puteți vizualiza aceste informații oricând în istoricul migrației. Este posibil ca mai multe mesaje jurnal să fie adăugate ulterior, deoarece descărcarea media continuă să ruleze în fundal.",
+                    "logSummary": "Jurnal de bord",
+                    "title": "Asistentul pentru Migrație a terminat"
+                },
+                "status": {
+                    "aborting": {
+                        "caption": "Datele nescrise sunt curățate. Datele deja migrate ar putea fi inutilizabile.",
+                        "long": "Migrația este întreruptă",
+                        "short": "Avortul"
+                    },
+                    "cleanup": {
+                        "caption": "Datele temporare sunt eliminate. Migrația este aproape completă.",
+                        "long": "Migrația este curățată",
+                        "short": "Curățare"
+                    },
+                    "fetching": {
+                        "caption": "Noile sarcini sunt procesate.",
+                        "long": "Datele vor fi citite din sistemul dvs.",
+                        "short": "Citire"
+                    },
+                    "finish": "Terminat",
+                    "indexing": {
+                        "caption": "Migrația este aproape completă.",
+                        "long": "Noile date sunt indexate",
+                        "short": "Indexare"
+                    },
+                    "media-processing": {
+                        "caption": "Procesarea datelor mari de imagine poate dura ceva timp.",
+                        "long": "Mass-media este transferată",
+                        "short": "Transferul media"
+                    },
+                    "writing": {
+                        "caption": "În funcție de dimensiunea magazinului, poate dura câteva momente.",
+                        "long": "Datele sunt scrise în Shopware 6",
+                        "short": "Scrierea"
+                    }
+                }
+            },
+            "migrateButton": "Pornire migrare",
+            "migrationAlreadyRunning": "Migraţia a început deja.",
+            "pauseButton": "Pauză",
+            "pluginVersionText": "Am observat că o actualizare plugin este disponibilă în sistemul sursă {sourceSystem}. Vă rugăm să actualizați plugin-ul „{pluginName}” înainte de a începe migrarea.",
+            "premappingCard": {
+                "cardTitle": "Misiuni",
+                "group": {
+                    "delivery_time": "Timp de livrare",
+                    "manufacturer": "Producători",
+                    "newsletter_status": "Starea buletinului informativ",
+                    "order_delivery_state": "Stări de livrare comenzi",
+                    "order_state": "Stări de comandă",
+                    "payment_method": "Metode de plată",
+                    "salesChannel": "Canalul de vânzări Newsletter",
+                    "salutation": "Salutare",
+                    "shipping_availability_rule": "Disponibilitatea metodei de expediere",
+                    "transaction_state": "Stările tranzacției",
+                    "user": "Utilizator de administrare"
+                },
+                "loadingCaption": "Datele existente au fost verificate.",
+                "loadingTitle": "Verificarea datelor se execută",
+                "newAssignmentTitle": "Misiuni noi",
+                "placeholder": "Vă rugăm să selectați",
+                "previousTitle": "Anterior",
+                "unfilledAlert": "Am detectat că există date care necesită atribuire manuală.",
+                "unfilledCaption": "Puteți continua numai după ce atribuirea manuală a fost finalizată.",
+                "unfilledTitle": "Verificarea datelor a fost finalizată",
+                "validCaption": "Datele sunt gata pentru a continua",
+                "validTitle": "Verificarea datelor este completă"
+            },
+            "savePremapping": {
+                "message": "Premaparea a fost salvată.",
+                "saveButton": "Salvează premaparea"
+            },
+            "selectDataCard": {
+                "cardTitle": "Selectarea datelor",
+                "dataHeader": "Date",
+                "dataSelection": {
+                    "basicSettings": "Date de bază",
+                    "cms": "Aspecte",
+                    "customerWishlists": "Liste de dorințe",
+                    "customersOrders": "Clienți și comenzi",
+                    "media": "Media",
+                    "newsletterRecipient": "Destinatar newsletter",
+                    "processMediaFiles": "Media",
+                    "productReviews": "Comentarii despre produse",
+                    "products": "Produse",
+                    "promotions": "Promoții",
+                    "seoUrls": "URL-uri SEO"
+                },
+                "dataTypes": {
+                    "basicData": "Date magazin",
+                    "pluginData": "Date plugin-uri"
+                },
+                "entities": {
+                    "category": "Categorii:",
+                    "category_association": "Asociații de categorii:",
+                    "category_cms_page_association": "Asociații de aspect categorie:",
+                    "category_custom_field": "Categorie câmpuri personalizate",
+                    "category_product_stream_association": "Categorii asociații dinamice ale grupurilor de produse:",
+                    "cms_page": "Aspecte:",
+                    "country": "Ţări:",
+                    "country_state": "Statele țării:",
+                    "currency": "Valute:",
+                    "custom_field_set": "Seturi de câmpuri personalizate:",
+                    "customer": "Clienți:",
+                    "customer_custom_field": "Câmpuri personalizate pentru clienți",
+                    "customer_group": "Grupuri de clienți:",
+                    "customer_group_custom_field": "Câmpuri personalizate pentru grupuri de clienți",
+                    "customer_wishlist": "Listele de dorințe:",
+                    "delivery_time": "Termeni de livrare:",
+                    "language": "Limbi:",
+                    "mail_template": "Șabloane de e-mail:",
+                    "main_variant_relation": "Relațiile principale ale variantei:",
+                    "media": "Mass-media:",
+                    "media_folder": "Dosare media:",
+                    "media_folder_inheritance": "Moștenirile folderului media:",
+                    "number_range": "Intervale de numere:",
+                    "order": "Comenzi:",
+                    "order_custom_field": "Comandați câmpuri personalizate",
+                    "order_document": "Documente de comandă:",
+                    "order_document_base_config": "Configurare document:",
+                    "order_document_custom_field": "Comandați câmpuri personalizate ale documentului",
+                    "order_document_inheritance": "Relații cu documentele de ordine:",
+                    "page_system_config": "Informații de bază ale paginii:",
+                    "product": "Produse:",
+                    "product_cross_selling": "Vânzare încrucișată:",
+                    "product_custom_field": "Câmpuri personalizate ale produsului",
+                    "product_feature_set": "Caracteristici esențiale:",
+                    "product_manufacturer": "Producători de produse:",
+                    "product_manufacturer_custom_field": "Câmpuri personalizate ale producătorului de produse",
+                    "product_option_relation": "Opțiuni de produs:",
+                    "product_price_custom_field": "Câmpuri personalizate pentru prețul produsului",
+                    "product_property_relation": "Proprietățile produsului:",
+                    "product_review": "Opinii:",
+                    "product_sorting": "Sortarea produselor:",
+                    "product_stream": "Grupuri dinamice de produse:",
+                    "product_stream_filter_inheritance": "Filtre dinamice pentru grupuri de produse",
+                    "promotion": "Promoții:",
+                    "property_group": "Grupuri de proprietăți:",
+                    "property_group_option": "Proprietăți:",
+                    "rule": "Regulile:",
+                    "sales_channel": "Canale de vânzări:",
+                    "sales_channel_domain": "Domenii:",
+                    "salutation": "Salutări:",
+                    "seo_url": "URL-uri SEO:",
+                    "seo_url_template": "Șabloane URL SEO:",
+                    "shipping_method": "Metode de livrare:",
+                    "snippet": "Fragmente:",
+                    "snippet_set": "Seturi de fragmente:",
+                    "system_config": "Informații de bază:",
+                    "tax": "Cote de impozitare:",
+                    "tax_rule": "Reguli fiscale:",
+                    "translation": "Traduceri:",
+                    "unit": "Unități de scară:"
+                },
+                "headers": {
+                    "dataType": "Tip",
+                    "name": "Nume",
+                    "total": "Seturi de date"
+                },
+                "noData": "Nimic nu a fost găsit să migreze."
+            },
+            "shopInfoCard": {
+                "buttonCreateConnection": "Creează o conexiune nouă",
+                "buttonCreateInitialConnection": "Creați conexiunea inițială",
+                "buttonEditSettings": "Editare conexiune",
+                "buttonProfileInstallation": "Instalați un alt profil",
+                "buttonRemoveCredentials": "Ștergerea datelor de acces",
+                "buttonResetChecksums": "Resetați sumele de control",
+                "buttonResetMigration": "Migrarea completă",
+                "buttonSelectConnection": "Modificarea conexiunii",
+                "cardTitle": "Sistem de magazin",
+                "connected": "Conectaţi",
+                "connectionCheck": "Verificarea conexiunii:",
+                "gateway": "Gateway:",
+                "lastMigration": "Ultima migrare:",
+                "noConnection": "Nici o conexiune",
+                "noMigrationDoneYet": "-",
+                "notConnected": "Nu este conectat",
+                "profile": "Profilul sistemului:",
+                "refreshTooltip": "Verificați conexiunea la sistemul sursă",
+                "removeCredentialsConfirmDialog": {
+                    "abortButtonText": "Anulare",
+                    "confirmButtonText": "Da, şterge",
+                    "content": "Nu va exista nici o conexiune activă după aceasta. Introduceți din nou datele de acces pentru a restabili conexiunea.",
+                    "contentHint": "Doriți să ștergeți datele de acces curente?",
+                    "title": "Ștergerea datelor de acces"
+                },
+                "resetChecksumsConfirmDialog": {
+                    "abortButtonText": "Anulare",
+                    "confirmButtonText": "Da, resetează",
+                    "content": "Dacă resetați sumele de control, toate datele din sistemul sursă vor fi recunoscute în următoarea migrare. Aceasta include seturi de date deja migrate sau neschimbate. <br><br><strong>Important:</strong> Modificările înregistrărilor de date pe care le-ați efectuat în Shopware 6 de la ultima migrare vor fi suprascrise. Datele sistemului sursă au prioritate.",
+                    "contentHint": "Doriți să resetați sumele de control?",
+                    "title": "Resetați sumele de control"
+                },
+                "resetMigrationConfirmDialog": {
+                    "abortButtonText": "Anulare",
+                    "confirmButtonText": "Finalizează acum",
+                    "content": "Grozav! Acum, să finalizăm migrarea și să curățăm fișierele temporare și datele neutilizate. <strong>Vă rugăm să rețineți:</strong> Finalizarea migrării este terminală. Nu veți putea migra alte date prin conexiunea curentă.",
+                    "contentHint": "Doriți să finalizați migrația acum?",
+                    "errorNotification": {
+                        "message": "O migrare este în curs de desfășurare.",
+                        "title": "Eroare la finalizarea migrării"
+                    },
+                    "header": "Ați terminat de migrat datele magazinului?",
+                    "title": "Finalizarea migrării"
+                }
+            },
+            "shopwareMajorVersionText": "Am observat că versiunea {sourceSystem} a sistemului sursă nu se potrivește cu versiunea {targetSystem} a sistemului țintă. Asigurați-vă că utilizați aceeași versiune majoră pentru ambele sisteme înainte de a începe migrarea.",
+            "title": "General"
+        },
+        "wizard": {
+            "buttonAbort": "Anulare",
+            "buttonConnect": "Conectare",
+            "buttonConnectionCreate": "Stabilește conexiunea",
+            "buttonConnectionSelect": "Schimbă conexiunea",
+            "buttonEdit": "Editare conexiune",
+            "buttonFinish": "Terminat",
+            "buttonLater": "Închide",
+            "buttonLetsGo": "Pornire",
+            "buttonNext": "Continuă",
+            "buttonToProfileInformation": "Informații",
+            "buttonUseSsl": "Utilizați HTTPS",
+            "pages": {
+                "connectionCreate": {
+                    "connectionLabel": "Denumirea conexiunii",
+                    "connectionPlaceholder": "Introduceți numele",
+                    "connectionTooltip": "Introduceți un nume unic pentru conexiune.",
+                    "contentInformation": "Următoarele informații sunt necesare pentru a efectua migrarea.",
+                    "gatewayLabel": "Gateway",
+                    "gatewayPlaceholder": "Selectează gateway-ul",
+                    "gatewayTooltip": "Tipul conexiunii dintre sisteme.",
+                    "gateways": {
+                        "shopwareApi": "API",
+                        "shopwareLocal": "Baza de date locală"
+                    },
+                    "hint": {
+                        "local": "Notă: Sistemele magazinelor trebuie să fie pe același server. Aveți nevoie de date de acces la baza de date."
+                    },
+                    "profileInstall": "Instalați un alt profil",
+                    "profileLabel": "Profilul sistemului magazinului",
+                    "profilePlaceholder": "Selectează profilul",
+                    "title": "Migraţie — Creează o conexiune"
+                },
+                "connectionSelect": {
+                    "connectionLabel": "Denumirea conexiunii",
+                    "connectionPlaceholder": "Vă rugăm să selectați o conexiune",
+                    "contentInformation": "Selectați o conexiune existentă din listă pentru a actualiza datele.",
+                    "title": "Migrare — Schimbarea conexiunii"
+                },
+                "credentials": {
+                    "emptyState": "Ne pare rău nici un formular pentru profilul selectat găsit.",
+                    "error": {
+                        "SWAG_MIGRATION__API_CONNECTION_ERROR": "Nu s-a putut conecta la server. Vă rugăm să verificați domeniul magazinului dat.",
+                        "SWAG_MIGRATION__API_CONNECTION_ERROR__HINT": "Dacă întâmpinați probleme la conectare, ar putea merita să verificați versiunea curl instalată în prezent pe serverul dvs. și să o actualizați.",
+                        "SWAG_MIGRATION__DATABASE_CONNECTION_ATTRIBUTES_WRONG": "Conexiunea bazei de date nu are atributele corecte și nu pot fi setate.",
+                        "SWAG_MIGRATION__DATABASE_CONNECTION_ERROR": "Conexiunea bazei de date nu poate fi stabilită.",
+                        "SWAG_MIGRATION__GATEWAY_READ": "Nu s-a putut conecta la server. Vă rugăm să verificați domeniul magazinului dat.",
+                        "SWAG_MIGRATION__GATEWAY_READ__HINT": "Dacă întâmpinați probleme la conectare, ar putea merita să verificați versiunea curl instalată în prezent pe serverul dvs. și să o actualizați.",
+                        "SWAG_MIGRATION__INVALID_CONNECTION_AUTHENTICATION": "Acreditările dvs. sunt incorecte. Vă rugăm să le verificaţi şi să încercaţi din nou.",
+                        "SWAG_MIGRATION__IS_RUNNING": "O migrare este în curs de desfășurare. Prin urmare, nu puteți edita acreditările până la finalizarea migrării.",
+                        "SWAG_MIGRATION__PLUGIN_NOT_INSTALLED": "Plugin-ul necesar „Conector de migrare” nu este instalat în Shopware 5. Vă rugăm să instalați plugin-ul gratuit și încercați din nou.",
+                        "SWAG_MIGRATION__PLUGIN_NOT_INSTALLED__HINT": "Dacă ați instalat deja „Migration Connector” și ați șters memoria cache din backend-ul Shopware 5 (Configurare > cache/performanță), încercați să ștergeți manual folderul cache Shopware 5 (var/cache).",
+                        "SWAG_MIGRATION__SSL_REQUIRED": "Am stabilit că domeniul de magazin dat este necesară o conexiune SSL.",
+                        "alertErrorTitle": "Atenţie",
+                        "contentTitle": "Nici o conexiune",
+                        "undefinedErrorMsg": "Eroare internă a serverului. Vă rugăm să încercați din nou."
+                    },
+                    "shopware55": {
+                        "api": {
+                            "apiKeyLabel": "Cheie API",
+                            "apiKeyPlaceholder": "Introduceți cheia",
+                            "apiKeyTooltip": "Cheia API este utilizată pentru securitate și identificare.",
+                            "apiUserLabel": "Nume utilizator (utilizator API)",
+                            "apiUserPlaceholder": "Introduceți numele de utilizator",
+                            "apiUserTooltip": "Numele de utilizator al backend-ului Shopware 5.",
+                            "contentInformation": "Aveți nevoie de acreditări API valide pentru a stabili o conexiune între Shopware 5 și Shopware 6. Acreditările API pot fi găsite în contul Shopware 5 sub „Administrare utilizator”. Accesul API trebuie să fie activat acolo și confirmat prin salvare.",
+                            "endpointLabel": "Domeniul magazin",
+                            "endpointPlaceholder": "www.demoshop.com",
+                            "endpointSSLLabel": "Magazinul meu utilizează o conexiune securizată (SSL)"
+                        },
+                        "local": {
+                            "contentInformation": "Avem încă nevoie de date de acces pentru a vă conecta la baza de date Shopware 5.",
+                            "dbHostLabel": "Gazdă",
+                            "dbHostPlaceholder": "Introduceți gazdă",
+                            "dbNameLabel": "Nume bază de date",
+                            "dbNamePlaceholder": "Introduceți numele",
+                            "dbPasswordLabel": "Parole",
+                            "dbPasswordPlaceholder": "Introduceți parola",
+                            "dbPortLabel": "Portul",
+                            "dbUserLabel": "Utilizator",
+                            "dbUserPlaceholder": "Introduceți numele de utilizator",
+                            "installationRoot": "Dosar de instalare magazin",
+                            "installationRootPlaceholder": "Introduceți rădăcina de instalare"
+                        }
+                    },
+                    "shopware6": {
+                        "api": {
+                            "apiPasswordLabel": "Cheie de acces secret",
+                            "apiPasswordPlaceholder": "Introduceți cheia de acces secretă",
+                            "apiPasswordTooltip": "Cheia de acces secretă este folosită pentru securitate şi identificare.",
+                            "apiUserLabel": "ID cheie de acces",
+                            "apiUserPlaceholder": "Introduceți ID-ul cheii de acces",
+                            "apiUserTooltip": "Accesați ID-ul cheie al integrării.",
+                            "contentInformation": "Aveți nevoie de acreditări API valide pentru a stabili o conexiune între sursa dvs. și instanța țintă Shopware 6. Veți obține aceste atunci când creați o integrare în sistemul sursă.",
+                            "endpointLabel": "Domeniul magazin",
+                            "endpointPlaceholder": "www.demoshop.com",
+                            "endpointSSLLabel": "Magazinul meu utilizează o conexiune securizată (SSL)"
+                        }
+                    },
+                    "statusTitle": "Verificarea conexiunii",
+                    "success": {
+                        "SWAG_MIGRATION__REQUEST_CERTIFICATE_INVALID": "Am stabilit că certificatul SSL al domeniului de magazin specificat nu este sigur. Verificați certificatul pentru propria dvs. securitate.",
+                        "contentInformation": "Puteți începe migrarea.",
+                        "contentTitle": "Conectare reușită",
+                        "undefinedErrorMsg": "A apărut o eroare necunoscută la verificarea certificatului SSL din domeniul de magazin specificat."
+                    },
+                    "title": "Migrarea — Stabilirea unei conexiuni"
+                },
+                "introduction": {
+                    "contentHeadline": "Hai să mutăm nişte lucruri",
+                    "contentInformation": "Împreună vom conecta sistemul dvs. de magazin la Shopware 6. Ulterior, Asistentul de migrare vă va ajuta să migrați datele pas cu pas.",
+                    "title": "Asistent migrare"
+                },
+                "profileInformation": {
+                    "shopware55Api": {
+                        "contentInformation": "Plugin-ul necesar „Conector de migrare” este gratuit și poate fi găsit în backend Shopware 5 sub Managerul de pluginuri > Extensii > Instrumente de migrare. Vă rugăm să instalați și să activați plugin-ul pentru a continua.",
+                        "contentTitle": "Plugin-ul necesar",
+                        "pluginLink": "Mai multe informații despre plugin"
+                    },
+                    "shopware6Api": {
+                        "contentTitle": "Cerințe",
+                        "integration": {
+                            "description": "Creați o integrare în sistemul sursă prin Setări > Sistem > Integrări. Veți avea nevoie de ID-ul cheii de acces generat și cheia de acces secretă în pasul următor.",
+                            "link": "https://docs.shopware.com/en/shopware-6-en/settings/system/integrationen",
+                            "linkText": "Mai multe despre integrări",
+                            "title": "Integrarea"
+                        },
+                        "plugin": {
+                            "description": "Instalați extensia Asistent de migrare în sistemul sursă.",
+                            "link": "https://store.shopware.com/en/swag257162657297f/migration-assistant.html",
+                            "linkText": "Mai multe despre extensia Asistent de migrare",
+                            "title": "Extensie"
+                        }
+                    },
+                    "title": "Migrație - Pregătirea conexiunii"
+                },
+                "profileInstallation": {
+                    "availabilityHeadline": "Disponibil anterior:",
+                    "availableVersionHeadline": "Acceptat:",
+                    "content": "Alegeți sistemul magazinului pentru a migra datele și asigurați-vă că ați instalat și plugin-ul de profil corespunzător.",
+                    "installationButton": "Instalează",
+                    "installedHint": "Instalat",
+                    "magentoProfileHeadline": "Magento - Profil",
+                    "profileManufacturer": "shopware AG",
+                    "shopwareProfileHeadline": "Shopware - Profil",
+                    "title": "Migrație - Shopsystem-Profil"
+                }
+            }
+        },
+        "worker-listener": {
+            "mediaProcessing": {
+                "message": "Nu mai există fișiere. | Un fișier rămas. | {n} fișiere rămase.",
+                "messageSuccess": "Descărcarea media a fost finalizată.",
+                "title": "Mass-media este descărcată",
+                "titleSuccess": "Descărcare media finalizată"
+            }
+        }
+    }
+}
