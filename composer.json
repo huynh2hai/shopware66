@@ -65,5 +65,10 @@
         "flex://defaults"
       ]
     }
+  },
+  "require-dev": {
+    "shopware/dev-tools": "^1.5",
+    "symfony/stopwatch": "^7.1",
+    "symfony/web-profiler-bundle": "^7.1"
   }
 }

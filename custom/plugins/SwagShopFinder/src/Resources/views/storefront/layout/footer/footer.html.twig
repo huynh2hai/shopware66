@@ -1,0 +1,10 @@
+{% sw_extends '@Storefront/storefront/layout/footer/footer.html.twig' %}
+
+{% block layout_footer_navigation_columns %}
+  {{ parent() }}
+  {% if page.footer.extensions.swag_shop_finder %}
+    {% sw_include '@Storefront/storefront/layout/footer/shop-finder-footer.htm.twig' with {
+      'swag_shop_finder': page.footer.extensions.swag_shop_finder
+    } %}
+  {% endif %}
+{% endblock %}

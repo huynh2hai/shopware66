@@ -1,0 +1,52 @@
+<div class="col-md-4 footer-column js-footer-column">
+  <div class="footer-column-headline footer-headline js-footer-column-headline js-collapse-footer-column-trigger" id="collapseFooterHotline" data-bs-target="#collapseFooterHotline" aria-expanded="true" aria-controls="collapseFooterHotline" role="listitem">
+    {{ "headerStories"|trans() }}
+    <div class="footer-column-toggle">
+      <span class="footer-plus-icon">{% sw_icon 'plus' %}</span>
+      <span class="footer-minus-icon">{% sw_icon 'minus' %}</span>
+    </div>
+  </div>
+  <div id="collapseFooterHotline" class="footer-column-content collapse js-footer-column-content footer-contact" aria-labelledby="collapseFooterHotline" role="listitem">
+    <div class="footer-column-content-inner">
+      <p>
+        {% for shop in swag_shop_finder.elements %}
+          <ul>
+            <li>
+              <a href="#" data-bs-toggle="modal" data-bs-target="#shop-{{ shop.id }}">{{ shop.name }}</a>
+            </li>
+          </ul>
+        {% endfor %}
+      </p>
+    </div>
+  </div>
+</div>
+
+{% for shop in swag_shop_finder.elements %}
+  <!-- Modal -->
+  <div class="modal fade" id="shop-{{ shop.id }}" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5">{{ shop.name }}</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <p>
+            <span>{{ shop.name }}</span> </br>
+            {{ shop.street }} </br>
+            {{ shop.postCode }} {{ shop.city }} </br>
+            {{ shop.country.name }} </br>
+            Phone: {{ shop.telephone }} </br>
+            Website: <a href="{{ shop.url }}" target="_blank">{{ shop.url }}</a></br>
+          </p>
+          <p>
+            {{shop.openTimes }}
+          </p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+{% endfor %}

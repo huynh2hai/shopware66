@@ -1,0 +1,55 @@
+<?xml version="1.0" ?>
+
+<container xmlns="http://symfony.com/schema/dic/services"
+           xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+           xsi:schemaLocation="http://symfony.com/schema/dic/services http://symfony.com/schema/dic/services/services-1.0.xsd">
+
+    <services>
+
+        <service id="SwagShopFinder\Command\ExampleCommand">
+            <tag name="console.command"/>
+        </service>
+
+        <service id="SwagShopFinder\Subscriber\MySubscriber">
+            <tag name="kernel.event_subscriber"/>
+        </service>
+
+        <service id="SwagShopFinder\Storefront\Subscriber\FooterSubscriber">
+            <argument id="Shopware\Core\System\SystemConfig\SystemConfigService" type="service" />
+            <argument id="swag_shop_finder.repository" type="service" />
+            <tag name="kernel.event_subscriber"/>
+        </service>
+
+        <service id="SwagShopFinder\Storefront\Controller\ExampleController" public="true">
+            <call method="setContainer">
+                <argument type="service" id="service_container"/>
+            </call>
+            <call method="setTwig">
+                 <argument type="service" id="twig"/>
+             </call>
+        </service>
+
+        <service id="SwagShopFinder\Core\Api\DemoDataController" public="true">
+            <argument id="country.repository" type="service"/>
+            <argument id="swag_shop_finder.repository" type="service"/>
+
+            <call method="setContainer">
+                <argument type="service" id="service_container"/>
+            </call>
+        </service>
+
+        <service id="SwagShopFinder\Core\Content\Example\SalesChannel\ExampleRoute">
+            <argument type="service" id="product.repository"/>
+        </service>
+
+        <service id="SwagShopFinder\Core\Content\ShopFinder\ShopFinderDefinition">
+            <tag name="shopware.entity.definition" entity="swag_shop_finder" />
+        </service>
+
+        <service id="SwagShopFinder\Service\CustomFieldsInstaller">
+            <argument type="service" id="custom_field_set.repository"/>
+            <argument type="service" id="custom_field_set_relation.repository"/>
+        </service>
+
+    </services>
+</container>
