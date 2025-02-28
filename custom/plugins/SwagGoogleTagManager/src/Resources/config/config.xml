@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:noNamespaceSchemaLocation="https://raw.githubusercontent.com/shopware/shopware/trunk/src/Core/System/SystemConfig/Schema/config.xsd">
+
+    <card>
+        <title>Google Tag Manager Configuration</title>
+
+        <input-field type="text">
+            <name>googleTagId</name>
+            <minLength>12</minLength>
+            <maxLength>12</maxLength>
+            <label>Google Tag ID</label>
+            <placeholder>Input Your Google Tag ID</placeholder>
+            <helpText>Enter your Google Tag Manager Container ID.</helpText>
+        </input-field>
+    </card>
+
+</config>

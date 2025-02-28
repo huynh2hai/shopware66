@@ -1,6 +1,6 @@
 <?php declare(strict_types=1);
 
-namespace SwagShopFinder;
+namespace SwagGoogleTagManager;
 
 use Shopware\Core\Framework\Plugin;
 use Shopware\Core\Framework\Plugin\Context\ActivateContext;
@@ -8,9 +8,8 @@ use Shopware\Core\Framework\Plugin\Context\DeactivateContext;
 use Shopware\Core\Framework\Plugin\Context\InstallContext;
 use Shopware\Core\Framework\Plugin\Context\UninstallContext;
 use Shopware\Core\Framework\Plugin\Context\UpdateContext;
-use SwagShopFinder\Service\CustomFieldsInstaller;
 
-class SwagShopFinder extends Plugin
+class SwagGoogleTagManager extends Plugin
 {
     public function install(InstallContext $installContext): void
     {
@@ -32,7 +31,6 @@ class SwagShopFinder extends Plugin
     {
         // Activate entities, such as a new payment method
         // Or create new entities here, because now your plugin is installed and active for sure
-
     }
 
     public function deactivate(DeactivateContext $deactivateContext): void

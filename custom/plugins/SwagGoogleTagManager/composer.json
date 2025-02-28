@@ -1,0 +1,27 @@
+{
+    "name": "swag-google-tag-manager/swag-google-tag-manager",
+    "description": "swag-google-tag-manager/swag-google-tag-manager",
+    "type": "shopware-platform-plugin",
+    "version": "1.0.0",
+    "license": "MIT",
+    "require": {
+        "shopware/core": "~6.6.0"
+    },
+    "extra": {
+        "shopware-plugin-class": "SwagGoogleTagManager\\SwagGoogleTagManager",
+        "label": {
+            "de-DE": "SwagGoogleTagManager by HaiH",
+            "en-GB": "SwagGoogleTagManager by HaiH"
+        }
+    },
+    "autoload": {
+        "psr-4": {
+            "SwagGoogleTagManager\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "SwagGoogleTagManager\\Tests\\": "tests/"
+        }
+    }
+}
