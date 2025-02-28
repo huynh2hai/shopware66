@@ -11,7 +11,6 @@ namespace Swag\PlatformDemoData\DataProvider;
 
 use Doctrine\DBAL\Connection;
 use Shopware\Core\Content\Category\CategoryCollection;
-use Shopware\Core\Content\Category\CategoryEntity;
 use Shopware\Core\Framework\Api\Context\SystemSource;
 use Shopware\Core\Framework\Context;
 use Shopware\Core\Framework\DataAbstractionLayer\EntityRepository;
@@ -20,11 +19,11 @@ use Shopware\Core\Framework\DataAbstractionLayer\Search\Filter\EqualsFilter;
 use Shopware\Core\Framework\Log\Package;
 use Swag\PlatformDemoData\Resources\helper\TranslationHelper;
 
-#[Package('services-settings')]
+#[Package('fundamentals@after-sales')]
 class CategoryProvider extends DemoDataProvider
 {
     /**
-     * @var EntityRepository<CategoryCollection> $categoryRepository
+     * @var EntityRepository<CategoryCollection>
      */
     private EntityRepository $categoryRepository;
 
@@ -193,8 +192,7 @@ class CategoryProvider extends DemoDataProvider
         $criteria = new Criteria();
         $criteria->addFilter(new EqualsFilter('parentId', null));
 
-        /** @var CategoryEntity|null $rootCategory */
-        $rootCategory = $this->categoryRepository->search($criteria, new Context(new SystemSource()))->first();
+        $rootCategory = $this->categoryRepository->search($criteria, new Context(new SystemSource()))->getEntities()->first();
         if (!$rootCategory) {
             throw new \RuntimeException('Root category not found');
         }
@@ -230,7 +228,7 @@ class CategoryProvider extends DemoDataProvider
                 WHERE cms_page.locked
                 AND name = :name
             ',
-            ['name' => $name]
+            ['name' => $name],
         );
 
         return $id !== false ? $id : null;

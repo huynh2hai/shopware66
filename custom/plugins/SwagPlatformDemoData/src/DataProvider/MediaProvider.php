@@ -15,7 +15,7 @@ use Shopware\Core\Content\Media\File\MediaFile;
 use Shopware\Core\Framework\Context;
 use Shopware\Core\Framework\Log\Package;
 
-#[Package('services-settings')]
+#[Package('fundamentals@after-sales')]
 class MediaProvider extends DemoDataProvider
 {
     private FileSaver $fileSaver;
@@ -95,12 +95,12 @@ class MediaProvider extends DemoDataProvider
                 new MediaFile(
                     $file,
                     \mime_content_type($file) ?: 'application/octet-stream',
-                    \pathinfo($file, PATHINFO_EXTENSION),
-                    \filesize($file) ?: 0
+                    \pathinfo($file, \PATHINFO_EXTENSION),
+                    \filesize($file) ?: 0,
                 ),
-                \pathinfo($file, PATHINFO_FILENAME),
+                \pathinfo($file, \PATHINFO_FILENAME),
                 \basename(\dirname($file)),
-                $context
+                $context,
             );
         }
 

@@ -12,7 +12,7 @@ namespace Swag\PlatformDemoData\Resources\helper;
 use Doctrine\DBAL\Connection;
 use Shopware\Core\Framework\Log\Package;
 
-#[Package('services-settings')]
+#[Package('fundamentals@after-sales')]
 class TranslationHelper
 {
     // Which language to use if no translation for the wanted language is available
@@ -27,6 +27,7 @@ class TranslationHelper
 
     /**
      * @param array<string, mixed> $translations
+     *
      * @return array<string, mixed>
      */
     public function adjustTranslations(array $translations): array
@@ -42,6 +43,7 @@ class TranslationHelper
 
     /**
      * @param array<string, mixed> $translations
+     *
      * @return array<string, mixed>
      */
     private function clearUnavailableTranslations(array $translations): array

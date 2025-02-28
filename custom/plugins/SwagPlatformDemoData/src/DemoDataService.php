@@ -9,7 +9,6 @@ declare(strict_types=1);
 
 namespace Swag\PlatformDemoData;
 
-use Doctrine\DBAL\Exception\ForeignKeyConstraintViolationException;
 use Shopware\Core\Framework\Api\Controller\SyncController;
 use Shopware\Core\Framework\Context;
 use Shopware\Core\Framework\DataAbstractionLayer\Write\Validation\RestrictDeleteViolationException;
@@ -18,7 +17,7 @@ use Swag\PlatformDemoData\DataProvider\DemoDataProvider;
 use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\HttpFoundation\RequestStack;
 
-#[Package('services-settings')]
+#[Package('fundamentals@after-sales')]
 class DemoDataService
 {
     private SyncController $sync;
@@ -42,7 +41,7 @@ class DemoDataService
 
     public function generate(Context $context): void
     {
-        foreach ($this->demoDataProvider as $dataProvider) {
+        foreach ($this->getSortedDemoDataProviders('create') as $dataProvider) {
             $payload = [
                 [
                     'action' => $dataProvider->getAction(),
@@ -51,7 +50,7 @@ class DemoDataService
                 ],
             ];
 
-            $request = new Request([], [], [], [], [], [], \json_encode($payload, JSON_THROW_ON_ERROR));
+            $request = new Request([], [], [], [], [], [], \json_encode($payload, \JSON_THROW_ON_ERROR));
 
             $this->requestStack->push($request);
             $response = $this->sync->sync($request, $context);
@@ -69,8 +68,9 @@ class DemoDataService
 
     public function delete(Context $context): void
     {
-        foreach ($this->demoDataProvider as $dataProvider) {
+        foreach ($this->getSortedDemoDataProviders('delete') as $dataProvider) {
             $payloadsIds = [];
+
             foreach ($dataProvider->getPayload() as $entry) {
                 if ($dataProvider->getEntity() === 'category' && isset($entry['children'])) {
                     foreach ($entry['children'] as $child) {
@@ -89,7 +89,7 @@ class DemoDataService
                 ],
             ];
 
-            $request = new Request([], [], [], [], [], [], \json_encode($payload, JSON_THROW_ON_ERROR));
+            $request = new Request([], [], [], [], [], [], \json_encode($payload, \JSON_THROW_ON_ERROR));
 
             try {
                 $this->requestStack->push($request);
@@ -101,9 +101,28 @@ class DemoDataService
                 if ($response->getStatusCode() >= 400) {
                     throw new \RuntimeException(\sprintf('Error deleting "%s": %s', $dataProvider->getEntity(), \print_r($result, true)));
                 }
-            } catch (RestrictDeleteViolationException|ForeignKeyConstraintViolationException) {
+            } catch (RestrictDeleteViolationException) {
                 // ignore
             }
         }
+    }
+
+    /**
+     * @return DemoDataProvider[]
+     */
+    private function getSortedDemoDataProviders(string $sequence): array
+    {
+        if (!\in_array($sequence, ['create', 'delete'], true)) {
+            throw new \InvalidArgumentException('Invalid sequence: use \'create\' or \'delete\'.');
+        }
+
+        $demoDataProviders = iterator_to_array($this->demoDataProvider);
+
+        usort(
+            $demoDataProviders,
+            fn(DemoDataProvider $a, DemoDataProvider $b) => $b->getStages()[$sequence] <=> $a->getStages()[$sequence],
+        );
+
+        return $demoDataProviders;
     }
 }

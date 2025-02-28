@@ -11,7 +11,6 @@ namespace Swag\PlatformDemoData\DataProvider;
 
 use Doctrine\DBAL\Connection;
 use Shopware\Core\Content\Category\CategoryCollection;
-use Shopware\Core\Content\Category\CategoryEntity;
 use Shopware\Core\Framework\Api\Context\SystemSource;
 use Shopware\Core\Framework\Context;
 use Shopware\Core\Framework\DataAbstractionLayer\EntityRepository;
@@ -19,13 +18,13 @@ use Shopware\Core\Framework\DataAbstractionLayer\Search\Criteria;
 use Shopware\Core\Framework\DataAbstractionLayer\Search\Filter\EqualsFilter;
 use Shopware\Core\Framework\Log\Package;
 
-#[Package('services-settings')]
+#[Package('fundamentals@after-sales')]
 class CustomerProvider extends DemoDataProvider
 {
     private Connection $connection;
 
     /**
-     * @var EntityRepository<CategoryCollection> $categoryRepository
+     * @var EntityRepository<CategoryCollection>
      */
     private EntityRepository $categoryRepository;
 
@@ -139,8 +138,7 @@ class CustomerProvider extends DemoDataProvider
         $criteria->addFilter(new EqualsFilter('parentId', null));
         $criteria->addAssociation('navigationSalesChannels');
 
-        /** @var CategoryEntity|null $rootCategory */
-        $rootCategory = $this->categoryRepository->search($criteria, new Context(new SystemSource()))->first();
+        $rootCategory = $this->categoryRepository->search($criteria, new Context(new SystemSource()))->getEntities()->first();
         if (!$rootCategory) {
             throw new \RuntimeException('Root category not found');
         }
