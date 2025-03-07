@@ -1,0 +1,27 @@
+{
+    "name": "swag/swag-happy-birthday-email",
+    "description": "swag/swag-happy-birthday-email",
+    "type": "shopware-platform-plugin",
+    "version": "1.0.0",
+    "license": "MIT",
+    "require": {
+        "shopware/core": "~6.6.0"
+    },
+    "extra": {
+        "shopware-plugin-class": "SwagHappyBirthdayEmail\\SwagHappyBirthdayEmail",
+        "label": {
+            "de-DE": "Send Happy Birtday Email",
+            "en-GB": "Send Happy Birtday Email"
+        }
+    },
+    "autoload": {
+        "psr-4": {
+            "SwagHappyBirthdayEmail\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "SwagHappyBirthdayEmail\\Tests\\": "tests/"
+        }
+    }
+}
