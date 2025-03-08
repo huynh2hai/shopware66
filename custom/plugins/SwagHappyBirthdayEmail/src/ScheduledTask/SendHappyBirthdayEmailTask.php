@@ -4,15 +4,15 @@ namespace SwagHappyBirthdayEmail\ScheduledTask;
 
 use Shopware\Core\Framework\MessageQueue\ScheduledTask\ScheduledTask;
 
-class ExampleTask extends ScheduledTask
+class SendHappyBirthdayEmailTask extends ScheduledTask
 {
     public static function getTaskName(): string
     {
-        return 'swag.example_task';
+        return 'swag.send_happy_birthday_email_task';
     }
 
     public static function getDefaultInterval(): int
     {
-        return 300; // 5 minutes
+        return 5; // 5 seconds
     }
 }

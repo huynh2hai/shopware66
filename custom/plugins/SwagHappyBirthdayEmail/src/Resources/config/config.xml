@@ -4,12 +4,40 @@
         xsi:noNamespaceSchemaLocation="https://raw.githubusercontent.com/shopware/shopware/trunk/src/Core/System/SystemConfig/Schema/config.xsd">
 
     <card>
-        <title>Minimal configuration</title>
+        <title>SMTP Server Settings</title>
 
         <input-field type="text">
-            <name>textField</name>
-            <label>Test field with default value</label>
-            <defaultValue>test</defaultValue>
+            <name>smtpHost</name>
+            <required>true</required>
+            <label>Host</label>
+            <placeholder>Fill in host name...</placeholder>
+        </input-field>
+
+        <input-field type="int">
+            <name>smtpPort</name>
+            <required>true</required>
+            <label>Port</label>
+            <placeholder>Fill in port number...</placeholder>
+        </input-field>
+
+        <input-field type="text">
+            <name>smtpUsername</name>
+            <required>true</required>
+            <label>Username</label>
+            <placeholder>Fill in username...</placeholder>
+        </input-field>
+
+        <input-field type="password">
+            <name>smtpPassword</name>
+            <required>true</required>
+            <label>Password</label>
+            <placeholder>Fill in password...</placeholder>
+        </input-field>
+
+        <input-field type="text">
+            <name>smtpSenderAddress</name>
+            <label>Sender Address</label>
+            <placeholder>Fill in a valid email address...</placeholder>
         </input-field>
     </card>
 

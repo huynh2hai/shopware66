@@ -6,9 +6,18 @@
 
     <services>
 
-        <service id="SwagHappyBirthdayEmail\ScheduledTask\ExampleTask">
-            <tag name="shopware.scheduled.task"/>
+        <service id="SwagHappyBirthdayEmail\ScheduledTask\SendHappyBirthdayEmailTask">
+            <tag name="shopware.scheduled.task" />
         </service>
+
+        <service id="SwagHappyBirthdayEmail\ScheduledTask\SendHappyBirthdayEmailHandler">
+            <argument type="service" id="scheduled_task.repository" />
+            <call method="setBirthdayEmailService">
+                <argument type="service" id="SwagHappyBirthdayEmail\Service\BirthdayEmailService"/>
+            </call>
+            <tag name="messenger.message_handler" />
+        </service>
+
 
         <service id="SwagHappyBirthdayEmail\Storefront\Controller\ExampleController" public="true">
             <call method="setContainer">
@@ -30,6 +39,13 @@
 
         <service id="SwagHappyBirthdayEmail\Extension\Content\Customer\BirthdayEmailExtension">
             <tag name="shopware.entity.extension"/>
+        </service>
+
+        <service id="SwagHappyBirthdayEmail\Service\BirthdayEmailService">
+            <argument type="service" id="customer.repository" />
+            <argument type="service" id="mail_template.repository" />
+            <argument type="service" id="Shopware\Core\Content\Mail\Service\MailService" />
+            <argument type="service" id="Shopware\Core\System\SystemConfig\SystemConfigService" />
         </service>
 
     </services>
