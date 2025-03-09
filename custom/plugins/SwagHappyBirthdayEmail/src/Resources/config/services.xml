@@ -19,15 +19,6 @@
         </service>
 
 
-        <service id="SwagHappyBirthdayEmail\Storefront\Controller\ExampleController" public="true">
-            <call method="setContainer">
-                <argument type="service" id="service_container"/>
-            </call>
-            <call method="setTwig">
-                 <argument type="service" id="twig"/>
-             </call>
-        </service>
-
         <service id="SwagHappyBirthdayEmail\Core\Content\Example\SalesChannel\ExampleRoute">
             <argument type="service" id="product.repository"/>
         </service>
@@ -46,6 +37,17 @@
             <argument type="service" id="mail_template.repository" />
             <argument type="service" id="Shopware\Core\Content\Mail\Service\MailService" />
             <argument type="service" id="Shopware\Core\System\SystemConfig\SystemConfigService" />
+        </service>
+
+        <service id="SwagHappyBirthdayEmail\Storefront\Controller\BirthdayEmailController" public="true">
+            <argument type="service" id="customer.repository"/>
+            <argument type="service" id="swag_customer_birthday_email.repository"/>
+            <call method="setContainer">
+                <argument type="service" id="service_container"/>
+            </call>
+            <call method="setTwig">
+                <argument type="service" id="twig"/>
+            </call>
         </service>
 
     </services>

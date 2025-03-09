@@ -1,0 +1,35 @@
+    {% if message|length > 0 %}
+      <div class="newsletter-alerts">
+          {% sw_include '@Storefront/storefront/utilities/alert.html.twig' with { type: 'success', content: message } %}
+      </div>
+    {% endif %}
+
+  {% set formAutoSubmitOptions = {
+    useAjax: false,
+    ajaxContainerSelector: '.js-birthday-wrapper'
+  } %}
+
+    <form name="birthdayEmailRegister"
+          method="post"
+          action="{{ path('frontend.account.birthday') }}"
+          data-form-auto-submit="true"
+          data-form-auto-submit-options="{{ formAutoSubmitOptions|json_encode }}">
+        <div class="form-check">
+            {% set status = false %}
+            {% if context.customer.extension('birthdayEmail').subscribe == true or isSubscribe == true %}
+              {% set status = true %}
+            {% endif %}
+            <input type="checkbox"
+                   class="form-check-input"
+                   id="birthdayEmailRegister"
+                   name="subscribe"
+                   autocomplete="off"
+                   value="subscribe"
+                   data-focus-id="birthdayEmailRegister"
+                   {% if status %}checked="checked"{% endif %}>
+
+            <label class="form-check-label custom-control-label" for="birthdayEmailRegister">
+              Yes, I’d like to receive birthday emails.
+            </label>
+        </div>
+    </form>
