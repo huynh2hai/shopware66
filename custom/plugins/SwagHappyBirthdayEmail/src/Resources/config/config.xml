@@ -34,6 +34,25 @@
             <placeholder>Fill in password...</placeholder>
         </input-field>
 
+        <input-field type="single-select">
+            <name>encryption</name>
+            <options>
+                <option>
+                    <id>none</id>
+                    <name>No encryption</name>
+                </option>
+                <option>
+                    <id>ssl</id>
+                    <name>SSL encryption</name>
+                </option>
+                <option>
+                    <id>tsl</id>
+                    <name>TLS encryption</name>
+                </option>
+            </options>
+            <label>Encryption</label>
+        </input-field>
+
         <input-field type="text">
             <name>smtpSenderAddress</name>
             <label>Sender Address</label>

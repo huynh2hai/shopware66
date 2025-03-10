@@ -60,13 +60,15 @@ class BirthdayEmailService
 
     private function sendEmail(CustomerEntity $customer, MailTemplateEntity $mailTemplate, Context $context): void
     {
+        $smtpConfigure = $this->systemConfigService->get('SwagHappyBirthdayEmail.config');
+
         $data = [
             'recipients' => [
-                $customer->getEmail() => 'Hai Huynh'
+                $customer->getEmail() => `{$customer->getFirstName()} {$customer->getLastName()}`
             ],
-            'senderName' => 'TheOne',
-            'senderEmail' => 'hai.huynh@nfq.com',
-            'subject' => "Happy Birthday Email",
+            'senderName' => $smtpConfigure['smtpSenderAddress'] ?? 'Shop',
+            'senderEmail' => $smtpConfigure['smtpUsername'],
+            'subject' => $mailTemplate->getSubject(),
             'contentHtml' => $mailTemplate->getContentHtml(),
             'contentPlain' => $mailTemplate->getContentPlain(),
             'salesChannelId' => '98432def39fc4624b33213a56b8c944d',
@@ -115,9 +117,6 @@ class BirthdayEmailService
             throw new \RuntimeException('SMTP Server Settings for Send Happy Birthday Email are empty');
         }
 
-
-
-//        $this->systemConfigService->set('core.basicInformation.email', $senderEmail);
         $this->systemConfigService->set('core.mailerSettings.transport', 'smtp');
         $this->systemConfigService->set('core.mailerSettings.host', $smtpConfigure['smtpHost']);
         $this->systemConfigService->set('core.mailerSettings.port', $smtpConfigure['smtpPort']);
