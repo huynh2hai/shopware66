@@ -2,7 +2,6 @@
 
 namespace SwagFreeGiftOnRegistration\Service;
 
-use Cassandra\Custom;
 use Shopware\Core\Checkout\Customer\CustomerEntity;
 use Shopware\Core\Content\Mail\Service\MailService;
 use Shopware\Core\Content\MailTemplate\MailTemplateEntity;
@@ -11,44 +10,43 @@ use Shopware\Core\Framework\DataAbstractionLayer\EntityRepository;
 use Shopware\Core\Framework\DataAbstractionLayer\Search\Criteria;
 use Shopware\Core\Framework\DataAbstractionLayer\Search\Filter\EqualsFilter;
 use Shopware\Core\Framework\Uuid\Uuid;
+use Shopware\Core\System\SalesChannel\SalesChannelEntity;
 
 class EmailService
 {
+    public const EMAIL_TEMPLATE_NAME = 'free_gift_on_registration_email_template';
+
     public function __construct(
         private EntityRepository $mailTemplateRepository,
         private MailService $mailService,
     ){
     }
 
-    public function sendRegistrationGiftEmail(CustomerEntity $receiver, string $voucher, Context $context)
-    {
+    public function sendRegistrationGiftEmail(
+        CustomerEntity $receiver,
+        SalesChannelEntity $salesChannel,
+        string $voucher, Context $context
+    ) {
         $emailTemplate = $this->getEmailTemplate($context);
 
-        $this->sendVoucherEmail($receiver, $voucher, $context, $emailTemplate);
+        $this->sendVoucherEmail($receiver, $voucher, $context, $emailTemplate, $salesChannel);
     }
 
 
-    private function sendVoucherEmail(CustomerEntity $customer, string $voucherCode, Context $context, MailTemplateEntity $mailTemplate): void
+    private function sendVoucherEmail(CustomerEntity $customer, string $voucherCode, Context $context, MailTemplateEntity $mailTemplate, SalesChannelEntity $salesChannel): void
     {
-//        $amount = $this->systemConfig->get('FreeGiftOnRegistration.config.voucherAmount') ?? 10;
-//        $shopName = $this->systemConfig->get('core.basicInformation.shopName');
-
-        $shopName = 'Test';
-
         $data = [
             'recipients' => [$customer->getEmail() => $customer->getEmail()],
             'senderName' => $mailTemplate->getSenderName(),
             'subject' => $mailTemplate->getSubject(),
             'contentHtml' => $mailTemplate->getContentHtml(),
             'contentPlain' => $mailTemplate->getContentPlain(),
-            'salesChannelId' => '98432def39fc4624b33213a56b8c944d'
+            'salesChannelId' => $salesChannel->getUniqueIdentifier(),
         ];
 
         $this->mailService->send($data, $context, [
             'voucherCode' => $voucherCode,
-            'shopName' => 'shopName',
-            'amount' => 10,
-            'currencySymbol' => '$'
+            'shopName' => $salesChannel->getName(),
         ]);
     }
 

@@ -13,7 +13,6 @@ use Symfony\Component\EventDispatcher\EventSubscriberInterface;
 class CustomerRegistrationSubscriber implements EventSubscriberInterface
 {
     public function __construct(
-        private EntityRepository $promotionRepository,
         private EntityRepository $promotionIndividualCodeRepository,
         private EmailService $emailService
     ) {
@@ -21,7 +20,6 @@ class CustomerRegistrationSubscriber implements EventSubscriberInterface
 
     public static function getSubscribedEvents(): array
     {
-        // Return the events to listen to as array like this:  <event to listen to> => <method to execute>
         return [
             CustomerRegisterEvent::class => ['onCustomerRegister', -99]
         ];
@@ -31,9 +29,10 @@ class CustomerRegistrationSubscriber implements EventSubscriberInterface
     {
         $context = $event->getContext();
         $customer = $event->getCustomer();
+        $saleChannel = $event->getSalesChannelContext()->getSalesChannel();
         $code = $this->createIndividualCode($context, $customer);
 
-        $this->emailService->sendRegistrationGiftEmail($customer, $code, $context);
+        $this->emailService->sendRegistrationGiftEmail($customer, $saleChannel, $code, $context);
     }
 
     private function createIndividualCode(Context $context, CustomerEntity $customer): string

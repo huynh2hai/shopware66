@@ -10,8 +10,8 @@
     "extra": {
         "shopware-plugin-class": "SwagFreeGiftOnRegistration\\SwagFreeGiftOnRegistration",
         "label": {
-            "de-DE": "Free Gift On Registration",
-            "en-GB": "Kostenloses Geschenk bei der Registrierung"
+            "de-DE": "Kostenloses Geschenk bei der Registrierung",
+            "en-GB": "Free Gift On Registration"
         }
     },
     "autoload": {

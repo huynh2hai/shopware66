@@ -7,7 +7,6 @@
     <services>
 
         <service id="SwagFreeGiftOnRegistration\Subscriber\CustomerRegistrationSubscriber">
-            <argument type="service" id="promotion.repository" />
             <argument type="service" id="promotion_individual_code.repository" />
             <argument type="service" id="SwagFreeGiftOnRegistration\Service\EmailService" />
             <tag name="kernel.event_subscriber"/>
