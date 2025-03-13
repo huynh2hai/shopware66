@@ -1,0 +1,27 @@
+{
+    "name": "swag/swag-free-gift-on-registration",
+    "description": "swag/swag-free-gift-on-registration",
+    "type": "shopware-platform-plugin",
+    "version": "1.0.0",
+    "license": "MIT",
+    "require": {
+        "shopware/core": "~6.6.0"
+    },
+    "extra": {
+        "shopware-plugin-class": "SwagFreeGiftOnRegistration\\SwagFreeGiftOnRegistration",
+        "label": {
+            "de-DE": "Free Gift On Registration",
+            "en-GB": "Kostenloses Geschenk bei der Registrierung"
+        }
+    },
+    "autoload": {
+        "psr-4": {
+            "SwagFreeGiftOnRegistration\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "SwagFreeGiftOnRegistration\\Tests\\": "tests/"
+        }
+    }
+}

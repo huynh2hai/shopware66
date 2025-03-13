@@ -1,0 +1,22 @@
+<?xml version="1.0" ?>
+
+<container xmlns="http://symfony.com/schema/dic/services"
+           xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+           xsi:schemaLocation="http://symfony.com/schema/dic/services http://symfony.com/schema/dic/services/services-1.0.xsd">
+
+    <services>
+
+        <service id="SwagFreeGiftOnRegistration\Subscriber\CustomerRegistrationSubscriber">
+            <argument type="service" id="promotion.repository" />
+            <argument type="service" id="promotion_individual_code.repository" />
+            <argument type="service" id="SwagFreeGiftOnRegistration\Service\EmailService" />
+            <tag name="kernel.event_subscriber"/>
+        </service>
+
+        <service id="SwagFreeGiftOnRegistration\Service\EmailService">
+            <argument type="service" id="mail_template.repository" />
+            <argument type="service" id="Shopware\Core\Content\Mail\Service\MailService" />
+        </service>
+
+    </services>
+</container>
