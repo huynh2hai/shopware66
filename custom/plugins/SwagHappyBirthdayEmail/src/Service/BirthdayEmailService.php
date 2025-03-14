@@ -43,7 +43,7 @@ class BirthdayEmailService
         foreach ($customers as $customer) {
             $today = new \DateTime();
 
-            if($customer->getBirthday()->format('d-m') !== $today->format('d-m')) {
+            if($customer->getBirthday()?->format('d-m') !== $today->format('d-m')) {
                 continue;
             }
 
@@ -105,7 +105,6 @@ class BirthdayEmailService
 
     private function configureEmailSender(): void
     {
-        throw new \Exception();
         $smtpConfigure = $this->systemConfigService->get('SwagHappyBirthdayEmail.config');
 
         if (
@@ -122,7 +121,7 @@ class BirthdayEmailService
         $this->systemConfigService->set('core.mailerSettings.port', $smtpConfigure['smtpPort']);
         $this->systemConfigService->set('core.mailerSettings.username', $smtpConfigure['smtpUsername']);
         $this->systemConfigService->set('core.mailerSettings.password', $smtpConfigure['smtpPassword']);
-        $this->systemConfigService->set('core.mailerSettings.encryption', 'ssl');
+        $this->systemConfigService->set('core.mailerSettings.encryption', $smtpConfigure['encryption']);
     }
 
 }

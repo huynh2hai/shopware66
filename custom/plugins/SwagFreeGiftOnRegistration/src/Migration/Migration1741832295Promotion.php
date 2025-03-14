@@ -28,7 +28,7 @@ class Migration1741832295Promotion extends MigrationStep
 
         // Create promotion
         $connection->executeStatement('
-            INSERT INTO `promotion` (
+            INSERT IGNORE INTO `promotion` (
                 `id`,
                 `active`,
                 `use_codes`,
@@ -51,7 +51,7 @@ class Migration1741832295Promotion extends MigrationStep
 
         // Create promotion translations
         $connection->executeStatement('
-            INSERT INTO `promotion_translation` (
+            INSERT IGNORE INTO `promotion_translation` (
                 `promotion_id`,
                 `language_id`,
                 `name`,
@@ -66,7 +66,7 @@ class Migration1741832295Promotion extends MigrationStep
 
         // Create promotion discount
         $connection->executeStatement('
-            INSERT INTO `promotion_discount` (
+            INSERT IGNORE INTO `promotion_discount` (
                 `id`,
                 `promotion_id`,
                 `scope`,
@@ -90,7 +90,7 @@ class Migration1741832295Promotion extends MigrationStep
         $promotionSalesChannelId = Uuid::randomHex();
 
         $connection->executeStatement('
-            INSERT INTO `promotion_sales_channel` (
+            INSERT IGNORE INTO `promotion_sales_channel` (
                 `id`,
                 `promotion_id`,
                 `sales_channel_id`,
