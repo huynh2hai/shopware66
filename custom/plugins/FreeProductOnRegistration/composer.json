@@ -1,0 +1,27 @@
+{
+    "name": "free-product-on-registration/free-product-on-registration",
+    "description": "free-product-on-registration/free-product-on-registration",
+    "type": "shopware-platform-plugin",
+    "version": "1.0.0",
+    "license": "MIT",
+    "require": {
+        "shopware/core": "~6.6.0"
+    },
+    "extra": {
+        "shopware-plugin-class": "FreeProductOnRegistration\\FreeProductOnRegistration",
+        "label": {
+            "de-DE": "Free Product On Registration",
+            "en-GB": "Free Product On Registration"
+        }
+    },
+    "autoload": {
+        "psr-4": {
+            "FreeProductOnRegistration\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "FreeProductOnRegistration\\Tests\\": "tests/"
+        }
+    }
+}

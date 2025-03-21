@@ -1,0 +1,41 @@
+<?xml version="1.0" ?>
+
+<container xmlns="http://symfony.com/schema/dic/services"
+           xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+           xsi:schemaLocation="http://symfony.com/schema/dic/services http://symfony.com/schema/dic/services/services-1.0.xsd">
+
+    <services>
+
+        <service id="FreeProductOnRegistration\Subscriber\MySubscriber">
+            <tag name="kernel.event_subscriber"/>
+            <argument type="service" id="tag.repository"/>
+            <argument type="service" id="customer.repository"/>
+            <argument type="service" id="product_category.repository"/>
+            <argument type="service" id="FreeProductOnRegistration\Service\EmailService"/>
+        </service>
+
+        <service id="FreeProductOnRegistration\Storefront\Controller\ExampleController" public="true">
+            <call method="setContainer">
+                <argument type="service" id="service_container"/>
+            </call>
+            <call method="setTwig">
+                 <argument type="service" id="twig"/>
+             </call>
+        </service>
+
+        <service id="FreeProductOnRegistration\Core\Content\Example\SalesChannel\ExampleRoute">
+            <argument type="service" id="product.repository"/>
+        </service>
+
+        <service id="FreeProductOnRegistration\Service\CustomFieldsInstaller">
+            <argument type="service" id="custom_field_set.repository"/>
+            <argument type="service" id="custom_field_set_relation.repository"/>
+        </service>
+
+        <service id="FreeProductOnRegistration\Service\EmailService">
+            <argument type="service" id="mail_template.repository" />
+            <argument type="service" id="Shopware\Core\Content\Mail\Service\MailService" />
+        </service>
+
+    </services>
+</container>
