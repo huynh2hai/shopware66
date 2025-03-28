@@ -1,0 +1,19 @@
+{% sw_extends '@Storefront/storefront/component/buy-widget/buy-widget-form.html.twig' %}
+
+{% set formAction = path('frontend.checkout.line-item.add') %}
+
+{% block buy_widget_buy_button %}
+
+  {% if page.footer.free_product_ids && (product.id in page.footer.free_product_ids || product.parentId in page.footer.free_product_ids) %}
+    <div class="d-grid">
+      <button class="btn btn-primary btn-buy"
+              type="submit"
+              title="GET YOUR FREE PRODUCT"
+              aria-label="GET YOUR FREE PRODUCT">
+        {{ 'GET YOUR FREE PRODUCT' }}
+      </button>
+    </div>
+  {% else %}
+    {{ parent() }}
+  {% endif %}
+{% endblock %}

@@ -10,8 +10,10 @@ use Shopware\Core\Framework\DataAbstractionLayer\Search\Criteria;
 use Shopware\Core\Framework\DataAbstractionLayer\Search\Filter\EqualsFilter;
 use Shopware\Core\Framework\Uuid\Uuid;
 use Shopware\Core\System\SystemConfig\Event\SystemConfigMultipleChangedEvent;
+use Shopware\Core\System\SystemConfig\SystemConfigService;
 use Shopware\Core\System\Tag\TagCollection;
 use Shopware\Core\System\Tag\TagEntity;
+use Shopware\Storefront\Pagelet\Footer\FooterPageletLoadedEvent;
 use Symfony\Component\EventDispatcher\EventSubscriberInterface;
 
 class MySubscriber implements EventSubscriberInterface
@@ -20,15 +22,17 @@ class MySubscriber implements EventSubscriberInterface
         private EntityRepository $tagRepository,
         private EntityRepository $customerRepository,
         private EntityRepository $productCategoryRepository,
-        private EmailService $emailService
+        private EmailService $emailService,
+        private SystemConfigService $systemConfigService
     ) {
     }
 
     public static function getSubscribedEvents(): array
     {
         return [
-            CustomerRegisterEvent::class => ['onCustomerRegister', -99],
-            SystemConfigMultipleChangedEvent::class => 'onSystemConfigMultipleChanged'
+            CustomerRegisterEvent::class => 'onCustomerRegister',
+            SystemConfigMultipleChangedEvent::class => 'onSystemConfigMultipleChanged',
+            FooterPageletLoadedEvent::class => 'onProductPage',
         ];
     }
 
@@ -98,5 +102,14 @@ class MySubscriber implements EventSubscriberInterface
         }, $productIds);
 
         $this->productCategoryRepository->create($productCategoryData, $context);
+    }
+
+    public function onProductPage(FooterPageletLoadedEvent $event): void
+    {
+        $productIds = $this->systemConfigService->get('FreeProductOnRegistration.config');
+
+        $event->getPagelet()->assign([
+            'free_product_ids' => $productIds['freeProductIds']
+        ]);
     }
 }

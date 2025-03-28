@@ -12,6 +12,7 @@
             <argument type="service" id="customer.repository"/>
             <argument type="service" id="product_category.repository"/>
             <argument type="service" id="FreeProductOnRegistration\Service\EmailService"/>
+            <argument id="Shopware\Core\System\SystemConfig\SystemConfigService" type="service" />
         </service>
 
         <service id="FreeProductOnRegistration\Storefront\Controller\ExampleController" public="true">

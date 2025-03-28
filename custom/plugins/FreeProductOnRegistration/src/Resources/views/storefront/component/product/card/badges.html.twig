@@ -1,0 +1,54 @@
+{% sw_extends '@Storefront/storefront/component/product/card/badges.html.twig' %}
+
+{% block component_product_badges %}
+    <div class="product-badges">
+{#      {{ dump(product) }}#}
+        {% block component_product_badges_discount %}
+            {% set price = product.calculatedPrice %}
+            {% if product.calculatedPrices.count > 0 %}
+                {% set price = product.calculatedPrices.last %}
+            {% endif %}
+
+            {% set listPrice = price.listPrice.percentage > 0 %}
+            {% set hasRange = product.calculatedPrices.count > 1 %}
+
+            {% set displayParent = product.variantListingConfig.displayParent and product.parentId === null %}
+            {% if displayParent %}
+                {% set displayFromVariants = displayParent and price.unitPrice !== product.calculatedCheapestPrice.unitPrice %}
+            {% endif %}
+
+            {% if listPrice and not hasRange and not displayFromVariants %}
+                <div class="badge bg-danger badge-discount">
+                    <span>&#37;</span>
+                </div>
+            {% endif %}
+        {% endblock %}
+
+        {% block component_product_badges_topseller %}
+            {% if product.markAsTopseller %}
+                <div>
+                    <span class="badge bg-warning badge-topseller">{{ 'listing.boxLabelTopseller'|trans|sw_sanitize }}</span>
+                </div>
+            {% endif %}
+        {% endblock %}
+
+        {% block component_product_badges_new %}
+            {% if product.isNew %}
+                <div>
+                    <span class="badge bg-success badge-new">{{ 'listing.boxLabelNew'|trans|sw_sanitize }}</span>
+                </div>
+            {% endif %}
+        {% endblock %}
+
+
+      {% if page.footer.free_product_ids %}
+        {% if product.id in page.footer.free_product_ids || product.parentId in page.footer.free_product_ids %}
+          <div>
+            <span class="badge bg-warning">FREE PRODUCT</span>
+          </div>
+          {% endif %}
+      {% endif %}
+
+
+    </div>
+{% endblock %}
