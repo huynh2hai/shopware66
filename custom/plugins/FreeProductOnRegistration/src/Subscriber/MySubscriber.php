@@ -109,7 +109,7 @@ class MySubscriber implements EventSubscriberInterface
         $productIds = $this->systemConfigService->get('FreeProductOnRegistration.config');
 
         $event->getPagelet()->assign([
-            'free_product_ids' => $productIds['freeProductIds']
+            'free_product_ids' => $productIds['freeProductIds'] ?? []
         ]);
     }
 }
