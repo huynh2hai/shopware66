@@ -1,0 +1,133 @@
+{% sw_extends '@Storefront/storefront/component/buy-widget/buy-widget.html.twig' %}
+
+
+
+{%  block buy_widget %}
+  {{ parent() }}
+  <div class="card">
+      <div class="card-body text-bg-light">
+          <div id="filterButtons">
+              <button class="btn btn-primary btn-buy" onclick="filterData('1 month')">1 Month</button>
+              <button class="btn btn-primary btn-buy" onclick="filterData('1 year')">1 Year</button>
+              <button class="btn btn-primary btn-buy" onclick="filterData('all')">All</button>
+          </div>
+          <div id="priceChartContainer" class="card">
+              <canvas id="priceChart"></canvas>
+              <div id="priceStats">
+                  <span class="highest">Highest: $<span id="highestPrice">0</span></span>
+                  <span class="lowest">Lowest: $<span id="lowestPrice">0</span></span>
+              </div>
+          </div>
+      </div>
+
+  </div>
+
+    <script>
+        {% if page.prices is defined %}
+            const priceHistory = JSON.parse('{{ page.prices|json_encode|e('js') }}');
+        {% else %}
+            window.prices = null;
+        {% endif %}
+    </script>
+
+  <script>
+
+      // Initialize Chart.js
+      const ctx = document.getElementById('priceChart').getContext('2d');
+      const gradient = ctx.createLinearGradient(0, 0, 0, 400);
+      gradient.addColorStop(0, 'rgba(0, 123, 255, 0.4)');
+      gradient.addColorStop(1, 'rgba(0, 123, 255, 0)');
+
+      let chart = new Chart(ctx, {
+          type: 'line',
+          data: {
+              labels: [],
+              datasets: [{
+                  label: 'Price ($)',
+                  data: [],
+                  borderColor: '#007bff',
+                  backgroundColor: gradient,
+                  borderWidth: 3,
+                  pointRadius: 5,
+                  pointHoverRadius: 8,
+                  pointBackgroundColor: '#fff',
+                  pointBorderColor: '#007bff',
+                  pointBorderWidth: 2,
+                  tension: 0.4,
+                  fill: true
+              }]
+          },
+          options: {
+              responsive: true,
+              animation: {
+                  duration: 1000,
+                  easing: 'easeInOutQuad'
+              },
+              scales: {
+                  x: {
+                      title: { display: false, text: 'Date', font: { size: 14 } },
+                      ticks: { maxRotation: 0, minRotation: 0, callback: function(value, index, ticks) {
+                              const date = new Date(this.getLabelForValue(value));
+                              const day = date.getDate();
+                              const month = date.toLocaleString('default', { month: 'short' });
+                              return `${day} ${month}`;
+                          } }
+                  },
+                  y: {
+                      title: { display: true, text: 'Price ($)', font: { size: 14 } },
+                      beginAtZero: true
+                  }
+              },
+              plugins: {
+                  legend: { display: false, position: 'top' },
+                  tooltip: { enabled: true, backgroundColor: '#333', titleFont: { size: 14 }, bodyFont: { size: 12 } },
+                  title: {
+                      display: true,
+                      text: 'Price History (All Time)',
+                      font: { size: 18, weight: 'bold' },
+                      padding: 20
+                  }
+              }
+          }
+      });
+
+      // Function to filter and update chart
+      function filterData(range) {
+          const now = new Date();
+          let filteredData = [];
+
+          if (range === '1 month') {
+              const oneMonthAgo = new Date(now.setMonth(now.getMonth() - 1));
+              filteredData = priceHistory.filter(item => new Date(item.date) >= oneMonthAgo);
+              chart.options.plugins.title.text = 'Price History (Last Month)';
+          } else if (range === '1 year') {
+              const oneYearAgo = new Date(now.setFullYear(now.getFullYear() - 1));
+              filteredData = priceHistory.filter(item => new Date(item.date) >= oneYearAgo);
+              chart.options.plugins.title.text = 'Price History (Last Year)';
+          } else {
+              filteredData = priceHistory;
+              chart.options.plugins.title.text = 'Price History (All Time)';
+          }
+
+          // Sort data by date
+          filteredData.sort((a, b) => new Date(a.date) - new Date(b.date));
+
+          // Calculate highest and lowest prices
+          const prices = filteredData.map(item => item.price);
+          const highestPrice = prices.length ? Math.max(...prices) : 0;
+          const lowestPrice = prices.length ? Math.min(...prices) : 0;
+
+          // Update chart
+          chart.data.labels = filteredData.map(item => item.date);
+          chart.data.datasets[0].data = prices;
+          chart.update();
+
+          // Update high/low display
+          document.getElementById('highestPrice').textContent = highestPrice;
+          document.getElementById('lowestPrice').textContent = lowestPrice;
+      }
+
+      // Initial load
+      filterData('all');
+  </script>
+{% endblock %}

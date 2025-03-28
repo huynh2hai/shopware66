@@ -1,0 +1,18 @@
+{% sw_extends '@Storefront/storefront/layout/meta.html.twig' %}
+
+{% block layout_head_stylesheet %}
+  {{ parent() }}
+  <style>
+
+      #priceStats { text-align: center; margin-top: 15px; font-size: 16px; }
+      #priceStats span { margin: 0 15px; font-weight: bold; }
+      .highest { color: #28a745; }
+      .lowest { color: #dc3545; }
+  </style>
+{% endblock %}
+
+{% block layout_head_javascript_router %}
+  {{ parent() }}
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+{% endblock %}
