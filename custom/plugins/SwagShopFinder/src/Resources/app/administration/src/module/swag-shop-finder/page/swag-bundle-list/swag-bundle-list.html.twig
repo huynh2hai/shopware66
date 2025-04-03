@@ -1,0 +1,22 @@
+{% block swag_bundle_list %}
+  <sw-page class="swag-bundle-list">
+    {% block swag_bundle_list_smart_bar_actions %}
+      <template #smart-bar-actions>
+        <sw-button variant="primary">
+          {{ 'Test button' }}
+        </sw-button>
+      </template>
+    {% endblock %}
+    <template #content>
+      <sw-entity-listing
+        v-if="bundles"
+        :items="bundles"
+        :repository="repository"
+        :showSelection="false"
+        :columns="columns"
+      >
+
+      </sw-entity-listing>
+    </template>
+  </sw-page>
+{% endblock %}

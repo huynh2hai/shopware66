@@ -1,0 +1,26 @@
+<sw-page class="swag-bundle-detail">
+  <template #smart-bar-action>
+    <sw-button :routerLink="{ name: 'swag.example.index' }">
+      {{ 'Cancel' }}
+    </sw-button>
+
+    <sw-button-process
+      :isLoading="isLoading"
+      :processSuccess="processSuccess"
+      variant="primary"
+      @process-finish="saveFinish"
+      @click="onClickSave"
+    >
+    {{ 'SAVE' }}
+    </sw-button-process>
+  </template>
+
+  <template #content>
+    <sw-card-view>
+      <sw-card v-if="bundle" :isLoading="isLoading">
+        <sw-field v-model="bundle.name" :labe="NAME"></sw-field>
+
+      </sw-card>
+    </sw-card-view>
+  </template>
+</sw-page>
