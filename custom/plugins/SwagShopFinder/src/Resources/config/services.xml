@@ -30,8 +30,8 @@
         </service>
 
         <service id="SwagShopFinder\Core\Api\DemoDataController" public="true">
-            <argument id="country.repository" type="service"/>
             <argument id="swag_shop_finder.repository" type="service"/>
+            <argument id="country.repository" type="service"/>
 
             <call method="setContainer">
                 <argument type="service" id="service_container"/>

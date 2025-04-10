@@ -17,10 +17,10 @@
 
   <template #content>
     <sw-card-view>
-      <sw-card v-if="bundle" :isLoading="isLoading">
-        <sw-field v-model="bundle.name" :labe="NAME"></sw-field>
+      <div v-if="bundle" :isLoading="isLoading">
+        <sw-field v-model="bundle.name"></sw-field>
 
-      </sw-card>
+      </div>
     </sw-card-view>
   </template>
 </sw-page>

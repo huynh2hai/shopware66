@@ -1,0 +1,63 @@
+  <sw-page class="import-product-index">
+
+    <template #smart-bar-header>
+      <h2>{{ 'Import Product from CSV' }}</h2>
+    </template>
+
+    <template #smart-bar-actions>
+      <sw-button
+        :disabled="!file || isLoading"
+        @click="validateFile"
+        variant="primary"
+      >
+        {{ 'Validate' }}
+      </sw-button>
+
+      <sw-button
+        :disabled="!validationResult?.valid || isLoading"
+        @click="startImport"
+        variant="primary"
+      >
+        {{ 'Import' }}
+      </sw-button>
+    </template>
+
+
+
+    <template #content>
+      <sw-card-view>
+        <sw-card class="sw-product-csv-import__card">
+          <sw-file-input
+            v-model="file"
+            :allowedMimeTypes="['text/csv']"
+            :label="$t('sw-product-csv-import.fileInput.label')"
+{#            accept=".csv"#}
+            @update:value="onFileSelected"
+          />
+
+          <sw-alert
+            v-if="errors && !validationResult.valid"
+            variant="warning"
+            class="sw-product-csv-import__validation-alert"
+          >
+            <ul style="list-style: none">
+              <li v-for="(item, key) in errors">
+                Row {{ item.row }} - {{ item.errors }}
+              </li>
+            </ul>
+          </sw-alert>
+
+          <sw-alert
+            v-if="validationResult?.valid"
+            variant="success"
+            class="sw-product-csv-import__validation-success"
+          >
+            The file is valid
+          </sw-alert>
+
+          <sw-loader v-if="isLoading" />
+        </sw-card>
+      </sw-card-view>
+
+    </template>
+  </sw-page>

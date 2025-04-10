@@ -1,0 +1,65 @@
+<?xml version="1.0" ?>
+
+<container xmlns="http://symfony.com/schema/dic/services"
+           xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+           xsi:schemaLocation="http://symfony.com/schema/dic/services http://symfony.com/schema/dic/services/services-1.0.xsd">
+
+    <services>
+
+        <service id="ImportProduct\Command\ExampleCommand">
+            <argument type="service" id="product_manufacturer.repository"/>
+            <argument type="service" id="product.repository"/>
+            <argument type="service" id="tag.repository"/>
+            <argument type="service" id="category.repository"/>
+            <argument type="service" id="property_group.repository"/>
+            <argument type="service" id="property_group_option.repository"/>
+            <argument type="service" id="Shopware\Core\Content\Product\ProductVariationBuilder"/>
+            <argument type="service" id="product_configurator_setting.repository"/>
+            <tag name="console.command"/>
+        </service>
+
+        <service id="ImportProduct\Storefront\Controller\ExampleController" public="true">
+            <call method="setContainer">
+                <argument type="service" id="service_container"/>
+            </call>
+            <call method="setTwig">
+                 <argument type="service" id="twig"/>
+            </call>
+        </service>
+
+        <service id="ImportProduct\Core\Content\Example\SalesChannel\ExampleRoute">
+            <argument type="service" id="product.repository"/>
+        </service>
+
+        <service id="ImportProduct\Core\Content\ProductImportLog\ProductImportLogDefinition">
+            <tag name="shopware.entity.definition" entity="product_import_log" />
+        </service>
+
+        <service id="ImportProduct\Core\Api\ProductImportController" public="true">
+            <argument type="service" id="ImportProduct\Service\ProductImportService" />
+            <argument type="service" id="product_import_log.repository" />
+            <call method="setContainer">
+                <argument type="service" id="service_container"/>
+            </call>
+        </service>
+
+        <service id="ImportProduct\Service\ProductImportService">
+        </service>
+
+        <service id="ImportProduct\ScheduledTask\ProductImportTask">
+            <tag name="shopware.scheduled.task" />
+        </service>
+
+        <service id="ImportProduct\ScheduledTask\ProductImportTaskHandler">
+            <argument type="service" id="scheduled_task.repository" />
+            <tag name="messenger.message_handler" />
+            <call method="setProductImportLogRepository">
+                <argument type="service" id="product_import_log.repository"/>
+            </call>
+            <call method="setApplication">
+                <argument type="service" id="console.messenger.application"/>
+            </call>
+        </service>
+
+    </services>
+</container>

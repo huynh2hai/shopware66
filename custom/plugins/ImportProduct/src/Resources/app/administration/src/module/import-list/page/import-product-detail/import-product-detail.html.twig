@@ -1,0 +1,47 @@
+<sw-page class="import-product-detail">
+
+  <template #content>
+    <sw-entity-listing
+      v-if="bundles"
+      :items="bundles"
+      :repository="repository"
+      :showSelection="false"
+      :columns="columns"
+      :allowDelete="false"
+      :allowEdit="false"
+    >
+
+    </sw-entity-listing>
+  </template>
+</sw-page>
+
+{#  <template #smart-bar-action>#}
+{#    <sw-button :routerLink="{ name: 'import.product.index' }">#}
+{#      {{ 'Cancel' }}#}
+{#    </sw-button>#}
+
+{#    <sw-button-process#}
+{#      :isLoading="isLoading"#}
+{#      :processSuccess="processSuccess"#}
+{#      variant="primary"#}
+{#      @process-finish="saveFinish"#}
+{#      @click="onClickSave"#}
+{#    >#}
+{#    {{ 'SAVE' }}#}
+{#    </sw-button-process>#}
+{#  </template>#}
+
+{#  <template #content>#}
+{#    <sw-card-view>#}
+{#      <sw-card v-if="bundle" :isLoading="isLoading">#}
+{#        <sw-field v-model="bundle.status"></sw-field>#}
+
+{#        <sw-text-field#}
+{#          v-model:value="bundle.status"#}
+{#          label="asdfasdf"#}
+{#        />#}
+
+{#      </sw-card>#}
+{#    </sw-card-view>#}
+{#  </template>#}
+{#</sw-page>#}

@@ -1,0 +1,1001 @@
+product_number,name,description,price,category_name,category_id,parent_category_id,variant,manufacturer,tag
+P0000001,Product 1,Description of Product 1,858.56,Electronics,1001,1003,Color:Brown;Size:M,Samsung,Electronics;Living Room
+P0000002,Product 2,Description of Product 2,982.96,Electronics,1001,1001,Color:Brown;Size:XL,Samsung,Electronics;Utensils
+P0000003,Product 3,Description of Product 3,63.14,Electronics,1001,1004,Color:Red;Size:M,LG,Gadgets;Home
+P0000004,Product 4,Description of Product 4,203.74,Home Appliances,1002,,Color:White;Size:M;Voltage:220V,Philips,Gadgets;Smartphones
+P0000005,Product 5,Description of Product 5,138.47,Electronics,1001,1004,Color:Blue;Size:S,Panasonic,Smartphones;Kitchen
+P0000006,Product 6,Description of Product 6,109.91,Kitchen,1003,,Color:White;Size:M;Material:Wood,Sony,Electronics;Living Room
+P0000007,Product 7,Description of Product 7,220.28,Books,1006,1001,Color:Red;Size:S,Samsung,Kitchen;Living Room
+P0000008,Product 8,Description of Product 8,588.61,Electronics,1001,1002,Color:White;Size:S,LG,Kitchen;Home
+P0000009,Product 9,Description of Product 9,346.17,Electronics,1001,1003,Color:White;Size:M,Ikea,Smartphones;Living Room
+P0000010,Product 10,Description of Product 10,502.75,Home Appliances,1002,1004,Color:Red;Size:L;Voltage:110V,Philips,Furniture;Smartphones
+P0000011,Product 11,Description of Product 11,795.52,Electronics,1001,1001,Color:Blue;Size:L,Ikea,Furniture;Utensils
+P0000012,Product 12,Description of Product 12,176.71,Toys,1005,1001,Color:Brown;Size:S,Sony,Smartphones;Kitchen
+P0000013,Product 13,Description of Product 13,975.55,Electronics,1001,1004,Color:Black;Size:M,Panasonic,Furniture;Utensils
+P0000014,Product 14,Description of Product 14,762.83,Books,1006,,Color:Blue;Size:M,Ikea,Electronics;Living Room
+P0000015,Product 15,Description of Product 15,358.64,Kitchen,1003,,Color:White;Size:M;Material:Plastic,LG,Kitchen;Smartphones
+P0000016,Product 16,Description of Product 16,791.2,Books,1006,1003,Color:Blue;Size:XL,LG,Living Room;Utensils
+P0000017,Product 17,Description of Product 17,945.85,Toys,1005,1003,Color:White;Size:XL,Panasonic,Utensils;Electronics
+P0000018,Product 18,Description of Product 18,83.74,Furniture,1004,1001,Color:Black;Size:XL;Material:Wood,Philips,Smartphones;Electronics
+P0000019,Product 19,Description of Product 19,940.07,Kitchen,1003,1001,Color:Black;Size:XL;Material:Steel,Sony,Furniture;Gadgets
+P0000020,Product 20,Description of Product 20,144.28,Home Appliances,1002,1005,Color:Black;Size:L;Voltage:110V,Sony,Living Room;Gadgets
+P0000021,Product 21,Description of Product 21,944.41,Electronics,1001,1005,Color:Black;Size:M,Panasonic,Electronics;Living Room
+P0000022,Product 22,Description of Product 22,567.17,Toys,1005,1002,Color:Blue;Size:M,Ikea,Furniture;Home
+P0000023,Product 23,Description of Product 23,401.53,Kitchen,1003,1001,Color:Brown;Size:M;Material:Plastic,Panasonic,Smartphones;Home
+P0000024,Product 24,Description of Product 24,460.09,Kitchen,1003,,Color:White;Size:XL;Material:Plastic,Panasonic,Living Room;Gadgets
+P0000025,Product 25,Description of Product 25,199.96,Furniture,1004,1003,Color:Blue;Size:M;Material:Plastic,Panasonic,Furniture;Utensils
+P0000026,Product 26,Description of Product 26,264.02,Electronics,1001,1005,Color:Black;Size:L,Philips,Gadgets;Utensils
+P0000027,Product 27,Description of Product 27,687.64,Furniture,1004,1002,Color:Blue;Size:M;Material:Steel,Samsung,Kitchen;Furniture
+P0000028,Product 28,Description of Product 28,934.71,Books,1006,1001,Color:Blue;Size:S,Ikea,Smartphones;Living Room
+P0000029,Product 29,Description of Product 29,581.49,Electronics,1001,1005,Color:Red;Size:S,Sony,Smartphones;Kitchen
+P0000030,Product 30,Description of Product 30,779.36,Furniture,1004,1005,Color:White;Size:L;Material:Wood,Sony,Kitchen;Smartphones
+P0000031,Product 31,Description of Product 31,499.22,Kitchen,1003,,Color:Red;Size:M;Material:Steel,Philips,Home;Electronics
+P0000032,Product 32,Description of Product 32,729.0,Electronics,1001,1001,Color:Blue;Size:S,Ikea,Home;Electronics
+P0000033,Product 33,Description of Product 33,513.35,Toys,1005,,Color:Black;Size:S,LG,Kitchen;Home
+P0000034,Product 34,Description of Product 34,508.67,Furniture,1004,1001,Color:Black;Size:M;Material:Wood,LG,Living Room;Utensils
+P0000035,Product 35,Description of Product 35,895.02,Kitchen,1003,1005,Color:Red;Size:M;Material:Steel,Sony,Kitchen;Furniture
+P0000036,Product 36,Description of Product 36,946.6,Electronics,1001,1001,Color:Red;Size:S,LG,Furniture;Smartphones
+P0000037,Product 37,Description of Product 37,788.91,Books,1006,1003,Color:Red;Size:M,Ikea,Electronics;Utensils
+P0000038,Product 38,Description of Product 38,884.49,Toys,1005,1005,Color:Blue;Size:S,Samsung,Smartphones;Home
+P0000039,Product 39,Description of Product 39,772.3,Books,1006,1004,Color:Brown;Size:XL,LG,Electronics;Furniture
+P0000040,Product 40,Description of Product 40,273.91,Furniture,1004,1004,Color:Blue;Size:M;Material:Steel,Ikea,Kitchen;Gadgets
+P0000041,Product 41,Description of Product 41,876.08,Electronics,1001,,Color:Blue;Size:S,Samsung,Kitchen;Furniture
+P0000042,Product 42,Description of Product 42,725.5,Books,1006,,Color:White;Size:S,LG,Home;Smartphones
+P0000043,Product 43,Description of Product 43,128.65,Toys,1005,1001,Color:Black;Size:M,Sony,Electronics;Utensils
+P0000044,Product 44,Description of Product 44,231.25,Books,1006,,Color:Blue;Size:M,LG,Home;Gadgets
+P0000045,Product 45,Description of Product 45,795.17,Kitchen,1003,1003,Color:Brown;Size:M;Material:Plastic,Ikea,Kitchen;Utensils
+P0000046,Product 46,Description of Product 46,236.56,Home Appliances,1002,1002,Color:Red;Size:M;Voltage:110V,Sony,Gadgets;Kitchen
+P0000047,Product 47,Description of Product 47,162.27,Electronics,1001,,Color:Blue;Size:L,Ikea,Furniture;Kitchen
+P0000048,Product 48,Description of Product 48,619.03,Toys,1005,,Color:Brown;Size:L,Philips,Smartphones;Kitchen
+P0000049,Product 49,Description of Product 49,195.39,Kitchen,1003,1003,Color:Red;Size:M;Material:Plastic,Philips,Utensils;Home
+P0000050,Product 50,Description of Product 50,380.03,Books,1006,,Color:Red;Size:L,Philips,Gadgets;Living Room
+P0000051,Product 51,Description of Product 51,732.12,Home Appliances,1002,1002,Color:Blue;Size:L;Voltage:220V,Sony,Gadgets;Home
+P0000052,Product 52,Description of Product 52,662.08,Books,1006,1005,Color:Blue;Size:XL,Ikea,Kitchen;Home
+P0000053,Product 53,Description of Product 53,916.8,Toys,1005,1003,Color:Blue;Size:L,LG,Utensils;Electronics
+P0000054,Product 54,Description of Product 54,80.59,Electronics,1001,1005,Color:Black;Size:S,Philips,Furniture;Utensils
+P0000055,Product 55,Description of Product 55,445.26,Furniture,1004,1004,Color:Red;Size:S;Material:Steel,Panasonic,Kitchen;Utensils
+P0000056,Product 56,Description of Product 56,764.44,Home Appliances,1002,1003,Color:White;Size:M;Voltage:110V,Ikea,Gadgets;Electronics
+P0000057,Product 57,Description of Product 57,29.27,Furniture,1004,1004,Color:Red;Size:L;Material:Plastic,Philips,Electronics;Furniture
+P0000058,Product 58,Description of Product 58,878.14,Home Appliances,1002,1005,Color:Brown;Size:L;Voltage:110V,Samsung,Gadgets;Electronics
+P0000059,Product 59,Description of Product 59,641.72,Electronics,1001,1005,Color:White;Size:S,Ikea,Kitchen;Living Room
+P0000060,Product 60,Description of Product 60,323.01,Books,1006,1001,Color:Brown;Size:XL,Sony,Kitchen;Smartphones
+P0000061,Product 61,Description of Product 61,733.87,Toys,1005,1001,Color:Blue;Size:L,LG,Furniture;Smartphones
+P0000062,Product 62,Description of Product 62,239.77,Furniture,1004,1001,Color:Blue;Size:L;Material:Plastic,Sony,Electronics;Gadgets
+P0000063,Product 63,Description of Product 63,214.29,Kitchen,1003,1004,Color:White;Size:M;Material:Wood,Samsung,Gadgets;Living Room
+P0000064,Product 64,Description of Product 64,720.68,Kitchen,1003,1003,Color:Blue;Size:S;Material:Plastic,Ikea,Smartphones;Home
+P0000065,Product 65,Description of Product 65,74.85,Toys,1005,1002,Color:White;Size:L,Samsung,Home;Kitchen
+P0000066,Product 66,Description of Product 66,777.49,Toys,1005,1003,Color:Black;Size:M,LG,Electronics;Gadgets
+P0000067,Product 67,Description of Product 67,156.01,Furniture,1004,,Color:Black;Size:M;Material:Wood,Philips,Gadgets;Living Room
+P0000068,Product 68,Description of Product 68,562.73,Home Appliances,1002,,Color:Blue;Size:S;Voltage:220V,Samsung,Smartphones;Utensils
+P0000069,Product 69,Description of Product 69,316.53,Books,1006,1002,Color:Red;Size:XL,Panasonic,Kitchen;Furniture
+P0000070,Product 70,Description of Product 70,22.78,Home Appliances,1002,1004,Color:Blue;Size:S;Voltage:220V,Ikea,Smartphones;Living Room
+P0000071,Product 71,Description of Product 71,659.26,Electronics,1001,,Color:Black;Size:XL,LG,Utensils;Living Room
+P0000072,Product 72,Description of Product 72,494.8,Kitchen,1003,,Color:Brown;Size:XL;Material:Steel,Samsung,Home;Kitchen
+P0000073,Product 73,Description of Product 73,13.6,Toys,1005,1004,Color:Brown;Size:L,Panasonic,Kitchen;Gadgets
+P0000074,Product 74,Description of Product 74,846.27,Kitchen,1003,1003,Color:Red;Size:S;Material:Plastic,Sony,Kitchen;Living Room
+P0000075,Product 75,Description of Product 75,204.91,Electronics,1001,1004,Color:Black;Size:L,Sony,Utensils;Living Room
+P0000076,Product 76,Description of Product 76,321.16,Toys,1005,1001,Color:Black;Size:L,Ikea,Home;Furniture
+P0000077,Product 77,Description of Product 77,563.37,Furniture,1004,1004,Color:Black;Size:XL;Material:Plastic,Philips,Furniture;Utensils
+P0000078,Product 78,Description of Product 78,315.63,Toys,1005,1005,Color:Brown;Size:XL,Sony,Living Room;Utensils
+P0000079,Product 79,Description of Product 79,385.01,Books,1006,1002,Color:Red;Size:L,Sony,Electronics;Home
+P0000080,Product 80,Description of Product 80,485.22,Furniture,1004,,Color:Brown;Size:M;Material:Plastic,Samsung,Smartphones;Home
+P0000081,Product 81,Description of Product 81,829.18,Home Appliances,1002,,Color:Blue;Size:XL;Voltage:220V,Samsung,Electronics;Smartphones
+P0000082,Product 82,Description of Product 82,969.64,Books,1006,1004,Color:Brown;Size:L,Panasonic,Gadgets;Smartphones
+P0000083,Product 83,Description of Product 83,611.14,Home Appliances,1002,1002,Color:Red;Size:M;Voltage:110V,Ikea,Smartphones;Living Room
+P0000084,Product 84,Description of Product 84,197.2,Home Appliances,1002,,Color:Brown;Size:S;Voltage:110V,Samsung,Kitchen;Furniture
+P0000085,Product 85,Description of Product 85,854.64,Furniture,1004,1002,Color:Brown;Size:XL;Material:Steel,Ikea,Furniture;Kitchen
+P0000086,Product 86,Description of Product 86,146.0,Furniture,1004,1005,Color:Brown;Size:M;Material:Steel,LG,Kitchen;Utensils
+P0000087,Product 87,Description of Product 87,93.55,Electronics,1001,1004,Color:White;Size:S,Philips,Kitchen;Electronics
+P0000088,Product 88,Description of Product 88,151.73,Furniture,1004,1004,Color:Brown;Size:XL;Material:Wood,Panasonic,Furniture;Smartphones
+P0000089,Product 89,Description of Product 89,397.08,Kitchen,1003,1005,Color:White;Size:L;Material:Plastic,Panasonic,Furniture;Living Room
+P0000090,Product 90,Description of Product 90,98.1,Home Appliances,1002,1004,Color:Brown;Size:L;Voltage:110V,Ikea,Gadgets;Smartphones
+P0000091,Product 91,Description of Product 91,527.51,Furniture,1004,,Color:Red;Size:XL;Material:Steel,Samsung,Utensils;Smartphones
+P0000092,Product 92,Description of Product 92,800.07,Kitchen,1003,1003,Color:Blue;Size:S;Material:Wood,Sony,Gadgets;Smartphones
+P0000093,Product 93,Description of Product 93,299.96,Home Appliances,1002,1002,Color:Black;Size:L;Voltage:220V,LG,Gadgets;Home
+P0000094,Product 94,Description of Product 94,703.94,Furniture,1004,1005,Color:White;Size:S;Material:Wood,LG,Utensils;Furniture
+P0000095,Product 95,Description of Product 95,39.16,Kitchen,1003,1002,Color:Blue;Size:S;Material:Wood,LG,Gadgets;Electronics
+P0000096,Product 96,Description of Product 96,960.59,Kitchen,1003,,Color:White;Size:S;Material:Steel,Samsung,Gadgets;Utensils
+P0000097,Product 97,Description of Product 97,636.98,Books,1006,1001,Color:Black;Size:XL,LG,Utensils;Kitchen
+P0000098,Product 98,Description of Product 98,776.75,Home Appliances,1002,1003,Color:Red;Size:L;Voltage:110V,Panasonic,Electronics;Home
+P0000099,Product 99,Description of Product 99,847.14,Kitchen,1003,,Color:Black;Size:L;Material:Plastic,Panasonic,Smartphones;Furniture
+P0000100,Product 100,Description of Product 100,964.26,Kitchen,1003,,Color:Black;Size:L;Material:Steel,LG,Utensils;Smartphones
+P0000101,Product 101,Description of Product 101,622.04,Furniture,1004,1005,Color:Blue;Size:M;Material:Plastic,LG,Home;Utensils
+P0000102,Product 102,Description of Product 102,574.03,Electronics,1001,1002,Color:Blue;Size:XL,LG,Home;Living Room
+P0000103,Product 103,Description of Product 103,600.74,Furniture,1004,1005,Color:Blue;Size:S;Material:Steel,Ikea,Kitchen;Gadgets
+P0000104,Product 104,Description of Product 104,297.87,Electronics,1001,1005,Color:Brown;Size:L,Ikea,Smartphones;Gadgets
+P0000105,Product 105,Description of Product 105,464.86,Furniture,1004,1003,Color:Brown;Size:L;Material:Wood,Philips,Living Room;Gadgets
+P0000106,Product 106,Description of Product 106,957.3,Kitchen,1003,,Color:Black;Size:M;Material:Plastic,Sony,Electronics;Kitchen
+P0000107,Product 107,Description of Product 107,523.08,Furniture,1004,,Color:Black;Size:XL;Material:Steel,Ikea,Kitchen;Furniture
+P0000108,Product 108,Description of Product 108,403.85,Home Appliances,1002,1002,Color:Blue;Size:XL;Voltage:110V,Panasonic,Electronics;Living Room
+P0000109,Product 109,Description of Product 109,946.52,Books,1006,1002,Color:Blue;Size:S,Panasonic,Electronics;Utensils
+P0000110,Product 110,Description of Product 110,627.9,Books,1006,1001,Color:Black;Size:S,Ikea,Living Room;Furniture
+P0000111,Product 111,Description of Product 111,668.67,Toys,1005,1001,Color:Black;Size:L,Sony,Electronics;Smartphones
+P0000112,Product 112,Description of Product 112,872.64,Furniture,1004,1003,Color:White;Size:L;Material:Wood,Samsung,Living Room;Home
+P0000113,Product 113,Description of Product 113,792.48,Furniture,1004,1003,Color:Blue;Size:M;Material:Steel,Panasonic,Furniture;Utensils
+P0000114,Product 114,Description of Product 114,612.7,Books,1006,1001,Color:White;Size:L,Samsung,Electronics;Furniture
+P0000115,Product 115,Description of Product 115,490.9,Home Appliances,1002,1004,Color:White;Size:XL;Voltage:110V,Sony,Electronics;Smartphones
+P0000116,Product 116,Description of Product 116,772.76,Kitchen,1003,1003,Color:Red;Size:S;Material:Wood,Ikea,Smartphones;Electronics
+P0000117,Product 117,Description of Product 117,757.01,Home Appliances,1002,1004,Color:Black;Size:XL;Voltage:220V,Sony,Gadgets;Utensils
+P0000118,Product 118,Description of Product 118,830.88,Home Appliances,1002,1004,Color:Blue;Size:L;Voltage:220V,Samsung,Utensils;Gadgets
+P0000119,Product 119,Description of Product 119,983.69,Home Appliances,1002,1004,Color:Red;Size:XL;Voltage:110V,LG,Gadgets;Utensils
+P0000120,Product 120,Description of Product 120,499.85,Books,1006,1001,Color:Brown;Size:S,Panasonic,Furniture;Home
+P0000121,Product 121,Description of Product 121,647.15,Books,1006,1004,Color:Blue;Size:XL,Ikea,Gadgets;Home
+P0000122,Product 122,Description of Product 122,770.07,Furniture,1004,1005,Color:Brown;Size:XL;Material:Steel,Ikea,Home;Kitchen
+P0000123,Product 123,Description of Product 123,47.99,Toys,1005,1001,Color:Brown;Size:S,LG,Smartphones;Kitchen
+P0000124,Product 124,Description of Product 124,16.71,Kitchen,1003,1005,Color:Red;Size:L;Material:Steel,Panasonic,Electronics;Smartphones
+P0000125,Product 125,Description of Product 125,794.68,Home Appliances,1002,1004,Color:Brown;Size:M;Voltage:220V,Ikea,Home;Utensils
+P0000126,Product 126,Description of Product 126,427.89,Toys,1005,1003,Color:Black;Size:M,LG,Smartphones;Furniture
+P0000127,Product 127,Description of Product 127,761.72,Home Appliances,1002,1005,Color:White;Size:L;Voltage:220V,Samsung,Living Room;Gadgets
+P0000128,Product 128,Description of Product 128,697.14,Books,1006,1003,Color:White;Size:XL,Ikea,Utensils;Smartphones
+P0000129,Product 129,Description of Product 129,808.45,Home Appliances,1002,1002,Color:Blue;Size:M;Voltage:110V,Panasonic,Living Room;Smartphones
+P0000130,Product 130,Description of Product 130,669.71,Home Appliances,1002,1005,Color:White;Size:XL;Voltage:220V,Ikea,Home;Gadgets
+P0000131,Product 131,Description of Product 131,436.48,Kitchen,1003,1003,Color:Red;Size:XL;Material:Wood,LG,Utensils;Home
+P0000132,Product 132,Description of Product 132,901.01,Home Appliances,1002,1003,Color:White;Size:S;Voltage:110V,Panasonic,Living Room;Kitchen
+P0000133,Product 133,Description of Product 133,946.54,Home Appliances,1002,1003,Color:Red;Size:XL;Voltage:220V,Samsung,Gadgets;Living Room
+P0000134,Product 134,Description of Product 134,371.32,Home Appliances,1002,1002,Color:Brown;Size:L;Voltage:110V,Samsung,Smartphones;Furniture
+P0000135,Product 135,Description of Product 135,912.95,Electronics,1001,1004,Color:White;Size:XL,Sony,Furniture;Gadgets
+P0000136,Product 136,Description of Product 136,295.41,Home Appliances,1002,1003,Color:Red;Size:L;Voltage:220V,LG,Gadgets;Electronics
+P0000137,Product 137,Description of Product 137,901.65,Books,1006,1003,Color:Blue;Size:S,Philips,Living Room;Electronics
+P0000138,Product 138,Description of Product 138,339.37,Furniture,1004,,Color:White;Size:M;Material:Plastic,Samsung,Utensils;Smartphones
+P0000139,Product 139,Description of Product 139,203.06,Kitchen,1003,,Color:Red;Size:L;Material:Plastic,Panasonic,Utensils;Gadgets
+P0000140,Product 140,Description of Product 140,291.76,Furniture,1004,1002,Color:White;Size:S;Material:Wood,Sony,Kitchen;Gadgets
+P0000141,Product 141,Description of Product 141,800.19,Kitchen,1003,1005,Color:Blue;Size:S;Material:Plastic,LG,Utensils;Electronics
+P0000142,Product 142,Description of Product 142,432.59,Books,1006,,Color:Black;Size:S,Panasonic,Home;Smartphones
+P0000143,Product 143,Description of Product 143,793.02,Electronics,1001,1004,Color:Black;Size:M,Sony,Home;Electronics
+P0000144,Product 144,Description of Product 144,851.95,Furniture,1004,1002,Color:Blue;Size:L;Material:Wood,Panasonic,Utensils;Kitchen
+P0000145,Product 145,Description of Product 145,382.57,Furniture,1004,1001,Color:White;Size:S;Material:Plastic,Sony,Smartphones;Furniture
+P0000146,Product 146,Description of Product 146,42.88,Books,1006,1005,Color:White;Size:S,Philips,Kitchen;Home
+P0000147,Product 147,Description of Product 147,522.12,Electronics,1001,,Color:White;Size:XL,Panasonic,Utensils;Gadgets
+P0000148,Product 148,Description of Product 148,519.28,Books,1006,1004,Color:Blue;Size:L,Philips,Kitchen;Utensils
+P0000149,Product 149,Description of Product 149,824.35,Furniture,1004,1005,Color:Black;Size:L;Material:Wood,Panasonic,Gadgets;Smartphones
+P0000150,Product 150,Description of Product 150,13.73,Home Appliances,1002,1001,Color:White;Size:S;Voltage:110V,Panasonic,Electronics;Gadgets
+P0000151,Product 151,Description of Product 151,309.86,Furniture,1004,1001,Color:Black;Size:L;Material:Steel,Philips,Living Room;Smartphones
+P0000152,Product 152,Description of Product 152,631.04,Books,1006,1002,Color:White;Size:S,Panasonic,Furniture;Kitchen
+P0000153,Product 153,Description of Product 153,784.88,Home Appliances,1002,1003,Color:Black;Size:M;Voltage:220V,Samsung,Home;Living Room
+P0000154,Product 154,Description of Product 154,167.91,Toys,1005,1004,Color:Black;Size:S,LG,Utensils;Electronics
+P0000155,Product 155,Description of Product 155,298.6,Furniture,1004,1001,Color:Black;Size:S;Material:Steel,Sony,Smartphones;Utensils
+P0000156,Product 156,Description of Product 156,341.09,Electronics,1001,1004,Color:White;Size:M,Sony,Kitchen;Home
+P0000157,Product 157,Description of Product 157,30.61,Home Appliances,1002,1002,Color:Brown;Size:S;Voltage:220V,LG,Utensils;Furniture
+P0000158,Product 158,Description of Product 158,348.46,Kitchen,1003,1002,Color:Black;Size:S;Material:Plastic,Panasonic,Smartphones;Utensils
+P0000159,Product 159,Description of Product 159,907.36,Toys,1005,1005,Color:Black;Size:L,Philips,Electronics;Gadgets
+P0000160,Product 160,Description of Product 160,188.4,Furniture,1004,1003,Color:White;Size:XL;Material:Steel,Ikea,Furniture;Smartphones
+P0000161,Product 161,Description of Product 161,482.75,Home Appliances,1002,1001,Color:Blue;Size:S;Voltage:110V,Sony,Utensils;Kitchen
+P0000162,Product 162,Description of Product 162,767.26,Home Appliances,1002,1003,Color:Black;Size:M;Voltage:220V,Samsung,Living Room;Kitchen
+P0000163,Product 163,Description of Product 163,751.05,Kitchen,1003,1001,Color:Black;Size:S;Material:Plastic,Panasonic,Home;Gadgets
+P0000164,Product 164,Description of Product 164,806.76,Electronics,1001,1005,Color:White;Size:XL,Ikea,Living Room;Gadgets
+P0000165,Product 165,Description of Product 165,246.75,Toys,1005,1001,Color:Brown;Size:XL,LG,Furniture;Gadgets
+P0000166,Product 166,Description of Product 166,645.66,Kitchen,1003,1001,Color:Brown;Size:XL;Material:Steel,Samsung,Furniture;Kitchen
+P0000167,Product 167,Description of Product 167,723.92,Electronics,1001,1004,Color:White;Size:S,LG,Furniture;Electronics
+P0000168,Product 168,Description of Product 168,45.39,Electronics,1001,1002,Color:Red;Size:XL,Panasonic,Kitchen;Utensils
+P0000169,Product 169,Description of Product 169,854.53,Furniture,1004,1001,Color:Brown;Size:L;Material:Wood,Sony,Utensils;Electronics
+P0000170,Product 170,Description of Product 170,232.65,Furniture,1004,1004,Color:Black;Size:S;Material:Plastic,Samsung,Living Room;Gadgets
+P0000171,Product 171,Description of Product 171,319.85,Electronics,1001,1004,Color:White;Size:XL,LG,Electronics;Gadgets
+P0000172,Product 172,Description of Product 172,172.5,Toys,1005,1003,Color:Brown;Size:S,Panasonic,Smartphones;Electronics
+P0000173,Product 173,Description of Product 173,575.63,Electronics,1001,,Color:Red;Size:L,Panasonic,Smartphones;Home
+P0000174,Product 174,Description of Product 174,625.98,Toys,1005,1003,Color:Black;Size:L,Philips,Kitchen;Electronics
+P0000175,Product 175,Description of Product 175,241.32,Books,1006,1001,Color:Blue;Size:L,Panasonic,Smartphones;Utensils
+P0000176,Product 176,Description of Product 176,197.35,Books,1006,,Color:Blue;Size:M,LG,Kitchen;Living Room
+P0000177,Product 177,Description of Product 177,451.79,Home Appliances,1002,1002,Color:Brown;Size:M;Voltage:110V,Sony,Electronics;Gadgets
+P0000178,Product 178,Description of Product 178,573.1,Electronics,1001,1002,Color:Brown;Size:S,Panasonic,Living Room;Home
+P0000179,Product 179,Description of Product 179,821.38,Kitchen,1003,1001,Color:White;Size:S;Material:Plastic,Sony,Gadgets;Electronics
+P0000180,Product 180,Description of Product 180,128.38,Kitchen,1003,1003,Color:Black;Size:M;Material:Plastic,Panasonic,Kitchen;Furniture
+P0000181,Product 181,Description of Product 181,428.27,Home Appliances,1002,1003,Color:White;Size:XL;Voltage:220V,Sony,Living Room;Furniture
+P0000182,Product 182,Description of Product 182,652.5,Books,1006,1004,Color:Blue;Size:XL,Sony,Utensils;Furniture
+P0000183,Product 183,Description of Product 183,762.78,Furniture,1004,1004,Color:Black;Size:M;Material:Steel,Philips,Home;Furniture
+P0000184,Product 184,Description of Product 184,159.27,Toys,1005,1001,Color:Red;Size:XL,Panasonic,Living Room;Utensils
+P0000185,Product 185,Description of Product 185,121.94,Books,1006,1002,Color:White;Size:L,Sony,Gadgets;Utensils
+P0000186,Product 186,Description of Product 186,408.27,Electronics,1001,1004,Color:Red;Size:S,Sony,Utensils;Furniture
+P0000187,Product 187,Description of Product 187,860.65,Toys,1005,1003,Color:Black;Size:M,Samsung,Electronics;Furniture
+P0000188,Product 188,Description of Product 188,384.68,Home Appliances,1002,1001,Color:Brown;Size:M;Voltage:220V,Samsung,Smartphones;Kitchen
+P0000189,Product 189,Description of Product 189,779.61,Electronics,1001,1005,Color:Blue;Size:S,Philips,Furniture;Home
+P0000190,Product 190,Description of Product 190,289.99,Electronics,1001,1001,Color:Brown;Size:S,Ikea,Electronics;Living Room
+P0000191,Product 191,Description of Product 191,604.76,Kitchen,1003,1002,Color:White;Size:L;Material:Steel,Ikea,Home;Electronics
+P0000192,Product 192,Description of Product 192,303.69,Furniture,1004,1005,Color:Red;Size:M;Material:Plastic,Sony,Electronics;Utensils
+P0000193,Product 193,Description of Product 193,291.82,Home Appliances,1002,1002,Color:Blue;Size:XL;Voltage:110V,LG,Furniture;Living Room
+P0000194,Product 194,Description of Product 194,598.76,Electronics,1001,1002,Color:Red;Size:S,Panasonic,Gadgets;Furniture
+P0000195,Product 195,Description of Product 195,215.66,Furniture,1004,1003,Color:Red;Size:XL;Material:Steel,Ikea,Living Room;Furniture
+P0000196,Product 196,Description of Product 196,621.29,Toys,1005,,Color:Blue;Size:L,Ikea,Gadgets;Utensils
+P0000197,Product 197,Description of Product 197,168.26,Toys,1005,1004,Color:Black;Size:XL,Panasonic,Smartphones;Utensils
+P0000198,Product 198,Description of Product 198,253.12,Electronics,1001,1004,Color:White;Size:L,Sony,Living Room;Utensils
+P0000199,Product 199,Description of Product 199,178.27,Electronics,1001,,Color:Blue;Size:M,Samsung,Kitchen;Gadgets
+P0000200,Product 200,Description of Product 200,681.02,Electronics,1001,1003,Color:White;Size:L,Philips,Living Room;Home
+P0000201,Product 201,Description of Product 201,919.4,Books,1006,,Color:Blue;Size:L,Samsung,Smartphones;Kitchen
+P0000202,Product 202,Description of Product 202,399.21,Furniture,1004,,Color:Blue;Size:XL;Material:Plastic,Philips,Living Room;Home
+P0000203,Product 203,Description of Product 203,892.96,Furniture,1004,1005,Color:Red;Size:XL;Material:Plastic,Panasonic,Electronics;Smartphones
+P0000204,Product 204,Description of Product 204,878.88,Furniture,1004,1003,Color:White;Size:XL;Material:Wood,LG,Furniture;Gadgets
+P0000205,Product 205,Description of Product 205,564.06,Toys,1005,,Color:Red;Size:M,Sony,Home;Electronics
+P0000206,Product 206,Description of Product 206,493.25,Books,1006,1003,Color:White;Size:L,Philips,Home;Utensils
+P0000207,Product 207,Description of Product 207,605.24,Toys,1005,1005,Color:Brown;Size:XL,Sony,Kitchen;Smartphones
+P0000208,Product 208,Description of Product 208,442.04,Books,1006,1003,Color:Blue;Size:XL,Ikea,Electronics;Kitchen
+P0000209,Product 209,Description of Product 209,258.91,Toys,1005,1001,Color:White;Size:S,Samsung,Gadgets;Kitchen
+P0000210,Product 210,Description of Product 210,423.88,Toys,1005,1001,Color:White;Size:L,Philips,Living Room;Home
+P0000211,Product 211,Description of Product 211,439.57,Toys,1005,,Color:Brown;Size:S,Panasonic,Electronics;Living Room
+P0000212,Product 212,Description of Product 212,45.32,Electronics,1001,1001,Color:White;Size:XL,Panasonic,Smartphones;Living Room
+P0000213,Product 213,Description of Product 213,875.51,Kitchen,1003,1003,Color:Red;Size:L;Material:Steel,Panasonic,Utensils;Smartphones
+P0000214,Product 214,Description of Product 214,523.85,Electronics,1001,1005,Color:Blue;Size:L,Samsung,Utensils;Furniture
+P0000215,Product 215,Description of Product 215,360.48,Electronics,1001,1005,Color:Black;Size:S,Ikea,Utensils;Smartphones
+P0000216,Product 216,Description of Product 216,797.34,Furniture,1004,,Color:Red;Size:XL;Material:Steel,Philips,Kitchen;Furniture
+P0000217,Product 217,Description of Product 217,714.32,Books,1006,1002,Color:White;Size:S,Philips,Furniture;Smartphones
+P0000218,Product 218,Description of Product 218,64.46,Books,1006,,Color:Black;Size:M,Ikea,Gadgets;Kitchen
+P0000219,Product 219,Description of Product 219,910.26,Electronics,1001,1002,Color:White;Size:S,LG,Home;Smartphones
+P0000220,Product 220,Description of Product 220,760.04,Furniture,1004,1002,Color:White;Size:XL;Material:Wood,Panasonic,Gadgets;Furniture
+P0000221,Product 221,Description of Product 221,55.68,Furniture,1004,1004,Color:Blue;Size:S;Material:Plastic,Samsung,Gadgets;Home
+P0000222,Product 222,Description of Product 222,611.66,Electronics,1001,,Color:Brown;Size:L,Ikea,Kitchen;Gadgets
+P0000223,Product 223,Description of Product 223,410.75,Books,1006,1003,Color:Brown;Size:XL,Ikea,Gadgets;Home
+P0000224,Product 224,Description of Product 224,349.73,Books,1006,1002,Color:Black;Size:L,Sony,Living Room;Utensils
+P0000225,Product 225,Description of Product 225,709.43,Kitchen,1003,,Color:Red;Size:S;Material:Plastic,Samsung,Electronics;Living Room
+P0000226,Product 226,Description of Product 226,321.77,Books,1006,1004,Color:Black;Size:S,Panasonic,Smartphones;Kitchen
+P0000227,Product 227,Description of Product 227,337.94,Electronics,1001,1003,Color:Brown;Size:L,Panasonic,Kitchen;Smartphones
+P0000228,Product 228,Description of Product 228,947.96,Home Appliances,1002,1003,Color:Black;Size:M;Voltage:220V,Ikea,Kitchen;Home
+P0000229,Product 229,Description of Product 229,197.67,Books,1006,1003,Color:Brown;Size:S,Sony,Living Room;Gadgets
+P0000230,Product 230,Description of Product 230,766.42,Furniture,1004,1001,Color:Red;Size:XL;Material:Plastic,Panasonic,Kitchen;Smartphones
+P0000231,Product 231,Description of Product 231,80.35,Kitchen,1003,1005,Color:White;Size:L;Material:Plastic,Panasonic,Kitchen;Utensils
+P0000232,Product 232,Description of Product 232,415.06,Kitchen,1003,1005,Color:White;Size:M;Material:Plastic,LG,Utensils;Gadgets
+P0000233,Product 233,Description of Product 233,657.3,Toys,1005,1003,Color:White;Size:S,LG,Living Room;Kitchen
+P0000234,Product 234,Description of Product 234,318.74,Books,1006,1003,Color:Red;Size:S,Sony,Furniture;Kitchen
+P0000235,Product 235,Description of Product 235,787.64,Toys,1005,1002,Color:Blue;Size:M,Ikea,Home;Living Room
+P0000236,Product 236,Description of Product 236,451.05,Books,1006,1002,Color:Brown;Size:M,Samsung,Living Room;Utensils
+P0000237,Product 237,Description of Product 237,304.01,Furniture,1004,1004,Color:Brown;Size:XL;Material:Steel,Sony,Gadgets;Smartphones
+P0000238,Product 238,Description of Product 238,506.55,Toys,1005,1005,Color:White;Size:S,Panasonic,Electronics;Living Room
+P0000239,Product 239,Description of Product 239,839.07,Electronics,1001,1001,Color:Blue;Size:XL,Panasonic,Smartphones;Electronics
+P0000240,Product 240,Description of Product 240,373.38,Home Appliances,1002,1003,Color:Black;Size:XL;Voltage:220V,Ikea,Utensils;Gadgets
+P0000241,Product 241,Description of Product 241,340.48,Kitchen,1003,,Color:White;Size:XL;Material:Wood,Ikea,Electronics;Home
+P0000242,Product 242,Description of Product 242,572.91,Furniture,1004,1004,Color:Blue;Size:M;Material:Wood,Samsung,Electronics;Gadgets
+P0000243,Product 243,Description of Product 243,163.67,Furniture,1004,1003,Color:Black;Size:S;Material:Wood,Philips,Gadgets;Smartphones
+P0000244,Product 244,Description of Product 244,552.55,Home Appliances,1002,,Color:Blue;Size:M;Voltage:110V,Sony,Living Room;Gadgets
+P0000245,Product 245,Description of Product 245,943.3,Toys,1005,1004,Color:White;Size:M,Ikea,Smartphones;Kitchen
+P0000246,Product 246,Description of Product 246,234.95,Books,1006,1003,Color:Brown;Size:S,Samsung,Electronics;Kitchen
+P0000247,Product 247,Description of Product 247,738.58,Electronics,1001,1003,Color:Brown;Size:M,Samsung,Gadgets;Living Room
+P0000248,Product 248,Description of Product 248,249.32,Books,1006,,Color:Black;Size:M,LG,Home;Smartphones
+P0000249,Product 249,Description of Product 249,815.57,Electronics,1001,1003,Color:Brown;Size:M,Ikea,Furniture;Utensils
+P0000250,Product 250,Description of Product 250,495.75,Books,1006,,Color:Blue;Size:M,LG,Kitchen;Smartphones
+P0000251,Product 251,Description of Product 251,289.05,Home Appliances,1002,1004,Color:Blue;Size:XL;Voltage:220V,Samsung,Home;Smartphones
+P0000252,Product 252,Description of Product 252,990.89,Books,1006,1004,Color:White;Size:M,Philips,Living Room;Kitchen
+P0000253,Product 253,Description of Product 253,11.87,Toys,1005,,Color:White;Size:M,Sony,Furniture;Smartphones
+P0000254,Product 254,Description of Product 254,60.17,Furniture,1004,1004,Color:Red;Size:L;Material:Steel,LG,Living Room;Furniture
+P0000255,Product 255,Description of Product 255,24.45,Kitchen,1003,1004,Color:Red;Size:XL;Material:Wood,Ikea,Furniture;Kitchen
+P0000256,Product 256,Description of Product 256,186.62,Books,1006,1005,Color:Brown;Size:XL,Philips,Living Room;Utensils
+P0000257,Product 257,Description of Product 257,998.1,Toys,1005,1001,Color:Red;Size:S,Sony,Furniture;Smartphones
+P0000258,Product 258,Description of Product 258,13.08,Books,1006,1001,Color:Brown;Size:M,Samsung,Gadgets;Living Room
+P0000259,Product 259,Description of Product 259,82.3,Electronics,1001,1001,Color:Brown;Size:L,LG,Gadgets;Smartphones
+P0000260,Product 260,Description of Product 260,599.16,Kitchen,1003,1001,Color:White;Size:M;Material:Wood,Sony,Utensils;Kitchen
+P0000261,Product 261,Description of Product 261,370.42,Toys,1005,1005,Color:Red;Size:S,Ikea,Living Room;Smartphones
+P0000262,Product 262,Description of Product 262,240.53,Electronics,1001,1005,Color:Blue;Size:L,LG,Smartphones;Electronics
+P0000263,Product 263,Description of Product 263,603.19,Toys,1005,,Color:Black;Size:M,LG,Living Room;Electronics
+P0000264,Product 264,Description of Product 264,398.33,Kitchen,1003,1004,Color:Red;Size:S;Material:Plastic,Philips,Home;Gadgets
+P0000265,Product 265,Description of Product 265,187.68,Kitchen,1003,1001,Color:Blue;Size:M;Material:Steel,Philips,Living Room;Smartphones
+P0000266,Product 266,Description of Product 266,898.16,Furniture,1004,,Color:Black;Size:M;Material:Steel,Philips,Smartphones;Furniture
+P0000267,Product 267,Description of Product 267,418.76,Electronics,1001,1004,Color:Blue;Size:M,Samsung,Home;Smartphones
+P0000268,Product 268,Description of Product 268,681.73,Books,1006,1005,Color:Blue;Size:L,Panasonic,Electronics;Furniture
+P0000269,Product 269,Description of Product 269,400.15,Home Appliances,1002,1005,Color:White;Size:M;Voltage:110V,Samsung,Kitchen;Furniture
+P0000270,Product 270,Description of Product 270,346.19,Home Appliances,1002,1001,Color:Red;Size:S;Voltage:110V,Samsung,Gadgets;Kitchen
+P0000271,Product 271,Description of Product 271,804.61,Toys,1005,1001,Color:White;Size:S,Philips,Gadgets;Home
+P0000272,Product 272,Description of Product 272,793.9,Home Appliances,1002,1002,Color:Blue;Size:XL;Voltage:110V,Samsung,Home;Electronics
+P0000273,Product 273,Description of Product 273,312.71,Toys,1005,1002,Color:Blue;Size:XL,Panasonic,Utensils;Kitchen
+P0000274,Product 274,Description of Product 274,322.02,Furniture,1004,1003,Color:Brown;Size:L;Material:Steel,Panasonic,Gadgets;Furniture
+P0000275,Product 275,Description of Product 275,764.98,Kitchen,1003,1005,Color:Black;Size:L;Material:Plastic,LG,Living Room;Smartphones
+P0000276,Product 276,Description of Product 276,180.08,Kitchen,1003,1003,Color:Red;Size:XL;Material:Plastic,Philips,Gadgets;Living Room
+P0000277,Product 277,Description of Product 277,282.5,Kitchen,1003,1002,Color:White;Size:XL;Material:Plastic,Ikea,Furniture;Home
+P0000278,Product 278,Description of Product 278,171.86,Furniture,1004,1003,Color:Brown;Size:L;Material:Steel,Panasonic,Furniture;Gadgets
+P0000279,Product 279,Description of Product 279,963.77,Books,1006,1003,Color:Blue;Size:S,LG,Kitchen;Home
+P0000280,Product 280,Description of Product 280,359.75,Books,1006,1002,Color:Brown;Size:S,Samsung,Smartphones;Electronics
+P0000281,Product 281,Description of Product 281,647.46,Furniture,1004,1002,Color:Black;Size:L;Material:Steel,Panasonic,Utensils;Gadgets
+P0000282,Product 282,Description of Product 282,502.52,Furniture,1004,1002,Color:Red;Size:M;Material:Steel,Philips,Electronics;Utensils
+P0000283,Product 283,Description of Product 283,241.04,Toys,1005,1005,Color:White;Size:S,Sony,Smartphones;Living Room
+P0000284,Product 284,Description of Product 284,44.74,Furniture,1004,1004,Color:Blue;Size:XL;Material:Plastic,LG,Furniture;Gadgets
+P0000285,Product 285,Description of Product 285,523.32,Furniture,1004,1001,Color:Black;Size:XL;Material:Steel,LG,Kitchen;Gadgets
+P0000286,Product 286,Description of Product 286,949.3,Home Appliances,1002,1005,Color:Black;Size:L;Voltage:220V,Sony,Gadgets;Furniture
+P0000287,Product 287,Description of Product 287,210.2,Electronics,1001,1004,Color:Black;Size:L,Sony,Gadgets;Home
+P0000288,Product 288,Description of Product 288,959.18,Furniture,1004,1002,Color:Red;Size:L;Material:Steel,Samsung,Living Room;Kitchen
+P0000289,Product 289,Description of Product 289,615.19,Toys,1005,1002,Color:White;Size:M,Samsung,Gadgets;Smartphones
+P0000290,Product 290,Description of Product 290,78.34,Toys,1005,1004,Color:Blue;Size:M,Sony,Kitchen;Electronics
+P0000291,Product 291,Description of Product 291,770.73,Furniture,1004,1004,Color:Black;Size:S;Material:Steel,Sony,Living Room;Smartphones
+P0000292,Product 292,Description of Product 292,713.44,Kitchen,1003,1003,Color:Red;Size:S;Material:Plastic,Panasonic,Utensils;Furniture
+P0000293,Product 293,Description of Product 293,365.53,Furniture,1004,1003,Color:Black;Size:S;Material:Plastic,Philips,Smartphones;Kitchen
+P0000294,Product 294,Description of Product 294,432.06,Furniture,1004,1002,Color:White;Size:L;Material:Wood,Samsung,Electronics;Home
+P0000295,Product 295,Description of Product 295,384.1,Toys,1005,1002,Color:Red;Size:M,Samsung,Smartphones;Living Room
+P0000296,Product 296,Description of Product 296,503.91,Books,1006,1003,Color:Brown;Size:M,Panasonic,Electronics;Smartphones
+P0000297,Product 297,Description of Product 297,385.41,Electronics,1001,1002,Color:Red;Size:M,Panasonic,Living Room;Gadgets
+P0000298,Product 298,Description of Product 298,979.75,Books,1006,1001,Color:White;Size:M,Philips,Living Room;Home
+P0000299,Product 299,Description of Product 299,846.19,Books,1006,1002,Color:Black;Size:M,LG,Utensils;Electronics
+P0000300,Product 300,Description of Product 300,461.74,Toys,1005,1001,Color:Red;Size:S,Philips,Utensils;Furniture
+P0000301,Product 301,Description of Product 301,190.93,Toys,1005,1002,Color:White;Size:XL,Samsung,Smartphones;Kitchen
+P0000302,Product 302,Description of Product 302,745.19,Kitchen,1003,1002,Color:Red;Size:L;Material:Steel,Ikea,Electronics;Furniture
+P0000303,Product 303,Description of Product 303,203.35,Furniture,1004,1003,Color:Red;Size:S;Material:Steel,Samsung,Home;Furniture
+P0000304,Product 304,Description of Product 304,220.22,Electronics,1001,1005,Color:White;Size:S,LG,Home;Living Room
+P0000305,Product 305,Description of Product 305,784.93,Kitchen,1003,1005,Color:Blue;Size:S;Material:Wood,Sony,Electronics;Furniture
+P0000306,Product 306,Description of Product 306,233.62,Books,1006,1001,Color:Black;Size:S,Ikea,Kitchen;Smartphones
+P0000307,Product 307,Description of Product 307,858.94,Books,1006,1003,Color:Red;Size:XL,LG,Kitchen;Utensils
+P0000308,Product 308,Description of Product 308,784.1,Toys,1005,1005,Color:Brown;Size:S,Sony,Gadgets;Home
+P0000309,Product 309,Description of Product 309,910.09,Electronics,1001,,Color:Brown;Size:XL,Philips,Living Room;Utensils
+P0000310,Product 310,Description of Product 310,387.54,Furniture,1004,1004,Color:Brown;Size:XL;Material:Plastic,Philips,Utensils;Smartphones
+P0000311,Product 311,Description of Product 311,471.08,Home Appliances,1002,,Color:Red;Size:XL;Voltage:220V,LG,Furniture;Home
+P0000312,Product 312,Description of Product 312,346.63,Toys,1005,,Color:Brown;Size:S,LG,Furniture;Smartphones
+P0000313,Product 313,Description of Product 313,148.88,Home Appliances,1002,,Color:Blue;Size:L;Voltage:220V,Sony,Kitchen;Home
+P0000314,Product 314,Description of Product 314,14.03,Toys,1005,1001,Color:Red;Size:M,Philips,Utensils;Smartphones
+P0000315,Product 315,Description of Product 315,984.93,Kitchen,1003,1001,Color:Black;Size:M;Material:Wood,Ikea,Gadgets;Furniture
+P0000316,Product 316,Description of Product 316,507.96,Toys,1005,1003,Color:Blue;Size:XL,Samsung,Furniture;Utensils
+P0000317,Product 317,Description of Product 317,53.45,Home Appliances,1002,,Color:Red;Size:M;Voltage:220V,LG,Gadgets;Furniture
+P0000318,Product 318,Description of Product 318,291.44,Furniture,1004,1002,Color:White;Size:L;Material:Plastic,Philips,Gadgets;Home
+P0000319,Product 319,Description of Product 319,414.46,Kitchen,1003,,Color:White;Size:L;Material:Plastic,Samsung,Furniture;Electronics
+P0000320,Product 320,Description of Product 320,490.25,Furniture,1004,1002,Color:Blue;Size:XL;Material:Plastic,Samsung,Electronics;Gadgets
+P0000321,Product 321,Description of Product 321,70.41,Toys,1005,1002,Color:Blue;Size:XL,Sony,Utensils;Kitchen
+P0000322,Product 322,Description of Product 322,889.7,Home Appliances,1002,1004,Color:Blue;Size:XL;Voltage:110V,Sony,Furniture;Utensils
+P0000323,Product 323,Description of Product 323,330.53,Kitchen,1003,1004,Color:Red;Size:L;Material:Plastic,Panasonic,Furniture;Home
+P0000324,Product 324,Description of Product 324,674.42,Toys,1005,1004,Color:Red;Size:XL,LG,Home;Furniture
+P0000325,Product 325,Description of Product 325,565.12,Toys,1005,1002,Color:Blue;Size:S,Panasonic,Kitchen;Utensils
+P0000326,Product 326,Description of Product 326,181.87,Furniture,1004,1002,Color:Black;Size:XL;Material:Steel,LG,Furniture;Gadgets
+P0000327,Product 327,Description of Product 327,683.32,Furniture,1004,,Color:White;Size:XL;Material:Wood,Samsung,Home;Utensils
+P0000328,Product 328,Description of Product 328,210.76,Toys,1005,1002,Color:Blue;Size:S,Panasonic,Utensils;Home
+P0000329,Product 329,Description of Product 329,658.55,Furniture,1004,,Color:White;Size:S;Material:Plastic,LG,Electronics;Utensils
+P0000330,Product 330,Description of Product 330,701.24,Kitchen,1003,1003,Color:Brown;Size:L;Material:Wood,Panasonic,Kitchen;Electronics
+P0000331,Product 331,Description of Product 331,859.64,Electronics,1001,,Color:Blue;Size:M,Sony,Gadgets;Furniture
+P0000332,Product 332,Description of Product 332,656.97,Books,1006,1002,Color:White;Size:S,Samsung,Living Room;Home
+P0000333,Product 333,Description of Product 333,875.89,Home Appliances,1002,1003,Color:Red;Size:L;Voltage:110V,Philips,Utensils;Smartphones
+P0000334,Product 334,Description of Product 334,430.44,Kitchen,1003,1004,Color:Black;Size:XL;Material:Plastic,Ikea,Furniture;Home
+P0000335,Product 335,Description of Product 335,656.5,Home Appliances,1002,1004,Color:Brown;Size:L;Voltage:110V,Sony,Electronics;Furniture
+P0000336,Product 336,Description of Product 336,826.49,Furniture,1004,1004,Color:Red;Size:M;Material:Steel,Philips,Gadgets;Utensils
+P0000337,Product 337,Description of Product 337,318.0,Electronics,1001,,Color:Brown;Size:L,Ikea,Home;Utensils
+P0000338,Product 338,Description of Product 338,983.58,Toys,1005,1004,Color:Brown;Size:XL,Philips,Smartphones;Living Room
+P0000339,Product 339,Description of Product 339,977.12,Books,1006,1003,Color:White;Size:XL,Samsung,Utensils;Smartphones
+P0000340,Product 340,Description of Product 340,248.91,Furniture,1004,1005,Color:Red;Size:M;Material:Steel,Samsung,Utensils;Furniture
+P0000341,Product 341,Description of Product 341,986.43,Electronics,1001,1004,Color:Red;Size:S,LG,Utensils;Gadgets
+P0000342,Product 342,Description of Product 342,337.47,Home Appliances,1002,1005,Color:White;Size:S;Voltage:110V,Samsung,Kitchen;Gadgets
+P0000343,Product 343,Description of Product 343,703.85,Kitchen,1003,,Color:Brown;Size:M;Material:Plastic,Ikea,Home;Kitchen
+P0000344,Product 344,Description of Product 344,77.93,Toys,1005,1001,Color:Red;Size:M,Sony,Kitchen;Gadgets
+P0000345,Product 345,Description of Product 345,887.2,Home Appliances,1002,1004,Color:Brown;Size:XL;Voltage:110V,Philips,Gadgets;Living Room
+P0000346,Product 346,Description of Product 346,458.22,Kitchen,1003,1004,Color:Black;Size:S;Material:Plastic,Panasonic,Kitchen;Furniture
+P0000347,Product 347,Description of Product 347,28.19,Electronics,1001,1002,Color:White;Size:M,LG,Kitchen;Electronics
+P0000348,Product 348,Description of Product 348,82.21,Electronics,1001,1001,Color:Blue;Size:L,Philips,Utensils;Home
+P0000349,Product 349,Description of Product 349,993.19,Kitchen,1003,1002,Color:Black;Size:M;Material:Steel,Panasonic,Gadgets;Kitchen
+P0000350,Product 350,Description of Product 350,318.0,Electronics,1001,1005,Color:Brown;Size:XL,Sony,Living Room;Gadgets
+P0000351,Product 351,Description of Product 351,266.3,Books,1006,1004,Color:Blue;Size:L,Samsung,Home;Furniture
+P0000352,Product 352,Description of Product 352,688.03,Home Appliances,1002,1002,Color:Black;Size:S;Voltage:220V,Philips,Living Room;Kitchen
+P0000353,Product 353,Description of Product 353,239.66,Electronics,1001,1003,Color:White;Size:XL,Ikea,Furniture;Utensils
+P0000354,Product 354,Description of Product 354,308.78,Electronics,1001,1001,Color:Blue;Size:M,LG,Utensils;Gadgets
+P0000355,Product 355,Description of Product 355,832.58,Furniture,1004,1002,Color:Black;Size:M;Material:Plastic,Samsung,Kitchen;Furniture
+P0000356,Product 356,Description of Product 356,75.08,Kitchen,1003,1001,Color:Blue;Size:XL;Material:Wood,Ikea,Living Room;Gadgets
+P0000357,Product 357,Description of Product 357,502.79,Toys,1005,1004,Color:Brown;Size:S,Philips,Living Room;Kitchen
+P0000358,Product 358,Description of Product 358,681.88,Toys,1005,1004,Color:Red;Size:M,Samsung,Gadgets;Kitchen
+P0000359,Product 359,Description of Product 359,328.24,Furniture,1004,1003,Color:Blue;Size:L;Material:Wood,LG,Kitchen;Home
+P0000360,Product 360,Description of Product 360,540.8,Kitchen,1003,1004,Color:Blue;Size:M;Material:Wood,Sony,Home;Gadgets
+P0000361,Product 361,Description of Product 361,70.6,Home Appliances,1002,1005,Color:Brown;Size:L;Voltage:220V,Panasonic,Smartphones;Kitchen
+P0000362,Product 362,Description of Product 362,555.0,Furniture,1004,1002,Color:Red;Size:L;Material:Plastic,Philips,Utensils;Living Room
+P0000363,Product 363,Description of Product 363,908.67,Home Appliances,1002,,Color:White;Size:S;Voltage:220V,Philips,Electronics;Living Room
+P0000364,Product 364,Description of Product 364,167.84,Furniture,1004,,Color:Red;Size:S;Material:Plastic,Philips,Kitchen;Living Room
+P0000365,Product 365,Description of Product 365,17.83,Kitchen,1003,1005,Color:Black;Size:M;Material:Steel,Philips,Furniture;Gadgets
+P0000366,Product 366,Description of Product 366,805.56,Electronics,1001,1003,Color:White;Size:XL,Sony,Smartphones;Home
+P0000367,Product 367,Description of Product 367,557.11,Electronics,1001,1002,Color:White;Size:M,Samsung,Gadgets;Smartphones
+P0000368,Product 368,Description of Product 368,618.87,Books,1006,1005,Color:Red;Size:M,LG,Living Room;Home
+P0000369,Product 369,Description of Product 369,521.41,Kitchen,1003,,Color:White;Size:M;Material:Steel,LG,Kitchen;Smartphones
+P0000370,Product 370,Description of Product 370,613.2,Electronics,1001,1005,Color:White;Size:L,LG,Smartphones;Gadgets
+P0000371,Product 371,Description of Product 371,999.52,Kitchen,1003,1005,Color:Brown;Size:M;Material:Plastic,Philips,Smartphones;Kitchen
+P0000372,Product 372,Description of Product 372,361.24,Books,1006,1001,Color:Brown;Size:M,Sony,Gadgets;Electronics
+P0000373,Product 373,Description of Product 373,989.15,Home Appliances,1002,1001,Color:Black;Size:S;Voltage:110V,LG,Furniture;Smartphones
+P0000374,Product 374,Description of Product 374,463.56,Toys,1005,,Color:Red;Size:XL,Ikea,Utensils;Furniture
+P0000375,Product 375,Description of Product 375,672.57,Home Appliances,1002,,Color:Blue;Size:L;Voltage:110V,LG,Smartphones;Home
+P0000376,Product 376,Description of Product 376,954.06,Books,1006,1005,Color:White;Size:M,Panasonic,Utensils;Gadgets
+P0000377,Product 377,Description of Product 377,626.21,Home Appliances,1002,,Color:Brown;Size:L;Voltage:220V,LG,Gadgets;Furniture
+P0000378,Product 378,Description of Product 378,266.43,Furniture,1004,1005,Color:White;Size:L;Material:Wood,Philips,Living Room;Gadgets
+P0000379,Product 379,Description of Product 379,979.33,Kitchen,1003,1005,Color:Brown;Size:S;Material:Wood,LG,Smartphones;Kitchen
+P0000380,Product 380,Description of Product 380,51.57,Kitchen,1003,1004,Color:Black;Size:XL;Material:Wood,Ikea,Electronics;Furniture
+P0000381,Product 381,Description of Product 381,469.02,Furniture,1004,,Color:Blue;Size:S;Material:Wood,Ikea,Utensils;Gadgets
+P0000382,Product 382,Description of Product 382,984.23,Furniture,1004,1005,Color:Red;Size:L;Material:Plastic,Philips,Smartphones;Furniture
+P0000383,Product 383,Description of Product 383,219.66,Toys,1005,,Color:Blue;Size:M,Philips,Utensils;Living Room
+P0000384,Product 384,Description of Product 384,156.88,Electronics,1001,1002,Color:White;Size:M,LG,Kitchen;Smartphones
+P0000385,Product 385,Description of Product 385,971.73,Books,1006,1003,Color:Blue;Size:XL,Panasonic,Kitchen;Gadgets
+P0000386,Product 386,Description of Product 386,58.14,Books,1006,1004,Color:Red;Size:M,Sony,Living Room;Kitchen
+P0000387,Product 387,Description of Product 387,685.88,Furniture,1004,1005,Color:White;Size:M;Material:Wood,Samsung,Home;Gadgets
+P0000388,Product 388,Description of Product 388,361.45,Furniture,1004,1002,Color:White;Size:S;Material:Wood,Panasonic,Living Room;Home
+P0000389,Product 389,Description of Product 389,44.18,Toys,1005,1005,Color:Brown;Size:M,Samsung,Living Room;Smartphones
+P0000390,Product 390,Description of Product 390,697.84,Toys,1005,,Color:Brown;Size:S,LG,Home;Furniture
+P0000391,Product 391,Description of Product 391,992.1,Furniture,1004,1001,Color:Blue;Size:M;Material:Wood,Samsung,Kitchen;Furniture
+P0000392,Product 392,Description of Product 392,700.0,Electronics,1001,1002,Color:Blue;Size:M,Philips,Living Room;Electronics
+P0000393,Product 393,Description of Product 393,330.22,Home Appliances,1002,1002,Color:Brown;Size:S;Voltage:220V,Samsung,Utensils;Electronics
+P0000394,Product 394,Description of Product 394,688.9,Kitchen,1003,1004,Color:Red;Size:S;Material:Plastic,Philips,Living Room;Electronics
+P0000395,Product 395,Description of Product 395,586.12,Electronics,1001,1004,Color:Black;Size:M,Sony,Furniture;Electronics
+P0000396,Product 396,Description of Product 396,179.23,Toys,1005,1001,Color:Black;Size:S,Samsung,Kitchen;Gadgets
+P0000397,Product 397,Description of Product 397,931.95,Kitchen,1003,1004,Color:Blue;Size:L;Material:Plastic,Samsung,Utensils;Kitchen
+P0000398,Product 398,Description of Product 398,975.65,Home Appliances,1002,1003,Color:Blue;Size:XL;Voltage:220V,Panasonic,Utensils;Gadgets
+P0000399,Product 399,Description of Product 399,320.68,Furniture,1004,1001,Color:White;Size:M;Material:Plastic,LG,Kitchen;Smartphones
+P0000400,Product 400,Description of Product 400,324.74,Electronics,1001,1003,Color:Blue;Size:XL,Samsung,Furniture;Kitchen
+P0000401,Product 401,Description of Product 401,92.3,Toys,1005,1001,Color:Brown;Size:XL,Samsung,Living Room;Gadgets
+P0000402,Product 402,Description of Product 402,602.26,Home Appliances,1002,1004,Color:Black;Size:M;Voltage:110V,Ikea,Kitchen;Furniture
+P0000403,Product 403,Description of Product 403,309.56,Electronics,1001,1004,Color:White;Size:M,Panasonic,Kitchen;Gadgets
+P0000404,Product 404,Description of Product 404,592.32,Books,1006,1004,Color:Black;Size:S,Sony,Electronics;Utensils
+P0000405,Product 405,Description of Product 405,221.42,Books,1006,1002,Color:Blue;Size:L,Ikea,Living Room;Kitchen
+P0000406,Product 406,Description of Product 406,471.74,Home Appliances,1002,1002,Color:White;Size:S;Voltage:110V,Panasonic,Furniture;Gadgets
+P0000407,Product 407,Description of Product 407,532.43,Furniture,1004,1005,Color:Black;Size:L;Material:Wood,Panasonic,Electronics;Home
+P0000408,Product 408,Description of Product 408,659.25,Electronics,1001,1001,Color:Red;Size:XL,LG,Kitchen;Furniture
+P0000409,Product 409,Description of Product 409,685.55,Kitchen,1003,,Color:Blue;Size:L;Material:Wood,Panasonic,Utensils;Home
+P0000410,Product 410,Description of Product 410,348.62,Furniture,1004,1001,Color:Blue;Size:XL;Material:Steel,Ikea,Smartphones;Kitchen
+P0000411,Product 411,Description of Product 411,172.01,Home Appliances,1002,1003,Color:Brown;Size:L;Voltage:110V,Panasonic,Furniture;Kitchen
+P0000412,Product 412,Description of Product 412,763.12,Kitchen,1003,1003,Color:Red;Size:M;Material:Wood,Sony,Furniture;Kitchen
+P0000413,Product 413,Description of Product 413,761.96,Toys,1005,,Color:White;Size:S,LG,Living Room;Electronics
+P0000414,Product 414,Description of Product 414,809.22,Books,1006,,Color:Brown;Size:L,Samsung,Utensils;Smartphones
+P0000415,Product 415,Description of Product 415,700.43,Electronics,1001,,Color:Black;Size:M,Samsung,Living Room;Electronics
+P0000416,Product 416,Description of Product 416,782.22,Kitchen,1003,1003,Color:White;Size:M;Material:Plastic,Panasonic,Kitchen;Electronics
+P0000417,Product 417,Description of Product 417,626.0,Electronics,1001,,Color:White;Size:S,Samsung,Furniture;Living Room
+P0000418,Product 418,Description of Product 418,890.44,Kitchen,1003,1002,Color:White;Size:XL;Material:Steel,LG,Gadgets;Home
+P0000419,Product 419,Description of Product 419,645.45,Furniture,1004,,Color:Red;Size:XL;Material:Steel,LG,Home;Smartphones
+P0000420,Product 420,Description of Product 420,432.32,Furniture,1004,1003,Color:Brown;Size:L;Material:Wood,Ikea,Gadgets;Electronics
+P0000421,Product 421,Description of Product 421,296.25,Furniture,1004,1004,Color:Blue;Size:L;Material:Wood,Sony,Electronics;Living Room
+P0000422,Product 422,Description of Product 422,319.25,Kitchen,1003,1001,Color:Brown;Size:S;Material:Steel,Panasonic,Furniture;Electronics
+P0000423,Product 423,Description of Product 423,139.41,Toys,1005,1001,Color:Blue;Size:L,Ikea,Electronics;Kitchen
+P0000424,Product 424,Description of Product 424,410.22,Toys,1005,1005,Color:Red;Size:M,Philips,Gadgets;Utensils
+P0000425,Product 425,Description of Product 425,224.37,Furniture,1004,1002,Color:Red;Size:S;Material:Wood,Ikea,Electronics;Utensils
+P0000426,Product 426,Description of Product 426,896.18,Toys,1005,1001,Color:Brown;Size:XL,Panasonic,Home;Living Room
+P0000427,Product 427,Description of Product 427,373.7,Kitchen,1003,1002,Color:White;Size:XL;Material:Wood,Panasonic,Kitchen;Gadgets
+P0000428,Product 428,Description of Product 428,797.24,Furniture,1004,1002,Color:White;Size:L;Material:Steel,Sony,Furniture;Living Room
+P0000429,Product 429,Description of Product 429,893.22,Furniture,1004,,Color:Red;Size:XL;Material:Plastic,Ikea,Living Room;Home
+P0000430,Product 430,Description of Product 430,842.21,Toys,1005,1001,Color:White;Size:S,Ikea,Furniture;Electronics
+P0000431,Product 431,Description of Product 431,537.04,Toys,1005,1003,Color:White;Size:L,Philips,Furniture;Gadgets
+P0000432,Product 432,Description of Product 432,352.32,Books,1006,1002,Color:White;Size:XL,Samsung,Gadgets;Electronics
+P0000433,Product 433,Description of Product 433,984.71,Books,1006,1005,Color:Brown;Size:S,Sony,Gadgets;Smartphones
+P0000434,Product 434,Description of Product 434,992.74,Home Appliances,1002,,Color:Blue;Size:M;Voltage:220V,LG,Furniture;Smartphones
+P0000435,Product 435,Description of Product 435,802.33,Home Appliances,1002,,Color:Blue;Size:L;Voltage:220V,Samsung,Gadgets;Kitchen
+P0000436,Product 436,Description of Product 436,252.71,Toys,1005,1005,Color:Red;Size:L,Sony,Utensils;Gadgets
+P0000437,Product 437,Description of Product 437,443.33,Electronics,1001,1003,Color:Brown;Size:S,Sony,Smartphones;Utensils
+P0000438,Product 438,Description of Product 438,644.02,Kitchen,1003,1001,Color:Blue;Size:M;Material:Steel,Ikea,Home;Electronics
+P0000439,Product 439,Description of Product 439,25.63,Electronics,1001,1004,Color:Brown;Size:S,Sony,Kitchen;Home
+P0000440,Product 440,Description of Product 440,315.91,Home Appliances,1002,1001,Color:Blue;Size:XL;Voltage:110V,Panasonic,Living Room;Smartphones
+P0000441,Product 441,Description of Product 441,417.65,Electronics,1001,1001,Color:Brown;Size:XL,LG,Home;Smartphones
+P0000442,Product 442,Description of Product 442,195.98,Electronics,1001,1004,Color:Red;Size:S,LG,Living Room;Smartphones
+P0000443,Product 443,Description of Product 443,639.81,Toys,1005,1004,Color:Brown;Size:S,Ikea,Kitchen;Gadgets
+P0000444,Product 444,Description of Product 444,270.14,Toys,1005,1005,Color:Black;Size:XL,Panasonic,Gadgets;Furniture
+P0000445,Product 445,Description of Product 445,848.89,Kitchen,1003,1002,Color:Brown;Size:S;Material:Wood,Samsung,Living Room;Furniture
+P0000446,Product 446,Description of Product 446,134.38,Electronics,1001,1003,Color:Brown;Size:XL,Samsung,Electronics;Furniture
+P0000447,Product 447,Description of Product 447,485.34,Kitchen,1003,1003,Color:Brown;Size:L;Material:Wood,Samsung,Gadgets;Smartphones
+P0000448,Product 448,Description of Product 448,670.05,Home Appliances,1002,1002,Color:Red;Size:M;Voltage:220V,Sony,Electronics;Smartphones
+P0000449,Product 449,Description of Product 449,771.14,Home Appliances,1002,1001,Color:White;Size:L;Voltage:110V,Panasonic,Kitchen;Utensils
+P0000450,Product 450,Description of Product 450,512.32,Electronics,1001,1001,Color:Brown;Size:XL,Samsung,Living Room;Kitchen
+P0000451,Product 451,Description of Product 451,983.89,Electronics,1001,1002,Color:Black;Size:M,Philips,Gadgets;Living Room
+P0000452,Product 452,Description of Product 452,980.4,Kitchen,1003,1001,Color:Red;Size:M;Material:Plastic,Philips,Electronics;Furniture
+P0000453,Product 453,Description of Product 453,328.21,Home Appliances,1002,1002,Color:White;Size:L;Voltage:220V,Ikea,Kitchen;Smartphones
+P0000454,Product 454,Description of Product 454,770.5,Kitchen,1003,1002,Color:Red;Size:S;Material:Wood,LG,Gadgets;Kitchen
+P0000455,Product 455,Description of Product 455,457.97,Home Appliances,1002,1005,Color:White;Size:XL;Voltage:110V,Ikea,Living Room;Gadgets
+P0000456,Product 456,Description of Product 456,876.45,Furniture,1004,1001,Color:Red;Size:L;Material:Steel,Philips,Utensils;Furniture
+P0000457,Product 457,Description of Product 457,957.97,Books,1006,,Color:Blue;Size:XL,Panasonic,Utensils;Furniture
+P0000458,Product 458,Description of Product 458,22.52,Kitchen,1003,1003,Color:White;Size:M;Material:Steel,LG,Electronics;Kitchen
+P0000459,Product 459,Description of Product 459,226.42,Furniture,1004,1004,Color:Black;Size:S;Material:Plastic,LG,Smartphones;Electronics
+P0000460,Product 460,Description of Product 460,22.74,Electronics,1001,,Color:Brown;Size:L,Philips,Smartphones;Electronics
+P0000461,Product 461,Description of Product 461,252.37,Kitchen,1003,,Color:Red;Size:L;Material:Plastic,Sony,Home;Gadgets
+P0000462,Product 462,Description of Product 462,361.29,Toys,1005,1002,Color:Brown;Size:M,Sony,Furniture;Kitchen
+P0000463,Product 463,Description of Product 463,806.62,Electronics,1001,1001,Color:Red;Size:M,Ikea,Furniture;Electronics
+P0000464,Product 464,Description of Product 464,907.73,Kitchen,1003,1004,Color:White;Size:M;Material:Plastic,Philips,Gadgets;Kitchen
+P0000465,Product 465,Description of Product 465,312.98,Electronics,1001,1001,Color:Red;Size:L,Ikea,Furniture;Home
+P0000466,Product 466,Description of Product 466,860.29,Books,1006,1001,Color:Black;Size:XL,LG,Kitchen;Home
+P0000467,Product 467,Description of Product 467,632.45,Kitchen,1003,1002,Color:Black;Size:XL;Material:Plastic,LG,Gadgets;Living Room
+P0000468,Product 468,Description of Product 468,438.25,Books,1006,,Color:Black;Size:M,LG,Living Room;Electronics
+P0000469,Product 469,Description of Product 469,864.92,Furniture,1004,1005,Color:Blue;Size:M;Material:Plastic,Ikea,Kitchen;Electronics
+P0000470,Product 470,Description of Product 470,421.01,Books,1006,1004,Color:Red;Size:XL,Ikea,Living Room;Utensils
+P0000471,Product 471,Description of Product 471,470.98,Furniture,1004,1003,Color:Red;Size:L;Material:Steel,Philips,Living Room;Smartphones
+P0000472,Product 472,Description of Product 472,29.69,Home Appliances,1002,1005,Color:Black;Size:S;Voltage:110V,Ikea,Furniture;Gadgets
+P0000473,Product 473,Description of Product 473,926.16,Toys,1005,1004,Color:White;Size:XL,Samsung,Home;Kitchen
+P0000474,Product 474,Description of Product 474,319.94,Books,1006,,Color:Brown;Size:XL,Sony,Smartphones;Electronics
+P0000475,Product 475,Description of Product 475,230.35,Books,1006,,Color:Red;Size:S,Sony,Electronics;Smartphones
+P0000476,Product 476,Description of Product 476,701.62,Furniture,1004,1001,Color:Black;Size:M;Material:Plastic,LG,Utensils;Gadgets
+P0000477,Product 477,Description of Product 477,152.12,Toys,1005,1001,Color:Brown;Size:XL,Philips,Home;Utensils
+P0000478,Product 478,Description of Product 478,24.79,Kitchen,1003,,Color:Blue;Size:XL;Material:Plastic,Sony,Living Room;Furniture
+P0000479,Product 479,Description of Product 479,278.75,Kitchen,1003,,Color:White;Size:S;Material:Wood,Samsung,Kitchen;Electronics
+P0000480,Product 480,Description of Product 480,247.29,Home Appliances,1002,,Color:Red;Size:XL;Voltage:220V,Panasonic,Furniture;Electronics
+P0000481,Product 481,Description of Product 481,234.66,Books,1006,1003,Color:Blue;Size:L,Philips,Kitchen;Furniture
+P0000482,Product 482,Description of Product 482,67.26,Home Appliances,1002,1003,Color:Brown;Size:M;Voltage:110V,Panasonic,Furniture;Smartphones
+P0000483,Product 483,Description of Product 483,815.36,Kitchen,1003,,Color:Red;Size:S;Material:Plastic,Samsung,Smartphones;Electronics
+P0000484,Product 484,Description of Product 484,927.84,Kitchen,1003,1002,Color:White;Size:XL;Material:Steel,LG,Living Room;Furniture
+P0000485,Product 485,Description of Product 485,787.79,Home Appliances,1002,1004,Color:White;Size:M;Voltage:110V,Philips,Home;Utensils
+P0000486,Product 486,Description of Product 486,778.24,Furniture,1004,1002,Color:White;Size:L;Material:Wood,LG,Electronics;Smartphones
+P0000487,Product 487,Description of Product 487,737.06,Books,1006,1005,Color:Red;Size:S,Ikea,Electronics;Utensils
+P0000488,Product 488,Description of Product 488,229.86,Kitchen,1003,,Color:Blue;Size:S;Material:Wood,Sony,Home;Gadgets
+P0000489,Product 489,Description of Product 489,618.79,Kitchen,1003,1003,Color:Red;Size:S;Material:Wood,Sony,Furniture;Home
+P0000490,Product 490,Description of Product 490,515.39,Electronics,1001,1003,Color:Blue;Size:S,Philips,Kitchen;Gadgets
+P0000491,Product 491,Description of Product 491,885.9,Furniture,1004,1004,Color:Red;Size:M;Material:Wood,Panasonic,Home;Furniture
+P0000492,Product 492,Description of Product 492,594.0,Books,1006,1005,Color:Black;Size:S,Samsung,Home;Smartphones
+P0000493,Product 493,Description of Product 493,299.88,Electronics,1001,1001,Color:Brown;Size:M,Ikea,Home;Furniture
+P0000494,Product 494,Description of Product 494,509.75,Home Appliances,1002,1002,Color:Brown;Size:M;Voltage:220V,Sony,Kitchen;Electronics
+P0000495,Product 495,Description of Product 495,300.38,Toys,1005,1005,Color:Brown;Size:XL,LG,Utensils;Living Room
+P0000496,Product 496,Description of Product 496,210.83,Toys,1005,1003,Color:Blue;Size:M,Philips,Smartphones;Furniture
+P0000497,Product 497,Description of Product 497,576.4,Home Appliances,1002,1001,Color:Blue;Size:XL;Voltage:220V,LG,Gadgets;Furniture
+P0000498,Product 498,Description of Product 498,141.8,Toys,1005,1005,Color:Brown;Size:L,LG,Kitchen;Furniture
+P0000499,Product 499,Description of Product 499,634.95,Toys,1005,1003,Color:Red;Size:XL,Sony,Gadgets;Furniture
+P0000500,Product 500,Description of Product 500,474.95,Furniture,1004,1001,Color:Black;Size:S;Material:Steel,Philips,Utensils;Living Room
+P0000501,Product 501,Description of Product 501,249.2,Electronics,1001,1005,Color:Black;Size:S,Philips,Furniture;Kitchen
+P0000502,Product 502,Description of Product 502,181.28,Books,1006,1001,Color:Red;Size:XL,Panasonic,Living Room;Utensils
+P0000503,Product 503,Description of Product 503,100.83,Books,1006,1004,Color:Red;Size:M,Philips,Smartphones;Gadgets
+P0000504,Product 504,Description of Product 504,78.97,Electronics,1001,1002,Color:Brown;Size:M,Ikea,Furniture;Utensils
+P0000505,Product 505,Description of Product 505,263.13,Toys,1005,1001,Color:Blue;Size:XL,Philips,Smartphones;Utensils
+P0000506,Product 506,Description of Product 506,781.33,Furniture,1004,1005,Color:White;Size:M;Material:Steel,Panasonic,Utensils;Gadgets
+P0000507,Product 507,Description of Product 507,736.19,Electronics,1001,1001,Color:Brown;Size:XL,Sony,Kitchen;Electronics
+P0000508,Product 508,Description of Product 508,14.58,Electronics,1001,,Color:Brown;Size:M,LG,Furniture;Smartphones
+P0000509,Product 509,Description of Product 509,530.36,Kitchen,1003,1003,Color:Blue;Size:L;Material:Steel,Sony,Furniture;Kitchen
+P0000510,Product 510,Description of Product 510,435.72,Home Appliances,1002,,Color:Red;Size:M;Voltage:220V,Ikea,Electronics;Living Room
+P0000511,Product 511,Description of Product 511,515.63,Books,1006,1005,Color:Brown;Size:M,LG,Kitchen;Utensils
+P0000512,Product 512,Description of Product 512,740.16,Kitchen,1003,1004,Color:Red;Size:M;Material:Wood,Panasonic,Kitchen;Utensils
+P0000513,Product 513,Description of Product 513,259.3,Books,1006,1002,Color:Blue;Size:XL,Samsung,Living Room;Home
+P0000514,Product 514,Description of Product 514,254.0,Toys,1005,1004,Color:White;Size:XL,Sony,Kitchen;Home
+P0000515,Product 515,Description of Product 515,267.02,Furniture,1004,1001,Color:Red;Size:XL;Material:Wood,Panasonic,Utensils;Living Room
+P0000516,Product 516,Description of Product 516,355.09,Home Appliances,1002,1002,Color:White;Size:L;Voltage:220V,Ikea,Electronics;Living Room
+P0000517,Product 517,Description of Product 517,163.61,Home Appliances,1002,1002,Color:White;Size:XL;Voltage:110V,Philips,Smartphones;Utensils
+P0000518,Product 518,Description of Product 518,636.48,Electronics,1001,1003,Color:Brown;Size:M,Ikea,Gadgets;Furniture
+P0000519,Product 519,Description of Product 519,374.51,Electronics,1001,1001,Color:White;Size:S,Ikea,Electronics;Home
+P0000520,Product 520,Description of Product 520,209.92,Books,1006,1003,Color:Red;Size:L,Ikea,Home;Furniture
+P0000521,Product 521,Description of Product 521,275.9,Toys,1005,1004,Color:White;Size:L,Samsung,Furniture;Kitchen
+P0000522,Product 522,Description of Product 522,94.72,Furniture,1004,1003,Color:Red;Size:XL;Material:Steel,Philips,Utensils;Smartphones
+P0000523,Product 523,Description of Product 523,247.38,Kitchen,1003,1003,Color:White;Size:S;Material:Plastic,Panasonic,Living Room;Electronics
+P0000524,Product 524,Description of Product 524,131.23,Furniture,1004,1001,Color:Red;Size:M;Material:Plastic,Panasonic,Home;Smartphones
+P0000525,Product 525,Description of Product 525,34.82,Home Appliances,1002,,Color:Red;Size:XL;Voltage:110V,Philips,Kitchen;Utensils
+P0000526,Product 526,Description of Product 526,233.86,Books,1006,1002,Color:Red;Size:XL,Philips,Kitchen;Utensils
+P0000527,Product 527,Description of Product 527,897.26,Kitchen,1003,1002,Color:Brown;Size:S;Material:Plastic,Samsung,Kitchen;Living Room
+P0000528,Product 528,Description of Product 528,976.04,Furniture,1004,1003,Color:Blue;Size:S;Material:Wood,Samsung,Utensils;Furniture
+P0000529,Product 529,Description of Product 529,956.8,Kitchen,1003,1004,Color:Brown;Size:XL;Material:Plastic,Samsung,Electronics;Utensils
+P0000530,Product 530,Description of Product 530,643.58,Furniture,1004,1003,Color:Blue;Size:S;Material:Wood,Philips,Smartphones;Utensils
+P0000531,Product 531,Description of Product 531,361.33,Toys,1005,,Color:Black;Size:S,LG,Electronics;Smartphones
+P0000532,Product 532,Description of Product 532,780.1,Books,1006,1003,Color:White;Size:S,Sony,Living Room;Kitchen
+P0000533,Product 533,Description of Product 533,935.03,Kitchen,1003,,Color:Brown;Size:L;Material:Wood,Panasonic,Utensils;Electronics
+P0000534,Product 534,Description of Product 534,331.87,Kitchen,1003,1004,Color:White;Size:S;Material:Plastic,Sony,Furniture;Gadgets
+P0000535,Product 535,Description of Product 535,637.63,Toys,1005,1003,Color:Red;Size:M,Panasonic,Electronics;Living Room
+P0000536,Product 536,Description of Product 536,937.05,Furniture,1004,1001,Color:White;Size:M;Material:Steel,Philips,Living Room;Smartphones
+P0000537,Product 537,Description of Product 537,310.9,Furniture,1004,1002,Color:Red;Size:S;Material:Wood,Panasonic,Kitchen;Electronics
+P0000538,Product 538,Description of Product 538,566.84,Kitchen,1003,1004,Color:Red;Size:L;Material:Wood,LG,Furniture;Home
+P0000539,Product 539,Description of Product 539,526.02,Books,1006,1003,Color:Blue;Size:M,LG,Furniture;Electronics
+P0000540,Product 540,Description of Product 540,843.74,Electronics,1001,1005,Color:White;Size:S,Sony,Electronics;Kitchen
+P0000541,Product 541,Description of Product 541,880.47,Kitchen,1003,1002,Color:Blue;Size:XL;Material:Wood,LG,Living Room;Furniture
+P0000542,Product 542,Description of Product 542,747.34,Toys,1005,1003,Color:White;Size:L,Samsung,Utensils;Electronics
+P0000543,Product 543,Description of Product 543,212.06,Home Appliances,1002,,Color:Brown;Size:S;Voltage:110V,Philips,Living Room;Smartphones
+P0000544,Product 544,Description of Product 544,670.04,Books,1006,1005,Color:Brown;Size:S,Ikea,Smartphones;Furniture
+P0000545,Product 545,Description of Product 545,289.5,Books,1006,1002,Color:White;Size:S,Sony,Kitchen;Smartphones
+P0000546,Product 546,Description of Product 546,714.43,Electronics,1001,,Color:Red;Size:S,Ikea,Home;Smartphones
+P0000547,Product 547,Description of Product 547,533.6,Furniture,1004,1004,Color:Red;Size:L;Material:Steel,Philips,Living Room;Smartphones
+P0000548,Product 548,Description of Product 548,981.51,Books,1006,1004,Color:White;Size:XL,Panasonic,Living Room;Utensils
+P0000549,Product 549,Description of Product 549,789.37,Furniture,1004,1004,Color:Black;Size:XL;Material:Steel,LG,Living Room;Home
+P0000550,Product 550,Description of Product 550,239.99,Books,1006,1003,Color:Black;Size:M,Sony,Furniture;Kitchen
+P0000551,Product 551,Description of Product 551,562.2,Home Appliances,1002,1003,Color:Blue;Size:L;Voltage:220V,Philips,Utensils;Electronics
+P0000552,Product 552,Description of Product 552,140.47,Toys,1005,1001,Color:Blue;Size:L,Philips,Home;Smartphones
+P0000553,Product 553,Description of Product 553,64.43,Toys,1005,,Color:Black;Size:XL,Philips,Furniture;Gadgets
+P0000554,Product 554,Description of Product 554,555.18,Furniture,1004,1003,Color:Brown;Size:M;Material:Steel,Panasonic,Home;Living Room
+P0000555,Product 555,Description of Product 555,655.57,Furniture,1004,1002,Color:Blue;Size:M;Material:Steel,LG,Smartphones;Gadgets
+P0000556,Product 556,Description of Product 556,205.95,Electronics,1001,1003,Color:White;Size:M,Panasonic,Kitchen;Gadgets
+P0000557,Product 557,Description of Product 557,510.9,Kitchen,1003,1001,Color:White;Size:XL;Material:Steel,Panasonic,Furniture;Kitchen
+P0000558,Product 558,Description of Product 558,343.16,Furniture,1004,1003,Color:Blue;Size:L;Material:Plastic,LG,Electronics;Furniture
+P0000559,Product 559,Description of Product 559,520.83,Furniture,1004,1003,Color:Blue;Size:M;Material:Wood,LG,Gadgets;Smartphones
+P0000560,Product 560,Description of Product 560,35.85,Books,1006,,Color:Brown;Size:M,Ikea,Home;Kitchen
+P0000561,Product 561,Description of Product 561,942.67,Books,1006,1003,Color:Red;Size:S,LG,Electronics;Home
+P0000562,Product 562,Description of Product 562,707.64,Electronics,1001,1003,Color:Red;Size:XL,Philips,Home;Gadgets
+P0000563,Product 563,Description of Product 563,767.45,Furniture,1004,,Color:Brown;Size:XL;Material:Wood,Panasonic,Home;Furniture
+P0000564,Product 564,Description of Product 564,980.95,Electronics,1001,1002,Color:Blue;Size:M,Ikea,Utensils;Kitchen
+P0000565,Product 565,Description of Product 565,329.35,Toys,1005,,Color:Black;Size:XL,Panasonic,Electronics;Utensils
+P0000566,Product 566,Description of Product 566,857.54,Home Appliances,1002,,Color:Red;Size:L;Voltage:220V,Panasonic,Smartphones;Living Room
+P0000567,Product 567,Description of Product 567,217.98,Furniture,1004,1003,Color:White;Size:M;Material:Plastic,Ikea,Utensils;Kitchen
+P0000568,Product 568,Description of Product 568,872.9,Home Appliances,1002,1002,Color:Blue;Size:L;Voltage:110V,Panasonic,Gadgets;Electronics
+P0000569,Product 569,Description of Product 569,146.38,Electronics,1001,1002,Color:Black;Size:S,LG,Living Room;Home
+P0000570,Product 570,Description of Product 570,363.75,Kitchen,1003,1001,Color:Black;Size:M;Material:Steel,Philips,Kitchen;Utensils
+P0000571,Product 571,Description of Product 571,350.46,Kitchen,1003,1001,Color:Brown;Size:XL;Material:Wood,Samsung,Utensils;Living Room
+P0000572,Product 572,Description of Product 572,699.96,Electronics,1001,1002,Color:White;Size:L,Panasonic,Utensils;Gadgets
+P0000573,Product 573,Description of Product 573,216.52,Electronics,1001,1004,Color:White;Size:L,Philips,Kitchen;Furniture
+P0000574,Product 574,Description of Product 574,706.04,Books,1006,1001,Color:Red;Size:XL,Sony,Gadgets;Furniture
+P0000575,Product 575,Description of Product 575,939.6,Kitchen,1003,1004,Color:Black;Size:L;Material:Plastic,Sony,Living Room;Smartphones
+P0000576,Product 576,Description of Product 576,709.52,Toys,1005,1005,Color:White;Size:M,Samsung,Gadgets;Kitchen
+P0000577,Product 577,Description of Product 577,308.32,Electronics,1001,1001,Color:Red;Size:L,Sony,Furniture;Gadgets
+P0000578,Product 578,Description of Product 578,435.62,Furniture,1004,1003,Color:Blue;Size:M;Material:Steel,Panasonic,Smartphones;Gadgets
+P0000579,Product 579,Description of Product 579,205.51,Kitchen,1003,,Color:Black;Size:M;Material:Steel,Panasonic,Smartphones;Home
+P0000580,Product 580,Description of Product 580,88.2,Home Appliances,1002,1002,Color:Brown;Size:L;Voltage:220V,Sony,Electronics;Gadgets
+P0000581,Product 581,Description of Product 581,220.97,Books,1006,1002,Color:Blue;Size:M,LG,Furniture;Living Room
+P0000582,Product 582,Description of Product 582,559.92,Home Appliances,1002,1002,Color:Brown;Size:XL;Voltage:220V,Samsung,Smartphones;Utensils
+P0000583,Product 583,Description of Product 583,768.47,Books,1006,1001,Color:Black;Size:L,Ikea,Living Room;Gadgets
+P0000584,Product 584,Description of Product 584,619.7,Furniture,1004,,Color:Red;Size:M;Material:Plastic,Philips,Electronics;Furniture
+P0000585,Product 585,Description of Product 585,67.95,Furniture,1004,1001,Color:Red;Size:L;Material:Wood,Panasonic,Home;Kitchen
+P0000586,Product 586,Description of Product 586,115.69,Furniture,1004,1004,Color:Brown;Size:M;Material:Wood,Ikea,Smartphones;Furniture
+P0000587,Product 587,Description of Product 587,431.26,Toys,1005,1003,Color:Blue;Size:S,LG,Gadgets;Furniture
+P0000588,Product 588,Description of Product 588,784.05,Furniture,1004,,Color:Blue;Size:M;Material:Wood,Sony,Living Room;Kitchen
+P0000589,Product 589,Description of Product 589,521.3,Home Appliances,1002,,Color:Blue;Size:M;Voltage:110V,LG,Smartphones;Furniture
+P0000590,Product 590,Description of Product 590,311.97,Books,1006,1005,Color:Brown;Size:XL,Philips,Gadgets;Utensils
+P0000591,Product 591,Description of Product 591,793.92,Toys,1005,1004,Color:White;Size:XL,Philips,Smartphones;Utensils
+P0000592,Product 592,Description of Product 592,198.38,Home Appliances,1002,1004,Color:Red;Size:XL;Voltage:220V,LG,Furniture;Kitchen
+P0000593,Product 593,Description of Product 593,278.92,Home Appliances,1002,1004,Color:White;Size:S;Voltage:220V,Panasonic,Kitchen;Living Room
+P0000594,Product 594,Description of Product 594,702.33,Books,1006,1005,Color:Blue;Size:M,Sony,Furniture;Gadgets
+P0000595,Product 595,Description of Product 595,288.15,Home Appliances,1002,1004,Color:Brown;Size:S;Voltage:110V,LG,Kitchen;Utensils
+P0000596,Product 596,Description of Product 596,870.86,Toys,1005,1002,Color:Black;Size:XL,Ikea,Furniture;Electronics
+P0000597,Product 597,Description of Product 597,283.75,Home Appliances,1002,1003,Color:Black;Size:XL;Voltage:220V,Panasonic,Kitchen;Gadgets
+P0000598,Product 598,Description of Product 598,722.69,Home Appliances,1002,1005,Color:Red;Size:S;Voltage:220V,Philips,Furniture;Electronics
+P0000599,Product 599,Description of Product 599,54.09,Electronics,1001,,Color:White;Size:XL,Panasonic,Furniture;Electronics
+P0000600,Product 600,Description of Product 600,576.37,Electronics,1001,1003,Color:Black;Size:XL,Ikea,Home;Smartphones
+P0000601,Product 601,Description of Product 601,172.48,Kitchen,1003,1003,Color:Black;Size:M;Material:Wood,Panasonic,Living Room;Utensils
+P0000602,Product 602,Description of Product 602,672.1,Furniture,1004,1003,Color:Brown;Size:XL;Material:Plastic,Sony,Utensils;Gadgets
+P0000603,Product 603,Description of Product 603,872.39,Home Appliances,1002,1004,Color:Black;Size:L;Voltage:110V,Philips,Home;Gadgets
+P0000604,Product 604,Description of Product 604,270.17,Books,1006,1001,Color:Brown;Size:M,Panasonic,Kitchen;Smartphones
+P0000605,Product 605,Description of Product 605,801.9,Books,1006,1002,Color:Black;Size:XL,LG,Kitchen;Living Room
+P0000606,Product 606,Description of Product 606,354.62,Home Appliances,1002,1001,Color:Brown;Size:S;Voltage:220V,Sony,Electronics;Smartphones
+P0000607,Product 607,Description of Product 607,360.08,Electronics,1001,1003,Color:Blue;Size:XL,Panasonic,Electronics;Utensils
+P0000608,Product 608,Description of Product 608,950.7,Furniture,1004,1004,Color:Brown;Size:L;Material:Wood,Panasonic,Home;Furniture
+P0000609,Product 609,Description of Product 609,621.96,Home Appliances,1002,1005,Color:Brown;Size:S;Voltage:220V,Samsung,Furniture;Utensils
+P0000610,Product 610,Description of Product 610,670.8,Electronics,1001,1004,Color:White;Size:M,Philips,Kitchen;Electronics
+P0000611,Product 611,Description of Product 611,821.78,Home Appliances,1002,1001,Color:Blue;Size:S;Voltage:220V,Samsung,Smartphones;Furniture
+P0000612,Product 612,Description of Product 612,566.17,Toys,1005,1005,Color:Brown;Size:L,LG,Electronics;Living Room
+P0000613,Product 613,Description of Product 613,449.19,Furniture,1004,,Color:White;Size:S;Material:Plastic,Sony,Utensils;Smartphones
+P0000614,Product 614,Description of Product 614,382.78,Home Appliances,1002,1003,Color:Brown;Size:M;Voltage:110V,Ikea,Home;Living Room
+P0000615,Product 615,Description of Product 615,304.38,Electronics,1001,1005,Color:Black;Size:S,Panasonic,Kitchen;Electronics
+P0000616,Product 616,Description of Product 616,704.98,Books,1006,1004,Color:White;Size:S,Ikea,Furniture;Utensils
+P0000617,Product 617,Description of Product 617,182.75,Home Appliances,1002,1001,Color:Brown;Size:S;Voltage:110V,Samsung,Smartphones;Furniture
+P0000618,Product 618,Description of Product 618,783.9,Kitchen,1003,1001,Color:Brown;Size:XL;Material:Steel,Sony,Living Room;Smartphones
+P0000619,Product 619,Description of Product 619,318.27,Home Appliances,1002,1003,Color:Black;Size:M;Voltage:110V,Philips,Furniture;Smartphones
+P0000620,Product 620,Description of Product 620,189.68,Kitchen,1003,1005,Color:Red;Size:L;Material:Steel,Philips,Electronics;Gadgets
+P0000621,Product 621,Description of Product 621,451.34,Toys,1005,1002,Color:Brown;Size:L,Sony,Smartphones;Electronics
+P0000622,Product 622,Description of Product 622,554.13,Kitchen,1003,1003,Color:Blue;Size:XL;Material:Wood,Ikea,Smartphones;Gadgets
+P0000623,Product 623,Description of Product 623,985.77,Home Appliances,1002,1004,Color:Red;Size:S;Voltage:220V,LG,Utensils;Smartphones
+P0000624,Product 624,Description of Product 624,33.51,Books,1006,,Color:Brown;Size:M,Sony,Electronics;Utensils
+P0000625,Product 625,Description of Product 625,822.99,Kitchen,1003,1003,Color:Brown;Size:XL;Material:Plastic,LG,Gadgets;Smartphones
+P0000626,Product 626,Description of Product 626,661.26,Electronics,1001,1005,Color:Brown;Size:L,Sony,Furniture;Gadgets
+P0000627,Product 627,Description of Product 627,955.14,Toys,1005,1004,Color:Red;Size:L,Sony,Utensils;Smartphones
+P0000628,Product 628,Description of Product 628,676.81,Home Appliances,1002,1005,Color:Red;Size:M;Voltage:220V,Philips,Kitchen;Smartphones
+P0000629,Product 629,Description of Product 629,657.3,Electronics,1001,1002,Color:Brown;Size:L,Philips,Smartphones;Living Room
+P0000630,Product 630,Description of Product 630,583.67,Books,1006,1002,Color:Brown;Size:L,Ikea,Kitchen;Electronics
+P0000631,Product 631,Description of Product 631,353.58,Furniture,1004,1005,Color:Brown;Size:XL;Material:Wood,Ikea,Smartphones;Electronics
+P0000632,Product 632,Description of Product 632,885.76,Home Appliances,1002,1001,Color:Red;Size:M;Voltage:220V,Panasonic,Living Room;Gadgets
+P0000633,Product 633,Description of Product 633,308.7,Furniture,1004,1002,Color:Brown;Size:S;Material:Steel,Philips,Utensils;Living Room
+P0000634,Product 634,Description of Product 634,881.43,Home Appliances,1002,1003,Color:Brown;Size:L;Voltage:220V,Philips,Kitchen;Furniture
+P0000635,Product 635,Description of Product 635,759.92,Electronics,1001,1004,Color:Black;Size:S,Panasonic,Living Room;Smartphones
+P0000636,Product 636,Description of Product 636,876.33,Electronics,1001,1003,Color:Blue;Size:XL,Ikea,Home;Utensils
+P0000637,Product 637,Description of Product 637,642.7,Furniture,1004,1003,Color:Black;Size:M;Material:Wood,Sony,Furniture;Kitchen
+P0000638,Product 638,Description of Product 638,714.02,Furniture,1004,1002,Color:Brown;Size:XL;Material:Plastic,Ikea,Furniture;Kitchen
+P0000639,Product 639,Description of Product 639,327.29,Home Appliances,1002,1002,Color:Blue;Size:S;Voltage:220V,Philips,Kitchen;Smartphones
+P0000640,Product 640,Description of Product 640,767.08,Books,1006,1005,Color:Brown;Size:XL,Ikea,Smartphones;Home
+P0000641,Product 641,Description of Product 641,839.36,Home Appliances,1002,1003,Color:White;Size:XL;Voltage:220V,Sony,Kitchen;Smartphones
+P0000642,Product 642,Description of Product 642,503.06,Electronics,1001,1004,Color:White;Size:XL,Samsung,Smartphones;Home
+P0000643,Product 643,Description of Product 643,291.18,Electronics,1001,,Color:White;Size:XL,Philips,Smartphones;Home
+P0000644,Product 644,Description of Product 644,511.56,Books,1006,1003,Color:Blue;Size:M,Ikea,Smartphones;Utensils
+P0000645,Product 645,Description of Product 645,730.19,Electronics,1001,1001,Color:Red;Size:L,Sony,Living Room;Utensils
+P0000646,Product 646,Description of Product 646,700.13,Electronics,1001,,Color:Black;Size:XL,Panasonic,Home;Electronics
+P0000647,Product 647,Description of Product 647,99.04,Furniture,1004,1003,Color:Brown;Size:M;Material:Steel,Samsung,Gadgets;Furniture
+P0000648,Product 648,Description of Product 648,811.26,Books,1006,1002,Color:Brown;Size:M,Philips,Kitchen;Home
+P0000649,Product 649,Description of Product 649,250.32,Books,1006,,Color:Black;Size:M,Sony,Living Room;Smartphones
+P0000650,Product 650,Description of Product 650,636.95,Kitchen,1003,1001,Color:Black;Size:S;Material:Plastic,Philips,Smartphones;Home
+P0000651,Product 651,Description of Product 651,201.76,Kitchen,1003,1001,Color:Brown;Size:L;Material:Steel,LG,Living Room;Smartphones
+P0000652,Product 652,Description of Product 652,588.74,Electronics,1001,1004,Color:Brown;Size:S,LG,Home;Smartphones
+P0000653,Product 653,Description of Product 653,492.73,Home Appliances,1002,1001,Color:White;Size:S;Voltage:220V,Ikea,Living Room;Home
+P0000654,Product 654,Description of Product 654,300.3,Books,1006,1004,Color:Blue;Size:XL,Philips,Gadgets;Furniture
+P0000655,Product 655,Description of Product 655,376.85,Home Appliances,1002,,Color:Brown;Size:XL;Voltage:220V,Samsung,Living Room;Furniture
+P0000656,Product 656,Description of Product 656,83.6,Toys,1005,1001,Color:Brown;Size:L,Philips,Utensils;Gadgets
+P0000657,Product 657,Description of Product 657,737.72,Toys,1005,1003,Color:Black;Size:M,Samsung,Utensils;Furniture
+P0000658,Product 658,Description of Product 658,720.26,Furniture,1004,1005,Color:Brown;Size:M;Material:Plastic,LG,Furniture;Electronics
+P0000659,Product 659,Description of Product 659,890.58,Books,1006,1004,Color:Black;Size:S,Philips,Living Room;Furniture
+P0000660,Product 660,Description of Product 660,621.34,Home Appliances,1002,1003,Color:White;Size:S;Voltage:110V,Sony,Kitchen;Home
+P0000661,Product 661,Description of Product 661,230.18,Kitchen,1003,1002,Color:Brown;Size:XL;Material:Plastic,Philips,Utensils;Furniture
+P0000662,Product 662,Description of Product 662,624.46,Electronics,1001,1005,Color:Brown;Size:L,Samsung,Electronics;Kitchen
+P0000663,Product 663,Description of Product 663,716.44,Home Appliances,1002,1005,Color:Black;Size:M;Voltage:220V,LG,Kitchen;Home
+P0000664,Product 664,Description of Product 664,67.47,Kitchen,1003,1003,Color:Blue;Size:L;Material:Plastic,Sony,Smartphones;Gadgets
+P0000665,Product 665,Description of Product 665,974.46,Furniture,1004,,Color:Red;Size:XL;Material:Steel,LG,Electronics;Home
+P0000666,Product 666,Description of Product 666,544.46,Toys,1005,1005,Color:Brown;Size:XL,Sony,Electronics;Furniture
+P0000667,Product 667,Description of Product 667,556.4,Toys,1005,1005,Color:Black;Size:L,Ikea,Home;Electronics
+P0000668,Product 668,Description of Product 668,831.09,Electronics,1001,1005,Color:White;Size:L,Panasonic,Gadgets;Electronics
+P0000669,Product 669,Description of Product 669,416.46,Furniture,1004,1001,Color:White;Size:XL;Material:Wood,Philips,Kitchen;Furniture
+P0000670,Product 670,Description of Product 670,949.33,Books,1006,1002,Color:Black;Size:L,LG,Gadgets;Electronics
+P0000671,Product 671,Description of Product 671,221.54,Furniture,1004,1004,Color:Black;Size:S;Material:Steel,LG,Home;Utensils
+P0000672,Product 672,Description of Product 672,985.72,Kitchen,1003,1002,Color:White;Size:S;Material:Plastic,Philips,Smartphones;Electronics
+P0000673,Product 673,Description of Product 673,157.93,Toys,1005,,Color:Brown;Size:L,Samsung,Living Room;Gadgets
+P0000674,Product 674,Description of Product 674,662.35,Furniture,1004,1002,Color:Brown;Size:S;Material:Wood,Samsung,Home;Living Room
+P0000675,Product 675,Description of Product 675,60.82,Books,1006,,Color:Black;Size:M,Sony,Kitchen;Utensils
+P0000676,Product 676,Description of Product 676,445.18,Books,1006,1001,Color:White;Size:XL,LG,Furniture;Kitchen
+P0000677,Product 677,Description of Product 677,513.96,Toys,1005,,Color:White;Size:L,LG,Gadgets;Smartphones
+P0000678,Product 678,Description of Product 678,663.01,Books,1006,1002,Color:Red;Size:XL,LG,Kitchen;Utensils
+P0000679,Product 679,Description of Product 679,673.89,Home Appliances,1002,1002,Color:Brown;Size:M;Voltage:110V,Philips,Furniture;Electronics
+P0000680,Product 680,Description of Product 680,421.97,Books,1006,1003,Color:Blue;Size:XL,Philips,Furniture;Utensils
+P0000681,Product 681,Description of Product 681,524.31,Electronics,1001,,Color:Red;Size:L,LG,Utensils;Living Room
+P0000682,Product 682,Description of Product 682,497.3,Toys,1005,1005,Color:Blue;Size:M,Samsung,Home;Electronics
+P0000683,Product 683,Description of Product 683,302.7,Home Appliances,1002,1001,Color:Blue;Size:L;Voltage:220V,Panasonic,Home;Kitchen
+P0000684,Product 684,Description of Product 684,626.26,Books,1006,1005,Color:Red;Size:M,Samsung,Electronics;Smartphones
+P0000685,Product 685,Description of Product 685,934.73,Kitchen,1003,1002,Color:Brown;Size:M;Material:Plastic,LG,Smartphones;Living Room
+P0000686,Product 686,Description of Product 686,384.15,Home Appliances,1002,1001,Color:Black;Size:M;Voltage:220V,Ikea,Smartphones;Home
+P0000687,Product 687,Description of Product 687,543.72,Electronics,1001,1003,Color:White;Size:L,Sony,Smartphones;Furniture
+P0000688,Product 688,Description of Product 688,760.68,Electronics,1001,1005,Color:Black;Size:S,Samsung,Utensils;Home
+P0000689,Product 689,Description of Product 689,433.37,Kitchen,1003,1003,Color:Brown;Size:M;Material:Steel,Panasonic,Utensils;Home
+P0000690,Product 690,Description of Product 690,376.05,Kitchen,1003,1001,Color:Red;Size:S;Material:Wood,Philips,Utensils;Smartphones
+P0000691,Product 691,Description of Product 691,515.77,Toys,1005,1004,Color:Blue;Size:S,LG,Electronics;Gadgets
+P0000692,Product 692,Description of Product 692,902.86,Electronics,1001,1003,Color:White;Size:L,Ikea,Home;Electronics
+P0000693,Product 693,Description of Product 693,679.05,Furniture,1004,1005,Color:Black;Size:XL;Material:Wood,LG,Living Room;Home
+P0000694,Product 694,Description of Product 694,737.4,Electronics,1001,1001,Color:Red;Size:XL,Sony,Living Room;Gadgets
+P0000695,Product 695,Description of Product 695,365.43,Kitchen,1003,,Color:Brown;Size:S;Material:Wood,Samsung,Home;Utensils
+P0000696,Product 696,Description of Product 696,189.61,Furniture,1004,1004,Color:Brown;Size:S;Material:Plastic,Philips,Electronics;Living Room
+P0000697,Product 697,Description of Product 697,11.56,Toys,1005,,Color:Brown;Size:M,Panasonic,Kitchen;Living Room
+P0000698,Product 698,Description of Product 698,414.39,Home Appliances,1002,,Color:Blue;Size:L;Voltage:220V,Ikea,Smartphones;Furniture
+P0000699,Product 699,Description of Product 699,301.56,Home Appliances,1002,1003,Color:Brown;Size:S;Voltage:110V,Samsung,Electronics;Home
+P0000700,Product 700,Description of Product 700,296.91,Books,1006,1002,Color:Black;Size:S,Philips,Gadgets;Living Room
+P0000701,Product 701,Description of Product 701,278.79,Books,1006,1004,Color:White;Size:S,Philips,Kitchen;Living Room
+P0000702,Product 702,Description of Product 702,297.63,Kitchen,1003,1003,Color:Blue;Size:M;Material:Plastic,Samsung,Kitchen;Home
+P0000703,Product 703,Description of Product 703,531.05,Furniture,1004,1003,Color:White;Size:XL;Material:Steel,Samsung,Kitchen;Utensils
+P0000704,Product 704,Description of Product 704,700.09,Electronics,1001,1005,Color:White;Size:S,Panasonic,Living Room;Kitchen
+P0000705,Product 705,Description of Product 705,632.8,Home Appliances,1002,1002,Color:White;Size:L;Voltage:220V,Philips,Home;Smartphones
+P0000706,Product 706,Description of Product 706,312.5,Books,1006,1003,Color:Blue;Size:XL,Samsung,Kitchen;Electronics
+P0000707,Product 707,Description of Product 707,879.86,Home Appliances,1002,1001,Color:Red;Size:M;Voltage:110V,Philips,Living Room;Home
+P0000708,Product 708,Description of Product 708,708.62,Electronics,1001,1005,Color:Red;Size:L,LG,Living Room;Electronics
+P0000709,Product 709,Description of Product 709,242.52,Furniture,1004,1003,Color:Black;Size:XL;Material:Plastic,Panasonic,Living Room;Smartphones
+P0000710,Product 710,Description of Product 710,698.34,Books,1006,1001,Color:Brown;Size:S,Panasonic,Living Room;Furniture
+P0000711,Product 711,Description of Product 711,273.58,Books,1006,1001,Color:Brown;Size:L,Philips,Utensils;Kitchen
+P0000712,Product 712,Description of Product 712,601.42,Books,1006,1002,Color:Blue;Size:S,LG,Electronics;Home
+P0000713,Product 713,Description of Product 713,905.09,Home Appliances,1002,1002,Color:Brown;Size:M;Voltage:220V,Sony,Furniture;Home
+P0000714,Product 714,Description of Product 714,481.05,Kitchen,1003,1004,Color:Black;Size:XL;Material:Wood,Samsung,Gadgets;Home
+P0000715,Product 715,Description of Product 715,78.23,Toys,1005,1002,Color:Brown;Size:L,Ikea,Home;Smartphones
+P0000716,Product 716,Description of Product 716,768.14,Home Appliances,1002,1002,Color:White;Size:S;Voltage:220V,Philips,Gadgets;Living Room
+P0000717,Product 717,Description of Product 717,92.48,Toys,1005,1004,Color:White;Size:XL,Ikea,Utensils;Furniture
+P0000718,Product 718,Description of Product 718,723.4,Electronics,1001,1001,Color:Red;Size:XL,LG,Electronics;Furniture
+P0000719,Product 719,Description of Product 719,425.31,Electronics,1001,,Color:Red;Size:S,Ikea,Living Room;Utensils
+P0000720,Product 720,Description of Product 720,712.25,Books,1006,1001,Color:Blue;Size:S,Sony,Gadgets;Utensils
+P0000721,Product 721,Description of Product 721,656.87,Home Appliances,1002,1005,Color:Red;Size:XL;Voltage:220V,Ikea,Kitchen;Living Room
+P0000722,Product 722,Description of Product 722,583.96,Home Appliances,1002,1003,Color:Red;Size:M;Voltage:110V,LG,Furniture;Kitchen
+P0000723,Product 723,Description of Product 723,205.62,Electronics,1001,1003,Color:Red;Size:L,Ikea,Kitchen;Gadgets
+P0000724,Product 724,Description of Product 724,954.44,Toys,1005,1002,Color:White;Size:S,Panasonic,Home;Electronics
+P0000725,Product 725,Description of Product 725,28.32,Home Appliances,1002,1002,Color:Brown;Size:S;Voltage:110V,Ikea,Utensils;Gadgets
+P0000726,Product 726,Description of Product 726,426.15,Kitchen,1003,1005,Color:Red;Size:XL;Material:Wood,LG,Kitchen;Home
+P0000727,Product 727,Description of Product 727,741.89,Toys,1005,1003,Color:Black;Size:L,Panasonic,Electronics;Utensils
+P0000728,Product 728,Description of Product 728,23.45,Furniture,1004,,Color:White;Size:S;Material:Steel,Samsung,Furniture;Gadgets
+P0000729,Product 729,Description of Product 729,588.78,Books,1006,1001,Color:Red;Size:S,Sony,Utensils;Smartphones
+P0000730,Product 730,Description of Product 730,237.35,Toys,1005,,Color:Brown;Size:S,LG,Home;Kitchen
+P0000731,Product 731,Description of Product 731,531.75,Toys,1005,,Color:White;Size:M,Sony,Home;Furniture
+P0000732,Product 732,Description of Product 732,356.29,Books,1006,1004,Color:Blue;Size:XL,Sony,Gadgets;Living Room
+P0000733,Product 733,Description of Product 733,79.4,Books,1006,1005,Color:Brown;Size:S,Panasonic,Furniture;Living Room
+P0000734,Product 734,Description of Product 734,226.74,Home Appliances,1002,,Color:Blue;Size:L;Voltage:110V,Philips,Smartphones;Living Room
+P0000735,Product 735,Description of Product 735,490.96,Home Appliances,1002,,Color:Red;Size:XL;Voltage:110V,Sony,Gadgets;Home
+P0000736,Product 736,Description of Product 736,124.98,Toys,1005,1003,Color:Brown;Size:L,Sony,Utensils;Electronics
+P0000737,Product 737,Description of Product 737,482.64,Books,1006,,Color:White;Size:M,Sony,Furniture;Smartphones
+P0000738,Product 738,Description of Product 738,525.02,Home Appliances,1002,1002,Color:Brown;Size:XL;Voltage:220V,Samsung,Smartphones;Gadgets
+P0000739,Product 739,Description of Product 739,125.57,Home Appliances,1002,1003,Color:Red;Size:L;Voltage:110V,Ikea,Electronics;Kitchen
+P0000740,Product 740,Description of Product 740,195.72,Home Appliances,1002,1005,Color:Red;Size:L;Voltage:110V,Panasonic,Electronics;Home
+P0000741,Product 741,Description of Product 741,271.62,Furniture,1004,1002,Color:Black;Size:M;Material:Steel,Samsung,Gadgets;Kitchen
+P0000742,Product 742,Description of Product 742,31.9,Home Appliances,1002,1003,Color:Red;Size:XL;Voltage:110V,Sony,Gadgets;Living Room
+P0000743,Product 743,Description of Product 743,549.63,Toys,1005,1005,Color:Blue;Size:S,Panasonic,Living Room;Home
+P0000744,Product 744,Description of Product 744,494.56,Books,1006,1002,Color:Blue;Size:M,Panasonic,Utensils;Living Room
+P0000745,Product 745,Description of Product 745,527.56,Furniture,1004,1001,Color:Blue;Size:L;Material:Plastic,Samsung,Electronics;Gadgets
+P0000746,Product 746,Description of Product 746,45.85,Home Appliances,1002,1004,Color:Blue;Size:M;Voltage:110V,Sony,Kitchen;Living Room
+P0000747,Product 747,Description of Product 747,223.55,Books,1006,1003,Color:Blue;Size:XL,Sony,Furniture;Electronics
+P0000748,Product 748,Description of Product 748,303.51,Home Appliances,1002,1002,Color:Blue;Size:XL;Voltage:220V,Philips,Home;Smartphones
+P0000749,Product 749,Description of Product 749,254.66,Furniture,1004,1002,Color:Red;Size:M;Material:Plastic,LG,Living Room;Home
+P0000750,Product 750,Description of Product 750,481.11,Kitchen,1003,1003,Color:Black;Size:XL;Material:Wood,Ikea,Furniture;Kitchen
+P0000751,Product 751,Description of Product 751,214.93,Kitchen,1003,1004,Color:Black;Size:XL;Material:Plastic,Sony,Kitchen;Furniture
+P0000752,Product 752,Description of Product 752,840.62,Home Appliances,1002,1005,Color:White;Size:S;Voltage:110V,Panasonic,Home;Smartphones
+P0000753,Product 753,Description of Product 753,729.63,Furniture,1004,1002,Color:Blue;Size:L;Material:Plastic,LG,Furniture;Home
+P0000754,Product 754,Description of Product 754,602.07,Home Appliances,1002,1001,Color:Black;Size:L;Voltage:220V,LG,Gadgets;Living Room
+P0000755,Product 755,Description of Product 755,296.63,Kitchen,1003,1005,Color:Black;Size:S;Material:Wood,Ikea,Gadgets;Home
+P0000756,Product 756,Description of Product 756,353.18,Home Appliances,1002,1005,Color:White;Size:XL;Voltage:110V,Ikea,Furniture;Home
+P0000757,Product 757,Description of Product 757,218.95,Furniture,1004,1002,Color:Black;Size:L;Material:Wood,LG,Living Room;Furniture
+P0000758,Product 758,Description of Product 758,445.77,Home Appliances,1002,,Color:Blue;Size:L;Voltage:110V,Samsung,Furniture;Home
+P0000759,Product 759,Description of Product 759,728.44,Books,1006,1002,Color:Red;Size:L,Panasonic,Gadgets;Kitchen
+P0000760,Product 760,Description of Product 760,595.84,Furniture,1004,1003,Color:Brown;Size:S;Material:Wood,Panasonic,Kitchen;Furniture
+P0000761,Product 761,Description of Product 761,970.42,Toys,1005,1004,Color:Black;Size:XL,Philips,Utensils;Electronics
+P0000762,Product 762,Description of Product 762,787.63,Home Appliances,1002,1003,Color:Red;Size:XL;Voltage:220V,Philips,Utensils;Electronics
+P0000763,Product 763,Description of Product 763,679.33,Furniture,1004,1004,Color:White;Size:M;Material:Wood,Samsung,Gadgets;Furniture
+P0000764,Product 764,Description of Product 764,143.1,Furniture,1004,1004,Color:White;Size:S;Material:Wood,Ikea,Kitchen;Smartphones
+P0000765,Product 765,Description of Product 765,367.82,Books,1006,1003,Color:Black;Size:XL,Sony,Gadgets;Smartphones
+P0000766,Product 766,Description of Product 766,702.18,Toys,1005,1005,Color:Red;Size:L,Ikea,Smartphones;Furniture
+P0000767,Product 767,Description of Product 767,593.67,Toys,1005,1004,Color:Black;Size:S,Samsung,Furniture;Utensils
+P0000768,Product 768,Description of Product 768,326.1,Home Appliances,1002,1005,Color:Brown;Size:L;Voltage:220V,LG,Gadgets;Utensils
+P0000769,Product 769,Description of Product 769,596.84,Books,1006,1001,Color:Red;Size:XL,Sony,Home;Kitchen
+P0000770,Product 770,Description of Product 770,39.32,Kitchen,1003,1001,Color:Black;Size:L;Material:Steel,Panasonic,Gadgets;Kitchen
+P0000771,Product 771,Description of Product 771,324.91,Toys,1005,1005,Color:Brown;Size:S,Panasonic,Utensils;Electronics
+P0000772,Product 772,Description of Product 772,125.99,Home Appliances,1002,1005,Color:Blue;Size:L;Voltage:220V,Sony,Gadgets;Furniture
+P0000773,Product 773,Description of Product 773,148.26,Home Appliances,1002,1005,Color:Brown;Size:M;Voltage:110V,Philips,Electronics;Home
+P0000774,Product 774,Description of Product 774,765.24,Kitchen,1003,1003,Color:Blue;Size:XL;Material:Wood,Panasonic,Kitchen;Electronics
+P0000775,Product 775,Description of Product 775,262.0,Books,1006,1001,Color:White;Size:L,Philips,Utensils;Home
+P0000776,Product 776,Description of Product 776,149.09,Furniture,1004,1003,Color:Red;Size:M;Material:Plastic,Philips,Living Room;Kitchen
+P0000777,Product 777,Description of Product 777,322.23,Electronics,1001,,Color:White;Size:S,Philips,Kitchen;Utensils
+P0000778,Product 778,Description of Product 778,436.21,Electronics,1001,1004,Color:Blue;Size:S,LG,Electronics;Gadgets
+P0000779,Product 779,Description of Product 779,271.69,Furniture,1004,1003,Color:Blue;Size:M;Material:Wood,Ikea,Home;Utensils
+P0000780,Product 780,Description of Product 780,34.01,Kitchen,1003,1005,Color:Brown;Size:L;Material:Plastic,Ikea,Kitchen;Living Room
+P0000781,Product 781,Description of Product 781,252.41,Home Appliances,1002,1004,Color:Red;Size:S;Voltage:220V,LG,Gadgets;Smartphones
+P0000782,Product 782,Description of Product 782,442.97,Electronics,1001,1003,Color:Black;Size:M,Panasonic,Home;Gadgets
+P0000783,Product 783,Description of Product 783,278.12,Furniture,1004,,Color:Red;Size:L;Material:Steel,Panasonic,Kitchen;Furniture
+P0000784,Product 784,Description of Product 784,258.69,Kitchen,1003,1005,Color:Red;Size:S;Material:Wood,Ikea,Home;Kitchen
+P0000785,Product 785,Description of Product 785,722.98,Kitchen,1003,,Color:Brown;Size:L;Material:Wood,Ikea,Living Room;Utensils
+P0000786,Product 786,Description of Product 786,913.39,Electronics,1001,1003,Color:Red;Size:S,Ikea,Living Room;Home
+P0000787,Product 787,Description of Product 787,997.69,Home Appliances,1002,1001,Color:Brown;Size:S;Voltage:110V,Panasonic,Gadgets;Smartphones
+P0000788,Product 788,Description of Product 788,654.07,Toys,1005,1001,Color:Blue;Size:S,Panasonic,Gadgets;Home
+P0000789,Product 789,Description of Product 789,548.63,Books,1006,1005,Color:Blue;Size:L,Panasonic,Living Room;Furniture
+P0000790,Product 790,Description of Product 790,693.15,Furniture,1004,1001,Color:Blue;Size:XL;Material:Plastic,Ikea,Utensils;Home
+P0000791,Product 791,Description of Product 791,586.46,Books,1006,1004,Color:Red;Size:M,Ikea,Home;Gadgets
+P0000792,Product 792,Description of Product 792,716.81,Furniture,1004,1003,Color:Blue;Size:S;Material:Wood,Ikea,Electronics;Smartphones
+P0000793,Product 793,Description of Product 793,147.41,Books,1006,1003,Color:Black;Size:L,Ikea,Living Room;Smartphones
+P0000794,Product 794,Description of Product 794,918.06,Kitchen,1003,1001,Color:Red;Size:L;Material:Plastic,LG,Gadgets;Smartphones
+P0000795,Product 795,Description of Product 795,990.87,Toys,1005,1002,Color:Brown;Size:XL,Samsung,Home;Kitchen
+P0000796,Product 796,Description of Product 796,780.55,Toys,1005,,Color:Black;Size:S,Samsung,Gadgets;Electronics
+P0000797,Product 797,Description of Product 797,724.41,Toys,1005,1005,Color:Black;Size:M,Philips,Furniture;Utensils
+P0000798,Product 798,Description of Product 798,609.62,Electronics,1001,1001,Color:Red;Size:S,Sony,Electronics;Kitchen
+P0000799,Product 799,Description of Product 799,394.58,Home Appliances,1002,1004,Color:White;Size:L;Voltage:110V,Panasonic,Electronics;Smartphones
+P0000800,Product 800,Description of Product 800,218.36,Home Appliances,1002,1003,Color:Blue;Size:L;Voltage:220V,Samsung,Kitchen;Smartphones
+P0000801,Product 801,Description of Product 801,570.88,Electronics,1001,1004,Color:Black;Size:S,Samsung,Home;Gadgets
+P0000802,Product 802,Description of Product 802,58.28,Home Appliances,1002,1005,Color:Brown;Size:L;Voltage:220V,LG,Home;Smartphones
+P0000803,Product 803,Description of Product 803,259.62,Books,1006,1002,Color:Blue;Size:M,Panasonic,Furniture;Gadgets
+P0000804,Product 804,Description of Product 804,187.66,Kitchen,1003,1005,Color:Black;Size:XL;Material:Plastic,Sony,Smartphones;Living Room
+P0000805,Product 805,Description of Product 805,516.32,Toys,1005,1005,Color:Brown;Size:L,Panasonic,Gadgets;Living Room
+P0000806,Product 806,Description of Product 806,572.76,Furniture,1004,1002,Color:White;Size:S;Material:Steel,Samsung,Living Room;Furniture
+P0000807,Product 807,Description of Product 807,577.56,Kitchen,1003,1005,Color:White;Size:M;Material:Plastic,Sony,Living Room;Kitchen
+P0000808,Product 808,Description of Product 808,891.41,Home Appliances,1002,,Color:Blue;Size:XL;Voltage:220V,Philips,Gadgets;Home
+P0000809,Product 809,Description of Product 809,116.25,Books,1006,1005,Color:White;Size:XL,Panasonic,Furniture;Electronics
+P0000810,Product 810,Description of Product 810,254.97,Furniture,1004,1002,Color:Blue;Size:XL;Material:Plastic,Sony,Utensils;Electronics
+P0000811,Product 811,Description of Product 811,260.33,Electronics,1001,1001,Color:Black;Size:S,Ikea,Home;Electronics
+P0000812,Product 812,Description of Product 812,540.4,Kitchen,1003,1002,Color:Red;Size:L;Material:Plastic,Samsung,Utensils;Electronics
+P0000813,Product 813,Description of Product 813,456.99,Furniture,1004,1005,Color:Black;Size:L;Material:Steel,Philips,Utensils;Gadgets
+P0000814,Product 814,Description of Product 814,136.02,Electronics,1001,1001,Color:White;Size:S,Samsung,Electronics;Home
+P0000815,Product 815,Description of Product 815,891.15,Toys,1005,1001,Color:Black;Size:XL,Panasonic,Furniture;Utensils
+P0000816,Product 816,Description of Product 816,436.24,Books,1006,1001,Color:Black;Size:XL,Ikea,Utensils;Kitchen
+P0000817,Product 817,Description of Product 817,875.28,Books,1006,1001,Color:Red;Size:L,Philips,Kitchen;Furniture
+P0000818,Product 818,Description of Product 818,487.81,Toys,1005,,Color:Red;Size:M,Philips,Gadgets;Kitchen
+P0000819,Product 819,Description of Product 819,112.23,Books,1006,1005,Color:Red;Size:XL,Sony,Living Room;Kitchen
+P0000820,Product 820,Description of Product 820,55.47,Kitchen,1003,1001,Color:Black;Size:L;Material:Plastic,Panasonic,Smartphones;Living Room
+P0000821,Product 821,Description of Product 821,266.79,Electronics,1001,1001,Color:Brown;Size:S,LG,Electronics;Living Room
+P0000822,Product 822,Description of Product 822,732.57,Books,1006,1004,Color:White;Size:M,Ikea,Furniture;Home
+P0000823,Product 823,Description of Product 823,531.11,Furniture,1004,1003,Color:Red;Size:XL;Material:Plastic,Samsung,Kitchen;Electronics
+P0000824,Product 824,Description of Product 824,170.0,Electronics,1001,1002,Color:Blue;Size:S,Philips,Electronics;Home
+P0000825,Product 825,Description of Product 825,985.51,Kitchen,1003,1002,Color:Black;Size:L;Material:Plastic,Samsung,Living Room;Home
+P0000826,Product 826,Description of Product 826,576.6,Furniture,1004,1002,Color:Black;Size:L;Material:Wood,Philips,Utensils;Electronics
+P0000827,Product 827,Description of Product 827,110.6,Books,1006,,Color:White;Size:XL,Philips,Utensils;Electronics
+P0000828,Product 828,Description of Product 828,654.88,Toys,1005,1004,Color:Black;Size:L,Panasonic,Home;Gadgets
+P0000829,Product 829,Description of Product 829,151.25,Furniture,1004,1003,Color:Brown;Size:M;Material:Steel,LG,Electronics;Furniture
+P0000830,Product 830,Description of Product 830,753.24,Kitchen,1003,1003,Color:Red;Size:M;Material:Plastic,Sony,Smartphones;Home
+P0000831,Product 831,Description of Product 831,392.72,Home Appliances,1002,1002,Color:Blue;Size:XL;Voltage:220V,Samsung,Furniture;Kitchen
+P0000832,Product 832,Description of Product 832,199.17,Home Appliances,1002,1002,Color:Blue;Size:M;Voltage:110V,Sony,Smartphones;Gadgets
+P0000833,Product 833,Description of Product 833,190.9,Toys,1005,1003,Color:Blue;Size:XL,Panasonic,Living Room;Home
+P0000834,Product 834,Description of Product 834,744.93,Toys,1005,,Color:Black;Size:S,Panasonic,Electronics;Smartphones
+P0000835,Product 835,Description of Product 835,604.13,Toys,1005,,Color:Brown;Size:M,LG,Electronics;Utensils
+P0000836,Product 836,Description of Product 836,337.41,Kitchen,1003,1001,Color:Red;Size:S;Material:Wood,Samsung,Kitchen;Utensils
+P0000837,Product 837,Description of Product 837,710.83,Kitchen,1003,1002,Color:White;Size:XL;Material:Steel,Samsung,Living Room;Utensils
+P0000838,Product 838,Description of Product 838,66.81,Electronics,1001,1001,Color:Black;Size:L,Samsung,Utensils;Electronics
+P0000839,Product 839,Description of Product 839,855.54,Books,1006,1005,Color:White;Size:XL,Ikea,Utensils;Smartphones
+P0000840,Product 840,Description of Product 840,405.38,Toys,1005,1002,Color:Red;Size:M,Ikea,Kitchen;Living Room
+P0000841,Product 841,Description of Product 841,908.11,Kitchen,1003,1005,Color:Black;Size:L;Material:Plastic,Samsung,Utensils;Home
+P0000842,Product 842,Description of Product 842,572.08,Electronics,1001,1005,Color:Red;Size:S,LG,Gadgets;Utensils
+P0000843,Product 843,Description of Product 843,277.06,Furniture,1004,1004,Color:Black;Size:L;Material:Plastic,Samsung,Electronics;Smartphones
+P0000844,Product 844,Description of Product 844,133.71,Kitchen,1003,1002,Color:White;Size:S;Material:Plastic,LG,Gadgets;Home
+P0000845,Product 845,Description of Product 845,873.2,Toys,1005,1003,Color:Black;Size:M,Samsung,Gadgets;Kitchen
+P0000846,Product 846,Description of Product 846,802.78,Toys,1005,1005,Color:Red;Size:S,Sony,Home;Living Room
+P0000847,Product 847,Description of Product 847,125.78,Kitchen,1003,1004,Color:Blue;Size:XL;Material:Wood,Samsung,Home;Electronics
+P0000848,Product 848,Description of Product 848,806.46,Furniture,1004,1003,Color:White;Size:XL;Material:Steel,Samsung,Utensils;Electronics
+P0000849,Product 849,Description of Product 849,120.18,Home Appliances,1002,,Color:Brown;Size:S;Voltage:110V,Samsung,Furniture;Utensils
+P0000850,Product 850,Description of Product 850,167.7,Furniture,1004,1001,Color:Brown;Size:M;Material:Steel,Ikea,Smartphones;Utensils
+P0000851,Product 851,Description of Product 851,639.05,Furniture,1004,1005,Color:Brown;Size:XL;Material:Wood,Philips,Utensils;Living Room
+P0000852,Product 852,Description of Product 852,614.11,Kitchen,1003,1005,Color:Brown;Size:XL;Material:Steel,Philips,Gadgets;Living Room
+P0000853,Product 853,Description of Product 853,881.59,Home Appliances,1002,1002,Color:Red;Size:XL;Voltage:110V,Panasonic,Utensils;Home
+P0000854,Product 854,Description of Product 854,951.27,Toys,1005,,Color:Brown;Size:XL,Panasonic,Furniture;Kitchen
+P0000855,Product 855,Description of Product 855,665.43,Home Appliances,1002,1005,Color:Blue;Size:L;Voltage:220V,Philips,Living Room;Utensils
+P0000856,Product 856,Description of Product 856,156.34,Kitchen,1003,1005,Color:Red;Size:S;Material:Steel,Samsung,Smartphones;Electronics
+P0000857,Product 857,Description of Product 857,183.27,Toys,1005,1001,Color:White;Size:L,Philips,Furniture;Home
+P0000858,Product 858,Description of Product 858,363.89,Home Appliances,1002,1003,Color:Red;Size:XL;Voltage:110V,Philips,Furniture;Utensils
+P0000859,Product 859,Description of Product 859,621.27,Kitchen,1003,1003,Color:White;Size:M;Material:Wood,Samsung,Electronics;Home
+P0000860,Product 860,Description of Product 860,837.94,Toys,1005,1003,Color:Red;Size:L,Philips,Living Room;Smartphones
+P0000861,Product 861,Description of Product 861,620.73,Books,1006,1005,Color:Blue;Size:XL,Panasonic,Living Room;Home
+P0000862,Product 862,Description of Product 862,883.15,Kitchen,1003,1005,Color:Red;Size:S;Material:Steel,Panasonic,Smartphones;Living Room
+P0000863,Product 863,Description of Product 863,669.06,Furniture,1004,1005,Color:Black;Size:S;Material:Plastic,Samsung,Utensils;Gadgets
+P0000864,Product 864,Description of Product 864,346.34,Kitchen,1003,,Color:Black;Size:L;Material:Plastic,Samsung,Furniture;Living Room
+P0000865,Product 865,Description of Product 865,766.83,Books,1006,1005,Color:Red;Size:XL,Ikea,Living Room;Home
+P0000866,Product 866,Description of Product 866,523.34,Toys,1005,1005,Color:Black;Size:L,Sony,Living Room;Kitchen
+P0000867,Product 867,Description of Product 867,231.97,Home Appliances,1002,1003,Color:White;Size:S;Voltage:220V,LG,Kitchen;Living Room
+P0000868,Product 868,Description of Product 868,431.73,Furniture,1004,1003,Color:Blue;Size:XL;Material:Steel,Sony,Home;Utensils
+P0000869,Product 869,Description of Product 869,375.25,Toys,1005,1002,Color:Red;Size:L,LG,Gadgets;Electronics
+P0000870,Product 870,Description of Product 870,582.28,Kitchen,1003,,Color:Brown;Size:XL;Material:Steel,Panasonic,Furniture;Gadgets
+P0000871,Product 871,Description of Product 871,322.79,Toys,1005,1005,Color:Brown;Size:XL,Philips,Electronics;Kitchen
+P0000872,Product 872,Description of Product 872,387.69,Kitchen,1003,,Color:Blue;Size:XL;Material:Steel,Ikea,Smartphones;Gadgets
+P0000873,Product 873,Description of Product 873,991.58,Toys,1005,1004,Color:Red;Size:XL,Samsung,Kitchen;Furniture
+P0000874,Product 874,Description of Product 874,969.79,Kitchen,1003,1002,Color:Brown;Size:XL;Material:Steel,Panasonic,Furniture;Home
+P0000875,Product 875,Description of Product 875,947.31,Home Appliances,1002,1002,Color:Black;Size:S;Voltage:110V,LG,Smartphones;Furniture
+P0000876,Product 876,Description of Product 876,54.92,Furniture,1004,1001,Color:Brown;Size:XL;Material:Wood,Ikea,Electronics;Furniture
+P0000877,Product 877,Description of Product 877,247.81,Home Appliances,1002,1004,Color:Black;Size:XL;Voltage:220V,Ikea,Utensils;Kitchen
+P0000878,Product 878,Description of Product 878,216.81,Furniture,1004,,Color:Red;Size:S;Material:Steel,Panasonic,Gadgets;Living Room
+P0000879,Product 879,Description of Product 879,131.36,Books,1006,1004,Color:Black;Size:M,Samsung,Utensils;Home
+P0000880,Product 880,Description of Product 880,103.76,Furniture,1004,,Color:Red;Size:S;Material:Plastic,Ikea,Utensils;Smartphones
+P0000881,Product 881,Description of Product 881,510.59,Books,1006,1005,Color:Blue;Size:S,Panasonic,Furniture;Utensils
+P0000882,Product 882,Description of Product 882,890.83,Home Appliances,1002,1001,Color:Red;Size:M;Voltage:110V,Philips,Home;Kitchen
+P0000883,Product 883,Description of Product 883,668.41,Kitchen,1003,,Color:Blue;Size:XL;Material:Plastic,Samsung,Living Room;Kitchen
+P0000884,Product 884,Description of Product 884,49.65,Furniture,1004,1002,Color:Blue;Size:M;Material:Wood,Panasonic,Electronics;Utensils
+P0000885,Product 885,Description of Product 885,208.48,Books,1006,1005,Color:White;Size:L,Samsung,Utensils;Smartphones
+P0000886,Product 886,Description of Product 886,195.98,Furniture,1004,1002,Color:Brown;Size:L;Material:Wood,Sony,Smartphones;Electronics
+P0000887,Product 887,Description of Product 887,742.33,Furniture,1004,1003,Color:Red;Size:S;Material:Steel,Panasonic,Electronics;Home
+P0000888,Product 888,Description of Product 888,971.06,Electronics,1001,,Color:Blue;Size:M,LG,Gadgets;Smartphones
+P0000889,Product 889,Description of Product 889,520.06,Electronics,1001,1002,Color:Brown;Size:M,Panasonic,Kitchen;Utensils
+P0000890,Product 890,Description of Product 890,962.85,Kitchen,1003,1001,Color:Brown;Size:S;Material:Steel,Ikea,Living Room;Utensils
+P0000891,Product 891,Description of Product 891,205.97,Home Appliances,1002,1001,Color:Red;Size:XL;Voltage:220V,Ikea,Utensils;Electronics
+P0000892,Product 892,Description of Product 892,231.59,Electronics,1001,1005,Color:Brown;Size:L,Philips,Kitchen;Utensils
+P0000893,Product 893,Description of Product 893,416.91,Toys,1005,,Color:Black;Size:XL,Panasonic,Home;Smartphones
+P0000894,Product 894,Description of Product 894,444.49,Toys,1005,,Color:Blue;Size:XL,Philips,Kitchen;Home
+P0000895,Product 895,Description of Product 895,653.82,Home Appliances,1002,1002,Color:Black;Size:XL;Voltage:220V,Sony,Kitchen;Living Room
+P0000896,Product 896,Description of Product 896,698.12,Electronics,1001,1005,Color:Blue;Size:S,Philips,Utensils;Home
+P0000897,Product 897,Description of Product 897,571.57,Furniture,1004,,Color:Red;Size:XL;Material:Steel,LG,Furniture;Smartphones
+P0000898,Product 898,Description of Product 898,402.03,Electronics,1001,1003,Color:Black;Size:L,Sony,Electronics;Smartphones
+P0000899,Product 899,Description of Product 899,586.88,Furniture,1004,1002,Color:Red;Size:XL;Material:Wood,Panasonic,Smartphones;Utensils
+P0000900,Product 900,Description of Product 900,85.25,Toys,1005,1004,Color:Red;Size:XL,Samsung,Utensils;Gadgets
+P0000901,Product 901,Description of Product 901,707.55,Books,1006,,Color:Black;Size:M,Ikea,Electronics;Gadgets
+P0000902,Product 902,Description of Product 902,494.79,Furniture,1004,1001,Color:Brown;Size:XL;Material:Steel,Philips,Utensils;Home
+P0000903,Product 903,Description of Product 903,833.07,Furniture,1004,1002,Color:Blue;Size:M;Material:Wood,Philips,Utensils;Gadgets
+P0000904,Product 904,Description of Product 904,874.0,Books,1006,1005,Color:Black;Size:XL,LG,Kitchen;Home
+P0000905,Product 905,Description of Product 905,625.79,Kitchen,1003,1002,Color:Brown;Size:M;Material:Plastic,Panasonic,Home;Living Room
+P0000906,Product 906,Description of Product 906,186.9,Toys,1005,1005,Color:Red;Size:S,Ikea,Electronics;Home
+P0000907,Product 907,Description of Product 907,781.79,Toys,1005,,Color:Brown;Size:S,Samsung,Home;Electronics
+P0000908,Product 908,Description of Product 908,39.21,Toys,1005,1002,Color:Brown;Size:M,LG,Furniture;Living Room
+P0000909,Product 909,Description of Product 909,261.61,Toys,1005,1003,Color:Brown;Size:M,LG,Home;Electronics
+P0000910,Product 910,Description of Product 910,29.99,Electronics,1001,1004,Color:Black;Size:L,Sony,Living Room;Utensils
+P0000911,Product 911,Description of Product 911,50.01,Toys,1005,1001,Color:Brown;Size:XL,Panasonic,Smartphones;Home
+P0000912,Product 912,Description of Product 912,868.68,Books,1006,,Color:Red;Size:L,Sony,Electronics;Smartphones
+P0000913,Product 913,Description of Product 913,909.93,Books,1006,1003,Color:Red;Size:S,Philips,Smartphones;Living Room
+P0000914,Product 914,Description of Product 914,110.18,Books,1006,1004,Color:Brown;Size:XL,Philips,Furniture;Electronics
+P0000915,Product 915,Description of Product 915,585.5,Electronics,1001,1003,Color:Blue;Size:L,Sony,Kitchen;Electronics
+P0000916,Product 916,Description of Product 916,932.58,Books,1006,1003,Color:Black;Size:S,Sony,Smartphones;Gadgets
+P0000917,Product 917,Description of Product 917,226.59,Kitchen,1003,1004,Color:Blue;Size:XL;Material:Wood,Samsung,Smartphones;Electronics
+P0000918,Product 918,Description of Product 918,170.68,Furniture,1004,1004,Color:White;Size:S;Material:Plastic,Panasonic,Kitchen;Home
+P0000919,Product 919,Description of Product 919,327.09,Books,1006,1003,Color:White;Size:L,Samsung,Gadgets;Electronics
+P0000920,Product 920,Description of Product 920,399.37,Home Appliances,1002,,Color:White;Size:M;Voltage:220V,Ikea,Smartphones;Gadgets
+P0000921,Product 921,Description of Product 921,276.31,Electronics,1001,1002,Color:White;Size:XL,Sony,Electronics;Living Room
+P0000922,Product 922,Description of Product 922,981.37,Electronics,1001,1002,Color:Red;Size:XL,Samsung,Home;Furniture
+P0000923,Product 923,Description of Product 923,382.51,Electronics,1001,1004,Color:Blue;Size:XL,Panasonic,Furniture;Electronics
+P0000924,Product 924,Description of Product 924,243.82,Books,1006,1002,Color:White;Size:L,Samsung,Smartphones;Electronics
+P0000925,Product 925,Description of Product 925,808.41,Electronics,1001,1001,Color:Blue;Size:S,Philips,Furniture;Living Room
+P0000926,Product 926,Description of Product 926,333.68,Toys,1005,1001,Color:Black;Size:L,Samsung,Furniture;Smartphones
+P0000927,Product 927,Description of Product 927,993.22,Toys,1005,1001,Color:White;Size:L,Sony,Gadgets;Living Room
+P0000928,Product 928,Description of Product 928,190.37,Kitchen,1003,1004,Color:Black;Size:XL;Material:Steel,Sony,Gadgets;Utensils
+P0000929,Product 929,Description of Product 929,839.33,Books,1006,1002,Color:Red;Size:L,Samsung,Electronics;Living Room
+P0000930,Product 930,Description of Product 930,563.08,Furniture,1004,1001,Color:Brown;Size:XL;Material:Plastic,Philips,Gadgets;Kitchen
+P0000931,Product 931,Description of Product 931,618.79,Furniture,1004,1002,Color:White;Size:S;Material:Steel,LG,Electronics;Utensils
+P0000932,Product 932,Description of Product 932,498.04,Toys,1005,1001,Color:Blue;Size:L,Sony,Gadgets;Electronics
+P0000933,Product 933,Description of Product 933,320.78,Toys,1005,1001,Color:Blue;Size:S,Philips,Living Room;Furniture
+P0000934,Product 934,Description of Product 934,933.61,Electronics,1001,,Color:White;Size:XL,Philips,Gadgets;Living Room
+P0000935,Product 935,Description of Product 935,841.25,Toys,1005,1005,Color:Brown;Size:L,Samsung,Electronics;Gadgets
+P0000936,Product 936,Description of Product 936,289.97,Toys,1005,1003,Color:White;Size:M,Philips,Kitchen;Furniture
+P0000937,Product 937,Description of Product 937,706.68,Toys,1005,1005,Color:Black;Size:M,Ikea,Furniture;Utensils
+P0000938,Product 938,Description of Product 938,765.43,Furniture,1004,1003,Color:Brown;Size:M;Material:Wood,Philips,Kitchen;Gadgets
+P0000939,Product 939,Description of Product 939,470.33,Kitchen,1003,1004,Color:White;Size:XL;Material:Wood,LG,Smartphones;Kitchen
+P0000940,Product 940,Description of Product 940,629.25,Furniture,1004,1004,Color:Red;Size:M;Material:Wood,Philips,Utensils;Kitchen
+P0000941,Product 941,Description of Product 941,920.93,Furniture,1004,1004,Color:White;Size:M;Material:Wood,LG,Home;Electronics
+P0000942,Product 942,Description of Product 942,972.27,Books,1006,,Color:White;Size:S,Samsung,Living Room;Smartphones
+P0000943,Product 943,Description of Product 943,196.67,Home Appliances,1002,1004,Color:Red;Size:L;Voltage:110V,Sony,Smartphones;Home
+P0000944,Product 944,Description of Product 944,365.03,Kitchen,1003,1005,Color:White;Size:M;Material:Steel,Samsung,Utensils;Gadgets
+P0000945,Product 945,Description of Product 945,113.28,Home Appliances,1002,1004,Color:Red;Size:L;Voltage:110V,Panasonic,Living Room;Electronics
+P0000946,Product 946,Description of Product 946,55.07,Books,1006,1005,Color:Brown;Size:M,Sony,Smartphones;Electronics
+P0000947,Product 947,Description of Product 947,205.5,Electronics,1001,1004,Color:Black;Size:XL,Sony,Living Room;Smartphones
+P0000948,Product 948,Description of Product 948,12.63,Home Appliances,1002,1005,Color:White;Size:L;Voltage:110V,Philips,Kitchen;Furniture
+P0000949,Product 949,Description of Product 949,371.02,Books,1006,1004,Color:Blue;Size:XL,Philips,Gadgets;Kitchen
+P0000950,Product 950,Description of Product 950,839.39,Kitchen,1003,1001,Color:Black;Size:M;Material:Steel,LG,Gadgets;Living Room
+P0000951,Product 951,Description of Product 951,130.16,Furniture,1004,1005,Color:White;Size:XL;Material:Steel,Panasonic,Electronics;Smartphones
+P0000952,Product 952,Description of Product 952,928.98,Toys,1005,1001,Color:Black;Size:L,LG,Home;Kitchen
+P0000953,Product 953,Description of Product 953,567.73,Furniture,1004,1005,Color:Black;Size:S;Material:Wood,Samsung,Living Room;Furniture
+P0000954,Product 954,Description of Product 954,369.04,Kitchen,1003,,Color:Brown;Size:M;Material:Wood,Samsung,Gadgets;Kitchen
+P0000955,Product 955,Description of Product 955,847.22,Electronics,1001,1001,Color:Brown;Size:L,Philips,Living Room;Furniture
+P0000956,Product 956,Description of Product 956,19.29,Toys,1005,1005,Color:White;Size:XL,Sony,Smartphones;Utensils
+P0000957,Product 957,Description of Product 957,558.73,Kitchen,1003,1001,Color:Black;Size:M;Material:Steel,Samsung,Gadgets;Furniture
+P0000958,Product 958,Description of Product 958,167.11,Furniture,1004,1004,Color:Black;Size:L;Material:Steel,LG,Furniture;Gadgets
+P0000959,Product 959,Description of Product 959,130.42,Furniture,1004,,Color:Brown;Size:S;Material:Wood,LG,Living Room;Electronics
+P0000960,Product 960,Description of Product 960,980.44,Electronics,1001,1001,Color:Blue;Size:XL,Ikea,Utensils;Living Room
+P0000961,Product 961,Description of Product 961,441.47,Furniture,1004,,Color:Brown;Size:M;Material:Steel,Ikea,Home;Utensils
+P0000962,Product 962,Description of Product 962,486.04,Home Appliances,1002,1005,Color:White;Size:M;Voltage:220V,Samsung,Smartphones;Kitchen
+P0000963,Product 963,Description of Product 963,108.78,Kitchen,1003,1001,Color:Blue;Size:M;Material:Wood,Samsung,Kitchen;Smartphones
+P0000964,Product 964,Description of Product 964,160.89,Furniture,1004,1002,Color:Black;Size:L;Material:Steel,Sony,Furniture;Smartphones
+P0000965,Product 965,Description of Product 965,60.13,Books,1006,,Color:White;Size:S,Panasonic,Smartphones;Furniture
+P0000966,Product 966,Description of Product 966,507.74,Kitchen,1003,1002,Color:Red;Size:S;Material:Wood,Ikea,Electronics;Kitchen
+P0000967,Product 967,Description of Product 967,71.19,Toys,1005,1003,Color:Blue;Size:S,Samsung,Utensils;Home
+P0000968,Product 968,Description of Product 968,969.88,Books,1006,1001,Color:Black;Size:M,Samsung,Smartphones;Gadgets
+P0000969,Product 969,Description of Product 969,293.43,Electronics,1001,1002,Color:Black;Size:M,Ikea,Electronics;Gadgets
+P0000970,Product 970,Description of Product 970,482.62,Toys,1005,1005,Color:Black;Size:M,LG,Furniture;Gadgets
+P0000971,Product 971,Description of Product 971,328.11,Home Appliances,1002,1005,Color:Red;Size:M;Voltage:220V,Ikea,Furniture;Home
+P0000972,Product 972,Description of Product 972,118.18,Furniture,1004,1003,Color:White;Size:S;Material:Steel,Ikea,Living Room;Gadgets
+P0000973,Product 973,Description of Product 973,613.09,Electronics,1001,,Color:White;Size:M,Ikea,Smartphones;Utensils
+P0000974,Product 974,Description of Product 974,798.82,Furniture,1004,1004,Color:Red;Size:S;Material:Plastic,Panasonic,Gadgets;Smartphones
+P0000975,Product 975,Description of Product 975,970.2,Toys,1005,1005,Color:Red;Size:XL,Sony,Living Room;Smartphones
+P0000976,Product 976,Description of Product 976,315.06,Kitchen,1003,1001,Color:Brown;Size:S;Material:Plastic,Philips,Home;Gadgets
+P0000977,Product 977,Description of Product 977,808.05,Furniture,1004,1003,Color:White;Size:S;Material:Wood,LG,Furniture;Kitchen
+P0000978,Product 978,Description of Product 978,151.71,Toys,1005,,Color:Red;Size:M,Samsung,Smartphones;Utensils
+P0000979,Product 979,Description of Product 979,374.83,Home Appliances,1002,1002,Color:Blue;Size:M;Voltage:110V,Ikea,Utensils;Smartphones
+P0000980,Product 980,Description of Product 980,693.39,Toys,1005,1003,Color:Red;Size:M,Philips,Electronics;Home
+P0000981,Product 981,Description of Product 981,682.44,Books,1006,1003,Color:White;Size:L,LG,Home;Kitchen
+P0000982,Product 982,Description of Product 982,835.09,Electronics,1001,1001,Color:White;Size:S,LG,Smartphones;Furniture
+P0000983,Product 983,Description of Product 983,296.27,Furniture,1004,1002,Color:Brown;Size:S;Material:Plastic,Ikea,Utensils;Gadgets
+P0000984,Product 984,Description of Product 984,553.7,Kitchen,1003,,Color:Red;Size:L;Material:Wood,LG,Kitchen;Gadgets
+P0000985,Product 985,Description of Product 985,208.85,Kitchen,1003,1004,Color:Red;Size:XL;Material:Steel,Panasonic,Furniture;Living Room
+P0000986,Product 986,Description of Product 986,819.78,Home Appliances,1002,1001,Color:Red;Size:S;Voltage:110V,Samsung,Utensils;Furniture
+P0000987,Product 987,Description of Product 987,816.72,Electronics,1001,1001,Color:Blue;Size:S,Sony,Kitchen;Utensils
+P0000988,Product 988,Description of Product 988,404.3,Electronics,1001,1005,Color:Red;Size:M,Philips,Kitchen;Utensils
+P0000989,Product 989,Description of Product 989,881.64,Kitchen,1003,1004,Color:White;Size:M;Material:Steel,LG,Smartphones;Utensils
+P0000990,Product 990,Description of Product 990,554.43,Kitchen,1003,1003,Color:Black;Size:S;Material:Wood,Philips,Kitchen;Living Room
+P0000991,Product 991,Description of Product 991,299.49,Home Appliances,1002,,Color:Black;Size:S;Voltage:220V,Ikea,Smartphones;Furniture
+P0000992,Product 992,Description of Product 992,894.33,Furniture,1004,1004,Color:White;Size:XL;Material:Wood,Panasonic,Living Room;Gadgets
+P0000993,Product 993,Description of Product 993,551.58,Electronics,1001,1004,Color:Brown;Size:M,Samsung,Home;Living Room
+P0000994,Product 994,Description of Product 994,395.37,Toys,1005,1001,Color:Blue;Size:XL,Samsung,Kitchen;Electronics
+P0000995,Product 995,Description of Product 995,269.03,Toys,1005,1004,Color:White;Size:M,Philips,Electronics;Kitchen
+P0000996,Product 996,Description of Product 996,995.76,Toys,1005,1001,Color:Red;Size:S,Sony,Gadgets;Furniture
+P0000997,Product 997,Description of Product 997,628.41,Toys,1005,1003,Color:Brown;Size:S,Philips,Smartphones;Living Room
+P0000998,Product 998,Description of Product 998,255.75,Home Appliances,1002,1004,Color:Red;Size:XL;Voltage:220V,Panasonic,Furniture;Gadgets
+P0000999,Product 999,Description of Product 999,387.59,Kitchen,1003,1002,Color:Red;Size:M;Material:Steel,Ikea,Gadgets;Home
+P0001000,Product 1000,Description of Product 1000,401.91,Furniture,1004,1003,Color:Red;Size:S;Material:Plastic,Samsung,Living Room;Smartphones
