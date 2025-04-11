@@ -54,6 +54,7 @@ class ProductImportTaskHandler extends ScheduledTaskHandler
 
         $this->productImportLogRepository->update([[
             'id' => $item->getUniqueIdentifier(),
+            'importDetails' => ['output' => $commandOutput],
             'status' => 'done'
         ]], Context::createDefaultContext());
     }

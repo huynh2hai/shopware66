@@ -102,7 +102,13 @@ Component.register('import-product-detail', {
                 label: 'Total Record',
                 inlineEdit: 'string',
                 allowResize: true
-            }];
+            },
+                {
+                    property: 'importDetails',
+                    label: 'Import Details',
+                    rawData: true,
+                    allowResize: true
+                }];
         }
     }
 });

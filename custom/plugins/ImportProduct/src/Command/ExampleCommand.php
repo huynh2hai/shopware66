@@ -4,7 +4,6 @@ namespace ImportProduct\Command;
 
 use Shopware\Core\Content\Category\CategoryEntity;
 use Shopware\Core\Content\Product\Aggregate\ProductManufacturer\ProductManufacturerEntity;
-use Shopware\Core\Content\Product\ProductEntity;
 use Shopware\Core\Content\Product\ProductVariationBuilder;
 use Shopware\Core\Defaults;
 use Shopware\Core\Framework\Context;
@@ -16,6 +15,7 @@ use Shopware\Core\System\Tag\TagEntity;
 use Symfony\Component\Console\Attribute\AsCommand;
 use Symfony\Component\Console\Command\Command;
 use Symfony\Component\Console\Helper\ProgressBar;
+use Symfony\Component\Console\Helper\Table;
 use Symfony\Component\Console\Input\InputArgument;
 use Symfony\Component\Console\Input\InputInterface;
 use Symfony\Component\Console\Output\OutputInterface;
@@ -39,7 +39,7 @@ class ExampleCommand extends Command
     private array $batch = [];
 
     private array $productVariants = [];
-    
+
 
     public function __construct(
         private readonly EntityRepository $productManufacturerRepository,
@@ -68,6 +68,9 @@ class ExampleCommand extends Command
         $filePath = $input->getArgument('filePath');
         $progressBar = new ProgressBar($output);
 
+        $productUpdated = 0;
+        $productCreated = 0;
+
         $this->preloadData($filePath);
 
         $file = fopen($filePath, 'r');
@@ -85,7 +88,13 @@ class ExampleCommand extends Command
                     $this->processBatch();
                 }
 
-                $productId = $this->products[$row[0]] ?? Uuid::randomHex();
+                if(isset($this->products[$row[0]])) {
+                    $productId = $this->products[$row[0]];
+                    $productUpdated++;
+                } else {
+                    $productId = Uuid::randomHex();
+                    $productCreated++;
+                }
 
 
                 $this->batch[] = [
@@ -108,7 +117,7 @@ class ExampleCommand extends Command
                     'tags' => $this->createTags(explode(';', $row[9])),
                     'taxId' => '019517c1f64b73d886b3299e2d16183d',
                     'active' => false,
-                    'stock' => 10,
+                    'stock' => 0,
                     'options' => $this->getPropertyids($row[7]),
                     'properties' => $this->getPropertyids($row[7])
                 ];
@@ -129,41 +138,18 @@ class ExampleCommand extends Command
             echo "Could not open the file.";
         }
 
-        $output->writeln('Finished');
+
+        $output->writeln('');
+
+        $output->writeln("Created: $productCreated; Updated: $productUpdated");
 
         return 0;
     }
 
     private function processBatch()
     {
-        $context = Context::createDefaultContext();
-        $this->productRepository->upsert($this->batch, $context);
+        $this->productRepository->upsert($this->batch, Context::createDefaultContext());
 
-
-//        $bla = $this->getPropertyids('Color:White;Size:M;Voltage:220V');
-
-//        $products = $this->productRepository->search(new Criteria(), $context);
-
-        /** @var ProductEntity $product */
-//        foreach ($products as $product) {
-//            $this->productRepository->create([[
-//                'id' => Uuid::randomHex(),
-//                'parentId' => $product->getId(),
-//                'name' => 'VAR-' . random_int(1000, 9999),
-//                'productNumber' => 'VAR-' . random_int(1000, 9999),
-//                'stock' => 50,
-//                'active' => true,
-//                'price' => [
-//                    [
-//                        'currencyId' => Defaults::CURRENCY,
-//                        'gross' => 12.00,
-//                        'net' => 10.00,
-//                        'linked' => true
-//                    ]
-//                ],
-//                'configuratorOptions' => $bla
-//            ]], $context);
-//        }
 
         $this->batch = [];
         $this->productVariants = [];
