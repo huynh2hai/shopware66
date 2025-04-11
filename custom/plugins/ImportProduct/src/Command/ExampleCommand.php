@@ -39,6 +39,7 @@ class ExampleCommand extends Command
     private array $batch = [];
 
     private array $productVariants = [];
+    
 
     public function __construct(
         private readonly EntityRepository $productManufacturerRepository,
@@ -107,9 +108,9 @@ class ExampleCommand extends Command
                     'tags' => $this->createTags(explode(';', $row[9])),
                     'taxId' => '019517c1f64b73d886b3299e2d16183d',
                     'active' => false,
-                    'stock' => 10
-//                    'options' => $this->getPropertyids($row[7]),
-//                    'properties' => $this->getPropertyids($row[7])
+                    'stock' => 10,
+                    'options' => $this->getPropertyids($row[7]),
+                    'properties' => $this->getPropertyids($row[7])
                 ];
             }
             fclose($file);

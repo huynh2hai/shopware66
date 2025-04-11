@@ -11,7 +11,6 @@ class ProductImportService
         'price',
         'category_name',
         'category_id',
-        'parent_category_id',
         'variant',
         'manufacturer',
         'tag'
@@ -52,6 +51,28 @@ class ProductImportService
                 'errors' => "Required field '" . implode(',', $error) . "' are missing in header"
             ]];
         }
+
+        $count = 1;
+        while (($row = fgetcsv($handle)) !== false) {
+            $row = array_combine($headers, $row);
+
+            foreach ($row as $key => $value) {
+                if ($key === 'parent_category_id') {
+                    continue;
+                }
+                
+                if (empty($value)) {
+                    $errors[] = [
+                        'row' => $count,
+                        'errors' => "Field '{$key}' is empty"
+                    ];
+                }
+            }
+            $count++;
+        }
+
+
+
 
         return $errors;
     }

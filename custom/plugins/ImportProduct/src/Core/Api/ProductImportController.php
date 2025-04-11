@@ -7,6 +7,7 @@ use Shopware\Core\Framework\Context;
 use Shopware\Core\Framework\DataAbstractionLayer\EntityRepository;
 use Shopware\Core\Framework\DataAbstractionLayer\Search\Criteria;
 use Shopware\Core\Framework\Uuid\Uuid;
+use SplFileObject;
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 use Symfony\Component\HttpFoundation\File\UploadedFile;
 use Symfony\Component\HttpFoundation\JsonResponse;
@@ -54,13 +55,17 @@ class ProductImportController extends AbstractController
         $tempPath = sys_get_temp_dir() . '/' . uniqid('import_') . '.csv';
         $file->move(sys_get_temp_dir(), basename($tempPath));
 
+        $fileObject = new SplFileObject($tempPath, 'r');
+        $fileObject->seek(PHP_INT_MAX); // Move to the end of the file
+        $count = $fileObject->key();
+
         $id = Uuid::randomHex();
 
         $data[] = [
             'id' => $id,
             'fileName' => $tempPath,
             'status' => 'init',
-            'totalRecords' => 0,
+            'totalRecords' => $count,
             'successRecords' => 0,
             'failedRecords' => 0
         ];

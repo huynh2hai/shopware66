@@ -21,7 +21,8 @@ Component.register('import-product-detail', {
             bundles: null,
             isLoading: false,
             processSuccess: false,
-            repository: null
+            repository: null,
+            intervalId: null
         };
     },
 
@@ -34,6 +35,12 @@ Component.register('import-product-detail', {
     created() {
        this.createdComponent();
     },
+
+    mounted() {
+        // Start the interval when the component is mounted
+        this.startAutoFetch();
+    },
+
 
     methods: {
        createdComponent() {
@@ -53,6 +60,30 @@ Component.register('import-product-detail', {
                 this.bundles = result;
             });
 
+        },
+        startAutoFetch() {
+            // Ensure no existing interval is running
+            this.stopAutoFetch();
+
+            // Run getBundle immediately and then every 1 second
+            this.getBundle();
+            this.intervalId = setInterval(() => {
+                if (this.$route.name === 'import.product.detail') {
+                    // Only fetch if this component is active
+                    this.getBundle();
+                } else {
+                    // Stop fetching if the route changes
+                    this.stopAutoFetch();
+                }
+            }, 1000); // 1000ms = 1 second
+        },
+
+        stopAutoFetch() {
+            // Clear the interval if it exists
+            if (this.intervalId) {
+                clearInterval(this.intervalId);
+                this.intervalId = null;
+            }
         },
         getColumns() {
             return [{
